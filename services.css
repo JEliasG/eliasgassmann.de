@@ -96,3 +96,18 @@ section[id],main[id] { scroll-margin-top:24px; }
 .contract-check:hover { color:#f4e3b7; }
 .contract-check span { font-size:20px; }
 @media(max-width:360px) { .hero-actions .text-link { padding:16px;gap:12px;font-size:13px; }.contract-check{font-size:13px;gap:10px;} }
+
+/* A personal portrait anchors the final invitation. */
+.contact-with-portrait { grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr); align-items:center; gap:clamp(32px,5vw,76px); padding:clamp(28px,5vw,72px); }
+.contact-portrait { margin:0; align-self:stretch; }
+.contact-portrait img { display:block; width:100%; height:100%; max-height:570px; aspect-ratio:4/5; object-fit:cover; object-position:center 38%; border-radius:56px 6px 6px 6px; }
+.contact-content { min-width:0; }
+.contact-content h2 { margin-top:24px; }
+.contact-content .contact-data { margin-top:30px; font-size:16px; gap:9px; }
+.contact-content .contact-data p { margin-top:12px; font-size:13px; }
+@media(max-width:760px) { .contact-with-portrait { grid-template-columns:minmax(0,1fr); gap:30px; padding:24px; } .contact-portrait { width:100%; max-width:420px; justify-self:center; } .contact-portrait img { max-height:380px; aspect-ratio:5/4; object-position:center 30%; border-radius:40px 5px 5px 5px; } .contact-content h2 { margin-top:20px; } }
+
+/* Crop the supplied flyer photograph in CSS: preserve the original face and body. */
+.contact-portrait { position:relative; overflow:hidden; aspect-ratio:450/370; align-self:center; border-radius:50px 6px 6px 6px; }
+.contact-portrait img { position:absolute; width:227.5556%; max-width:none; height:auto; max-height:none; aspect-ratio:auto; left:-124.4444%; top:-67.5676%; border-radius:0; }
+@media(max-width:760px) { .contact-portrait { max-width:420px; border-radius:38px 5px 5px 5px; } .contact-portrait img { max-height:none; aspect-ratio:auto; } }
