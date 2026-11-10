@@ -319,7 +319,7 @@
               <input type="checkbox" name="datenschutz" value="ja" required>
               <span>Ich stimme der Verarbeitung meiner Angaben gemäß der <a href="/datenschutz">Datenschutzerklärung</a> zu. Die Anfrage ist unverbindlich.</span>
             </label>
-            <input type="hidden" name="seite" value="finanzberater-mainz">
+            <input type="hidden" name="seite" value="https://eliasgassmann.de/finanzberater-mainz">
             <button type="submit">Unverbindliche Anfrage senden</button>
             <p class="form-status" role="status" data-form-status></p>
           </form>
@@ -533,10 +533,12 @@
   </footer>
   <a class="mobile-sticky" href="#anfrage">Jetzt Beratung anfragen</a>
   <script src="formular.js" defer></script>
-  <script defer>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    bindeAnfrageFormular(document.getElementById('beratung-form'), {
-      endpoint: 'https://eg-anfragen.elias-gassmann.workers.dev/anfrage'
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('year').textContent = new Date().getFullYear();
+      bindeAnfrageFormular(document.getElementById('beratung-form'), {
+        endpoint: 'https://eg-anfragen.elias-gassmann.workers.dev/anfrage'
+      });
     });
   </script>
 </body>
