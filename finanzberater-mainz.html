@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Finanzberater Mainz — Elias Gassmann | persönlich und klar</title>
+  <meta name="description" content="Finanzberater in Mainz für Privat, Selbstständige und Betriebe. Elias Gassmann berät als gebundener Vermittler zu Absicherung und Vorsorge. Unverbindlichen Termin unter termin.eliasgassmann.de vereinbaren.">
+  <link rel="canonical" href="https://eliasgassmann.de/finanzberater-mainz">
+  <meta name="theme-color" content="#fbfbfd">
+  <meta property="og:title" content="Finanzberater Mainz — Elias Gassmann | persönlich und klar">
+  <meta property="og:description" content="Finanzberater in Mainz für Privat, Selbstständige und Betriebe. Elias Gassmann berät als gebundener Vermittler zu Absicherung und Vorsorge. Unverbindlichen Termin unter termin.eliasgassmann.de vereinbaren.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://eliasgassmann.de/finanzberater-mainz">
+  <meta property="og:image" content="https://eliasgassmann.de/portrait-elias-gassmann.jpeg">
+  <link rel="stylesheet" href="apple.css?v=20261103">
+  <style>
+    .hero h1, .intro h2, .process-heading h2, .faq-section h2, .contact-card h2, .page-block h2 {
+      -webkit-hyphens: manual;
+      hyphens: manual;
+      overflow-wrap: normal;
+      word-break: normal;
+    }
+    .hero--beratung {
+      align-items: start;
+      gap: 48px;
+      padding-bottom: 72px;
+    }
+    .hero--beratung h1 {
+      font-size: clamp(36px, 4.2vw, 58px);
+      line-height: 1.08;
+      max-width: 18ch;
+    }
+    .answer-box {
+      margin: 22px 0 20px;
+      padding: 18px 20px 18px 22px;
+      border-radius: 20px;
+      background: var(--grau);
+      border-left: 3px solid var(--blau);
+    }
+    .answer-label {
+      display: block;
+      margin: 0 0 6px;
+      color: var(--blau);
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .answer-box p {
+      margin: 0;
+      color: var(--ink);
+      font-size: 17px;
+      line-height: 1.45;
+    }
+    .core-answer {
+      margin: 0 0 22px;
+      max-width: 40rem;
+      font-size: 18px;
+      line-height: 1.45;
+      color: var(--ink-2);
+    }
+    .hero-panel { display: grid; gap: 16px; min-width: 0; }
+    .hero--beratung .hero-portrait { max-height: 420px; aspect-ratio: 4/5; }
+    .form-card {
+      padding: 22px 22px 20px;
+      border-radius: 28px;
+      background: #fff;
+      box-shadow: var(--schatten-hoch);
+    }
+    .form-card h2 {
+      margin: 0 0 6px;
+      font: 700 24px/1.2 var(--display);
+      letter-spacing: -.03em;
+    }
+    .form-lead, .form-alt, .form-status {
+      margin: 0 0 16px;
+      color: var(--mut);
+      font-size: 15px;
+      line-height: 1.45;
+    }
+    .form-alt, .form-status { margin: 10px 0 0; font-size: 13px; }
+    .form-status.is-ok { color: #248a3d; }
+    .form-status.is-error { color: #b42318; }
+    .fwx-honeypot {
+      position: absolute;
+      left: -10000px;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+
+    .form-alt a, .consent a { color: var(--link); }
+    .lead-form { display: grid; gap: 12px; }
+    .lead-form label { display: grid; gap: 5px; font-size: 13px; font-weight: 600; color: var(--ink); }
+    .lead-form input[type="text"] {
+      width: 100%; padding: 12px 14px; border: 1px solid var(--linie); border-radius: 12px;
+      background: var(--grau); color: var(--ink); font: 16px var(--sans);
+    }
+    .lead-form input:focus { outline: 2px solid rgba(0,113,227,.55); outline-offset: 1px; background: #fff; }
+    .consent { display: flex !important; align-items: flex-start; gap: 10px; font-weight: 400 !important; font-size: 13px !important; color: var(--mut) !important; line-height: 1.45; }
+    .consent input { margin-top: 3px; flex: none; }
+    .lead-form button[type="submit"] {
+      appearance: none; margin-top: 4px; min-height: 50px; padding: 0 22px; border: 0; border-radius: 980px;
+      background: var(--blau); color: #fff; font-size: 16px; cursor: pointer;
+    }
+    .lead-form button[type="submit"]:hover { background: var(--blau-hover); }
+    .trust-rating {
+      display: flex; align-items: center; gap: 12px; padding: 14px 16px;
+      border-radius: 20px; background: var(--grau); color: inherit;
+    }
+    .trust-rating strong { display: block; font-size: 15px; }
+    .trust-rating small { display: block; font-size: 12px; color: var(--mut); }
+    .quote-mini {
+      margin: 0; padding: 16px 18px; border-radius: 20px; background: var(--grau);
+    }
+    .quote-mini p { margin: 0 0 8px; font-size: 15px; line-height: 1.4; }
+    .quote-mini footer { font-size: 12px; color: var(--mut); }
+    .page-block { padding: 96px var(--rand); }
+    .page-block h2 { margin: 8px 0 18px; font: 700 clamp(34px,4.2vw,56px)/1.07 var(--display); letter-spacing: -.03em; max-width: 22ch; }
+    .page-block .lead, .page-block p { max-width: 42rem; }
+    .page-block p { margin: 0 0 16px; font-size: 17px; line-height: 1.5; color: var(--ink-2); }
+    .page-block .lead { font-size: 21px; line-height: 1.38; color: var(--mut); }
+    .page-block--grau { background: var(--grau); }
+    .criteria {
+      width: 100%; max-width: 52rem; margin: 8px 0 0; border-collapse: collapse;
+      background: #fff; border-radius: 20px; box-shadow: var(--schatten); overflow: hidden;
+    }
+    .criteria caption { caption-side: top; text-align: left; padding: 18px 20px 8px; font: 600 18px var(--display); color: var(--ink); }
+    .criteria th, .criteria td { padding: 14px 20px; border-top: 1px solid var(--linie); text-align: left; vertical-align: top; font-size: 15px; line-height: 1.45; }
+    .criteria thead th { font-size: 12px; color: var(--mut); font-weight: 600; }
+    .criteria tbody th { width: 48%; color: var(--ink); font-weight: 600; }
+    .topic-list { display: grid; gap: 12px; margin: 8px 0 20px; padding: 0; list-style: none; max-width: 44rem; }
+    .topic-list li { padding: 18px 20px; border-radius: 20px; background: var(--grau); }
+    .topic-list strong { display: block; margin-bottom: 4px; }
+    .topic-list span { color: var(--mut); font-size: 15px; line-height: 1.45; }
+    .partners { font-size: 15px; color: var(--ink-2); }
+    .mobile-sticky {
+      display: none;
+    }
+    @media (max-width: 760px) {
+      .hero--beratung h1 { max-width: none; }
+      .hero--beratung .hero-portrait { max-height: none; }
+      .page-block { padding: 72px 22px; }
+      .mobile-sticky {
+        display: flex; align-items: center; justify-content: center;
+        position: fixed; z-index: 30; left: 16px; right: 16px;
+        bottom: max(16px, env(safe-area-inset-bottom));
+        min-height: 50px; border-radius: 980px; background: var(--blau); color: #fff;
+        font-size: 16px; box-shadow: var(--schatten-hoch);
+      }
+      body { padding-bottom: 84px; }
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .hero-content, .hero-panel { animation: none; }
+    }
+
+    .quote-mini .quote-src { margin: 0; font-size: 12px; color: var(--mut); line-height: 1.4; }
+    .hero--beratung { display: grid; grid-template-columns: minmax(0,1.15fr) minmax(0,.85fr); }
+    .hero-form { min-width: 0; }
+    @media (min-width: 761px) {
+      .hero-copy { grid-column: 1; grid-row: 1; }
+      .hero-form { grid-column: 1; grid-row: 2; }
+      .hero-panel { grid-column: 2; grid-row: 1 / span 2; }
+    }
+    @media (max-width: 760px) {
+      .hero--beratung { display: flex; flex-direction: column; }
+      .hero-copy { order: 1; }
+      .hero-panel { order: 2; }
+      .hero-form { order: 3; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wer ist Finanzberater in Mainz bei euch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die Finanzberatung in Mainz erfolgt persönlich durch Elias Gassmann. Du kannst einen Termin in der Region Mainz oder online vereinbaren."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bist du unabhängiger Finanzberater oder Versicherungsmakler in Mainz?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nein. Elias Gassmann berät und vermittelt als gebundener Versicherungsvermittler zu den Produktpartnern. Das ist keine Beratung über den gesamten Markt und keine Honorarberatung."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Berätst du in Mainz auch Selbstständige und Handwerksbetriebe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Neben privaten Themen kommen typische Fragen von Selbstständigen und Betrieben auf den Tisch, etwa zur Absicherung im Gewerbe. Vertiefende Fachtexte zu einzelnen Gewerbeversicherungen liegen auf factoringwerkstatt.de und werden von hier verlinkt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ist das Erstgespräch beim Finanzberater in Mainz kostenpflichtig?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Das Erstgespräch ist unverbindlich. Du zahlst keine Beratungsgebühr. Soweit Produkte vermittelt werden, erfolgt die Vergütung typischerweise über die Produktpartner. Im Gespräch wird der Ablauf transparent erklärt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Findet die Finanzberatung nur vor Ort in Mainz statt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nein. Du kannst die Beratung in der Region Mainz oder online wahrnehmen. Den Termin buchst du unter termin.eliasgassmann.de."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Welche Themen deckt die Finanzberatung in Mainz ab?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Häufig geht es um private Absicherung und Vorsorge sowie um typische betriebliche Fragen von Selbstständigen und Betrieben. Nicht jedes Thema und jedes Produkt ist automatisch verfügbar; das klären wir im Gespräch."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie vereinbare ich einen Termin mit dem Finanzberater in Mainz?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Den unverbindlichen Termin buchst du online unter termin.eliasgassmann.de. Im Erstgespräch klären wir dein Anliegen und den möglichen nächsten Schritt, ohne Verpflichtung."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Elias Gassmann — Finanzberater in Mainz",
+    "url": "https://eliasgassmann.de/finanzberater-mainz",
+    "description": "Finanzberatung in Mainz für Privat, Selbstständige und Betriebe. Elias Gassmann berät als gebundener Versicherungsvermittler zu den Produktpartnern.",
+    "areaServed": ["Mainz", "DE"],
+    "telephone": "+491626960629",
+    "email": "elias@eliasgassmann.de",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "August-Horch-Straße 6A",
+      "postalCode": "55129",
+      "addressLocality": "Mainz",
+      "addressCountry": "DE"
+    },
+    "provider": {
+      "@type": "Person",
+      "name": "Elias Gassmann",
+      "url": "https://eliasgassmann.de/",
+      "image": "https://eliasgassmann.de/portrait-elias-gassmann.jpeg"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Elias Gassmann", "item": "https://eliasgassmann.de/" },
+      { "@type": "ListItem", "position": 2, "name": "Finanzberater Mainz", "item": "https://eliasgassmann.de/finanzberater-mainz" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt</a>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Elias Gassmann Finanzberatung Startseite">
+      <span class="brand-seal">EG</span>
+      <span class="brand-name">Elias Gassmann<small>Finanzberatung</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Hauptnavigation">
+      <a href="index.html#gewerbe">Gewerbe</a>
+      <a href="index.html#privat">Privat</a>
+      <a href="#ablauf">So läuft’s</a>
+      <a href="#termin">Termin</a>
+    </nav>
+    <a class="header-contact" href="tel:+491626960629">
+      <span class="phone-icon">↗</span>
+      <span>0162 6960629</span>
+    </a>
+  </header>
+
+  <main id="top">
+    <section class="hero hero--beratung" id="inhalt" aria-labelledby="hero-title">
+      <div class="hero-content hero-copy">
+        <p class="eyebrow hero-label">Finanzberatung in Mainz</p>
+        <h1 id="hero-title">Finanzberater in Mainz: Beratung für Privat, Selbstständige und Betriebe</h1>
+        <aside class="answer-box" aria-label="Kurzantwort">
+          <span class="answer-label">Kurzantwort</span>
+          <p>Du suchst einen Finanzberater in Mainz für private oder betriebliche Themen — von Absicherung und Vorsorge bis zu typischen Fragen von Selbstständigen und Handwerksbetrieben. Elias Gassmann berät vor Ort und online als gebundener Versicherungsvermittler zu den Produktpartnern, nicht über den gesamten Markt und nicht gegen ein Stundenhonorar. Im unverbindlichen Gespräch unter termin.eliasgassmann.de klären wir dein Anliegen, die mögliche Vergütung und den nächsten sinnvollen Schritt.</p>
+        </aside>
+        <p class="core-answer">Als Finanzberater in Mainz begleitet Elias Gassmann private Haushalte sowie Selbstständige und Betriebe bei Absicherung, Vorsorge und typischen Finanzentscheidungen — vor Ort in der Region Mainz und online. Die Beratung erfolgt als gebundener Versicherungsvermittler zu den Produktpartnern: transparent im Ablauf und in der Vergütung, aber nicht als Beratung über den gesamten Markt und nicht als Beratung gegen Stundenhonorar.</p>
+        <!-- Formular-Backend: Nur das action-Attribut durch den Endpunkt ersetzen. method="post", Feldnamen beibehalten. Ziel: elias@eliasgassmann.de -->
+        </div>
+        <div class="hero-form">
+        <div class="form-card" id="anfrage">
+          <h2>Jetzt Beratung anfragen</h2>
+          <p class="form-lead">Unverbindlich, in der Region Mainz oder online. Erzähl kurz, worum es geht.</p>
+          <form class="lead-form" id="beratung-form" action="https://eg-anfragen.elias-gassmann.workers.dev/anfrage" method="post" novalidate>
+            <label>Name
+              <input type="text" name="name" autocomplete="name" required placeholder="Vor- und Nachname">
+            </label>
+            <label>Telefon oder E-Mail
+              <input type="text" name="kontakt" autocomplete="on" required placeholder="Nummer oder E-Mail-Adresse" inputmode="email">
+            </label>
+            <label>Branche oder Situation
+              <input type="text" name="branche" required placeholder="z. B. privat, selbstständig, Handwerk">
+            </label>
+            <label>Kurz dein Anliegen
+              <input type="text" name="anliegen" required placeholder="z. B. Absicherung, Vorsorge, Betrieb">
+            </label>
+            <label class="consent fwx-consent">
+              <input type="checkbox" name="datenschutz" value="ja" required>
+              <span>Ich stimme der Verarbeitung meiner Angaben gemäß der <a href="/datenschutz">Datenschutzerklärung</a> zu. Die Anfrage ist unverbindlich.</span>
+            </label>
+            <input type="hidden" name="seite" value="finanzberater-mainz">
+            <button type="submit">Unverbindliche Anfrage senden</button>
+            <p class="form-status" role="status" data-form-status></p>
+          </form>
+          <p class="form-alt">Oder Termin direkt wählen: <a href="https://termin.eliasgassmann.de">termin.eliasgassmann.de</a> · <a href="tel:+491626960629">+49 162 6960629</a></p>
+        </div>
+        </div>
+      <div class="hero-panel">
+        <figure class="hero-portrait">
+          <img src="portrait-elias-gassmann.jpeg" alt="Elias Gassmann, Finanzberater in Mainz, im Anzug" width="1254" height="1254" fetchpriority="high">
+          <figcaption>
+            <span>Elias Gassmann</span>
+            <strong>Finanzberater in Mainz</strong>
+            <small>Gebundener Versicherungsvermittler · vor Ort und online</small>
+          </figcaption>
+        </figure>
+        <a class="trust-rating" href="https://www.google.com/maps?cid=18281856182098275446" target="_blank" rel="noopener noreferrer">
+          <span aria-hidden="true">★★★★★</span>
+          <span>
+            <strong>4,9 / 5 · 48 Google-Rezensionen</strong>
+            <small>Stand 10.11.2026</small>
+          </span>
+        </a>
+        <blockquote class="quote-mini">
+          <p>„Elias begleitet mich seitdem kontinuierlich zu allen wichtigen Finanzfragen …“</p>
+          <p class="quote-src">Frank Teibes · Google-Rezension · Factoring für einen Malerbetrieb</p>
+        </blockquote>
+        <blockquote class="quote-mini">
+          <p>„… er hat mich fantastisch beraten.“</p>
+          <p class="quote-src">Cagdas Aslan · Google-Rezension · Factoring-Beratung</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="process-section page-block" id="ablauf" aria-labelledby="ablauf-title">
+      <div class="process-heading">
+        <p class="eyebrow">Der Ablauf</p>
+        <h2 id="ablauf-title">Wie die Finanzberatung in Mainz abläuft</h2>
+        <p class="lead">Persönlich in der Region Mainz und online: Wir starten mit einem unverbindlichen Erstgespräch, klären dein Anliegen und ordnen die nächsten Schritte ein.</p>
+        <p>Ich berate und vermittle als gebundener Versicherungsvermittler zu den Produktpartnern, an die meine Zulassung gebunden ist — nicht über den gesamten Markt und nicht gegen ein Stundenhonorar. Das erkläre ich im Gespräch, bevor eine Entscheidung ansteht.</p>
+      </div>
+      <ol class="process-list">
+        <li>
+          <span>1</span>
+          <h3>Termin buchen</h3>
+          <p>Du buchst einen unverbindlichen Termin, vor Ort in der Region Mainz oder online.</p>
+        </li>
+        <li>
+          <span>2</span>
+          <h3>Anliegen klären</h3>
+          <p>Wir klären dein Anliegen und die wichtigsten Rahmenbedingungen — privat, betrieblich oder beides.</p>
+        </li>
+        <li>
+          <span>3</span>
+          <h3>Themen einordnen</h3>
+          <p>Ich ordne ein, welche Themen zuerst relevant sind und welche Unterlagen helfen.</p>
+        </li>
+        <li>
+          <span>4</span>
+          <h3>Rahmen erklären</h3>
+          <p>Ich erkläre, bei welchen Produktpartnern ich beraten und vermitteln darf — und wo die Grenze der gebundenen Vermittlung liegt.</p>
+        </li>
+        <li>
+          <span>5</span>
+          <h3>In Ruhe entscheiden</h3>
+          <p>Du entscheidest in Ruhe, ob und wie es weitergehen soll. Durch das Erstgespräch entsteht keine Verpflichtung.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="page-block page-block--grau" aria-labelledby="fuer-wen">
+      <p class="eyebrow">Zielgruppen</p>
+      <h2 id="fuer-wen">Für wen die Beratung typischerweise infrage kommt</h2>
+      <p class="lead">Die Beratung richtet sich an private Haushalte sowie an Selbstständige und Handwerksbetriebe — oft an der Schnittstelle von privat und betrieblich.</p>
+      <p>Für Privatpersonen geht es typischerweise um Absicherung, Vorsorge und Entscheidungen in bestimmten Lebensphasen. Für Selbstständige und Betriebe kommen dazu typische betriebliche Fragen, etwa zum Schutz des Gewerbes. Nicht jedes Thema und jedes Produkt ist automatisch verfügbar; das klären wir im Gespräch.</p>
+      <p>Vertiefende Ratgeber zu einzelnen Gewerbeversicherungen liegen auf factoringwerkstatt.de, zum Beispiel zur <a href="https://www.factoringwerkstatt.de/betriebshaftpflicht-handwerk">Betriebshaftpflicht fürs Handwerk</a> und zum <a href="https://www.factoringwerkstatt.de/gewerberechtsschutz">Gewerberechtsschutz</a>. Diese Seiten ersetzen nicht das Gespräch, sondern ordnen Fachfragen ein.</p>
+    </section>
+
+    <section class="page-block" aria-labelledby="themen">
+      <p class="eyebrow">Themen, nicht Produktkatalog</p>
+      <h2 id="themen">Themen, die häufig auf den Tisch kommen</h2>
+      <p class="lead">Die Liste ist eine Orientierung, kein Vollständigkeitsversprechen und keine Zusage, jedes Produkt vermitteln zu können.</p>
+      <ul class="topic-list">
+        <li>
+          <strong>Private Absicherung</strong>
+          <span>Typische Risiken im Alltag und für die Familie einordnen und mit dem abgleichen, was bereits besteht.</span>
+        </li>
+        <li>
+          <strong>Vorsorge</strong>
+          <span>Für später vorsorgen und die wichtigsten Rahmenbedingungen klären, ohne eine Rendite zuzusagen.</span>
+        </li>
+        <li>
+          <strong>Typische betriebliche Versicherungen</strong>
+          <span>Fragen von Selbstständigen und Betrieben zur Absicherung im Gewerbe — vertieft etwa über die Fachseiten zu Betriebshaftpflicht und Gewerberechtsschutz.</span>
+        </li>
+        <li>
+          <strong>Schnittstelle Privat und Betrieb</strong>
+          <span>Wenn sich privater und betrieblicher Bedarf überschneidet, schauen wir, welche Fragen zuerst kommen.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="page-block page-block--grau" aria-labelledby="transparenz">
+      <p class="eyebrow">Status und Vergütung</p>
+      <h2 id="transparenz">Transparenz: Status, Produktpartner, Vergütung</h2>
+      <p class="lead">«Gebunden» heißt: Ich darf zu den Produktpartnern beraten und vermitteln, an die meine Zulassung gebunden ist. Das ist keine Beratung über den gesamten Markt und keine Beratung gegen Stundenhonorar.</p>
+      <p>Im Versicherungsbereich bin ich gebundener Versicherungsvermittler gemäß § 34d Abs. 7 GewO und tätig für Generali Deutschland Lebensversicherung, Generali Deutschland Versicherung, Generali Deutschland Krankenversicherung und ADVOCARD Rechtsschutzversicherung. Im Investmentbereich bin ich Finanzanlagenvermittler gemäß § 34f GewO zu den im <a href="impressum.html">Impressum</a> genannten Produktpartnern.</p>
+      <p class="partners">Die Vergütung erfolgt typischerweise über die Produktpartner, soweit Produkte vermittelt werden. Für das Erstgespräch zahlst du keine Beratungsgebühr. Konkrete Provisionsbeträge setze ich hier nicht an — den Ablauf erkläre ich im Gespräch. Es werden keine Kundengelder entgegengenommen; Zahlungen erfolgen direkt an die jeweiligen Produktpartner.</p>
+      <table class="criteria">
+        <caption>Was du hier erwarten kannst — und was nicht</caption>
+        <thead>
+          <tr>
+            <th scope="col">Das kannst du erwarten</th>
+            <th scope="col">Das ist hier nicht gemeint</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Persönliche Finanzberatung in Mainz und online</th>
+            <td>Eine anonyme Vergleichsplattform</td>
+          </tr>
+          <tr>
+            <th scope="row">Beratung als gebundener Versicherungsvermittler zu den Produktpartnern</th>
+            <td>Eine Beratung über den gesamten Markt</td>
+          </tr>
+          <tr>
+            <th scope="row">Klare Einordnung typischer privater und betrieblicher Anliegen</th>
+            <td>Eine Beratung gegen Stundenhonorar</td>
+          </tr>
+          <tr>
+            <th scope="row">Unverbindlicher Termin als Einstieg</th>
+            <td>Eine Garantie auf das günstigste Produkt oder eine bestimmte Ersparnis</td>
+          </tr>
+          <tr>
+            <th scope="row">Verweise auf vertiefende Fachseiten, etwa zu Gewerbeversicherungen</th>
+            <td>Eine Zweitfassung aller nationalen Ratgebertexte auf dieser Domain</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="page-block" id="termin" aria-labelledby="termin-title">
+      <p class="eyebrow">Nächster Schritt</p>
+      <h2 id="termin-title">Termin vereinbaren — vor Ort in Mainz oder online</h2>
+      <p class="lead">Den unverbindlichen Termin buchst du unter <a href="https://termin.eliasgassmann.de">termin.eliasgassmann.de</a>. Vor Ort in der Region Mainz oder online — ohne Druck und ohne Ersparniszusage.</p>
+      <p>Die öffentlich genannte Anschrift ist August-Horch-Straße 6A, 55129 Mainz. Ob ein Termin vor Ort oder online sinnvoller ist, klären wir bei der Buchung. Du erreichst mich auch unter <a href="tel:+491626960629">+49 162 6960629</a> und <a href="mailto:elias@eliasgassmann.de">elias@eliasgassmann.de</a>.</p>
+      <p style="margin-top:28px"><a class="text-link" href="https://termin.eliasgassmann.de">Unverbindlichen Termin vereinbaren <span aria-hidden="true">↗</span></a></p>
+    </section>
+
+    <section class="faq-section" id="fragen" aria-labelledby="faq-title">
+      <div>
+        <p class="eyebrow">Vor dem Gespräch</p>
+        <h2 id="faq-title">Häufige Fragen zur Finanzberatung in Mainz</h2>
+      </div>
+      <div class="faq-list">
+        <details open>
+          <summary>Wer ist Finanzberater in Mainz bei euch?</summary>
+          <p>Die Finanzberatung in Mainz erfolgt persönlich durch Elias Gassmann. Du kannst einen Termin in der Region Mainz oder online vereinbaren.</p>
+        </details>
+        <details>
+          <summary>Bist du unabhängiger Finanzberater oder Versicherungsmakler in Mainz?</summary>
+          <p>Nein. Ich berate und vermittle als gebundener Versicherungsvermittler zu den Produktpartnern. Das bin ich nicht: eine Beratung über den gesamten Markt oder eine Beratung gegen Stundenhonorar.</p>
+        </details>
+        <details>
+          <summary>Berätst du in Mainz auch Selbstständige und Handwerksbetriebe?</summary>
+          <p>Ja. Neben privaten Themen kommen typische Fragen von Selbstständigen und Betrieben auf den Tisch, etwa zur Absicherung im Gewerbe. Vertiefende Fachtexte zu einzelnen Gewerbeversicherungen liegen auf factoringwerkstatt.de, etwa zur <a href="https://www.factoringwerkstatt.de/betriebshaftpflicht-handwerk">Betriebshaftpflicht fürs Handwerk</a> und zum <a href="https://www.factoringwerkstatt.de/gewerberechtsschutz">Gewerberechtsschutz</a>.</p>
+        </details>
+        <details>
+          <summary>Ist das Erstgespräch beim Finanzberater in Mainz kostenpflichtig?</summary>
+          <p>Das Erstgespräch ist unverbindlich. Du zahlst keine Beratungsgebühr. Soweit Produkte vermittelt werden, erfolgt die Vergütung typischerweise über die Produktpartner. Im Gespräch wird der Ablauf transparent erklärt.</p>
+        </details>
+        <details>
+          <summary>Findet die Finanzberatung nur vor Ort in Mainz statt?</summary>
+          <p>Nein. Du kannst die Beratung in der Region Mainz oder online wahrnehmen. Den Termin buchst du unter <a href="https://termin.eliasgassmann.de">termin.eliasgassmann.de</a>.</p>
+        </details>
+        <details>
+          <summary>Welche Themen deckt die Finanzberatung in Mainz ab?</summary>
+          <p>Häufig geht es um private Absicherung und Vorsorge sowie um typische betriebliche Fragen von Selbstständigen und Betrieben. Nicht jedes Thema und jedes Produkt ist automatisch verfügbar; das klären wir im Gespräch.</p>
+        </details>
+        <details>
+          <summary>Wie vereinbare ich einen Termin mit dem Finanzberater in Mainz?</summary>
+          <p>Den unverbindlichen Termin buchst du online unter <a href="https://termin.eliasgassmann.de">termin.eliasgassmann.de</a>. Im Erstgespräch klären wir dein Anliegen und den möglichen nächsten Schritt, ohne Verpflichtung.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="contact-card" aria-labelledby="kontakt-title">
+      <figure class="hero-portrait" style="margin:0;max-height:520px">
+        <img src="portrait-elias-gassmann.jpeg" alt="Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" loading="lazy">
+      </figure>
+      <div class="contact-content">
+        <p class="eyebrow">Kontakt</p>
+        <h2 id="kontakt-title">Was hast du vor?<br><em>Lass uns sprechen.</em></h2>
+        <p class="contact-copy">Ein privates Ziel, eine Frage zur Absicherung oder der nächste Schritt für deinen Betrieb: Erzähl mir, worum es geht.</p>
+        <a class="text-link" href="https://termin.eliasgassmann.de">Unverbindlichen Termin vereinbaren <span aria-hidden="true">↗</span></a>
+        <div class="contact-data">
+          <a href="tel:+491626960629">+49 162 6960629</a>
+          <a href="mailto:elias@eliasgassmann.de">elias@eliasgassmann.de</a>
+          <p>August-Horch-Straße 6A<br>55129 Mainz</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year">2026</span> Elias Gassmann</p>
+    <div>
+      <a href="index.html">Startseite</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="/datenschutz">Datenschutz</a>
+    </div>
+  </footer>
+  <a class="mobile-sticky" href="#anfrage">Jetzt Beratung anfragen</a>
+  <script src="formular.js" defer></script>
+  <script defer>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    bindeAnfrageFormular(document.getElementById('beratung-form'), {
+      endpoint: 'https://eg-anfragen.elias-gassmann.workers.dev/anfrage'
+    });
+  </script>
+</body>
+</html>
