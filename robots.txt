@@ -1,0 +1,40 @@
+# eliasgassmann.de
+User-agent: *
+Allow: /
+Disallow: /signatur.html
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-InspectionTool
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Bytespider
+Disallow: /
+
+Sitemap: https://eliasgassmann.de/sitemap.xml
