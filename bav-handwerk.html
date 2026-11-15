@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Betriebliche Altersvorsorge (bAV) für Handwerksbetriebe in Mainz und Rhein-Main — Elias Gassmann</title>
+  <meta name="description" content="Betriebliche Altersvorsorge (bAV) für Handwerksbetriebe in Mainz und Rhein-Main: Entgeltumwandlung, Arbeitgeberzuschuss und Durchführungswege. Beratung vor Ort, im Umkreis von rund 100 Kilometern oder online deutschlandweit.">
+  <link rel="canonical" href="https://eliasgassmann.de/bav-handwerk">
+  <meta name="theme-color" content="#fbfbfd">
+  <meta property="og:title" content="Betriebliche Altersvorsorge (bAV) für Handwerksbetriebe in Mainz und Rhein-Main — Elias Gassmann">
+  <meta property="og:description" content="Betriebliche Altersvorsorge (bAV) für Handwerksbetriebe in Mainz und Rhein-Main: Entgeltumwandlung, Arbeitgeberzuschuss und Durchführungswege. Beratung vor Ort, im Umkreis von rund 100 Kilometern oder online deutschlandweit.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://eliasgassmann.de/bav-handwerk">
+  <meta property="og:image" content="https://eliasgassmann.de/portrait-elias-gassmann.jpeg">
+  <meta property="og:locale" content="de_DE">
+  <link rel="stylesheet" href="apple.css?v=20261103">
+  <style>
+    .hero h1, .intro h2, .process-heading h2, .faq-section h2, .contact-card h2, .page-block h2 {
+      -webkit-hyphens: manual;
+      hyphens: manual;
+      overflow-wrap: normal;
+      word-break: normal;
+    }
+    .hero--beratung {
+      align-items: start;
+      gap: 48px;
+      padding-bottom: 72px;
+    }
+    .hero--beratung h1 {
+      font-size: clamp(36px, 4.2vw, 58px);
+      line-height: 1.08;
+      max-width: 20ch;
+    }
+    .answer-box {
+      margin: 22px 0 20px;
+      padding: 18px 20px 18px 22px;
+      border-radius: 20px;
+      background: var(--grau);
+      border-left: 3px solid var(--blau);
+    }
+    .answer-label {
+      display: block;
+      margin: 0 0 6px;
+      color: var(--blau);
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .answer-box p {
+      margin: 0;
+      color: var(--ink);
+      font-size: 17px;
+      line-height: 1.45;
+    }
+    .core-answer {
+      margin: 0 0 22px;
+      max-width: 40rem;
+      font-size: 18px;
+      line-height: 1.45;
+      color: var(--ink-2);
+    }
+    .hero-panel { display: grid; gap: 16px; min-width: 0; }
+    .hero--beratung .hero-portrait { max-height: 420px; aspect-ratio: 4/5; }
+    .form-card {
+      padding: 22px 22px 20px;
+      border-radius: 28px;
+      background: #fff;
+      box-shadow: var(--schatten-hoch);
+    }
+    .form-card h2 {
+      margin: 0 0 6px;
+      font: 700 24px/1.2 var(--display);
+      letter-spacing: -.03em;
+    }
+    .form-lead, .form-alt, .form-status {
+      margin: 0 0 16px;
+      color: var(--mut);
+      font-size: 15px;
+      line-height: 1.45;
+    }
+    .form-alt, .form-status { margin: 10px 0 0; font-size: 13px; }
+    .form-status.is-ok { color: #248a3d; }
+    .form-status.is-error { color: #b42318; }
+    .fwx-honeypot {
+      position: absolute;
+      left: -10000px;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+    .form-alt a, .consent a { color: var(--link); }
+    .lead-form { display: grid; gap: 12px; }
+    .lead-form label { display: grid; gap: 5px; font-size: 13px; font-weight: 600; color: var(--ink); }
+    .lead-form input[type="text"] {
+      width: 100%; padding: 12px 14px; border: 1px solid var(--linie); border-radius: 12px;
+      background: var(--grau); color: var(--ink); font: 16px var(--sans);
+    }
+    .lead-form input:focus { outline: 2px solid rgba(0,113,227,.55); outline-offset: 1px; background: #fff; }
+    .consent { display: flex !important; align-items: flex-start; gap: 10px; font-weight: 400 !important; font-size: 13px !important; color: var(--mut) !important; line-height: 1.45; }
+    .consent input { margin-top: 3px; flex: none; }
+    .lead-form button[type="submit"] {
+      appearance: none; margin-top: 4px; min-height: 50px; padding: 0 22px; border: 0; border-radius: 980px;
+      background: var(--blau); color: #fff; font-size: 16px; cursor: pointer;
+    }
+    .lead-form button[type="submit"]:hover { background: var(--blau-hover); }
+    .trust-rating {
+      display: flex; align-items: center; gap: 12px; padding: 14px 16px;
+      border-radius: 20px; background: var(--grau); color: inherit;
+    }
+    .trust-rating strong { display: block; font-size: 15px; }
+    .trust-rating small { display: block; font-size: 12px; color: var(--mut); }
+    .page-block { padding: 96px var(--rand); }
+    .page-block h2 { margin: 8px 0 18px; font: 700 clamp(34px,4.2vw,56px)/1.07 var(--display); letter-spacing: -.03em; max-width: 22ch; }
+    .page-block .lead, .page-block p { max-width: 42rem; }
+    .page-block p { margin: 0 0 16px; font-size: 17px; line-height: 1.5; color: var(--ink-2); }
+    .page-block .lead { font-size: 21px; line-height: 1.38; color: var(--mut); }
+    .page-block--grau { background: var(--grau); }
+    .criteria {
+      width: 100%; max-width: 52rem; margin: 8px 0 0; border-collapse: collapse;
+      background: #fff; border-radius: 20px; box-shadow: var(--schatten); overflow: hidden;
+    }
+    .criteria caption { caption-side: top; text-align: left; padding: 18px 20px 8px; font: 600 18px var(--display); color: var(--ink); }
+    .criteria th, .criteria td { padding: 14px 20px; border-top: 1px solid var(--linie); text-align: left; vertical-align: top; font-size: 15px; line-height: 1.45; }
+    .criteria thead th { font-size: 12px; color: var(--mut); font-weight: 600; }
+    .criteria tbody th { width: 48%; color: var(--ink); font-weight: 600; }
+    .topic-list { display: grid; gap: 12px; margin: 8px 0 20px; padding: 0; list-style: none; max-width: 44rem; }
+    .topic-list li { padding: 18px 20px; border-radius: 20px; background: var(--grau); }
+    .topic-list strong { display: block; margin-bottom: 4px; }
+    .topic-list span { color: var(--mut); font-size: 15px; line-height: 1.45; }
+    .page-block--grau .topic-list li { background: #fff; }
+    .partners { font-size: 15px; color: var(--ink-2); }
+    .hinweis {
+      margin: 8px 0 0;
+      max-width: 42rem;
+      padding: 18px 20px;
+      border-radius: 20px;
+      background: var(--grau);
+      font-size: 16px;
+      line-height: 1.5;
+      color: var(--ink);
+    }
+    .page-block--grau .hinweis { background: #fff; }
+    .mobile-sticky { display: none; }
+    @media (max-width: 760px) {
+      .hero--beratung h1 { max-width: none; }
+      .hero--beratung .hero-portrait { max-height: none; }
+      .page-block { padding: 72px 22px; }
+      .mobile-sticky {
+        display: flex; align-items: center; justify-content: center;
+        position: fixed; z-index: 30; left: 16px; right: 16px;
+        bottom: max(16px, env(safe-area-inset-bottom));
+        min-height: 50px; border-radius: 980px; background: var(--blau); color: #fff;
+        font-size: 16px; box-shadow: var(--schatten-hoch);
+      }
+      body { padding-bottom: 84px; }
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .hero-content, .hero-panel { animation: none; }
+    }
+    .hero--beratung { display: grid; grid-template-columns: minmax(0,1.15fr) minmax(0,.85fr); }
+    .hero-form { min-width: 0; }
+    @media (min-width: 761px) {
+      .hero-copy { grid-column: 1; grid-row: 1; }
+      .hero-form { grid-column: 1; grid-row: 2; }
+      .hero-panel { grid-column: 2; grid-row: 1 / span 2; }
+    }
+    @media (max-width: 760px) {
+      .hero--beratung { display: flex; flex-direction: column; }
+      .hero-copy { order: 1; }
+      .hero-panel { order: 2; }
+      .hero-form { order: 3; }
+    }
+  </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Was ist betriebliche Altersvorsorge (bAV)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Betriebliche Altersvorsorge ist Vorsorge, die über den Betrieb läuft. Sie kann vom Arbeitgeber finanziert werden, vom Mitarbeitenden über Entgeltumwandlung oder aus beidem. Beiträge können in gesetzlich festgelegten Grenzen steuer- und sozialabgabenfrei sein. Welche Lösung zu deinem Betrieb passt, hängt von der Ausgangslage ab."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Haben Mitarbeitende einen Anspruch auf Entgeltumwandlung?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Sozialversicherungspflichtig Beschäftigte haben typischerweise einen gesetzlichen Anspruch darauf, einen Teil ihres künftigen Entgelts in eine betriebliche Altersvorsorge umzuwandeln. Den Anspruch und die praktische Umsetzung klären wir im Gespräch anhand deines Betriebs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Muss ich als Arbeitgeber einen Zuschuss zahlen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wenn durch die Entgeltumwandlung Sozialversicherungsbeiträge gespart werden, ist der Arbeitgeber in der Regel zu einem Zuschuss verpflichtet. Ausnahmen kann es etwa durch Tarifverträge oder bereits gezahlte gleichwertige Zuschüsse geben. Ob und in welcher Höhe das in deinem Betrieb gilt, klären wir im Gespräch."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welche Durchführungswege gibt es?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gesetzlich vorgesehen sind fünf Wege: Direktversicherung, Pensionskasse, Pensionsfonds, Unterstützungskasse und Direktzusage. Im Handwerk ist typischerweise die Direktversicherung der erste Weg. Welcher Weg zu deinem Betrieb passt, hängt unter anderem von Betriebsgröße, Tarifbindung und dem Bestand ab."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie hilft bAV bei der Mitarbeiterbindung im Handwerk?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Eine verständlich erklärte bAV kann ein Argument sein, Fachkräfte zu halten oder zu gewinnen. Sie ergänzt den Lohn um Vorsorge über den Betrieb. Wie stark das wirkt, hängt davon ab, wie du sie einrichtest und deinem Team erklärst. Zahlen oder Garantien dazu nenne ich hier bewusst nicht."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ist das Erstgespräch kostenpflichtig?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Das Erstgespräch ist unverbindlich. Du zahlst keine Beratungsgebühr. Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte. Den Ablauf erkläre ich dir im Gespräch. Nicht jedes Produkt ist automatisch verfügbar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Berätst du nur in Mainz oder auch online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Beides. Du kannst einen Termin in Mainz, nach Absprache im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern, etwa in Wiesbaden, Frankfurt oder Darmstadt, oder online vereinbaren. Online berate ich deutschlandweit. Den Termin buchst du unter termin.eliasgassmann.de."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "name": "Elias Gassmann — Betriebliche Altersvorsorge für Handwerksbetriebe",
+  "url": "https://eliasgassmann.de/bav-handwerk",
+  "description": "Beratung zur betrieblichen Altersvorsorge (bAV) für Handwerksbetriebe: Entgeltumwandlung, Arbeitgeberzuschuss und Durchführungswege, persönlich in Mainz, im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern sowie online deutschlandweit.",
+  "areaServed": [
+    "Mainz",
+    "Wiesbaden",
+    "Frankfurt am Main",
+    "Darmstadt",
+    "Rhein-Main",
+    "DE"
+  ],
+  "telephone": "+491626960629",
+  "email": "elias@eliasgassmann.de",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "August-Horch-Straße 6A",
+    "postalCode": "55129",
+    "addressLocality": "Mainz",
+    "addressCountry": "DE"
+  },
+  "provider": {
+    "@type": "Person",
+    "name": "Elias Gassmann",
+    "url": "https://eliasgassmann.de/",
+    "image": "https://eliasgassmann.de/portrait-elias-gassmann.jpeg"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Elias Gassmann",
+      "item": "https://eliasgassmann.de/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Betriebliche Altersvorsorge für Handwerksbetriebe",
+      "item": "https://eliasgassmann.de/bav-handwerk"
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt</a>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Elias Gassmann Finanzberatung Startseite">
+      <span class="brand-seal">EG</span>
+      <span class="brand-name">Elias Gassmann<small>Finanzberatung</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Hauptnavigation">
+      <a href="index.html#gewerbe">Gewerbe</a>
+      <a href="index.html#privat">Privat</a>
+      <a href="#ablauf">So läuft’s</a>
+      <a href="#termin">Termin</a>
+    </nav>
+    <a class="header-contact" href="tel:+491626960629">
+      <span class="phone-icon">↗</span>
+      <span>0162 6960629</span>
+    </a>
+  </header>
+
+  <main id="top">
+    <section class="hero hero--beratung" id="inhalt" aria-labelledby="hero-title">
+      <div class="hero-content hero-copy">
+        <p class="eyebrow hero-label">Für Handwerksbetriebe</p>
+        <h1 id="hero-title">Betriebliche Altersvorsorge für Handwerksbetriebe in Mainz und im Rhein-Main-Gebiet</h1>
+        <aside class="answer-box" aria-label="Kurzantwort">
+          <span class="answer-label">Kurzantwort</span>
+          <p>Betriebliche Altersvorsorge läuft über den Betrieb. Sozialversicherungspflichtig Beschäftigte haben typischerweise einen gesetzlichen Anspruch auf Entgeltumwandlung. Sparst du als Arbeitgeber dadurch Sozialversicherungsbeiträge, bist du in der Regel zu einem Zuschuss verpflichtet. Beiträge können in gesetzlich festgelegten Grenzen steuer- und sozialabgabenfrei sein. Elias Gassmann berät dich dazu in Mainz, im Rhein-Main-Gebiet oder online deutschlandweit.</p>
+        </aside>
+        <p class="core-answer">Typische Anlässe: du willst Fachkräfte halten oder gewinnen, eine bestehende bAV prüfen oder die Vorsorge für dein Team erstmals einrichten.</p>
+      </div>
+      <div class="hero-form">
+        <div class="form-card" id="anfrage">
+          <h2>Jetzt Beratung anfragen</h2>
+          <p class="form-lead">Unverbindlich, in Mainz, im Rhein-Main-Gebiet oder online. Erzähl kurz, worum es geht.</p>
+          <form class="lead-form" id="beratung-form" action="https://eg-anfragen.elias-gassmann.workers.dev/anfrage" method="post" novalidate>
+            <label>Name
+              <input type="text" name="name" autocomplete="name" required placeholder="Vor- und Nachname">
+            </label>
+            <label>Telefon oder E-Mail
+              <input type="text" name="kontakt" autocomplete="on" required placeholder="Nummer oder E-Mail-Adresse" inputmode="email">
+            </label>
+            <label>Branche oder Tätigkeit
+              <input type="text" name="branche" required placeholder="z. B. SHK, Elektro, Maler">
+            </label>
+            <label>Betriebsgröße
+              <input type="text" name="betriebsgroesse" placeholder="z. B. 8 Mitarbeitende">
+            </label>
+            <label>Kurz dein Anliegen
+              <input type="text" name="anliegen" required placeholder="z. B. bAV einrichten oder Bestand prüfen">
+            </label>
+            <label class="consent fwx-consent">
+              <input type="checkbox" name="datenschutz" value="ja" required>
+              <span>Ich stimme der Verarbeitung meiner Angaben gemäß der <a href="/datenschutz">Datenschutzerklärung</a> zu. Die Anfrage ist unverbindlich.</span>
+            </label>
+            <input type="hidden" name="seite" value="https://eliasgassmann.de/bav-handwerk">
+            <button type="submit">Unverbindliche Anfrage senden</button>
+            <p class="form-status" role="status" data-form-status></p>
+          </form>
+          <p class="form-alt">Oder Termin direkt wählen: <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=bav-handwerk">termin.eliasgassmann.de</a> · <a href="tel:+491626960629">+49 162 6960629</a></p>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <figure class="hero-portrait">
+          <img src="portrait-elias-gassmann.jpeg" alt="Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" fetchpriority="high">
+          <figcaption>
+            <span>Elias Gassmann</span>
+            <strong>Finanzberater in Mainz</strong>
+            <small>Persönlich in Mainz, Rhein-Main und online</small>
+          </figcaption>
+        </figure>
+        <a class="trust-rating" href="https://www.google.com/maps?cid=18281856182098275446" target="_blank" rel="noopener noreferrer">
+          <span aria-hidden="true">★★★★★</span>
+          <span>
+            <strong>4,9 / 5 · 48 Google-Rezensionen</strong>
+            <small>Stand 10.11.2026, wie auf der Seite Finanzberater Mainz</small>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <section class="page-block" aria-labelledby="was-ist">
+      <p class="eyebrow">Einordnung</p>
+      <h2 id="was-ist">Was betriebliche Altersvorsorge ist</h2>
+      <p class="lead">bAV ist Vorsorge, die über den Betrieb läuft. Sie kann vom Arbeitgeber finanziert werden, vom Mitarbeitenden über Entgeltumwandlung oder aus beidem.</p>
+      <p>Für sozialversicherungspflichtig Beschäftigte gibt es typischerweise einen gesetzlichen Anspruch auf Entgeltumwandlung. Sie können also verlangen, dass ein Teil ihres künftigen Entgelts in die bAV fließt.</p>
+      <p>Wenn du als Arbeitgeber dadurch Sozialversicherungsbeiträge sparst, bist du in der Regel zu einem Zuschuss verpflichtet. Ausnahmen kann es geben, etwa durch Tarifverträge oder weil du bereits einen gleichwertigen Zuschuss zahlst. Ob und in welcher Höhe das bei dir gilt, schauen wir uns im Gespräch an.</p>
+      <ul class="topic-list">
+        <li>
+          <strong>Steuer und Sozialabgaben</strong>
+          <span>Beiträge können in gesetzlich festgelegten Grenzen steuer- und sozialabgabenfrei sein. Die genauen Grenzen und die Wirkung hängen vom Durchführungsweg und vom Einzelfall ab. Das rechne ich im Gespräch durch, ohne hier pauschale Beträge zu nennen.</span>
+        </li>
+        <li>
+          <strong>Spätere Leistung</strong>
+          <span>Was später ausgezahlt wird, hängt vom gewählten Weg, den Beiträgen und dem Tarif ab. Bei fondsgebundenen Wegen unterliegen die Werte Schwankungen. Verluste sind möglich. Ich gebe keine Renditeversprechen.</span>
+        </li>
+        <li>
+          <strong>Pflichten und Bestand</strong>
+          <span>Der Rechtsanspruch und die Zuschusspflicht sind der gesetzliche Rahmen. Ob bereits Verträge, eine Versorgungsordnung oder eine Tarifbindung bestehen, gehört fest ins Gespräch. Davon hängt ab, was als Nächstes sinnvoll ist.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="page-block page-block--grau" aria-labelledby="handwerk">
+      <p class="eyebrow">Im Handwerk</p>
+      <h2 id="handwerk">Mitarbeiterbindung und Fachkräfte gewinnen</h2>
+      <p class="lead">Im Handwerk entscheidet oft das Team über den nächsten Auftrag. Eine klar eingerichtete bAV kann ein Argument sein, Leute zu halten oder neu zu gewinnen.</p>
+      <p>Sie ergänzt den Lohn um Vorsorge über den Betrieb. Für viele Mitarbeitende zählt, dass der Betrieb sich an der Vorsorge beteiligt und der Weg verständlich erklärt wird. Eine Regelung, die niemand versteht, entfaltet typischerweise wenig Wirkung.</p>
+      <p>Wie stark das in deinem Betrieb wirkt, hängt von der Umsetzung ab, nicht von einer Formel. Zahlen zu Ersparnis, Bindung oder Gewinnung nenne ich hier bewusst nicht.</p>
+      <ul class="topic-list">
+        <li>
+          <strong>Bestehende Teams</strong>
+          <span>Oft läuft schon etwas, ist aber unvollständig oder schlecht erklärt. Dann prüfen wir den Bestand und machen den nächsten Schritt nachvollziehbar.</span>
+        </li>
+        <li>
+          <strong>Neue Fachkräfte</strong>
+          <span>Im Gespräch oder im Vorstellungsprozess kann die bAV ein greifbares Plus sein. Voraussetzung ist, dass du sie selbst kurz und klar benennen kannst.</span>
+        </li>
+        <li>
+          <strong>Inhaber und Betrieb</strong>
+          <span>Neben dem Team kann auch die eigene Vorsorge Thema sein. Ob und wie das über den Betrieb möglich ist, hängt von der Rechtsform und der Stellung im Unternehmen ab.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="page-block" aria-labelledby="wege">
+      <p class="eyebrow">Wege</p>
+      <h2 id="wege">Die fünf Durchführungswege, kurz eingeordnet</h2>
+      <p class="lead">Das Gesetz kennt fünf Durchführungswege. Im Handwerk steht typischerweise die Direktversicherung am Anfang. Welcher Weg passt, hängt von deinem Betrieb ab.</p>
+      <ul class="topic-list">
+        <li>
+          <strong>Direktversicherung</strong>
+          <span>Der Betrieb schließt eine Versicherung auf das Leben der Mitarbeitenden ab. Dieser Weg ist typischerweise der Einstieg für Handwerksbetriebe, weil er vergleichsweise klar einzurichten ist.</span>
+        </li>
+        <li>
+          <strong>Pensionskasse und Pensionsfonds</strong>
+          <span>Weitere Wege über eine Kasse oder einen Fonds. Sie kommen infrage, wenn sie zu Bestand, Tarif oder der gewünschten Ausgestaltung passen.</span>
+        </li>
+        <li>
+          <strong>Unterstützungskasse und Direktzusage</strong>
+          <span>Hier trägt der Betrieb die Zusage unmittelbarer. Der Aufwand ist typischerweise höher. Diese Wege sehen wir eher bei besonderen oder größeren Zusagen.</span>
+        </li>
+      </ul>
+      <p>Welcher Weg zu deinem Betrieb passt, hängt unter anderem von der Betriebsgröße, einer möglichen Tarifbindung und davon ab, was bereits besteht. Konkrete Produkte nenne ich erst im Gespräch. Nicht jeder Weg ist automatisch verfügbar.</p>
+    </section>
+
+    <section class="page-block page-block--grau" aria-labelledby="fuer-wen">
+      <p class="eyebrow">Für wen</p>
+      <h2 id="fuer-wen">Für wen das typischerweise infrage kommt</h2>
+      <p class="lead">Die Seite richtet sich an Handwerksbetriebe in Mainz, Wiesbaden, Frankfurt, Darmstadt und im übrigen Rhein-Main-Gebiet sowie im Umkreis von rund 100 Kilometern. Online berate ich deutschlandweit.</p>
+      <ul class="topic-list">
+        <li>
+          <strong>Betriebe ohne bAV</strong>
+          <span>Du willst die Vorsorge für dein Team erstmals einrichten und den gesetzlichen Rahmen sauber umsetzen, einschließlich Entgeltumwandlung und Zuschuss.</span>
+        </li>
+        <li>
+          <strong>Betriebe mit bestehender bAV</strong>
+          <span>Verträge sind da, aber unklar, lückenhaft oder nicht mehr passend. Dann ordnen wir den Bestand ein und klären, was zu tun ist, etwa bei neuen Mitarbeitenden.</span>
+        </li>
+        <li>
+          <strong>Wachsende Teams</strong>
+          <span>Wenn du einstellst, einen Betrieb übernimmst oder die bisherige Regelung nicht mehr zur Größe passt. Dann braucht es typischerweise einen klaren Ablauf, nicht nur einen einzelnen Vertrag.</span>
+        </li>
+      </ul>
+      <p>Nicht jedes Thema und jedes Produkt ist automatisch verfügbar; das klären wir im Gespräch. Zur privaten Vorsorge und zum Vermögensaufbau liegt eine Einordnung auf der Seite <a href="geldanlage-mainz">Geldanlage und Vermögensaufbau</a>. Für typische betriebliche Themen im Handwerk siehe auch <a href="betriebshaftpflicht-mainz">Betriebshaftpflicht</a> und <a href="factoring-handwerk">Factoring für Handwerk</a>. Einen Überblick zur Finanzberatung in Mainz findest du auf der Seite <a href="finanzberater-mainz">Finanzberater Mainz</a>.</p>
+    </section>
+
+    <section class="process-section page-block" id="ablauf" aria-labelledby="ablauf-title">
+      <div class="process-heading">
+        <p class="eyebrow">Der Ablauf</p>
+        <h2 id="ablauf-title">So läuft die Beratung</h2>
+        <p class="lead">Wir starten mit deinem Betrieb und dem, was schon da ist. Danach folgen Einrichtung und die Information deiner Mitarbeitenden.</p>
+      </div>
+      <ol class="process-list">
+        <li>
+          <span>1</span>
+          <h3>Termin buchen</h3>
+          <p>Du buchst einen unverbindlichen Termin, vor Ort in Mainz, im Rhein-Main-Gebiet bzw. im Umkreis von rund 100 Kilometern oder online. Die Beratung kann also auch rein digital laufen.</p>
+        </li>
+        <li>
+          <span>2</span>
+          <h3>Betrieb und Bestand verstehen</h3>
+          <p>Wir sprechen über Tätigkeit, Teamgröße, mögliche Tarifbindung, Budget und bestehende Verträge. Auch offene Fragen deiner Mitarbeitenden gehören dazu.</p>
+        </li>
+        <li>
+          <span>3</span>
+          <h3>Weg festlegen</h3>
+          <p>Ich ordne ein, welcher Durchführungsweg zu deinem Betrieb passt und wie Entgeltumwandlung und Zuschuss typischerweise umgesetzt werden. Nicht jedes Produkt ist automatisch verfügbar.</p>
+        </li>
+        <li>
+          <span>4</span>
+          <h3>Einrichtung</h3>
+          <p>Wenn du dich entscheidest, begleite ich die Einrichtung: Verträge, Abläufe und das, was die Entgeltabrechnung braucht. Du behältst den Überblick, bevor etwas unterschrieben wird.</p>
+        </li>
+        <li>
+          <span>5</span>
+          <h3>Mitarbeitende informieren</h3>
+          <p>Eine bAV wirkt nur, wenn dein Team sie versteht. Ich helfe dir bei der Information der Mitarbeitenden und beantworte typische Fragen, wenn du das möchtest.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="page-block page-block--grau" aria-labelledby="transparenz">
+      <p class="eyebrow">Kosten und Ablauf</p>
+      <h2 id="transparenz">Was das Erstgespräch kostet</h2>
+      <p class="lead">Für das Erstgespräch zahlst du keine Beratungsgebühr. Bevor du etwas entscheidest, weißt du, wie ein Vorschlag funktioniert und welche Kosten daran hängen.</p>
+      <p class="partners">Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte; den Ablauf erkläre ich dir im Gespräch. Pauschale Gebühren, Zuschüsse in Prozent oder Förderbeträge nenne ich hier bewusst nicht. Es werden keine Kundengelder entgegengenommen; Zahlungen gehen direkt an den jeweiligen Anbieter. Alle Pflichtangaben findest du im <a href="impressum.html">Impressum</a>.</p>
+    </section>
+
+    <section class="page-block" id="termin" aria-labelledby="termin-title">
+      <p class="eyebrow">Nächster Schritt</p>
+      <h2 id="termin-title">Termin vereinbaren — in Mainz, im Rhein-Main-Gebiet oder online</h2>
+      <p class="lead">Den unverbindlichen Termin buchst du unter <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=bav-handwerk">termin.eliasgassmann.de</a>. Ohne Druck und ohne eine bestimmte Förderzusage.</p>
+      <p>Die öffentlich genannte Anschrift ist August-Horch-Straße 6A, 55129 Mainz. Ob ein Termin vor Ort oder online sinnvoller ist, klären wir bei der Buchung. Du erreichst mich auch unter <a href="tel:+491626960629">+49 162 6960629</a> und <a href="mailto:elias@eliasgassmann.de">elias@eliasgassmann.de</a>.</p>
+      <p style="margin-top:28px"><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=bav-handwerk">Unverbindlichen Termin vereinbaren <span aria-hidden="true">↗</span></a></p>
+    </section>
+
+    <section class="faq-section" id="fragen" aria-labelledby="faq-title">
+      <div>
+        <p class="eyebrow">Vor dem Gespräch</p>
+        <h2 id="faq-title">Häufige Fragen zur betrieblichen Altersvorsorge</h2>
+      </div>
+      <div class="faq-list">
+        <details open>
+          <summary>Was ist betriebliche Altersvorsorge (bAV)?</summary>
+          <p>Betriebliche Altersvorsorge ist Vorsorge, die über den Betrieb läuft. Sie kann vom Arbeitgeber finanziert werden, vom Mitarbeitenden über Entgeltumwandlung oder aus beidem. Beiträge können in gesetzlich festgelegten Grenzen steuer- und sozialabgabenfrei sein. Welche Lösung zu deinem Betrieb passt, hängt von der Ausgangslage ab.</p>
+        </details>
+        <details>
+          <summary>Haben Mitarbeitende einen Anspruch auf Entgeltumwandlung?</summary>
+          <p>Ja. Sozialversicherungspflichtig Beschäftigte haben typischerweise einen gesetzlichen Anspruch darauf, einen Teil ihres künftigen Entgelts in eine betriebliche Altersvorsorge umzuwandeln. Den Anspruch und die praktische Umsetzung klären wir im Gespräch anhand deines Betriebs.</p>
+        </details>
+        <details>
+          <summary>Muss ich als Arbeitgeber einen Zuschuss zahlen?</summary>
+          <p>Wenn durch die Entgeltumwandlung Sozialversicherungsbeiträge gespart werden, ist der Arbeitgeber in der Regel zu einem Zuschuss verpflichtet. Ausnahmen kann es etwa durch Tarifverträge oder bereits gezahlte gleichwertige Zuschüsse geben. Ob und in welcher Höhe das in deinem Betrieb gilt, klären wir im Gespräch.</p>
+        </details>
+        <details>
+          <summary>Welche Durchführungswege gibt es?</summary>
+          <p>Gesetzlich vorgesehen sind fünf Wege: Direktversicherung, Pensionskasse, Pensionsfonds, Unterstützungskasse und Direktzusage. Im Handwerk ist typischerweise die Direktversicherung der erste Weg. Welcher Weg zu deinem Betrieb passt, hängt unter anderem von Betriebsgröße, Tarifbindung und dem Bestand ab.</p>
+        </details>
+        <details>
+          <summary>Wie hilft bAV bei der Mitarbeiterbindung im Handwerk?</summary>
+          <p>Eine verständlich erklärte bAV kann ein Argument sein, Fachkräfte zu halten oder zu gewinnen. Sie ergänzt den Lohn um Vorsorge über den Betrieb. Wie stark das wirkt, hängt davon ab, wie du sie einrichtest und deinem Team erklärst. Zahlen oder Garantien dazu nenne ich hier bewusst nicht.</p>
+        </details>
+        <details>
+          <summary>Ist das Erstgespräch kostenpflichtig?</summary>
+          <p>Das Erstgespräch ist unverbindlich. Du zahlst keine Beratungsgebühr. Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte. Den Ablauf erkläre ich dir im Gespräch. Nicht jedes Produkt ist automatisch verfügbar.</p>
+        </details>
+        <details>
+          <summary>Berätst du nur in Mainz oder auch online?</summary>
+          <p>Beides. Du kannst einen Termin in Mainz, nach Absprache im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern, etwa in Wiesbaden, Frankfurt oder Darmstadt, oder online vereinbaren. Online berate ich deutschlandweit. Den Termin buchst du unter <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=bav-handwerk">termin.eliasgassmann.de</a>.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="contact-card" aria-labelledby="kontakt-title">
+      <figure class="hero-portrait" style="margin:0;max-height:520px">
+        <img src="portrait-elias-gassmann.jpeg" alt="Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" loading="lazy">
+      </figure>
+      <div class="contact-content">
+        <p class="eyebrow">Kontakt</p>
+        <h2 id="kontakt-title">Was hast du vor?<br><em>Lass uns sprechen.</em></h2>
+        <p class="contact-copy">bAV einrichten, eine bestehende Regelung prüfen oder die Vorsorge für dein Team erklären: Erzähl mir, worum es geht.</p>
+        <a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=bav-handwerk">Unverbindlichen Termin vereinbaren <span aria-hidden="true">↗</span></a>
+        <div class="contact-data">
+          <a href="tel:+491626960629">+49 162 6960629</a>
+          <a href="mailto:elias@eliasgassmann.de">elias@eliasgassmann.de</a>
+          <p>August-Horch-Straße 6A<br>55129 Mainz</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year">2026</span> Elias Gassmann</p>
+    <div>
+      <a href="index.html">Startseite</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="/datenschutz">Datenschutz</a>
+    </div>
+  </footer>
+  <a class="mobile-sticky" href="#anfrage">Jetzt Beratung anfragen</a>
+  <script src="formular.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('year').textContent = new Date().getFullYear();
+      bindeAnfrageFormular(document.getElementById('beratung-form'), {
+        endpoint: 'https://eg-anfragen.elias-gassmann.workers.dev/anfrage'
+      });
+    });
+  </script>
+</body>
+</html>
