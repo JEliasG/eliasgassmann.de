@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Berufsunfähigkeitsversicherung (BU) für Selbstständige und Handwerker in Mainz und Rhein-Main — Elias Gassmann</title>
+  <meta name="description" content="Berufsunfähigkeitsversicherung (BU) für Selbstständige und Handwerker in Mainz und Rhein-Main: gesetzlicher Schutz, Gesundheitsfragen und anonyme Risikovoranfrage. Beratung vor Ort, im Umkreis von rund 100 Kilometern oder online deutschlandweit.">
+  <link rel="canonical" href="https://eliasgassmann.de/bu-selbststaendige">
+  <meta name="theme-color" content="#fbfbfd">
+  <meta property="og:title" content="Berufsunfähigkeitsversicherung (BU) für Selbstständige und Handwerker in Mainz und Rhein-Main — Elias Gassmann">
+  <meta property="og:description" content="Berufsunfähigkeitsversicherung (BU) für Selbstständige und Handwerker in Mainz und Rhein-Main: gesetzlicher Schutz, Gesundheitsfragen und anonyme Risikovoranfrage. Beratung vor Ort, im Umkreis von rund 100 Kilometern oder online deutschlandweit.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://eliasgassmann.de/bu-selbststaendige">
+  <meta property="og:image" content="https://eliasgassmann.de/portrait-elias-gassmann.jpeg">
+  <meta property="og:locale" content="de_DE">
+  <link rel="stylesheet" href="apple.css?v=20261103">
+  <style>
+    .hero h1, .intro h2, .process-heading h2, .faq-section h2, .contact-card h2, .page-block h2 {
+      -webkit-hyphens: manual;
+      hyphens: manual;
+      overflow-wrap: normal;
+      word-break: normal;
+    }
+    .hero--beratung {
+      align-items: start;
+      gap: 48px;
+      padding-bottom: 72px;
+    }
+    .hero--beratung h1 {
+      font-size: clamp(36px, 4.2vw, 58px);
+      line-height: 1.08;
+      max-width: 20ch;
+    }
+    .answer-box {
+      margin: 22px 0 20px;
+      padding: 18px 20px 18px 22px;
+      border-radius: 20px;
+      background: var(--grau);
+      border-left: 3px solid var(--blau);
+    }
+    .answer-label {
+      display: block;
+      margin: 0 0 6px;
+      color: var(--blau);
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .answer-box p {
+      margin: 0;
+      color: var(--ink);
+      font-size: 17px;
+      line-height: 1.45;
+    }
+    .core-answer {
+      margin: 0 0 22px;
+      max-width: 40rem;
+      font-size: 18px;
+      line-height: 1.45;
+      color: var(--ink-2);
+    }
+    .hero-panel { display: grid; gap: 16px; min-width: 0; }
+    .hero--beratung .hero-portrait { max-height: 420px; aspect-ratio: 4/5; }
+    .form-card {
+      padding: 22px 22px 20px;
+      border-radius: 28px;
+      background: #fff;
+      box-shadow: var(--schatten-hoch);
+    }
+    .form-card h2 {
+      margin: 0 0 6px;
+      font: 700 24px/1.2 var(--display);
+      letter-spacing: -.03em;
+    }
+    .form-lead, .form-alt, .form-status {
+      margin: 0 0 16px;
+      color: var(--mut);
+      font-size: 15px;
+      line-height: 1.45;
+    }
+    .form-alt, .form-status { margin: 10px 0 0; font-size: 13px; }
+    .form-status.is-ok { color: #248a3d; }
+    .form-status.is-error { color: #b42318; }
+    .fwx-honeypot {
+      position: absolute;
+      left: -10000px;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+    .form-alt a, .consent a { color: var(--link); }
+    .lead-form { display: grid; gap: 12px; }
+    .lead-form label { display: grid; gap: 5px; font-size: 13px; font-weight: 600; color: var(--ink); }
+    .lead-form input[type="text"] {
+      width: 100%; padding: 12px 14px; border: 1px solid var(--linie); border-radius: 12px;
+      background: var(--grau); color: var(--ink); font: 16px var(--sans);
+    }
+    .lead-form input:focus { outline: 2px solid rgba(0,113,227,.55); outline-offset: 1px; background: #fff; }
+    .consent { display: flex !important; align-items: flex-start; gap: 10px; font-weight: 400 !important; font-size: 13px !important; color: var(--mut) !important; line-height: 1.45; }
+    .consent input { margin-top: 3px; flex: none; }
+    .lead-form button[type="submit"] {
+      appearance: none; margin-top: 4px; min-height: 50px; padding: 0 22px; border: 0; border-radius: 980px;
+      background: var(--blau); color: #fff; font-size: 16px; cursor: pointer;
+    }
+    .lead-form button[type="submit"]:hover { background: var(--blau-hover); }
+    .trust-rating {
+      display: flex; align-items: center; gap: 12px; padding: 14px 16px;
+      border-radius: 20px; background: var(--grau); color: inherit;
+    }
+    .trust-rating strong { display: block; font-size: 15px; }
+    .trust-rating small { display: block; font-size: 12px; color: var(--mut); }
+    .page-block { padding: 96px var(--rand); }
+    .page-block h2 { margin: 8px 0 18px; font: 700 clamp(34px,4.2vw,56px)/1.07 var(--display); letter-spacing: -.03em; max-width: 22ch; }
+    .page-block .lead, .page-block p { max-width: 42rem; }
+    .page-block p { margin: 0 0 16px; font-size: 17px; line-height: 1.5; color: var(--ink-2); }
+    .page-block .lead { font-size: 21px; line-height: 1.38; color: var(--mut); }
+    .page-block--grau { background: var(--grau); }
+    .criteria {
+      width: 100%; max-width: 52rem; margin: 8px 0 0; border-collapse: collapse;
+      background: #fff; border-radius: 20px; box-shadow: var(--schatten); overflow: hidden;
+    }
+    .criteria caption { caption-side: top; text-align: left; padding: 18px 20px 8px; font: 600 18px var(--display); color: var(--ink); }
+    .criteria th, .criteria td { padding: 14px 20px; border-top: 1px solid var(--linie); text-align: left; vertical-align: top; font-size: 15px; line-height: 1.45; }
+    .criteria thead th { font-size: 12px; color: var(--mut); font-weight: 600; }
+    .criteria tbody th { width: 48%; color: var(--ink); font-weight: 600; }
+    .topic-list { display: grid; gap: 12px; margin: 8px 0 20px; padding: 0; list-style: none; max-width: 44rem; }
+    .topic-list li { padding: 18px 20px; border-radius: 20px; background: var(--grau); }
+    .topic-list strong { display: block; margin-bottom: 4px; }
+    .topic-list span { color: var(--mut); font-size: 15px; line-height: 1.45; }
+    .page-block--grau .topic-list li { background: #fff; }
+    .partners { font-size: 15px; color: var(--ink-2); }
+    .hinweis {
+      margin: 8px 0 0;
+      max-width: 42rem;
+      padding: 18px 20px;
+      border-radius: 20px;
+      background: var(--grau);
+      font-size: 16px;
+      line-height: 1.5;
+      color: var(--ink);
+    }
+    .page-block--grau .hinweis { background: #fff; }
+    .mobile-sticky { display: none; }
+    @media (max-width: 760px) {
+      .hero--beratung h1 { max-width: none; }
+      .hero--beratung .hero-portrait { max-height: none; }
+      .page-block { padding: 72px 22px; }
+      .mobile-sticky {
+        display: flex; align-items: center; justify-content: center;
+        position: fixed; z-index: 30; left: 16px; right: 16px;
+        bottom: max(16px, env(safe-area-inset-bottom));
+        min-height: 50px; border-radius: 980px; background: var(--blau); color: #fff;
+        font-size: 16px; box-shadow: var(--schatten-hoch);
+      }
+      body { padding-bottom: 84px; }
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .hero-content, .hero-panel { animation: none; }
+    }
+    .hero--beratung { display: grid; grid-template-columns: minmax(0,1.15fr) minmax(0,.85fr); }
+    .hero-form { min-width: 0; }
+    @media (min-width: 761px) {
+      .hero-copy { grid-column: 1; grid-row: 1; }
+      .hero-form { grid-column: 1; grid-row: 2; }
+      .hero-panel { grid-column: 2; grid-row: 1 / span 2; }
+    }
+    @media (max-width: 760px) {
+      .hero--beratung { display: flex; flex-direction: column; }
+      .hero-copy { order: 1; }
+      .hero-panel { order: 2; }
+      .hero-form { order: 3; }
+    }
+  </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Warum haben Selbstständige typischerweise keinen gesetzlichen Erwerbsminderungsschutz?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Die gesetzliche Erwerbsminderungsrente setzt voraus, dass du in der gesetzlichen Rentenversicherung versichert bist und die gesetzlich vorgesehenen Wartezeiten und Beitragszeiten erfüllst. Viele Selbstständige zahlen keine Pflichtbeiträge. Dann besteht typischerweise kein Anspruch. Die gesetzliche Erwerbsminderungsrente prüft außerdem nicht deinen Beruf, sondern die Erwerbsfähigkeit auf dem allgemeinen Arbeitsmarkt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Gilt das auch für Handwerker?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nicht pauschal. Handwerker, die in der Handwerksrolle eingetragen sind, sind typischerweise in der gesetzlichen Rentenversicherung pflichtversichert, jedenfalls für einen gesetzlich festgelegten Zeitraum. Später kann eine Befreiung möglich sein. Ob das auf dich zutrifft, hängt von Eintragung, Gewerk und bisherigen Beiträgen ab. Auch wer Beiträge zahlt, hat damit noch keinen Berufsunfähigkeitsschutz für den ausgeübten Beruf."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Warum müssen Gesundheitsfragen ehrlich beantwortet werden?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gesundheitsfragen musst du wahrheitsgemäß und vollständig beantworten. Unrichtige oder unvollständige Angaben können den Versicherungsschutz gefährden. Der Versicherer kann später ganz oder teilweise von der Leistung frei sein. Das klären wir, bevor ein Antrag gestellt wird."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was ist eine anonyme Risikovoranfrage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bevor ein namentlicher Antrag gestellt wird, können Gesundheit und Beruf typischerweise anonym bei Versicherern angefragt werden. Du erhältst eine Einschätzung, etwa Annahme, Zuschlag, Ausschluss oder Ablehnung, ohne dass schon ein Antrag mit deinem Namen vorliegt. So siehst du die Lage, bevor du entscheidest."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was bedeuten abstrakte Verweisung und Nachversicherungsgarantie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Die abstrakte Verweisung erlaubt dem Versicherer typischerweise, auf einen anderen Beruf zu verweisen, den du nach Ausbildung, Erfahrung und bisheriger Lebensstellung theoretisch ausüben könntest, auch wenn du ihn tatsächlich nicht ausübst. Ob ein Tarif darauf verzichtet, prüfen wir im Vertrag. Die Nachversicherungsgarantie erlaubt es typischerweise, die abgesicherte Rente später zu bestimmten Anlässen zu erhöhen, ohne dass die Gesundheit neu geprüft wird. Anlässe, Fristen und Grenzen stehen im jeweiligen Vertrag."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ist das Erstgespräch kostenpflichtig?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Das Erstgespräch ist unverbindlich. Du zahlst keine Beratungsgebühr. Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte. Den Ablauf erkläre ich dir im Gespräch. Nicht jedes Produkt ist automatisch verfügbar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Berätst du nur in Mainz oder auch online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Beides. Du kannst einen Termin in Mainz, nach Absprache im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern, etwa in Wiesbaden, Frankfurt oder Darmstadt, oder online vereinbaren. Online berate ich deutschlandweit. Den Termin buchst du unter termin.eliasgassmann.de."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "name": "Elias Gassmann — Berufsunfähigkeitsversicherung für Selbstständige und Handwerker",
+  "url": "https://eliasgassmann.de/bu-selbststaendige",
+  "description": "Beratung zur Berufsunfähigkeitsversicherung (BU) für Selbstständige und Handwerker: gesetzlicher Schutz, Gesundheitsfragen und anonyme Risikovoranfrage, persönlich in Mainz, im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern sowie online deutschlandweit.",
+  "areaServed": [
+    "Mainz",
+    "Wiesbaden",
+    "Frankfurt am Main",
+    "Darmstadt",
+    "Rhein-Main",
+    "DE"
+  ],
+  "telephone": "+491626960629",
+  "email": "elias@eliasgassmann.de",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "August-Horch-Straße 6A",
+    "postalCode": "55129",
+    "addressLocality": "Mainz",
+    "addressCountry": "DE"
+  },
+  "provider": {
+    "@type": "Person",
+    "name": "Elias Gassmann",
+    "url": "https://eliasgassmann.de/",
+    "image": "https://eliasgassmann.de/portrait-elias-gassmann.jpeg"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Elias Gassmann",
+      "item": "https://eliasgassmann.de/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Berufsunfähigkeitsversicherung für Selbstständige und Handwerker",
+      "item": "https://eliasgassmann.de/bu-selbststaendige"
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt</a>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Elias Gassmann Finanzberatung Startseite">
+      <span class="brand-seal">EG</span>
+      <span class="brand-name">Elias Gassmann<small>Finanzberatung</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Hauptnavigation">
+      <a href="index.html#gewerbe">Gewerbe</a>
+      <a href="index.html#privat">Privat</a>
+      <a href="#ablauf">So läuft’s</a>
+      <a href="#termin">Termin</a>
+    </nav>
+    <a class="header-contact" href="tel:+491626960629">
+      <span class="phone-icon">↗</span>
+      <span>0162 6960629</span>
+    </a>
+  </header>
+
+  <main id="top">
+    <section class="hero hero--beratung" id="inhalt" aria-labelledby="hero-title">
+      <div class="hero-content hero-copy">
+        <p class="eyebrow hero-label">Für Selbstständige und Handwerker</p>
+        <h1 id="hero-title">Berufs&shy;unfähigkeits&shy;versicherung für Selbstständige und Handwerker in Mainz und im Rhein-Main-Gebiet</h1>
+        <aside class="answer-box" aria-label="Kurzantwort">
+          <span class="answer-label">Kurzantwort</span>
+          <p>Wer als Selbstständiger keine Pflichtbeiträge in die gesetzliche Rentenversicherung zahlt, hat typischerweise keinen Anspruch auf eine gesetzliche Erwerbsminderungsrente. Die BU sichert dein Einkommen, wenn du deinen Beruf aus gesundheitlichen Gründen nicht mehr ausüben kannst. Gesundheitsfragen gehören ehrlich beantwortet. Vor einem Antrag klären wir die Annahme typischerweise über eine anonyme Risikovoranfrage. Elias Gassmann berät dich dazu in Mainz, im Rhein-Main-Gebiet oder online deutschlandweit.</p>
+        </aside>
+        <p class="core-answer">Typische Anlässe: du machst dich selbstständig, dein Einkommen hängt an deiner Arbeitskraft, ein bestehender Vertrag soll geprüft werden oder die Gesundheit soll vor einem Antrag anonym geklärt werden.</p>
+      </div>
+      <div class="hero-form">
+        <div class="form-card" id="anfrage">
+          <h2>Jetzt Beratung anfragen</h2>
+          <p class="form-lead">Unverbindlich, in Mainz, im Rhein-Main-Gebiet oder online. Erzähl kurz, worum es geht.</p>
+          <form class="lead-form" id="beratung-form" action="https://eg-anfragen.elias-gassmann.workers.dev/anfrage" method="post" novalidate>
+            <label>Name
+              <input type="text" name="name" autocomplete="name" required placeholder="Vor- und Nachname">
+            </label>
+            <label>Telefon oder E-Mail
+              <input type="text" name="kontakt" autocomplete="on" required placeholder="Nummer oder E-Mail-Adresse" inputmode="email">
+            </label>
+            <label>Beruf oder Tätigkeit
+              <input type="text" name="branche" required placeholder="z. B. Maler, SHK, selbstständig im Büro">
+            </label>
+            <label>Kurz dein Anliegen
+              <input type="text" name="anliegen" required placeholder="z. B. BU neu oder Vertrag prüfen">
+            </label>
+            <label class="consent fwx-consent">
+              <input type="checkbox" name="datenschutz" value="ja" required>
+              <span>Ich stimme der Verarbeitung meiner Angaben gemäß der <a href="/datenschutz">Datenschutzerklärung</a> zu. Die Anfrage ist unverbindlich.</span>
+            </label>
+            <input type="hidden" name="seite" value="https://eliasgassmann.de/bu-selbststaendige">
+            <button type="submit">Unverbindliche Anfrage senden</button>
+            <p class="form-status" role="status" data-form-status></p>
+          </form>
+          <p class="form-alt">Oder Termin direkt wählen: <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=bu-selbststaendige">termin.eliasgassmann.de</a> · <a href="tel:+491626960629">+49 162 6960629</a></p>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <figure class="hero-portrait">
+          <img src="portrait-elias-gassmann.jpeg" alt="Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" fetchpriority="high">
+          <figcaption>
+            <span>Elias Gassmann</span>
+            <strong>Finanzberater in Mainz</strong>
+            <small>Persönlich in Mainz, Rhein-Main und online</small>
+          </figcaption>
+        </figure>
+        <a class="trust-rating" href="https://www.google.com/maps?cid=18281856182098275446" target="_blank" rel="noopener noreferrer">
+          <span aria-hidden="true">★★★★★</span>
+          <span>
+            <strong>4,9 / 5 · 48 Google-Rezensionen</strong>
+            <small>Stand 10.11.2026, wie auf der Seite Finanzberater Mainz</small>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <section class="page-block" aria-labelledby="schutz">
+      <p class="eyebrow">Einordnung</p>
+      <h2 id="schutz">Warum der gesetzliche Schutz oft fehlt</h2>
+      <p class="lead">Als Selbstständiger hängst du typischerweise an deiner eigenen Arbeitskraft. Fällt sie aus, fehlt das Einkommen. Einen automatischen gesetzlichen Schutz dafür gibt es oft nicht.</p>
+      <p>Die gesetzliche Erwerbsminderungsrente setzt voraus, dass du in der gesetzlichen Rentenversicherung versichert bist und die gesetzlich vorgesehenen Wartezeiten und Beitragszeiten erfüllst. Viele Selbstständige zahlen keine Pflichtbeiträge. Dann besteht typischerweise kein Anspruch.</p>
+      <p>Selbst wenn ein Anspruch besteht, prüft die gesetzliche Erwerbsminderungsrente nicht deinen Beruf. Sie schaut auf die Erwerbsfähigkeit auf dem allgemeinen Arbeitsmarkt. Eine Berufsunfähigkeitsversicherung stellt typischerweise auf den zuletzt ausgeübten Beruf ab. Beiträge, Rentenhöhen oder Quoten nenne ich hier bewusst nicht.</p>
+      <ul class="topic-list">
+        <li>
+          <strong>Selbstständige ohne Pflichtbeiträge</strong>
+          <span>Ohne die gesetzlich vorgesehenen Beiträge und Wartezeiten besteht typischerweise kein Anspruch auf eine gesetzliche Erwerbsminderungsrente. Ob freiwillige Beiträge in deinem Fall etwas ändern, hängt vom Einzelfall ab und gehört ins Gespräch.</span>
+        </li>
+        <li>
+          <strong>Handwerker in der Handwerksrolle</strong>
+          <span>Wer in der Handwerksrolle eingetragen ist, ist typischerweise in der gesetzlichen Rentenversicherung pflichtversichert, jedenfalls für einen gesetzlich festgelegten Zeitraum. Später kann eine Befreiung möglich sein. Ob und wie lange das bei dir gilt, hängt von Eintragung, Gewerk und bisherigen Beiträgen ab. Das prüfe ich im Gespräch, ohne es hier pauschal festzulegen.</span>
+        </li>
+        <li>
+          <strong>Unterschied zur BU</strong>
+          <span>Auch wer Rentenversicherungsbeiträge zahlt, hat damit noch keinen Schutz für den ausgeübten Beruf. Die BU zielt typischerweise darauf, dass du gerade diesen Beruf aus gesundheitlichen Gründen nicht mehr ausüben kannst.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="page-block page-block--grau" aria-labelledby="gesundheit">
+      <p class="eyebrow">Vor dem Antrag</p>
+      <h2 id="gesundheit">Gesundheitsfragen ehrlich beantworten</h2>
+      <p class="lead">Vor dem Abschluss stellt der Versicherer Gesundheitsfragen. Die Antworten müssen wahr und vollständig sein. Davon hängt später der Versicherungsschutz ab.</p>
+      <p>Unrichtige oder unvollständige Angaben können den Schutz gefährden. Der Versicherer kann später ganz oder teilweise von der Leistung frei sein. Deshalb gehen wir die Fragen in Ruhe durch, bevor ein Antrag gestellt wird.</p>
+      <ul class="topic-list">
+        <li>
+          <strong>Ehrlich und vollständig</strong>
+          <span>Es zählt, was gefragt ist, im abgefragten Zeitraum. Wenn du unsicher bist, etwa bei alten Befunden oder Behandlungen, klären wir das, statt zu raten oder etwas wegzulassen.</span>
+        </li>
+        <li>
+          <strong>Anonyme Risikovoranfrage</strong>
+          <span>Bevor ein namentlicher Antrag gestellt wird, können Gesundheit und Beruf typischerweise anonym bei Versicherern angefragt werden. Du erhältst eine Einschätzung, etwa Annahme, Zuschlag, Ausschluss oder Ablehnung, ohne dass schon ein Antrag mit deinem Namen vorliegt.</span>
+        </li>
+        <li>
+          <strong>Erst dann der Antrag</strong>
+          <span>So siehst du die Lage, bevor du entscheidest. Ein Antrag kommt erst, wenn die Einschätzung und der Tarif zu deiner Situation passen. Nicht jedes Produkt ist automatisch verfügbar.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="page-block" aria-labelledby="vertrag">
+      <p class="eyebrow">Im Vertrag</p>
+      <h2 id="vertrag">Beruf, Verweisung und Nachversicherung</h2>
+      <p class="lead">Neben der Gesundheit entscheidet typischerweise der Beruf über Annahme und Bedingungen. Drei Punkte schauen wir uns im Vertrag genau an.</p>
+      <ul class="topic-list">
+        <li>
+          <strong>Berufsgruppe und Tätigkeitsbeschreibung</strong>
+          <span>Versicherer ordnen Berufe in Gruppen ein. Entscheidend ist nicht nur die Berufsbezeichnung, sondern was du im Alltag tatsächlich tust, etwa Büro, Baustelle, Kundenbesuche oder körperliche Arbeit. Eine genaue Beschreibung gehört fest ins Gespräch.</span>
+        </li>
+        <li>
+          <strong>Abstrakte Verweisung</strong>
+          <span>Die abstrakte Verweisung erlaubt dem Versicherer typischerweise, auf einen anderen Beruf zu verweisen, den du nach Ausbildung, Erfahrung und bisheriger Lebensstellung theoretisch ausüben könntest, auch wenn du ihn tatsächlich nicht ausübst. Ob ein Tarif darauf verzichtet, ist ein zentraler Punkt im Vertrag. Das prüfen wir im Gespräch.</span>
+        </li>
+        <li>
+          <strong>Nachversicherungsgarantie</strong>
+          <span>Viele Tarife erlauben es, die abgesicherte Rente später zu bestimmten Anlässen zu erhöhen, ohne dass die Gesundheit neu geprüft wird. Typische Anlässe sind etwa Heirat, Geburt eines Kindes, Berufsstart oder ein höheres Einkommen. Welche Anlässe, Fristen und Grenzen gelten, steht im jeweiligen Vertrag.</span>
+        </li>
+      </ul>
+      <p>Konkrete Tarife, Beiträge oder Annahmerichtlinien nenne ich erst im Gespräch. Nicht jeder Tarif ist automatisch verfügbar.</p>
+    </section>
+
+    <section class="page-block page-block--grau" aria-labelledby="fuer-wen">
+      <p class="eyebrow">Für wen</p>
+      <h2 id="fuer-wen">Für wen das typischerweise infrage kommt</h2>
+      <p class="lead">Die Seite richtet sich an Selbstständige und Handwerker in Mainz, Wiesbaden, Frankfurt, Darmstadt und im übrigen Rhein-Main-Gebiet sowie im Umkreis von rund 100 Kilometern. Online berate ich deutschlandweit.</p>
+      <ul class="topic-list">
+        <li>
+          <strong>Selbstständige ohne gesetzlichen Schutz</strong>
+          <span>Dein Einkommen hängt an deiner Arbeitskraft, und du zahlst typischerweise keine Pflichtbeiträge in die gesetzliche Rentenversicherung. Dann fehlt oft ein gesetzlicher Erwerbsminderungsschutz.</span>
+        </li>
+        <li>
+          <strong>Handwerker</strong>
+          <span>Auch wenn du in der Handwerksrolle stehst und Beiträge zahlst, schützt das typischerweise nicht deinen ausgeübten Beruf. Gerade körperlich arbeitende Berufe sind auf die eigene Arbeitskraft angewiesen.</span>
+        </li>
+        <li>
+          <strong>Bestehender Vertrag oder Gründung</strong>
+          <span>Du willst einen vorhandenen Schutz prüfen, die BU erstmals einrichten oder den Schutz anpassen, weil sich Beruf, Einkommen oder Familie geändert haben.</span>
+        </li>
+      </ul>
+      <p>Nicht jedes Thema und jedes Produkt ist automatisch verfügbar; das klären wir im Gespräch. Für typische betriebliche Themen siehe auch <a href="betriebshaftpflicht-mainz">Betriebshaftpflicht</a> und <a href="rechtsschutz-selbststaendige">Rechtsschutz für Selbstständige</a>. Zur Vorsorge im Betrieb liegt eine Einordnung auf der Seite <a href="bav-handwerk">betriebliche Altersvorsorge für Handwerksbetriebe</a>. Einen Überblick zur Finanzberatung in Mainz findest du auf der Seite <a href="finanzberater-mainz">Finanzberater Mainz</a>.</p>
+    </section>
+
+    <section class="process-section page-block" id="ablauf" aria-labelledby="ablauf-title">
+      <div class="process-heading">
+        <p class="eyebrow">Der Ablauf</p>
+        <h2 id="ablauf-title">So läuft die Beratung</h2>
+        <p class="lead">Wir starten mit deinem Beruf und deiner Situation. Die Beratung kann vollständig digital laufen.</p>
+      </div>
+      <ol class="process-list">
+        <li>
+          <span>1</span>
+          <h3>Termin buchen</h3>
+          <p>Du buchst einen unverbindlichen Termin, vor Ort in Mainz, im Rhein-Main-Gebiet bzw. im Umkreis von rund 100 Kilometern oder online. Die Beratung kann also auch rein digital laufen.</p>
+        </li>
+        <li>
+          <span>2</span>
+          <h3>Beruf und Situation verstehen</h3>
+          <p>Wir sprechen über deine Tätigkeit, dein Einkommen, bestehende Verträge und was du absichern möchtest. Auch offene Punkte zur Gesundheit gehören dazu, ohne dass schon ein Antrag gestellt wird.</p>
+        </li>
+        <li>
+          <span>3</span>
+          <h3>Anonyme Risikovoranfrage</h3>
+          <p>Wenn es sinnvoll ist, klären wir die Annahme typischerweise zuerst anonym. Du siehst, wie Versicherer Gesundheit und Beruf einschätzen, bevor ein namentlicher Antrag gestellt wird.</p>
+        </li>
+        <li>
+          <span>4</span>
+          <h3>Vertrag einordnen</h3>
+          <p>Ich zeige dir, welcher Schutz zu deiner Situation passt und worauf im Vertrag zu achten ist, etwa Verweisung, Nachversicherung und die Tätigkeitsbeschreibung. Nicht jedes Produkt ist automatisch verfügbar.</p>
+        </li>
+        <li>
+          <span>5</span>
+          <h3>In Ruhe entscheiden</h3>
+          <p>Du entscheidest in Ruhe, ob und wie es weitergehen soll. Ein Antrag kommt erst, wenn die Angaben sitzen und du dich entschieden hast. Durch das Erstgespräch entsteht keine Verpflichtung.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="page-block page-block--grau" aria-labelledby="transparenz">
+      <p class="eyebrow">Kosten und Ablauf</p>
+      <h2 id="transparenz">Was das Erstgespräch kostet</h2>
+      <p class="lead">Für das Erstgespräch zahlst du keine Beratungsgebühr. Bevor du etwas entscheidest, weißt du, wie ein Vorschlag funktioniert und welche Kosten daran hängen.</p>
+      <p class="partners">Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte; den Ablauf erkläre ich dir im Gespräch. Pauschale Beiträge, Annahmerichtlinien oder Leistungsquoten nenne ich hier bewusst nicht. Es werden keine Kundengelder entgegengenommen; Zahlungen gehen direkt an den jeweiligen Anbieter. Alle Pflichtangaben findest du im <a href="impressum.html">Impressum</a>.</p>
+    </section>
+
+    <section class="page-block" id="termin" aria-labelledby="termin-title">
+      <p class="eyebrow">Nächster Schritt</p>
+      <h2 id="termin-title">Termin vereinbaren — in Mainz, im Rhein-Main-Gebiet oder online</h2>
+      <p class="lead">Den unverbindlichen Termin buchst du unter <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=bu-selbststaendige">termin.eliasgassmann.de</a>. Ohne Druck und ohne eine bestimmte Annahmezusage.</p>
+      <p>Die öffentlich genannte Anschrift ist August-Horch-Straße 6A, 55129 Mainz. Ob ein Termin vor Ort oder online sinnvoller ist, klären wir bei der Buchung. Du erreichst mich auch unter <a href="tel:+491626960629">+49 162 6960629</a> und <a href="mailto:elias@eliasgassmann.de">elias@eliasgassmann.de</a>.</p>
+      <p style="margin-top:28px"><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=bu-selbststaendige">Unverbindlichen Termin vereinbaren <span aria-hidden="true">↗</span></a></p>
+    </section>
+
+    <section class="faq-section" id="fragen" aria-labelledby="faq-title">
+      <div>
+        <p class="eyebrow">Vor dem Gespräch</p>
+        <h2 id="faq-title">Häufige Fragen zur Berufs&shy;unfähigkeits&shy;versicherung</h2>
+      </div>
+      <div class="faq-list">
+        <details open>
+          <summary>Warum haben Selbstständige typischerweise keinen gesetzlichen Erwerbsminderungsschutz?</summary>
+          <p>Die gesetzliche Erwerbsminderungsrente setzt voraus, dass du in der gesetzlichen Rentenversicherung versichert bist und die gesetzlich vorgesehenen Wartezeiten und Beitragszeiten erfüllst. Viele Selbstständige zahlen keine Pflichtbeiträge. Dann besteht typischerweise kein Anspruch. Die gesetzliche Erwerbsminderungsrente prüft außerdem nicht deinen Beruf, sondern die Erwerbsfähigkeit auf dem allgemeinen Arbeitsmarkt.</p>
+        </details>
+        <details>
+          <summary>Gilt das auch für Handwerker?</summary>
+          <p>Nicht pauschal. Handwerker, die in der Handwerksrolle eingetragen sind, sind typischerweise in der gesetzlichen Rentenversicherung pflichtversichert, jedenfalls für einen gesetzlich festgelegten Zeitraum. Später kann eine Befreiung möglich sein. Ob das auf dich zutrifft, hängt von Eintragung, Gewerk und bisherigen Beiträgen ab. Auch wer Beiträge zahlt, hat damit noch keinen Berufsunfähigkeitsschutz für den ausgeübten Beruf.</p>
+        </details>
+        <details>
+          <summary>Warum müssen Gesundheitsfragen ehrlich beantwortet werden?</summary>
+          <p>Gesundheitsfragen musst du wahrheitsgemäß und vollständig beantworten. Unrichtige oder unvollständige Angaben können den Versicherungsschutz gefährden. Der Versicherer kann später ganz oder teilweise von der Leistung frei sein. Das klären wir, bevor ein Antrag gestellt wird.</p>
+        </details>
+        <details>
+          <summary>Was ist eine anonyme Risikovoranfrage?</summary>
+          <p>Bevor ein namentlicher Antrag gestellt wird, können Gesundheit und Beruf typischerweise anonym bei Versicherern angefragt werden. Du erhältst eine Einschätzung, etwa Annahme, Zuschlag, Ausschluss oder Ablehnung, ohne dass schon ein Antrag mit deinem Namen vorliegt. So siehst du die Lage, bevor du entscheidest.</p>
+        </details>
+        <details>
+          <summary>Was bedeuten abstrakte Verweisung und Nachversicherungsgarantie?</summary>
+          <p>Die abstrakte Verweisung erlaubt dem Versicherer typischerweise, auf einen anderen Beruf zu verweisen, den du nach Ausbildung, Erfahrung und bisheriger Lebensstellung theoretisch ausüben könntest, auch wenn du ihn tatsächlich nicht ausübst. Ob ein Tarif darauf verzichtet, prüfen wir im Vertrag. Die Nachversicherungsgarantie erlaubt es typischerweise, die abgesicherte Rente später zu bestimmten Anlässen zu erhöhen, ohne dass die Gesundheit neu geprüft wird. Anlässe, Fristen und Grenzen stehen im jeweiligen Vertrag.</p>
+        </details>
+        <details>
+          <summary>Ist das Erstgespräch kostenpflichtig?</summary>
+          <p>Das Erstgespräch ist unverbindlich. Du zahlst keine Beratungsgebühr. Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte. Den Ablauf erkläre ich dir im Gespräch. Nicht jedes Produkt ist automatisch verfügbar.</p>
+        </details>
+        <details>
+          <summary>Berätst du nur in Mainz oder auch online?</summary>
+          <p>Beides. Du kannst einen Termin in Mainz, nach Absprache im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern, etwa in Wiesbaden, Frankfurt oder Darmstadt, oder online vereinbaren. Online berate ich deutschlandweit. Den Termin buchst du unter <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=bu-selbststaendige">termin.eliasgassmann.de</a>.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="contact-card" aria-labelledby="kontakt-title">
+      <figure class="hero-portrait" style="margin:0;max-height:520px">
+        <img src="portrait-elias-gassmann.jpeg" alt="Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" loading="lazy">
+      </figure>
+      <div class="contact-content">
+        <p class="eyebrow">Kontakt</p>
+        <h2 id="kontakt-title">Was hast du vor?<br><em>Lass uns sprechen.</em></h2>
+        <p class="contact-copy">BU prüfen, neu einrichten oder die Gesundheitsfragen vorbereiten: Erzähl mir, worum es geht.</p>
+        <a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=bu-selbststaendige">Unverbindlichen Termin vereinbaren <span aria-hidden="true">↗</span></a>
+        <div class="contact-data">
+          <a href="tel:+491626960629">+49 162 6960629</a>
+          <a href="mailto:elias@eliasgassmann.de">elias@eliasgassmann.de</a>
+          <p>August-Horch-Straße 6A<br>55129 Mainz</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year">2026</span> Elias Gassmann</p>
+    <div>
+      <a href="index.html">Startseite</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="/datenschutz">Datenschutz</a>
+    </div>
+  </footer>
+  <a class="mobile-sticky" href="#anfrage">Jetzt Beratung anfragen</a>
+  <script src="formular.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('year').textContent = new Date().getFullYear();
+      bindeAnfrageFormular(document.getElementById('beratung-form'), {
+        endpoint: 'https://eg-anfragen.elias-gassmann.workers.dev/anfrage'
+      });
+    });
+  </script>
+</body>
+</html>
