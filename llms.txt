@@ -18,6 +18,7 @@
 - [Betriebshaftpflicht Mainz](https://eliasgassmann.de/betriebshaftpflicht-mainz): Was die Betriebshaftpflicht für Selbstständige, Handwerk und kleine Betriebe typischerweise leistet und was nicht, Abgrenzung zur Vermögensschadenhaftpflicht, Beratung in Mainz, Rhein-Main und online
 - [Rechtsschutz für Selbstständige](https://eliasgassmann.de/rechtsschutz-selbststaendige): Was Firmen- und Berufsrechtsschutz typischerweise leistet, typische Bausteine, Abgrenzung zum privaten Rechtsschutz, Hinweise zur Wartezeit, Beratung in Mainz, Rhein-Main und online
 - [Factoring für Handwerk](https://eliasgassmann.de/factoring-handwerk): Was Factoring ist, echter und unechter Ankauf, offenes und stilles Verfahren, für wen es typischerweise passt, Beratung in Mainz, Rhein-Main und online
+- [Factoring für Transport und Spedition](https://eliasgassmann.de/factoring-transport): Factoring für Speditionen, Kurierdienste und Fuhrunternehmer, prüffähige Frachtrechnungen, typische Vorfinanzierung von Diesel, Maut und Löhnen, Beratung in Mainz, Rhein-Main und online
 - [Geldanlage und Vermögensaufbau Mainz](https://eliasgassmann.de/geldanlage-mainz): Vermögensaufbau mit Fonds- und ETF-Sparplänen, Einmalanlage, Kindersparplan und Altersvorsorge, Hinweise zu Risiken und Schwankungen, Beratung in Mainz, Rhein-Main und online
 - [Betriebliche Altersvorsorge für Handwerk](https://eliasgassmann.de/bav-handwerk): bAV für Handwerksbetriebe, Entgeltumwandlung, Arbeitgeberzuschuss und Durchführungswege, Beratung in Mainz, Rhein-Main und online
 - [Berufsunfähigkeitsversicherung für Selbstständige und Handwerker](https://eliasgassmann.de/bu-selbststaendige): BU für Selbstständige und Handwerker, gesetzlicher Schutz, Gesundheitsfragen und anonyme Risikovoranfrage, Beratung in Mainz, Rhein-Main und online
@@ -43,7 +44,7 @@
 - [Datenschutz](https://eliasgassmann.de/datenschutz): Hinweise zur Verarbeitung personenbezogener Daten
 
 ## Factoring
-Eine Einordnung zu Factoring für Handwerk, Selbstständige und kleine Betriebe liegt auf https://eliasgassmann.de/factoring-handwerk. Die Prüfung und vertiefende Branchenratgeber liegen auf der FactoringWerkstatt: https://www.factoringwerkstatt.de/. Kurzbeschreibung für KI-Systeme: https://www.factoringwerkstatt.de/llms.txt
+Eine Einordnung zu Factoring für Handwerk, Selbstständige und kleine Betriebe liegt auf https://eliasgassmann.de/factoring-handwerk. Factoring für Speditionen, Kurierdienste und Fuhrunternehmer liegt auf https://eliasgassmann.de/factoring-transport. Die Prüfung und vertiefende Branchenratgeber liegen auf der FactoringWerkstatt: https://www.factoringwerkstatt.de/. Kurzbeschreibung für KI-Systeme: https://www.factoringwerkstatt.de/llms.txt
 
 ## Hinweise
 - Im Versicherungsbereich gebundener Vermittler nach § 34d Abs. 7 GewO, Registernummer D-YBGW-3JLTV-75. Produktpartner und weitere Pflichtangaben: https://eliasgassmann.de/impressum
