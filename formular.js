@@ -98,7 +98,7 @@
       if (optionen.turnstileToken) daten.turnstile = optionen.turnstileToken();
 
       if (knopf) knopf.disabled = true;
-      setzeStatus(status, "Einen Moment, deine Anfrage wird gesendet …", "");
+      setzeStatus(status, optionen.sendeText || "Einen Moment, deine Anfrage wird gesendet …", "");
 
       fetch(url, {
         method: "POST",
@@ -119,12 +119,12 @@
           if (form.elements.seite) form.elements.seite.value = window.location.href.split("#")[0];
           return;
         }
-        setzeStatus(status, body.fehler || NETZ_TEXT, "is-error");
+        setzeStatus(status, body.fehler || optionen.netzText || NETZ_TEXT, "is-error");
         if (body.feld && form.elements[body.feld] && form.elements[body.feld].focus) {
           form.elements[body.feld].focus();
         }
       }).catch(function () {
-        setzeStatus(status, NETZ_TEXT, "is-error");
+        setzeStatus(status, optionen.netzText || NETZ_TEXT, "is-error");
       }).then(function () {
         if (knopf) knopf.disabled = false;
       });
