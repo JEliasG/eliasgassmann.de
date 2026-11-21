@@ -3,72 +3,144 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Altersvorsorgedepot Förderung — Grundzulage, Kinderzulage und Sonderausgaben — Elias Gassmann</title>
-  <meta name="description" content="Förderung im Altersvorsorgedepot: Grundzulage, Kinderzulage, Berufseinsteigerbonus und Sonderausgabenabzug nach Angaben von BMF und BaFin, mit als Beispiel gekennzeichneten Rechenwegen. Beratung in Mainz, im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern oder online.">
+  <title>Förderung im Altersvorsorgedepot | Gassmann</title>
+  <meta name="description" content="Förderung im Altersvorsorgedepot: Grundzulage bis 540 Euro, Kinderzulage, Berufseinsteigerbonus und Sonderausgaben nach BMF und BaFin.">
   <link rel="canonical" href="https://eliasgassmann.de/altersvorsorgedepot-foerderung">
   <meta name="theme-color" content="#fbfbfd">
-  <meta property="og:title" content="Altersvorsorgedepot Förderung — Grundzulage, Kinderzulage und Sonderausgaben — Elias Gassmann">
-  <meta property="og:description" content="Förderung im Altersvorsorgedepot: Grundzulage, Kinderzulage, Berufseinsteigerbonus und Sonderausgaben nach Angaben von BMF und BaFin, mit Rechenbeispielen. Beratung in Mainz, Rhein-Main oder online.">
+  <meta property="og:title" content="Förderung im Altersvorsorgedepot | Gassmann">
+  <meta property="og:description" content="Förderung im Altersvorsorgedepot: Grundzulage bis 540 Euro, Kinderzulage, Berufseinsteigerbonus und Sonderausgaben nach BMF und BaFin.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://eliasgassmann.de/altersvorsorgedepot-foerderung">
   <meta property="og:image" content="https://eliasgassmann.de/portrait-elias-gassmann.jpeg">
   <meta property="og:locale" content="de_DE">
   <link rel="stylesheet" href="apple.css?v=20261103">
   <style>
-    .hero h1, .intro h2, .process-heading h2, .faq-section h2, .contact-card h2, .page-block h2, .quellen h2 {
+    .hero h1, .intro h2, .process-heading h2, .faq-section h2, .contact-card h2, .page-block h2 {
       -webkit-hyphens: manual;
       hyphens: manual;
       overflow-wrap: normal;
       word-break: normal;
     }
-    .hero--beratung { align-items: start; gap: 48px; padding-bottom: 72px; }
-    .hero--beratung h1 { font-size: clamp(36px, 4.2vw, 58px); line-height: 1.08; max-width: 20ch; }
-    .answer-box { margin: 22px 0 20px; padding: 18px 20px 18px 22px; border-radius: 20px; background: var(--grau); border-left: 3px solid var(--blau); }
-    .answer-label { display: block; margin: 0 0 6px; color: var(--blau); font-size: 13px; font-weight: 600; }
-    .answer-box p { margin: 0; color: var(--ink); font-size: 17px; line-height: 1.45; }
-    .core-answer { margin: 0 0 22px; max-width: 40rem; font-size: 18px; line-height: 1.45; color: var(--ink-2); }
+    .hero--beratung {
+      align-items: start;
+      gap: 48px;
+      padding-bottom: 72px;
+    }
+    .hero--beratung h1 {
+      font-size: clamp(36px, 4.2vw, 58px);
+      line-height: 1.08;
+      max-width: min(22ch, 100%);
+      overflow-wrap: anywhere;
+    }
+    .answer-box {
+      margin: 22px 0 20px;
+      padding: 18px 20px 18px 22px;
+      border-radius: 20px;
+      background: var(--grau);
+      border-left: 3px solid var(--blau);
+    }
+    .answer-label {
+      display: block;
+      margin: 0 0 6px;
+      color: var(--blau);
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .answer-box p {
+      margin: 0;
+      color: var(--ink);
+      font-size: 17px;
+      line-height: 1.45;
+    }
+    .core-answer {
+      margin: 0 0 22px;
+      max-width: 40rem;
+      font-size: 18px;
+      line-height: 1.45;
+      color: var(--ink-2);
+    }
     .hero-panel { display: grid; gap: 16px; min-width: 0; }
     .hero--beratung .hero-portrait { max-height: 420px; aspect-ratio: 4/5; }
-    .form-card { padding: 22px 22px 20px; border-radius: 28px; background: #fff; box-shadow: var(--schatten-hoch); }
-    .form-card h2 { margin: 0 0 6px; font: 700 24px/1.2 var(--display); letter-spacing: -.03em; }
-    .form-lead, .form-alt, .form-status { margin: 0 0 16px; color: var(--mut); font-size: 15px; line-height: 1.45; }
+    .form-card {
+      padding: 22px 22px 20px;
+      border-radius: 28px;
+      background: #fff;
+      box-shadow: var(--schatten-hoch);
+    }
+    .form-card h2 {
+      margin: 0 0 6px;
+      font: 700 24px/1.2 var(--display);
+      letter-spacing: -.03em;
+    }
+    .form-lead, .form-alt, .form-status {
+      margin: 0 0 16px;
+      color: var(--mut);
+      font-size: 15px;
+      line-height: 1.45;
+    }
     .form-alt, .form-status { margin: 10px 0 0; font-size: 13px; }
     .form-status.is-ok { color: #248a3d; }
     .form-status.is-error { color: #b42318; }
-    .form-alt a, .consent a, .page-block a, .quellen a { color: var(--link); }
+    .fwx-honeypot {
+      position: absolute;
+      left: -10000px;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+
+    .form-alt a, .consent a { color: var(--link); }
     .lead-form { display: grid; gap: 12px; }
     .lead-form label { display: grid; gap: 5px; font-size: 13px; font-weight: 600; color: var(--ink); }
-    .lead-form input[type="text"] { width: 100%; padding: 12px 14px; border: 1px solid var(--linie); border-radius: 12px; background: var(--grau); color: var(--ink); font: 16px var(--sans); }
+    .lead-form input[type="text"] {
+      width: 100%; padding: 12px 14px; border: 1px solid var(--linie); border-radius: 12px;
+      background: var(--grau); color: var(--ink); font: 16px var(--sans);
+    }
     .lead-form input:focus { outline: 2px solid rgba(0,113,227,.55); outline-offset: 1px; background: #fff; }
     .consent { display: flex !important; align-items: flex-start; gap: 10px; font-weight: 400 !important; font-size: 13px !important; color: var(--mut) !important; line-height: 1.45; }
     .consent input { margin-top: 3px; flex: none; }
-    .lead-form button[type="submit"] { appearance: none; margin-top: 4px; min-height: 50px; padding: 0 22px; border: 0; border-radius: 980px; background: var(--blau); color: #fff; font-size: 16px; cursor: pointer; }
+    .lead-form button[type="submit"] {
+      appearance: none; margin-top: 4px; min-height: 50px; padding: 0 22px; border: 0; border-radius: 980px;
+      background: var(--blau); color: #fff; font-size: 16px; cursor: pointer;
+    }
     .lead-form button[type="submit"]:hover { background: var(--blau-hover); }
-    .trust-rating { display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-radius: 20px; background: var(--grau); color: inherit; }
+    .trust-rating {
+      display: flex; align-items: center; gap: 12px; padding: 14px 16px;
+      border-radius: 20px; background: var(--grau); color: inherit;
+    }
     .trust-rating strong { display: block; font-size: 15px; }
     .trust-rating small { display: block; font-size: 12px; color: var(--mut); }
+    .quote-mini {
+      margin: 0; padding: 16px 18px; border-radius: 20px; background: var(--grau);
+    }
+    .quote-mini p { margin: 0 0 8px; font-size: 15px; line-height: 1.4; }
+    .quote-mini footer { font-size: 12px; color: var(--mut); }
     .page-block { padding: 96px var(--rand); }
     .page-block h2 { margin: 8px 0 18px; font: 700 clamp(34px,4.2vw,56px)/1.07 var(--display); letter-spacing: -.03em; max-width: 22ch; }
     .page-block .lead, .page-block p { max-width: 42rem; }
     .page-block p { margin: 0 0 16px; font-size: 17px; line-height: 1.5; color: var(--ink-2); }
     .page-block .lead { font-size: 21px; line-height: 1.38; color: var(--mut); }
     .page-block--grau { background: var(--grau); }
+    .criteria {
+      width: 100%; max-width: 52rem; margin: 8px 0 0; border-collapse: collapse;
+      background: #fff; border-radius: 20px; box-shadow: var(--schatten); overflow: hidden;
+    }
+    .criteria caption { caption-side: top; text-align: left; padding: 18px 20px 8px; font: 600 18px var(--display); color: var(--ink); }
+    .criteria th, .criteria td { padding: 14px 20px; border-top: 1px solid var(--linie); text-align: left; vertical-align: top; font-size: 15px; line-height: 1.45; }
+    .criteria thead th { font-size: 12px; color: var(--mut); font-weight: 600; }
+    .criteria tbody th { width: 48%; color: var(--ink); font-weight: 600; }
     .topic-list { display: grid; gap: 12px; margin: 8px 0 20px; padding: 0; list-style: none; max-width: 44rem; }
     .topic-list li { padding: 18px 20px; border-radius: 20px; background: var(--grau); }
     .topic-list strong { display: block; margin-bottom: 4px; }
     .topic-list span { color: var(--mut); font-size: 15px; line-height: 1.45; }
-    .page-block--grau .topic-list li { background: #fff; }
     .partners { font-size: 15px; color: var(--ink-2); }
-    .fn { font-size: .78em; font-weight: 600; vertical-align: super; line-height: 0; text-decoration: none; margin-left: 1px; }
-    .quellen { padding: 72px var(--rand) 40px; background: var(--grau); }
-    .quellen h2 { margin: 0 0 16px; font: 700 clamp(28px,3.4vw,40px)/1.15 var(--display); letter-spacing: -.03em; }
-    .quellen ol { margin: 0; padding-left: 1.25rem; max-width: 44rem; color: var(--ink-2); font-size: 14px; line-height: 1.5; }
-    .quellen li { margin: 0 0 8px; }
-    .mobile-sticky { display: none; }
+    .mobile-sticky {
+      display: none;
+    }
     @media (max-width: 760px) {
       .hero--beratung h1 { max-width: none; }
       .hero--beratung .hero-portrait { max-height: none; }
-      .page-block, .quellen { padding: 72px 22px; }
+      .page-block { padding: 72px 22px; }
       .mobile-sticky {
         display: flex; align-items: center; justify-content: center;
         position: fixed; z-index: 30; left: 16px; right: 16px;
@@ -78,6 +150,11 @@
       }
       body { padding-bottom: 84px; }
     }
+    @media (prefers-reduced-motion: no-preference) {
+      .hero-content, .hero-panel { animation: none; }
+    }
+
+    .quote-mini .quote-src { margin: 0; font-size: 12px; color: var(--mut); line-height: 1.4; }
     .hero--beratung { display: grid; grid-template-columns: minmax(0,1.15fr) minmax(0,.85fr); }
     .hero-form { min-width: 0; }
     @media (min-width: 761px) {
@@ -87,108 +164,123 @@
     }
     @media (max-width: 760px) {
       .hero--beratung { display: flex; flex-direction: column; }
+      .hero-copy, .hero-form, .hero-panel { order: 0; min-width: 0; width: 100%; }
       .hero-copy { order: 1; }
       .hero-panel { order: 2; }
       .hero-form { order: 3; }
+      .hero--beratung h1 { overflow-wrap: anywhere; }
+    }
+  
+    .process-section.page-block .process-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .page-block--grau .topic-list li { background: #fff; }
+    .link-row { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 4px 0 18px; max-width: 44rem; }
+    .link-row a { color: var(--link); }
+    .source-list { margin: 8px 0 0; padding-left: 18px; max-width: 44rem; }
+    .source-list li { margin: 0 0 8px; font-size: 15px; line-height: 1.45; color: var(--ink-2); }
+    .source-list a { color: var(--link); }
+    @media (max-width: 760px) {
+      .hero h1, .page-block h2, .process-heading h2, .faq-section h2, .contact-card h2 { overflow-wrap: break-word; }
+      .process-section.page-block .process-list { grid-template-columns: 1fr; }
+      .criteria, .criteria thead, .criteria tbody, .criteria tr, .criteria th, .criteria td { display: block; width: auto; }
+      .criteria thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+      .criteria tr { padding: 8px 0; }
     }
   </style>
   <script type="application/ld+json">
-{
+  {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Wie wird die Grundzulage beim Altersvorsorgedepot berechnet?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Die Grundzulage ist laut Bundesfinanzministerium und BaFin beitragsproportional. Bis 360 Euro Eigenbeitrag im Jahr erhältst du 50 Cent je Euro, danach 25 Cent je Euro bis insgesamt 1.800 Euro Eigenbeitrag. Das ergibt höchstens 540 Euro Grundzulage im Jahr, erreichbar bei 1.800 Euro Eigenbeitrag. Voraussetzung ist unter anderem ein jährlicher Mindesteigenbeitrag von 120 Euro. Pauschale Renditen nenne ich hier bewusst nicht."
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Wie kommt man auf 540 Euro Grundzulage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bei 1.800 Euro Eigenbeitrag im Jahr. Bis 360 Euro gibt es 50 Cent je Euro, danach 25 Cent je Euro, gedeckelt bei 540 Euro."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was bringt ein Kind?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Höchstens 300 Euro Kinderzulage je Kind für einen Elternteil, typischerweise bei 300 Euro Eigenbeitrag. Das kommt zur Grundzulage dazu."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Gibt es den Berufseinsteigerbonus jedes Jahr?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein. Einmalig 200 Euro, wenn du den Vertrag vor dem 25. Geburtstag abschließt."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was kostet das Erstgespräch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Das Erstgespräch kostet dich nichts. Eine Beratungsgebühr verlange ich nicht. Kommt ein Produkt zustande, werde ich vom Anbieter vergütet. Wie das läuft, sage ich dir im Gespräch. Die Pflichtangaben stehen im Impressum."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Muss ich einen bestehenden Vertrag kündigen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein. Ich schaue zuerst, was du schon hast. Was zu deinem Ziel passt, kann bleiben. Ob du etwas änderst, entscheidest du."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bist du danach noch da?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Wenn sich etwas ändert oder du eine Frage zum Vertrag hast, meldest du dich bei mir. Ich bleibe dein Ansprechpartner."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FinancialService",
+      "name": "Förderung Altersvorsorgedepot",
+      "url": "https://eliasgassmann.de/altersvorsorgedepot-foerderung",
+      "description": "Förderung im Altersvorsorgedepot: Grundzulage bis 540 Euro, Kinderzulage, Berufseinsteigerbonus und Sonderausgaben nach BMF und BaFin.",
+      "telephone": "+491626960629",
+      "email": "elias@eliasgassmann.de",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "August-Horch-Straße 6A",
+        "postalCode": "55129",
+        "addressLocality": "Mainz",
+        "addressCountry": "DE"
+      },
+      "provider": {
+        "@type": "Person",
+        "name": "Elias Gassmann",
+        "url": "https://eliasgassmann.de/",
+        "image": "https://eliasgassmann.de/portrait-elias-gassmann.jpeg"
       }
     },
     {
-      "@type": "Question",
-      "name": "Wie hoch ist die Kinderzulage?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Für jedes Kind kann ein Elternteil laut Bundesfinanzministerium und BaFin zusätzlich 1 Euro je eingesetztem Euro erhalten, höchstens 300 Euro je Kind. Dieser Höchstbetrag wird typischerweise bei 300 Euro Eigenbeitrag erreicht. Das Geburtsjahr des Kindes spielt im neuen System typischerweise keine Rolle mehr. Die Kinderzulage ist etwas anderes als die Frühstartrente."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Was ist der Berufseinsteigerbonus?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Wer zu Beginn des Beitragsjahres das 25. Lebensjahr noch nicht vollendet hat und die übrigen Voraussetzungen erfüllt, kann laut Bundesfinanzministerium einmalig 200 Euro Berufseinsteigerbonus erhalten. Der Bonus kommt zur Grundzulage hinzu und wird nicht jedes Jahr neu gezahlt."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Was kann ich als Sonderausgaben absetzen?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Beiträge und den Zulageanspruch kannst du laut Bundesfinanzministerium als Sonderausgaben geltend machen, künftig bis 1.800 Euro zuzüglich Zulageanspruch. Das Finanzamt prüft, ob dir über die Zulage hinaus ein Steuervorteil zusteht. Ohne Kinder und ohne mittelbar zulageberechtigten Ehegatten beträgt der Höchstbetrag laut BMF beispielsweise 2.340 Euro, also 1.800 Euro plus 540 Euro Grundzulage. In der Auszahlungsphase werden die Leistungen nachgelagert besteuert."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wie viel muss ich mindestens einzahlen, und wie viel höchstens?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Für die Grundzulage sind laut BaFin und Bundesfinanzministerium unter anderem 120 Euro Eigenbeitrag im Jahr Voraussetzung, also zum Beispiel 10 Euro im Monat. Einzahlen kannst du bis zu 6.840 Euro im Jahr; ab 1.800 Euro Eigenbeitrag steigt die Zulage nicht weiter. Verträge nach neuem Recht können erst ab dem 1. Januar 2027 abgeschlossen werden."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Ist das Erstgespräch kostenpflichtig?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Das Erstgespräch ist unverbindlich. Du zahlst keine Beratungsgebühr. Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte. Den Ablauf erkläre ich dir im Gespräch. Nicht jedes Produkt ist automatisch verfügbar."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Berätst du nur in Mainz oder auch online?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Beides. Du kannst einen Termin in Mainz, nach Absprache im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern, etwa in Wiesbaden, Frankfurt oder Darmstadt, oder online vereinbaren. Online berate ich deutschlandweit, typischerweise per Video. Den Termin buchst du unter termin.eliasgassmann.de."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Elias Gassmann",
+          "item": "https://eliasgassmann.de/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Förderung Altersvorsorgedepot",
+          "item": "https://eliasgassmann.de/altersvorsorgedepot-foerderung"
+        }
+      ]
     }
-  ]
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FinancialService",
-  "name": "Elias Gassmann — Förderung im Altersvorsorgedepot: Zulagen und Sonderausgaben",
-  "url": "https://eliasgassmann.de/altersvorsorgedepot-foerderung",
-  "description": "Beratung zur Förderung im Altersvorsorgedepot ab 2027: Grundzulage, Kinderzulage, Berufseinsteigerbonus und Sonderausgabenabzug, persönlich in Mainz, im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern sowie online deutschlandweit.",
-  "areaServed": ["Mainz", "Wiesbaden", "Frankfurt am Main", "Darmstadt", "Rhein-Main", "DE"],
-  "telephone": "+491626960629",
-  "email": "elias@eliasgassmann.de",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "August-Horch-Straße 6A",
-    "postalCode": "55129",
-    "addressLocality": "Mainz",
-    "addressCountry": "DE"
-  },
-  "provider": {
-    "@type": "Person",
-    "name": "Elias Gassmann",
-    "url": "https://eliasgassmann.de/",
-    "image": "https://eliasgassmann.de/portrait-elias-gassmann.jpeg"
-  }
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Elias Gassmann", "item": "https://eliasgassmann.de/" },
-    { "@type": "ListItem", "position": 2, "name": "Altersvorsorgedepot", "item": "https://eliasgassmann.de/altersvorsorgedepot" },
-    { "@type": "ListItem", "position": 3, "name": "Förderung", "item": "https://eliasgassmann.de/altersvorsorgedepot-foerderung" }
   ]
 }
   </script>
@@ -201,32 +293,28 @@
       <span class="brand-name">Elias Gassmann<small>Finanzberatung</small></span>
     </a>
     <nav class="main-nav" aria-label="Hauptnavigation">
-      <a href="index.html#gewerbe">Gewerbe</a>
       <a href="index.html#privat">Privat</a>
-      <a href="#ablauf">So läuft’s</a>
-      <a href="#termin">Termin</a>
+      <a href="index.html#gewerbe">Betrieb</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="#anfrage">Termin</a>
     </nav>
     <a class="header-contact" href="tel:+491626960629">
       <span class="phone-icon">↗</span>
       <span>0162 6960629</span>
     </a>
   </header>
-
   <main id="top">
     <section class="hero hero--beratung" id="inhalt" aria-labelledby="hero-title">
       <div class="hero-content hero-copy">
-        <p class="eyebrow hero-label">Zulagen und Steuer ab 2027</p>
-        <h1 id="hero-title">Förderung im Altersvorsorge&shy;depot — Grundzulage, Kinderzulage und Sonderausgaben</h1>
-        <aside class="answer-box" aria-label="Kurzantwort">
-          <span class="answer-label">Kurzantwort</span>
-          <p>Die Förderung im Altersvorsorgedepot ist laut Bundesfinanzministerium und BaFin beitragsproportional. Die Grundzulage beträgt höchstens 540&nbsp;Euro im Jahr. Dazu können eine Kinderzulage und einmalig ein Berufseinsteigerbonus von 200&nbsp;Euro kommen. Beiträge plus Zulageanspruch kannst du als Sonderausgaben geltend machen.<a class="fn" href="#quelle-1">[1]</a><a class="fn" href="#quelle-2">[2]</a> Die Stufen, amtliche Höchstbeträge und als Beispiel gekennzeichnete Rechenwege stehen weiter unten mit Quelle. Was das Depot ist, welche Produkttypen es gibt und was mit einem Riester-Vertrag passiert, steht auf der Seite <a href="altersvorsorgedepot">Altersvorsorgedepot</a>. Verträge nach neuem Recht können erst ab dem 1.&nbsp;Januar 2027 abgeschlossen werden. Elias Gassmann berät dich dazu in Mainz, im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern oder online deutschlandweit.</p>
-        </aside>
-        <p class="core-answer">Typische Anlässe: du willst die neue Zulage nachvollziehen, die Kinderzulage oder den Sonderausgabenabzug einordnen — ohne eine Renditeannahme und ohne unter Zeitdruck zu unterschreiben.</p>
+        <p class="eyebrow hero-label">Zulagen</p>
+        <h1 id="hero-title">Förderung im Altersvorsorgedepot: Was du einzahlen musst, damit die Zulage kommt.</h1>
+        <p class="core-answer">Die Zulage hängt an deinem Eigenbeitrag, nicht mehr an vier Prozent deines Einkommens. Die Sätze stammen von BMF und BaFin. Eine Rendite rechne ich hier nicht dazu.</p>
+        <p><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=altersvorsorgedepot-foerderung">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a></p>
       </div>
       <div class="hero-form">
         <div class="form-card" id="anfrage">
-          <h2>Jetzt Beratung anfragen</h2>
-          <p class="form-lead">Unverbindlich, in Mainz, im Rhein-Main-Gebiet oder online. Erzähl kurz, worum es geht.</p>
+          <h2>Erstgespräch anfragen</h2>
+          <p class="form-lead">Kostenlos und unverbindlich. Ein Satz zu deiner Lage reicht.</p>
           <form class="lead-form" id="beratung-form" action="https://eg-anfragen.elias-gassmann.workers.dev/anfrage" method="post" novalidate>
             <label>Name
               <input type="text" name="name" autocomplete="name" required placeholder="Vor- und Nachname">
@@ -235,10 +323,10 @@
               <input type="text" name="kontakt" autocomplete="on" required placeholder="Nummer oder E-Mail-Adresse" inputmode="email">
             </label>
             <label>Beruf oder Tätigkeit
-              <input type="text" name="branche" required placeholder="z. B. angestellt oder selbstständig">
+              <input type="text" name="branche" required placeholder="z. B. selbstständig, Handwerk">
             </label>
             <label>Kurz dein Anliegen
-              <input type="text" name="anliegen" required placeholder="z. B. Zulage oder Sonderausgaben klären">
+              <input type="text" name="anliegen" required placeholder="z. B. Bestand prüfen">
             </label>
             <label class="consent fwx-consent">
               <input type="checkbox" name="datenschutz" value="ja" required>
@@ -250,254 +338,75 @@
           </form>
           <p class="form-alt">Oder Termin direkt wählen: <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=altersvorsorgedepot-foerderung">termin.eliasgassmann.de</a> · <a href="tel:+491626960629">+49 162 6960629</a></p>
         </div>
-      </div>
+        </div>
       <div class="hero-panel">
         <figure class="hero-portrait">
-          <img src="portrait-elias-gassmann.jpeg" alt="Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" fetchpriority="high">
+          <img src="portrait-elias-gassmann.jpeg" alt="Porträt von Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" fetchpriority="high">
           <figcaption>
             <span>Elias Gassmann</span>
             <strong>Finanzberater in Mainz</strong>
-            <small>Persönlich in Mainz, Rhein-Main und online</small>
+            <small>Sitz in Mainz, Gespräche auch online</small>
           </figcaption>
         </figure>
         <a class="trust-rating" href="https://www.google.com/maps?cid=18281856182098275446" target="_blank" rel="noopener noreferrer">
           <span aria-hidden="true">★★★★★</span>
           <span>
             <strong>4,9 / 5 · 48 Google-Rezensionen</strong>
-            <small>Stand 10.11.2026, wie auf der Seite Finanzberater Mainz</small>
+            <small>FactoringWerkstatt · Stand 10.11.2026</small>
           </span>
         </a>
       </div>
     </section>
-
-    <section class="page-block" aria-labelledby="abgrenzung">
-      <p class="eyebrow">Einordnung</p>
-      <h2 id="abgrenzung">Was diese Seite klärt — und was nicht</h2>
-      <p class="lead">Hier geht es um die staatliche Förderung selbst: Grundzulage, Kinderzulage, Berufseinsteigerbonus, Mindest- und Höchstbeträge sowie den Sonderausgabenabzug.</p>
-      <p>Die Übersicht und die drei Produkttypen findest du auf der Seite <a href="altersvorsorgedepot">Altersvorsorgedepot</a>, den Riester-Bestandsschutz auf der Seite <a href="altersvorsorgedepot-riester">Riester und Altersvorsorgedepot</a> und die Frühstartrente auf der Seite <a href="fruehstartrente">Frühstartrente</a>. Die Basisrente und ungeförderte Sparpläne für Selbstständige bleiben auf der Seite <a href="altersvorsorge-selbststaendige">Altersvorsorge für Selbstständige und Handwerker</a>. Pauschale Renditen, Anbieterpreise oder eine festgelegte Empfehlung zu einem bestimmten Beitrag nenne ich bewusst nicht.</p>
+    <section class="page-block" id="fuer-wen" aria-labelledby="fuer-wen-title">
+      <p class="eyebrow">Für wen</p>
+      <h2 id="fuer-wen-title">Für wen das ist.</h2>
+      
+      <ul class="topic-list"><li><strong>Arbeitnehmer mit Kindern</strong><span>Grundzulage und Kinderzulage zusammen anschauen, nicht einzeln.</span></li><li><strong>Berufseinsteiger</strong><span>Einmalig 200 Euro, wenn der Vertrag vor dem 25. Geburtstag geschlossen wird.</span></li><li><strong>Ehepartner</strong><span>Eine mittelbare Zulage kann über den Partner laufen. Ob das bei euch greift, ist ein Gespräch, kein Automatismus. <a href="altersvorsorgedepot-selbststaendige">Selbstständige</a></span></li></ul>
     </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="grundzulage">
-      <p class="eyebrow">Grundzulage</p>
-      <h2 id="grundzulage">Wie die Grundzulage typischerweise greift</h2>
-      <p class="lead">Die Zulage richtet sich nach deinem Eigenbeitrag, nicht mehr nach einem einkommensabhängigen Mindestsatz von vier Prozent. Die Sätze stammen aus den Angaben von BMF und BaFin.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Erste Stufe</strong>
-          <span>50&nbsp;Cent je Euro Eigenbeitrag bis 360&nbsp;Euro im Jahr.<a class="fn" href="#quelle-1">[1]</a><a class="fn" href="#quelle-2">[2]</a></span>
-        </li>
-        <li>
-          <strong>Zweite Stufe</strong>
-          <span>Danach 25&nbsp;Cent je Euro für weitere 1.440&nbsp;Euro, also von 361 bis 1.800&nbsp;Euro Eigenbeitrag.<a class="fn" href="#quelle-1">[1]</a><a class="fn" href="#quelle-2">[2]</a></span>
-        </li>
-        <li>
-          <strong>Höchstbetrag</strong>
-          <span>Höchstens 540&nbsp;Euro Grundzulage im Jahr, erreichbar bei 1.800&nbsp;Euro Eigenbeitrag. Darüber steigt die Zulage nicht weiter, auch wenn du mehr einzahlst.<a class="fn" href="#quelle-1">[1]</a><a class="fn" href="#quelle-2">[2]</a></span>
-        </li>
-      </ul>
-      <p>Die folgenden Rechenwege wenden nur diese amtlichen Sätze an. Es sind Beispiele zur Nachvollziehbarkeit, keine Prognose und keine Aussage über eine Rendite.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Beispiel: 120&nbsp;Euro Eigenbeitrag im Jahr</strong>
-          <span>Das ist der Mindesteigenbeitrag, laut BaFin zum Beispiel 10&nbsp;Euro im Monat. 120&nbsp;Euro mal 50&nbsp;Cent je Euro ergeben 60&nbsp;Euro Grundzulage. Errechnet aus den Sätzen von BMF und BaFin.<a class="fn" href="#quelle-1">[1]</a><a class="fn" href="#quelle-2">[2]</a></span>
-        </li>
-        <li>
-          <strong>Beispiel: 360&nbsp;Euro Eigenbeitrag im Jahr</strong>
-          <span>360&nbsp;Euro liegen am Ende der ersten Stufe. 360&nbsp;Euro mal 50&nbsp;Cent je Euro ergeben 180&nbsp;Euro Grundzulage. Errechnet aus den Sätzen von BMF und BaFin.<a class="fn" href="#quelle-1">[1]</a><a class="fn" href="#quelle-2">[2]</a></span>
-        </li>
-        <li>
-          <strong>Beispiel: 1.800&nbsp;Euro Eigenbeitrag im Jahr</strong>
-          <span>360&nbsp;Euro mal 50&nbsp;Cent ergeben 180&nbsp;Euro, weitere 1.440&nbsp;Euro mal 25&nbsp;Cent ergeben 360&nbsp;Euro. Zusammen sind das 540&nbsp;Euro Grundzulage — der von BMF und BaFin genannte Höchstbetrag.<a class="fn" href="#quelle-1">[1]</a><a class="fn" href="#quelle-2">[2]</a></span>
-        </li>
-      </ul>
+<section class="page-block page-block--grau" id="worauf" aria-labelledby="worauf-title">
+      <p class="eyebrow">Worauf es ankommt</p>
+      <h2 id="worauf-title">Was ich mit dir kläre.</h2>
+      
+      <ul class="topic-list"><li><strong>Grundzulage</strong><span>50 Cent je Euro bis 360 Euro Eigenbeitrag im Jahr, danach 25 Cent je Euro bis 1.800 Euro Eigenbeitrag. Maximum 540 Euro. Beispiel: 1.800 Euro eigenes Geld, 540 Euro Zulage. Das ist die amtliche Staffel, keine Hochrechnung.</span></li><li><strong>Mindestbeitrag</strong><span>Unter anderem 120 Euro Eigenbeitrag im Jahr, also 10 Euro im Monat, für die Grundzulage. Darüber hinaus kannst du laut BaFin und BMF bis 6.840 Euro im Jahr einzahlen. Ab 1.800 Euro Eigenbeitrag steigt die Grundzulage nicht weiter.</span></li><li><strong>Kinderzulage</strong><span>Für jedes Kind kann ein Elternteil 1 Euro je eingesetztem Euro erhalten, höchstens 300 Euro je Kind, typischerweise bei 300 Euro Eigenbeitrag.</span></li><li><strong>Sonderausgaben</strong><span>Beiträge plus Zulageanspruch kannst du als Sonderausgaben geltend machen, künftig bis 1.800 Euro zuzüglich Zulageanspruch. Das Finanzamt prüft, ob dir über die Zulage hinaus ein Vorteil bleibt. In der Auszahlung wird nachgelagert besteuert.</span></li></ul>
     </section>
-
-    <section class="page-block" aria-labelledby="kinderzulage">
-      <p class="eyebrow">Familie</p>
-      <h2 id="kinderzulage">Kinderzulage — zusätzlich zur Grundzulage</h2>
-      <p class="lead">Für jedes Kind kann ein Elternteil eine Kinderzulage erhalten. Sie kommt zur Grundzulage hinzu und ist etwas anderes als die Frühstartrente.</p>
-      <p>Laut BMF und BaFin erhält ein Elternteil 1&nbsp;Euro je eingesetztem Euro, höchstens 300&nbsp;Euro je Kind. Dieser Höchstbetrag wird typischerweise bei 300&nbsp;Euro Eigenbeitrag erreicht.<a class="fn" href="#quelle-1">[1]</a><a class="fn" href="#quelle-2">[2]</a> Das Geburtsjahr des Kindes spielt im neuen System typischerweise keine Rolle mehr; die frühere Unterscheidung von 185 und 300&nbsp;Euro entfällt.<a class="fn" href="#quelle-1">[1]</a> Eigenbeiträge bis 25&nbsp;Euro im Monat werden laut BMF durch Grundzulage und gegebenenfalls Kinderzulage besonders gefördert.<a class="fn" href="#quelle-1">[1]</a></p>
-      <ul class="topic-list">
-        <li>
-          <strong>Beispiel: 300&nbsp;Euro Eigenbeitrag, ein Kind</strong>
-          <span>Die Grundzulage liegt in der ersten Stufe: 300&nbsp;Euro mal 50&nbsp;Cent ergeben 150&nbsp;Euro. Die Kinderzulage erreicht mit 300&nbsp;Euro den Höchstbetrag von 300&nbsp;Euro. Zusammen sind das 450&nbsp;Euro Zulage in diesem Jahr. Errechnet aus den Sätzen von BMF und BaFin.<a class="fn" href="#quelle-1">[1]</a><a class="fn" href="#quelle-2">[2]</a></span>
-        </li>
-        <li>
-          <strong>Beispiel: 1.800&nbsp;Euro Eigenbeitrag, ein Kind</strong>
-          <span>Die Grundzulage beträgt 540&nbsp;Euro, die Kinderzulage 300&nbsp;Euro. Zusammen sind das 840&nbsp;Euro Zulage in diesem Jahr. Errechnet aus den Sätzen von BMF und BaFin.<a class="fn" href="#quelle-1">[1]</a><a class="fn" href="#quelle-2">[2]</a></span>
-        </li>
-      </ul>
-      <p>Die Frühstartrente ist eine eigene Leistung und nicht dieselbe wie diese Kinderzulage. Eine ausführliche Einordnung steht auf der Seite <a href="fruehstartrente">Frühstartrente</a>.</p>
-    </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="bonus">
-      <p class="eyebrow">Berufseinstieg</p>
-      <h2 id="bonus">Berufseinsteiger&shy;bonus</h2>
-      <p class="lead">Für junge Vertragsabschlüsse gibt es einmalig einen Zuschlag zur Grundzulage — nicht als jährliche Wiederholung.</p>
-      <p>Laut BMF erhalten Altersvorsorgende, die zu Beginn des Beitragsjahres das 25.&nbsp;Lebensjahr noch nicht vollendet haben und die übrigen Voraussetzungen erfüllen, einmalig 200&nbsp;Euro Berufseinsteigerbonus.<a class="fn" href="#quelle-1">[1]</a> Voraussetzung für die Grundzulage einschließlich dieses Bonus ist unter anderem die unmittelbare Zulageberechtigung und ein jährlicher Mindesteigenbeitrag von 120&nbsp;Euro.<a class="fn" href="#quelle-1">[1]</a></p>
-      <p>Beispiel: Schließt du den Vertrag in einem Jahr ab, in dem du zu Jahresbeginn noch nicht 25 bist, und zahlst 1.800&nbsp;Euro Eigenbeitrag, kommen in diesem Jahr typischerweise 540&nbsp;Euro Grundzulage und einmalig 200&nbsp;Euro Bonus zusammen, also 740&nbsp;Euro. In den Folgejahren entfällt der Bonus. Errechnet aus den Sätzen des BMF; der Bonus selbst ist ein amtlicher Betrag.<a class="fn" href="#quelle-1">[1]</a></p>
-    </section>
-
-    <section class="page-block" aria-labelledby="minmax">
-      <p class="eyebrow">Grenzen</p>
-      <h2 id="minmax">Mindestbeitrag und Höchstbetrag</h2>
-      <p class="lead">Ohne den Mindesteigenbeitrag gibt es typischerweise keine Grundzulage. Mehr einzahlen als bis zur Zulagegrenze ist möglich, hebt die Zulage aber nicht weiter an.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Mindesteigenbeitrag</strong>
-          <span>Für die Grundzulage sind unter anderem 120&nbsp;Euro Eigenbeitrag im Jahr Voraussetzung, also zum Beispiel 10&nbsp;Euro im Monat.<a class="fn" href="#quelle-1">[1]</a><a class="fn" href="#quelle-2">[2]</a></span>
-        </li>
-        <li>
-          <strong>Zulagegrenze</strong>
-          <span>Ab 1.800&nbsp;Euro Eigenbeitrag steigt die Zulage nicht weiter.<a class="fn" href="#quelle-1">[1]</a><a class="fn" href="#quelle-2">[2]</a></span>
-        </li>
-        <li>
-          <strong>Einzahlungshöchstbetrag</strong>
-          <span>Einzahlen kannst du laut BaFin und BMF bis zu 6.840&nbsp;Euro im Jahr. Davon werden bis zu 1.800&nbsp;Euro über die Zulage gefördert.<a class="fn" href="#quelle-1">[1]</a><a class="fn" href="#quelle-2">[2]</a></span>
-        </li>
-      </ul>
-      <p>Beispiel: Zahlst du den Höchstbetrag von 6.840&nbsp;Euro ein, bleibt die Grundzulage ohne Kinder und ohne Bonus bei 540&nbsp;Euro, weil die Zulage ab 1.800&nbsp;Euro Eigenbeitrag nicht weiter steigt. Errechnet aus den Sätzen von BMF und BaFin.<a class="fn" href="#quelle-1">[1]</a><a class="fn" href="#quelle-2">[2]</a></p>
-    </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="sonderausgaben">
-      <p class="eyebrow">Steuer</p>
-      <h2 id="sonderausgaben">Sonderausgaben&shy;abzug und Günstigerprüfung</h2>
-      <p class="lead">Neben der Zulage prüft das Finanzamt, ob dir über den Zulageanspruch hinaus ein Steuervorteil zusteht. Eine selbst errechnete Steuerersparnis nenne ich hier bewusst nicht.</p>
-      <p>Beiträge und den Zulageanspruch (Grund- und Kinderzulage) kannst du laut BMF als Sonderausgaben geltend machen, künftig bis 1.800&nbsp;Euro zuzüglich Zulageanspruch.<a class="fn" href="#quelle-1">[1]</a> Bisher lag der Höchstbetrag bei 2.100&nbsp;Euro einschließlich Zulageanspruch; laut BMF liegt der neue Höchstbetrag stets darüber.<a class="fn" href="#quelle-1">[1]</a></p>
-      <ul class="topic-list">
-        <li>
-          <strong>Amtliches Beispiel des BMF</strong>
-          <span>Ohne mittelbar zulageberechtigten Ehegatten und ohne Kinderzulage beträgt der Höchstbetrag laut BMF 2.340&nbsp;Euro, also 1.800&nbsp;Euro plus 540&nbsp;Euro Grundzulage.<a class="fn" href="#quelle-1">[1]</a></span>
-        </li>
-        <li>
-          <strong>Beispiel: ein Kind, volle Grundzulage</strong>
-          <span>1.800&nbsp;Euro zuzüglich 540&nbsp;Euro Grundzulage und 300&nbsp;Euro Kinderzulage ergeben 2.640&nbsp;Euro. Errechnet aus der amtlichen Formel „1.800&nbsp;Euro zuzüglich Zulageanspruch“.<a class="fn" href="#quelle-1">[1]</a></span>
-        </li>
-        <li>
-          <strong>Günstigerprüfung</strong>
-          <span>Das Finanzamt prüft, ob der Sonderausgabenabzug günstiger ist als der Zulageanspruch. Wird der Abzug gewährt, wird die tarifliche Steuer um den Zulageanspruch erhöht; nur der darüber hinausgehende Steuervorteil kommt bei der Veranlagung an. Die Zulage selbst bleibt auf dem Vertrag.<a class="fn" href="#quelle-1">[1]</a></span>
-        </li>
-      </ul>
-      <p>In der Ansparphase werden Wertsteigerungen und Erträge im Vertrag laut BMF nicht als Kapitalerträge besteuert. In der Auszahlungsphase werden die Leistungen nachgelagert besteuert, typischerweise mit dem individuellen Steuersatz.<a class="fn" href="#quelle-1">[1]</a></p>
-    </section>
-
-    <section class="page-block" aria-labelledby="berechtigung">
-      <p class="eyebrow">Wer typischerweise gefördert wird</p>
-      <h2 id="berechtigung">Förderberechtigung und mittelbare Zulage</h2>
-      <p class="lead">Die Grundzulage setzt typischerweise eine unmittelbare Zulageberechtigung und den Mindesteigenbeitrag voraus. Den vollständigen Kreis listet das BMF; hier die Punkte, die in der Beratung am häufigsten vorkommen.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Unmittelbar förderberechtigt</strong>
-          <span>Dazu gehören typischerweise Pflichtversicherte in der gesetzlichen Rentenversicherung und inländische Besoldungsempfängerinnen und -empfänger. Ab Januar 2027 sind laut BMF auch selbstständig Erwerbstätige mit Einkünften aus Gewerbebetrieb oder selbstständiger Arbeit, die eine Steuererklärung abgegeben haben, sowie Pflichtmitglieder einer berufsständischen Versorgungseinrichtung grundsätzlich unmittelbar förderberechtigt.<a class="fn" href="#quelle-1">[1]</a></span>
-        </li>
-        <li>
-          <strong>Typischerweise nicht unmittelbar</strong>
-          <span>Minijobbende, die sich von der Rentenversicherungspflicht haben befreien lassen, erhalten diese Förderung typischerweise nicht.<a class="fn" href="#quelle-1">[1]</a><a class="fn" href="#quelle-2">[2]</a> Die genaue Einordnung klären wir im Gespräch.</span>
-        </li>
-        <li>
-          <strong>Mittelbar zulageberechtigte Ehegatten</strong>
-          <span>Ist eine Person unmittelbar förderberechtigt, kann der Ehegatte oder die Ehegattin die Zulage ebenfalls erhalten, sofern unter anderem ein eigener Mindesteigenbeitrag von 120&nbsp;Euro fließt und die Eheleute nicht dauernd getrennt leben. Das gilt laut BMF auch für Lebenspartnerinnen und Lebenspartner einer eingetragenen Lebenspartnerschaft. Die Höhe richtet sich nach den Beiträgen der unmittelbar berechtigten Person und beträgt höchstens 175&nbsp;Euro. Einen eigenen Sonderausgabenabzugsbetrag gibt es für mittelbar Berechtigte typischerweise nicht.<a class="fn" href="#quelle-1">[1]</a></span>
-        </li>
-      </ul>
-      <p>Zur neuen Förderberechtigung von Selbstständigen und zur Abgrenzung von der Basisrente liegt eine Einordnung auf der Seite <a href="altersvorsorgedepot-selbststaendige">Altersvorsorgedepot für Selbstständige</a>; der Produktüberblick steht auf der Seite <a href="altersvorsorgedepot">Altersvorsorgedepot</a>. Basisrente, Handwerker-Pflicht in der DRV und ungeförderte Sparpläne bleiben auf der Seite <a href="altersvorsorge-selbststaendige">Altersvorsorge für Selbstständige und Handwerker</a>. Nicht jedes Thema und jedes Produkt ist automatisch verfügbar.</p>
-    </section>
-
-    <section class="process-section page-block page-block--grau" id="ablauf" aria-labelledby="ablauf-title">
+<section class="process-section page-block" id="ablauf" aria-labelledby="ablauf-title">
       <div class="process-heading">
-        <p class="eyebrow">Der Ablauf</p>
-        <h2 id="ablauf-title">So läuft die Beratung zur Förderung</h2>
-        <p class="lead">Wir starten mit deiner Familie, deinem Beitragsspielraum und dem, was du ab 2027 klären möchtest. Die Beratung kann vollständig digital laufen, typischerweise per Video.</p>
+        <p class="eyebrow">Ablauf</p>
+        <h2 id="ablauf-title">So gehe ich vor.</h2>
+        <p class="lead">Du musst nichts vorbereiten. Unterlagen helfen, wenn du sie schon hast.</p>
       </div>
-      <ol class="process-list">
-        <li>
-          <span>1</span>
-          <h3>Termin buchen</h3>
-          <p>Du buchst einen unverbindlichen Termin, vor Ort in Mainz, im Rhein-Main-Gebiet bzw. im Umkreis von rund 100 Kilometern oder online. Online berate ich deutschlandweit, typischerweise per Video.</p>
-        </li>
-        <li>
-          <span>2</span>
-          <h3>Situation verstehen</h3>
-          <p>Wir sprechen über Eigenbeitrag, Kinder, einen möglichen Berufseinsteigerbonus und bestehende Verträge. Es wird noch kein Antrag gestellt.</p>
-        </li>
-        <li>
-          <span>3</span>
-          <h3>Förderung einordnen</h3>
-          <p>Ich rechne die Zulage anhand der amtlichen Sätze nach und ordne den Sonderausgabenabzug ein. Pauschale Renditen oder eine festgelegte Beitragshöhe nenne ich bewusst nicht. Nicht jedes Produkt ist automatisch verfügbar.</p>
-        </li>
-        <li>
-          <span>4</span>
-          <h3>Bei Bedarf den nächsten Schritt planen</h3>
-          <p>Kommt ein neuer Vertrag infrage, schauen wir uns die offenen Punkte in Ruhe an. Vor dem 1.&nbsp;Januar 2027 kann ein Vertrag nach neuem Recht noch nicht abgeschlossen werden.</p>
-        </li>
-        <li>
-          <span>5</span>
-          <h3>In Ruhe entscheiden</h3>
-          <p>Du entscheidest in Ruhe, ob und wie es weitergehen soll. Durch das Erstgespräch entsteht keine Verpflichtung.</p>
-        </li>
-      </ol>
+      <ol class="process-list"><li><span>1</span><h3>Kennenlernen</h3><p>Einkommen spielt für die Zulagenstaffel nicht mehr die alte Rolle. Familie und Eigenbeitrag schon.</p></li><li><span>2</span><h3>Analysieren</h3><p>Ich rechne die Staffel an deinen möglichen Eigenbeitrag, als Beispiel, nicht als Zusage.</p></li><li><span>3</span><h3>Lösungen besprechen</h3><p>Zulage gegen Kosten und Bindung. <a href="altersvorsorgedepot-kosten">Kosten</a></p></li><li><span>4</span><h3>Umsetzen</h3><p>Erst ab 2027, und nur in einem zertifizierten Vertrag.</p></li></ol>
     </section>
-
-    <section class="page-block" aria-labelledby="transparenz">
-      <p class="eyebrow">Kosten und Ablauf</p>
-      <h2 id="transparenz">Was das Erstgespräch kostet</h2>
-      <p class="lead">Für das Erstgespräch zahlst du keine Beratungsgebühr. Bevor du etwas entscheidest, weißt du, wie ein Vorschlag funktioniert und welche Kosten daran hängen.</p>
-      <p class="partners">Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte; den Ablauf erkläre ich dir im Gespräch. Pauschale Renditen, Anbieterkonditionen oder eine Empfehlung zu einem bestimmten Beitrag nenne ich hier bewusst nicht. Es werden keine Kundengelder entgegengenommen; Zahlungen gehen direkt an den jeweiligen Anbieter. Alle Pflichtangaben findest du im <a href="impressum.html">Impressum</a>.</p>
+<section class="page-block page-block--grau" id="quellen" aria-labelledby="quellen-title">
+      <p class="eyebrow">Quellen</p>
+      <h2 id="quellen-title">Worauf sich die Zahlen stützen.</h2>
+      <p class="lead">Die Seite ersetzt keine Beratung. Maßgeblich sind Gesetz, Vertrag und der aktuelle Stand.</p>
+      <ul class="source-list"><li><a href="https://www.bundesfinanzministerium.de/Content/DE/FAQ/reform-der-privaten-altersvorsorge.html">Bundesfinanzministerium</a></li><li><a href="https://www.bafin.de/DE/verbraucherinnen-verbraucher/themen-finanzprodukte/altersvorsorge/altersvorsorge_depot/altersvorsorge_depot.html">BaFin</a></li></ul><p>Überblick: <a href="altersvorsorgedepot">Altersvorsorgedepot</a>.</p>
     </section>
-
-    <section class="page-block page-block--grau" id="termin" aria-labelledby="termin-title">
+<section class="page-block" id="naechster" aria-labelledby="naechster-title">
       <p class="eyebrow">Nächster Schritt</p>
-      <h2 id="termin-title">Termin vereinbaren — in Mainz, im Rhein-Main-Gebiet oder online</h2>
-      <p class="lead">Den unverbindlichen Termin buchst du unter <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=altersvorsorgedepot-foerderung">termin.eliasgassmann.de</a>. Ohne Druck und ohne eine festgelegte Empfehlung zu einem bestimmten Beitrag.</p>
-      <p>Die öffentlich genannte Anschrift ist August-Horch-Straße 6A, 55129 Mainz. Ob ein Termin vor Ort oder online per Video sinnvoller ist, klären wir bei der Buchung. Du erreichst mich auch unter <a href="tel:+491626960629">+49 162 6960629</a> und <a href="mailto:elias@eliasgassmann.de">elias@eliasgassmann.de</a>.</p>
-      <p style="margin-top:28px"><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=altersvorsorgedepot-foerderung">Unverbindlichen Termin vereinbaren <span aria-hidden="true">↗</span></a></p>
+      <h2 id="naechster-title">Das Erstgespräch zeigt dir den nächsten sinnvollen Schritt.</h2>
+      
+      <p>Du hörst, was schon passt, was fehlt und was es kosten würde. Danach entscheidest du.</p><p style="margin-top:8px"><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=altersvorsorgedepot-foerderung">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a></p>
     </section>
-
     <section class="faq-section" id="fragen" aria-labelledby="faq-title">
       <div>
-        <p class="eyebrow">Vor dem Gespräch</p>
-        <h2 id="faq-title">Häufige Fragen zur Förderung im Altersvorsorge&shy;depot</h2>
+        <p class="eyebrow">Kurz geklärt</p>
+        <h2 id="faq-title">Fragen, die oft kommen.</h2>
       </div>
       <div class="faq-list">
-        <details open>
-          <summary>Wie wird die Grundzulage beim Altersvorsorgedepot berechnet?</summary>
-          <p>Die Grundzulage ist laut Bundesfinanzministerium und BaFin beitragsproportional. Bis 360 Euro Eigenbeitrag im Jahr erhältst du 50 Cent je Euro, danach 25 Cent je Euro bis insgesamt 1.800 Euro Eigenbeitrag. Das ergibt höchstens 540 Euro Grundzulage im Jahr, erreichbar bei 1.800 Euro Eigenbeitrag. Voraussetzung ist unter anderem ein jährlicher Mindesteigenbeitrag von 120 Euro. Pauschale Renditen nenne ich hier bewusst nicht.</p>
-        </details>
-        <details>
-          <summary>Wie hoch ist die Kinderzulage?</summary>
-          <p>Für jedes Kind kann ein Elternteil laut Bundesfinanzministerium und BaFin zusätzlich 1 Euro je eingesetztem Euro erhalten, höchstens 300 Euro je Kind. Dieser Höchstbetrag wird typischerweise bei 300 Euro Eigenbeitrag erreicht. Das Geburtsjahr des Kindes spielt im neuen System typischerweise keine Rolle mehr. Die Kinderzulage ist etwas anderes als die Frühstartrente.</p>
-        </details>
-        <details>
-          <summary>Was ist der Berufseinsteigerbonus?</summary>
-          <p>Wer zu Beginn des Beitragsjahres das 25. Lebensjahr noch nicht vollendet hat und die übrigen Voraussetzungen erfüllt, kann laut Bundesfinanzministerium einmalig 200 Euro Berufseinsteigerbonus erhalten. Der Bonus kommt zur Grundzulage hinzu und wird nicht jedes Jahr neu gezahlt.</p>
-        </details>
-        <details>
-          <summary>Was kann ich als Sonderausgaben absetzen?</summary>
-          <p>Beiträge und den Zulageanspruch kannst du laut Bundesfinanzministerium als Sonderausgaben geltend machen, künftig bis 1.800 Euro zuzüglich Zulageanspruch. Das Finanzamt prüft, ob dir über die Zulage hinaus ein Steuervorteil zusteht. Ohne Kinder und ohne mittelbar zulageberechtigten Ehegatten beträgt der Höchstbetrag laut BMF beispielsweise 2.340 Euro, also 1.800 Euro plus 540 Euro Grundzulage. In der Auszahlungsphase werden die Leistungen nachgelagert besteuert.</p>
-        </details>
-        <details>
-          <summary>Wie viel muss ich mindestens einzahlen, und wie viel höchstens?</summary>
-          <p>Für die Grundzulage sind laut BaFin und Bundesfinanzministerium unter anderem 120 Euro Eigenbeitrag im Jahr Voraussetzung, also zum Beispiel 10 Euro im Monat. Einzahlen kannst du bis zu 6.840 Euro im Jahr; ab 1.800 Euro Eigenbeitrag steigt die Zulage nicht weiter. Verträge nach neuem Recht können erst ab dem 1. Januar 2027 abgeschlossen werden.</p>
-        </details>
-        <details>
-          <summary>Ist das Erstgespräch kostenpflichtig?</summary>
-          <p>Das Erstgespräch ist unverbindlich. Du zahlst keine Beratungsgebühr. Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte. Den Ablauf erkläre ich dir im Gespräch. Nicht jedes Produkt ist automatisch verfügbar.</p>
-        </details>
-        <details>
-          <summary>Berätst du nur in Mainz oder auch online?</summary>
-          <p>Beides. Du kannst einen Termin in Mainz, nach Absprache im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern, etwa in Wiesbaden, Frankfurt oder Darmstadt, oder online vereinbaren. Online berate ich deutschlandweit, typischerweise per Video. Den Termin buchst du unter <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=altersvorsorgedepot-foerderung">termin.eliasgassmann.de</a>.</p>
-        </details>
+        <details open><summary>Wie kommt man auf 540 Euro Grundzulage?</summary><p>Bei 1.800 Euro Eigenbeitrag im Jahr. Bis 360 Euro gibt es 50 Cent je Euro, danach 25 Cent je Euro, gedeckelt bei 540 Euro.</p></details><details><summary>Was bringt ein Kind?</summary><p>Höchstens 300 Euro Kinderzulage je Kind für einen Elternteil, typischerweise bei 300 Euro Eigenbeitrag. Das kommt zur Grundzulage dazu.</p></details><details><summary>Gibt es den Berufseinsteigerbonus jedes Jahr?</summary><p>Nein. Einmalig 200 Euro, wenn du den Vertrag vor dem 25. Geburtstag abschließt.</p></details><details><summary>Was kostet das Erstgespräch?</summary><p>Das Erstgespräch kostet dich nichts. Eine Beratungsgebühr verlange ich nicht. Kommt ein Produkt zustande, werde ich vom Anbieter vergütet. Wie das läuft, sage ich dir im Gespräch. Die Pflichtangaben stehen im Impressum.</p></details><details><summary>Muss ich einen bestehenden Vertrag kündigen?</summary><p>Nein. Ich schaue zuerst, was du schon hast. Was zu deinem Ziel passt, kann bleiben. Ob du etwas änderst, entscheidest du.</p></details><details><summary>Bist du danach noch da?</summary><p>Ja. Wenn sich etwas ändert oder du eine Frage zum Vertrag hast, meldest du dich bei mir. Ich bleibe dein Ansprechpartner.</p></details>
       </div>
     </section>
-
     <section class="contact-card" aria-labelledby="kontakt-title">
       <figure class="hero-portrait" style="margin:0;max-height:520px">
-        <img src="portrait-elias-gassmann.jpeg" alt="Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" loading="lazy">
+        <img src="portrait-elias-gassmann.jpeg" alt="Porträt von Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" loading="lazy">
       </figure>
       <div class="contact-content">
-        <p class="eyebrow">Kontakt</p>
-        <h2 id="kontakt-title">Was hast du vor?<br><em>Lass uns sprechen.</em></h2>
-        <p class="contact-copy">Die neue Zulage nachvollziehen, die Kinderzulage oder den Sonderausgabenabzug einordnen: Erzähl mir, worum es geht.</p>
-        <a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=altersvorsorgedepot-foerderung">Unverbindlichen Termin vereinbaren <span aria-hidden="true">↗</span></a>
+        <p class="eyebrow">Erstgespräch</p>
+        <h2 id="kontakt-title">Wenn du das einordnen willst, sag mir Bescheid.</h2>
+        <p class="contact-copy">Kurz schreiben, worum es geht. Eine Beratungsgebühr verlange ich nicht.</p>
+        <a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=altersvorsorgedepot-foerderung">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a>
         <div class="contact-data">
           <a href="tel:+491626960629">+49 162 6960629</a>
           <a href="mailto:elias@eliasgassmann.de">elias@eliasgassmann.de</a>
@@ -505,16 +414,7 @@
         </div>
       </div>
     </section>
-
-    <aside class="quellen" aria-labelledby="quellen-title">
-      <h2 id="quellen-title">Quellen zu Zulagen und Steuer</h2>
-      <ol>
-        <li id="quelle-1"><a href="https://www.bundesfinanzministerium.de/Content/DE/FAQ/reform-der-privaten-altersvorsorge.html">Bundesministerium der Finanzen, Fragen und Antworten zur Reform der geförderten privaten Altersvorsorge</a>, Stand 9.&nbsp;November 2026.</li>
-        <li id="quelle-2"><a href="https://www.bafin.de/DE/verbraucherinnen-verbraucher/themen-finanzprodukte/altersvorsorge/altersvorsorge_depot/altersvorsorge_depot.html">Bundesanstalt für Finanzdienstleistungsaufsicht (BaFin), Neue Produkte in der privaten Altersvorsorge: Das ändert sich ab 2027</a>.</li>
-      </ol>
-    </aside>
   </main>
-
   <footer>
     <p>© <span id="year">2026</span> Elias Gassmann</p>
     <div>
@@ -523,7 +423,7 @@
       <a href="/datenschutz">Datenschutz</a>
     </div>
   </footer>
-  <a class="mobile-sticky" href="#anfrage">Jetzt Beratung anfragen</a>
+  <a class="mobile-sticky" href="#anfrage">Erstgespräch anfragen</a>
   <script src="formular.js" defer></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
