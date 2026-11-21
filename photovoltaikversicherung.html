@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Photovoltaikversicherung für Betriebe und Hausbesitzer in Mainz und Rhein-Main — Elias Gassmann</title>
-  <meta name="description" content="Photovoltaikversicherung für PV-Anlage und Speicher: Abgrenzung zur Gebäudeversicherung, Allgefahren und Elektronik, Ertragsausfall und Betreiberhaftpflicht. Beratung in Mainz, im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern oder online.">
+  <title>Photovoltaikversicherung | Elias Gassmann</title>
+  <meta name="description" content="Photovoltaikversicherung für Anlage und Speicher: Abgrenzung zur Gebäudeversicherung, Ertragsausfall und Betreiberhaftpflicht.">
   <link rel="canonical" href="https://eliasgassmann.de/photovoltaikversicherung">
   <meta name="theme-color" content="#fbfbfd">
-  <meta property="og:title" content="Photovoltaikversicherung für Betriebe und Hausbesitzer in Mainz und Rhein-Main — Elias Gassmann">
-  <meta property="og:description" content="Photovoltaikversicherung für PV-Anlage und Speicher, Abgrenzung zu Gebäude, Elektronik, Ertragsausfall und Haftpflicht. Beratung in Mainz, Rhein-Main oder online.">
+  <meta property="og:title" content="Photovoltaikversicherung | Elias Gassmann">
+  <meta property="og:description" content="Photovoltaikversicherung für Anlage und Speicher: Abgrenzung zur Gebäudeversicherung, Ertragsausfall und Betreiberhaftpflicht.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://eliasgassmann.de/photovoltaikversicherung">
   <meta property="og:image" content="https://eliasgassmann.de/portrait-elias-gassmann.jpeg">
   <meta property="og:locale" content="de_DE">
   <link rel="stylesheet" href="apple.css?v=20261103">
-<style>
-    .hero h1, .intro h2, .process-heading h2, .faq-section h2, .contact-card h2, .page-block h2, .quellen h2 {
+  <style>
+    .hero h1, .intro h2, .process-heading h2, .faq-section h2, .contact-card h2, .page-block h2 {
       -webkit-hyphens: manual;
       hyphens: manual;
       overflow-wrap: normal;
@@ -29,7 +29,8 @@
     .hero--beratung h1 {
       font-size: clamp(36px, 4.2vw, 58px);
       line-height: 1.08;
-      max-width: 20ch;
+      max-width: min(22ch, 100%);
+      overflow-wrap: anywhere;
     }
     .answer-box {
       margin: 22px 0 20px;
@@ -87,7 +88,8 @@
       height: 1px;
       overflow: hidden;
     }
-    .form-alt a, .consent a, .page-block a { color: var(--link); }
+
+    .form-alt a, .consent a { color: var(--link); }
     .lead-form { display: grid; gap: 12px; }
     .lead-form label { display: grid; gap: 5px; font-size: 13px; font-weight: 600; color: var(--ink); }
     .lead-form input[type="text"] {
@@ -108,8 +110,13 @@
     }
     .trust-rating strong { display: block; font-size: 15px; }
     .trust-rating small { display: block; font-size: 12px; color: var(--mut); }
+    .quote-mini {
+      margin: 0; padding: 16px 18px; border-radius: 20px; background: var(--grau);
+    }
+    .quote-mini p { margin: 0 0 8px; font-size: 15px; line-height: 1.4; }
+    .quote-mini footer { font-size: 12px; color: var(--mut); }
     .page-block { padding: 96px var(--rand); }
-    .page-block h2, .quellen h2 { margin: 8px 0 18px; font: 700 clamp(34px,4.2vw,56px)/1.07 var(--display); letter-spacing: -.03em; max-width: 22ch; }
+    .page-block h2 { margin: 8px 0 18px; font: 700 clamp(34px,4.2vw,56px)/1.07 var(--display); letter-spacing: -.03em; max-width: 22ch; }
     .page-block .lead, .page-block p { max-width: 42rem; }
     .page-block p { margin: 0 0 16px; font-size: 17px; line-height: 1.5; color: var(--ink-2); }
     .page-block .lead { font-size: 21px; line-height: 1.38; color: var(--mut); }
@@ -126,15 +133,10 @@
     .topic-list li { padding: 18px 20px; border-radius: 20px; background: var(--grau); }
     .topic-list strong { display: block; margin-bottom: 4px; }
     .topic-list span { color: var(--mut); font-size: 15px; line-height: 1.45; }
-    .page-block--grau .topic-list li { background: #fff; }
     .partners { font-size: 15px; color: var(--ink-2); }
-    .fn { font-size: .78em; font-weight: 600; vertical-align: super; line-height: 0; text-decoration: none; margin-left: 1px; }
-    .quellen { padding: 72px var(--rand) 40px; background: var(--grau); }
-    .quellen h2 { margin: 0 0 16px; font: 700 clamp(28px,3.4vw,40px)/1.15 var(--display); letter-spacing: -.03em; }
-    .quellen ol { margin: 0; padding-left: 1.25rem; max-width: 44rem; color: var(--ink-2); font-size: 14px; line-height: 1.5; }
-    .quellen li { margin: 0 0 8px; }
-    .quellen a, .page-block a { color: var(--link); }
-    .mobile-sticky { display: none; }
+    .mobile-sticky {
+      display: none;
+    }
     @media (max-width: 760px) {
       .hero--beratung h1 { max-width: none; }
       .hero--beratung .hero-portrait { max-height: none; }
@@ -151,6 +153,8 @@
     @media (prefers-reduced-motion: no-preference) {
       .hero-content, .hero-panel { animation: none; }
     }
+
+    .quote-mini .quote-src { margin: 0; font-size: 12px; color: var(--mut); line-height: 1.4; }
     .hero--beratung { display: grid; grid-template-columns: minmax(0,1.15fr) minmax(0,.85fr); }
     .hero-form { min-width: 0; }
     @media (min-width: 761px) {
@@ -160,131 +164,122 @@
     }
     @media (max-width: 760px) {
       .hero--beratung { display: flex; flex-direction: column; }
+      .hero-copy, .hero-form, .hero-panel { order: 0; min-width: 0; width: 100%; }
       .hero-copy { order: 1; }
       .hero-panel { order: 2; }
       .hero-form { order: 3; }
+      .hero--beratung h1 { overflow-wrap: anywhere; }
+    }
+  
+    .process-section.page-block .process-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .page-block--grau .topic-list li { background: #fff; }
+    .link-row { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 4px 0 18px; max-width: 44rem; }
+    .link-row a { color: var(--link); }
+    .source-list { margin: 8px 0 0; padding-left: 18px; max-width: 44rem; }
+    .source-list li { margin: 0 0 8px; font-size: 15px; line-height: 1.45; color: var(--ink-2); }
+    .source-list a { color: var(--link); }
+    @media (max-width: 760px) {
+      .hero h1, .page-block h2, .process-heading h2, .faq-section h2, .contact-card h2 { overflow-wrap: break-word; }
+      .process-section.page-block .process-list { grid-template-columns: 1fr; }
+      .criteria, .criteria thead, .criteria tbody, .criteria tr, .criteria th, .criteria td { display: block; width: auto; }
+      .criteria thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+      .criteria tr { padding: 8px 0; }
     }
   </style>
   <script type="application/ld+json">
-{
+  {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Was ist eine Photovoltaikversicherung?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sie meint typischerweise den Sachschutz der Photovoltaikanlage und häufig eines dauerhaft verbundenen Stromspeichers — also Module, Montagerahmen, Wechselrichter, Verkabelung und vergleichbare Komponenten. Je nach Vertrag kann auch ein Ertragsausfall vereinbart sein, etwa entgangene Erlöse aus der Stromeinspeisung oder Mehrkosten für den Bezug von Fremdstrom. Das ist etwas anderes als die Gebäudeversicherung, die Elektronikversicherung oder die Haftpflicht, wenn die Anlage Dritte schädigt. Was im Einzelfall versichert ist, steht im Versicherungsschein. Prämien nenne ich hier bewusst nicht."
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Reicht die Wohngebäudeversicherung?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nicht sicher. Manche Verträge schließen Anlagen ein, oft begrenzt. Das steht im Bedingungswerk, nicht in der Annahme."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ist der Speicher dabei?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nur wenn er mitversichert ist. Das prüfe ich am Vertrag."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was ist Ertragsausfall?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Der entgangene Ertrag, nachdem ein versicherter Sachschaden die Anlage stilllegt, und nur für die vereinbarte Zeit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was kostet das Erstgespräch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Das Erstgespräch kostet dich nichts. Eine Beratungsgebühr verlange ich nicht. Kommt ein Produkt zustande, werde ich vom Anbieter vergütet. Wie das läuft, sage ich dir im Gespräch. Die Pflichtangaben stehen im Impressum."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Muss ich bestehende Verträge kündigen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein. Ich schaue zuerst, was du schon hast. Was zu deinem Ziel passt, kann bleiben. Ob du etwas änderst, entscheidest du."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bist du danach noch da?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Wenn sich etwas ändert oder du eine Frage zum Vertrag hast, meldest du dich bei mir. Ich bleibe dein Ansprechpartner."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FinancialService",
+      "name": "Photovoltaikversicherung",
+      "url": "https://eliasgassmann.de/photovoltaikversicherung",
+      "description": "Photovoltaikversicherung für Anlage und Speicher: Abgrenzung zur Gebäudeversicherung, Ertragsausfall und Betreiberhaftpflicht.",
+      "telephone": "+491626960629",
+      "email": "elias@eliasgassmann.de",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "August-Horch-Straße 6A",
+        "postalCode": "55129",
+        "addressLocality": "Mainz",
+        "addressCountry": "DE"
+      },
+      "provider": {
+        "@type": "Person",
+        "name": "Elias Gassmann",
+        "url": "https://eliasgassmann.de/",
+        "image": "https://eliasgassmann.de/portrait-elias-gassmann.jpeg"
       }
     },
     {
-      "@type": "Question",
-      "name": "Greift die Gebäudeversicherung nicht schon für die Anlage auf dem Dach?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "In den unverbindlichen GDV-Musterbedingungen zur Wohngebäudeversicherung (VGB 2022, Stand Juni 2026) sind Photovoltaikanlagen und deren Komponenten typischerweise nicht versichert, einschließlich eines mit der Anlage dauerhaft verbundenen, der Versorgung des Gebäudes dienenden Stromspeichers. Balkonkraftwerke — also steckerfertige Mini-PV-Anlagen auf dem Versicherungsgrundstück — gelten dort als Gebäudezubehör; der Ausschluss für Photovoltaikanlagen gilt für sie nicht. Sie teilen dann die vereinbarten Gefahren der Wohngebäudeversicherung, nicht automatisch einen weitergehenden Schutz bei äußerer Einwirkung. Eine zusätzliche Vereinbarung nach der unverbindlichen Musterklausel PK 7170 kann die auf den versicherten Gebäuden befestigte und fachgerecht montierte Anlage einschließlich Speicher einbeziehen. Die zitierten Musterbedingungen betreffen die Wohngebäudeversicherung. Für Gewerbedächer richtet sich der Einschluss nach dem jeweiligen gewerblichen Vertrag. Maßgebend ist immer dein Vertrag; Abweichungen von den Musterbedingungen sind möglich."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Was ist typischerweise versichert — und was nicht?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nach der unverbindlichen Musterklausel PK 7170 zur Wohngebäudeversicherung sind typischerweise die fachgerecht montierte Photovoltaikanlage auf dem versicherten Gebäude und ein dauerhaft verbundener, der Versorgung des Gebäudes dienender Stromspeicher versichert, etwa Solarmodule, Montagerahmen, Befestigungselemente, Wechselrichter, Moduloptimierer und die Verkabelung. Kraftfahrzeuge gelten dort nicht als Stromspeicheranlage. Der Schutz greift, wenn versicherte Sachen durch äußere Einwirkung zerstört oder beschädigt werden oder abhandenkommen; Folgeschäden an weiteren Teilen durch Konstruktions-, Material- oder Ausführungsfehler können mitversichert sein, die Fehler selbst typischerweise nicht. Der Schutz besteht in diesem Muster auch während Ab- und Wiederaufbau und bei Transport innerhalb des Versicherungsorts. Typischerweise nicht versichert sind unter anderem elektronische Austauschteile ohne äußere Einwirkung, bekannte Mängel, betriebsbedingte normale oder vorzeitige Abnutzung oder Alterung, Verschmutzung und Verschattung etwa durch Schnee, Blütenstaub oder Laub, Schwamm, Grundwasser — außer als Folge von Niederschlag oder über die Ufer getretenen oberirdischen Gewässern —, Trockenheit des Bodens und Sturmflut. Leistungsgrenzen etwa nach Leistung der Anlage oder Fläche sind im Muster als Platzhalter formuliert; ich setze dafür keine eigenen Zahlen. Prämien nenne ich bewusst nicht."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Was gilt typischerweise für den Ertragsausfall?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "In derselben unverbindlichen Musterklausel PK 7170 kann ein Ertragsausfall vorgesehen sein, wenn der Betrieb einer versicherten Photovoltaikanlage durch einen versicherten Schaden unterbrochen oder beeinträchtigt wird, auch nach einem Versicherungsfall der Wohngebäudeversicherung an versicherten Sachen. Ersetzt werden dort typischerweise der unmittelbare finanzielle Verlust durch den Produktionsausfall: entgangene Erlöse aus der Stromeinspeisung und/oder Mehrkosten für den Bezug von Fremdstrom. Weitere Vermögensschäden sind in diesem Muster nicht versichert. Die Dauer und die Art der Ermittlung — etwa nach Einspeiseerlös, Mehrkosten oder einem vereinbarten Betrag je nicht erzeugter Kilowattstunde bzw. je Tag — stehen im jeweiligen Vertrag; die Musterbedingungen enthalten dafür Platzhalter, keine festen Fristen oder Beträge. Das ist nicht dasselbe wie eine Betriebsunterbrechungsversicherung, die typischerweise laufende Kosten und den entgehenden Gewinn des Betriebs nach einem Sachschaden betrifft. Zur Betriebsunterbrechung liegt eine Einordnung auf der Seite Betriebsunterbrechungsversicherung für kleine Betriebe und Handwerk."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Worin unterscheidet sich das von der Elektronikversicherung?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Die Elektronikversicherung nach den unverbindlichen GDV-Musterbedingungen ABE 2020 stellt auf unvorhergesehene Beschädigung oder Zerstörung sowie bestimmtes Abhandenkommen von im Vertrag bezeichneten elektrotechnischen und elektronischen Anlagen ab, sobald sie betriebsfertig sind. Das wird oft als Allgefahrendeckung beschrieben und ist weiter als die benannten Gefahren einer klassischen Gebäudeversicherung. Sie ist trotzdem ein anderes Produkt als die Zusatzvereinbarung zur Wohngebäudeversicherung: In den ABE 2020 sind Akkumulatoren typischerweise nicht versichert, und in der unverbindlichen Klausel zur Elektronik-Pauschalversicherung (TK A 1926) sind Photovoltaik- und Solarthermieanlagen ausdrücklich als nicht versicherte Sachen genannt. Eine pauschale Elektronikversicherung ersetzt die Absicherung der PV-Anlage und des Speichers deshalb typischerweise nicht automatisch. Eine Einordnung zum betrieblichen Inhaltsschutz liegt auf der Seite Inhalts- und Elektronikversicherung. Was dein Vertrag bezeichnet, prüfen wir anhand der Police."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Brauche ich eine Betreiberhaftpflicht?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Schäden, die deine Photovoltaikanlage bei anderen Personen oder an fremden Sachen verursacht — etwa durch herabfallende Teile —, sind typischerweise keine Leistung der Sachversicherung der Anlage, sondern eine Haftpflichtfrage. Die unverbindliche Musterklausel PK 7170 regelt den Sachschutz und den Ertragsausfall, nicht die Haftpflicht gegenüber Dritten. Ob deine private Haftpflicht, eine Betriebshaftpflicht oder eine besondere Vereinbarung greift, steht im jeweiligen Vertrag; eine allgemeine gesetzliche Pflichtversicherung nur für Betreiber von Photovoltaikanlagen nenne ich hier nicht. Für betriebliche Risiken liegt eine Einordnung auf der Seite Betriebshaftpflicht."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Ist das Erstgespräch kostenpflichtig?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Das Erstgespräch dauert typischerweise rund 20 Minuten und ist kostenfrei und unverbindlich. Du zahlst keine Beratungsgebühr. Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte. Den Ablauf erkläre ich dir im Gespräch. Nicht jedes Produkt ist automatisch verfügbar."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Berätst du nur in Mainz oder auch online?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Beides. Du kannst einen Termin in Mainz, nach Absprache im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern, etwa in Wiesbaden, Frankfurt oder Darmstadt, oder online vereinbaren. Den Termin buchst du unter termin.eliasgassmann.de."
-      }
-    }
-  ]
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Elias Gassmann — Photovoltaikversicherung für Betriebe und Hausbesitzer",
-  "url": "https://eliasgassmann.de/photovoltaikversicherung",
-  "description": "Beratung zur Photovoltaikversicherung für PV-Anlage und Speicher, persönlich in Mainz, im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern sowie online.",
-  "areaServed": [
-    "Mainz",
-    "Wiesbaden",
-    "Frankfurt am Main",
-    "Darmstadt",
-    "Rhein-Main",
-    "DE"
-  ],
-  "telephone": "+491626960629",
-  "email": "elias@eliasgassmann.de",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "August-Horch-Straße 6A",
-    "postalCode": "55129",
-    "addressLocality": "Mainz",
-    "addressCountry": "DE"
-  },
-  "provider": {
-    "@type": "Person",
-    "name": "Elias Gassmann",
-    "url": "https://eliasgassmann.de/",
-    "image": "https://eliasgassmann.de/portrait-elias-gassmann.jpeg"
-  }
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Elias Gassmann",
-      "item": "https://eliasgassmann.de/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Photovoltaikversicherung für Betriebe und Hausbesitzer",
-      "item": "https://eliasgassmann.de/photovoltaikversicherung"
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Elias Gassmann",
+          "item": "https://eliasgassmann.de/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Photovoltaikversicherung",
+          "item": "https://eliasgassmann.de/photovoltaikversicherung"
+        }
+      ]
     }
   ]
 }
@@ -298,32 +293,28 @@
       <span class="brand-name">Elias Gassmann<small>Finanzberatung</small></span>
     </a>
     <nav class="main-nav" aria-label="Hauptnavigation">
-      <a href="index.html#gewerbe">Gewerbe</a>
       <a href="index.html#privat">Privat</a>
-      <a href="#ablauf">So läuft’s</a>
-      <a href="#termin">Termin</a>
+      <a href="index.html#gewerbe">Betrieb</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="#anfrage">Termin</a>
     </nav>
     <a class="header-contact" href="tel:+491626960629">
       <span class="phone-icon">↗</span>
       <span>0162 6960629</span>
     </a>
   </header>
-
-    <main id="top">
+  <main id="top">
     <section class="hero hero--beratung" id="inhalt" aria-labelledby="hero-title">
       <div class="hero-content hero-copy">
-        <p class="eyebrow hero-label">Für PV-Anlage und Speicher</p>
-        <h1 id="hero-title">Photo&shy;voltaik&shy;versicherung für Betriebe und Hausbesitzer in Mainz und im Rhein-Main-Gebiet</h1>
-        <aside class="answer-box" aria-label="Kurzantwort">
-          <span class="answer-label">Kurzantwort</span>
-          <p>In den unverbindlichen GDV-Musterbedingungen zur Wohngebäudeversicherung sind Photovoltaikanlagen und ein dauerhaft verbundener Stromspeicher typischerweise nicht mitversichert. Balkonkraftwerke gelten dort als Gebäudezubehör. Eine zusätzliche Vereinbarung kann die fachgerecht montierte Anlage bei Schäden durch äußere Einwirkung absichern und einen Ertragsausfall vorsehen. Die Elektronikversicherung ist ein anderes Produkt und nimmt PV-Anlagen und Akkumulatoren in den Musterbedingungen typischerweise aus. Schäden, die die Anlage bei Dritten verursacht, sind eine Haftpflichtfrage. Maßgebend ist immer dein Vertrag. Prämien nenne ich bewusst nicht. Elias Gassmann prüft mit dir in Mainz, im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern oder online, ob der Schutz zu deiner Anlage passt.</p>
-        </aside>
-        <p class="core-answer">Typische Anlässe: die Anlage oder der Speicher ist neu, du willst wissen, ob die Gebäudeversicherung schon greift, oder ein Ertragsausfall und die Haftpflicht gegenüber Dritten sollen klar getrennt werden.</p>
+        <p class="eyebrow hero-label">Anlage</p>
+        <h1 id="hero-title">Photovoltaik: Die Gebäudeversicherung kennt deine Module oft nicht.</h1>
+        <p class="core-answer">Anlage und Speicher sind teurer als ein paar Ziegel. Ob die Wohn- oder Gewerbegebäudeversicherung sie mitträgt, steht im Kleingedruckten und oft nur bis zu einer Grenze. Eine Photovoltaikversicherung kann Sachschäden an Anlage und typischerweise am Speicher absichern. Ertragsausfall und die Haftung als Betreiber sind eigene Fragen.</p>
+        <p><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=photovoltaikversicherung">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a></p>
       </div>
       <div class="hero-form">
         <div class="form-card" id="anfrage">
-          <h2>Jetzt Beratung anfragen</h2>
-          <p class="form-lead">Kostenfrei und unverbindlich, typischerweise rund 20 Minuten. In Mainz, im Rhein-Main-Gebiet oder online.</p>
+          <h2>Erstgespräch anfragen</h2>
+          <p class="form-lead">Kostenlos und unverbindlich. Ein Satz zu deiner Lage reicht.</p>
           <form class="lead-form" id="beratung-form" action="https://eg-anfragen.elias-gassmann.workers.dev/anfrage" method="post" novalidate>
             <label>Name
               <input type="text" name="name" autocomplete="name" required placeholder="Vor- und Nachname">
@@ -332,10 +323,10 @@
               <input type="text" name="kontakt" autocomplete="on" required placeholder="Nummer oder E-Mail-Adresse" inputmode="email">
             </label>
             <label>Branche oder Tätigkeit
-              <input type="text" name="branche" required placeholder="z. B. Handwerk, Hausbesitzer">
+              <input type="text" name="branche" required placeholder="z. B. Eigenheim, Hallendach, Gewerbe">
             </label>
             <label>Kurz dein Anliegen
-              <input type="text" name="anliegen" required placeholder="z. B. PV-Anlage auf dem Hallendach prüfen">
+              <input type="text" name="anliegen" required placeholder="z. B. Anlage und Speicher prüfen">
             </label>
             <label class="consent fwx-consent">
               <input type="checkbox" name="datenschutz" value="ja" required>
@@ -347,175 +338,69 @@
           </form>
           <p class="form-alt">Oder Termin direkt wählen: <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=photovoltaikversicherung">termin.eliasgassmann.de</a> · <a href="tel:+491626960629">+49 162 6960629</a></p>
         </div>
-      </div>
+        </div>
       <div class="hero-panel">
         <figure class="hero-portrait">
-          <img src="portrait-elias-gassmann.jpeg" alt="Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" fetchpriority="high">
+          <img src="portrait-elias-gassmann.jpeg" alt="Porträt von Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" fetchpriority="high">
           <figcaption>
             <span>Elias Gassmann</span>
             <strong>Finanzberater in Mainz</strong>
-            <small>Persönlich in Mainz, Rhein-Main und online</small>
+            <small>Sitz in Mainz, Gespräche auch online</small>
           </figcaption>
         </figure>
         <a class="trust-rating" href="https://www.google.com/maps?cid=18281856182098275446" target="_blank" rel="noopener noreferrer">
           <span aria-hidden="true">★★★★★</span>
           <span>
             <strong>4,9 / 5 · 48 Google-Rezensionen</strong>
-            <small>Stand 10.11.2026, wie auf der Seite Finanzberater Mainz</small>
+            <small>FactoringWerkstatt · Stand 10.11.2026</small>
           </span>
         </a>
       </div>
     </section>
-
-    <section class="page-block" aria-labelledby="abgrenzung">
-      <p class="eyebrow">Einordnung</p>
-      <h2 id="abgrenzung">Was diese Seite klärt — und was nicht</h2>
-      <p class="lead">Es geht um den Sachschutz der Photovoltaikanlage und typischerweise des Speichers sowie um die Trennung zu Gebäudeversicherung, Elektronik bzw. Allgefahren, Ertragsausfall und Haftpflicht.</p>
-      <p>Die <a href="gebaeudeversicherung-gewerbe">Gebäudeversicherung</a> schützt typischerweise die Substanz des Gebäudes gegen vereinbarte Gefahren. In den unverbindlichen GDV-Musterbedingungen zur Wohngebäudeversicherung (VGB 2022) sind Photovoltaikanlagen und ein dauerhaft verbundener, der Versorgung des Gebäudes dienender Stromspeicher ausdrücklich nicht versichert. Balkonkraftwerke sind dort als Gebäudezubehör genannt; der Ausschluss gilt für sie nicht. Eine zusätzliche Vereinbarung kann die fachgerecht montierte Anlage auf dem versicherten Gebäude einbeziehen.</p>
-      <p>Mit Allgefahren oder Elektronik ist oft ein weiter gefasster Sachschutz gemeint als Brand, Sturm oder Leitungswasser allein. Die unverbindliche Musterklausel PK 7170 zur Wohngebäudeversicherung stellt auf Zerstörung, Beschädigung oder Abhandenkommen durch äußere Einwirkung ab. Die <a href="inhaltsversicherung-betrieb">Elektronikversicherung</a> nach den unverbindlichen ABE 2020 stellt auf unvorhergesehene Sachschäden an bezeichneten elektrotechnischen Anlagen ab, sobald sie betriebsfertig sind. Das sind zwei verschiedene Musterwerke: In den ABE 2020 sind Akkumulatoren typischerweise nicht versichert, und die Klausel zur Elektronik-Pauschalversicherung nimmt Photovoltaik- und Solarthermieanlagen ausdrücklich aus.</p>
-      <p>Ein Ertragsausfall der Photovoltaikanlage betrifft in der Musterklausel PK 7170 typischerweise entgangene Einspeiseerlöse und Mehrkosten für Fremdstrom, wenn die versicherte Anlage nach einem versicherten Schaden nicht oder nur eingeschränkt läuft. Das ist nicht dasselbe wie eine <a href="betriebsunterbrechung-versicherung">Betriebsunterbrechungsversicherung</a>, die typischerweise laufende Kosten und den entgehenden Gewinn des Betriebs nach einem Sachschaden betrifft. Die Haftpflicht, wenn die Anlage Dritte schädigt, ist wiederum eine andere Frage; für Betriebe liegt eine Einordnung auf der Seite <a href="betriebshaftpflicht-mainz">Betriebshaftpflicht</a>.</p>
-      <p>Prämien, typische Selbstbehalte oder erfundene Leistungsgrenzen nenne ich hier nicht. Die GDV-Texte sind unverbindliche Musterbedingungen; Abweichungen sind möglich. Maßgebend ist dein Vertrag.</p>
+    <section class="page-block" id="fuer-wen" aria-labelledby="fuer-wen-title">
+      <p class="eyebrow">Für wen</p>
+      <h2 id="fuer-wen-title">Für wen das ist.</h2>
+      
+      <ul class="topic-list"><li><strong>Hausbesitzer</strong><span>Die Anlage sitzt auf dem eigenen Dach.</span></li><li><strong>Betrieb mit Gewerbedach</strong><span>Einspeisung und Eigenverbrauch hängen am Tagesgeschäft.</span></li><li><strong>Speicher dazu</strong><span>Der Speicher ist nicht automatisch mitversichert, nur weil die Module genannt sind.</span></li></ul>
     </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="was-ist">
-      <p class="eyebrow">Sachschutz der Anlage</p>
-      <h2 id="was-ist">Was die Photo&shy;voltaik&shy;versicherung typischerweise leistet</h2>
-      <p class="lead">Die folgende Einordnung stützt sich auf die unverbindliche GDV-Musterklausel PK 7170 (26) zu den VGB 2022. Dein Vertrag kann abweichen.</p>
-      <p>Versichert sind danach typischerweise die auf den versicherten Gebäuden befestigte und fachgerecht montierte Photovoltaikanlage — also integriert oder aufgesetzt — und ein dauerhaft verbundener, der Versorgung des Gebäudes dienender Stromspeicher. Als Komponenten nennt das Muster unter anderem Solarmodule, Montagerahmen, Befestigungselemente, Wechselrichter, Moduloptimierer und die Verkabelung. Kraftfahrzeuge gelten nicht als Stromspeicheranlage. Eine Freiflächenanlage am Versicherungsort kann zusätzlich vereinbart werden.</p>
-      <p>Der Versicherungsfall tritt in diesem Muster ein, wenn versicherte Sachen durch äußere Einwirkung zerstört oder beschädigt werden oder abhandenkommen. Folgeschäden an weiteren Teilen durch Konstruktions-, Material- oder Ausführungsfehler können mitversichert sein; die Fehler selbst sind typischerweise nicht versichert. Der Schutz besteht auch während Ab- und Wiederaufbau und bei Transport innerhalb des Versicherungsorts.</p>
-      <p>Typischerweise nicht versichert sind unter anderem elektronische Austauschteile ohne äußere Einwirkung, bekannte Mängel, betriebsbedingte normale oder vorzeitige Abnutzung oder Alterung, Verschmutzung und Verschattung etwa durch Schnee, Blütenstaub oder Laub, Schwamm, Grundwasser — außer als Folge von Niederschlag oder über die Ufer getretenen oberirdischen Gewässern —, Trockenheit des Bodens und Sturmflut. Leistungsgrenzen nach Kilowattpeak oder Fläche enthält das Muster nur als Platzhalter; ich setze keine eigenen Werte ein.</p>
+<section class="page-block page-block--grau" id="worauf" aria-labelledby="worauf-title">
+      <p class="eyebrow">Worauf es ankommt</p>
+      <h2 id="worauf-title">Was ich mit dir kläre.</h2>
+      
+      <ul class="topic-list"><li><strong>Sachschaden</strong><span>Feuer, Sturm, Überspannung und ähnliche Gefahren, soweit der Vertrag sie nennt. Die unverbindlichen GDV-Musterbedingungen sind eine Orientierung, kein Ersatz für deinen Vertrag.</span></li><li><strong>Ertragsausfall</strong><span>Fällt die Anlage nach einem versicherten Schaden aus, kann ein Baustein den entgangenen Ertrag für eine vereinbarte Zeit tragen. Ohne diesen Baustein bleibt der Ertrag draußen.</span></li><li><strong>Haftung</strong><span>Löst sich ein Modul und trifft ein Auto, ist das Betreiberhaftpflicht, nicht der Sachschutz der Anlage.</span></li><li><strong>Gebäudepolice prüfen</strong><span>Manchmal ist eine Mitversicherung bis zu einer Summe schon da. Dann rechnen wir, ob sie reicht, bevor ein zweiter Vertrag entsteht.</span></li></ul>
     </section>
-
-    <section class="page-block" aria-labelledby="ertrag-gewerbe">
-      <p class="eyebrow">Ertragsausfall und Gewerbedächer</p>
-      <h2 id="ertrag-gewerbe">Ertragsausfall, Gewerbedächer und Haftpflicht</h2>
-      <p class="lead">Drei Punkte werden oft vermischt: der Ertrag der Anlage, der gewerbliche Vertrag und Schäden bei Dritten.</p>
-      <p>Für den Ertragsausfall sieht PK 7170 typischerweise den unmittelbaren finanziellen Verlust durch den Produktionsausfall vor: entgangene Erlöse aus der Stromeinspeisung und/oder Mehrkosten für den Bezug von Fremdstrom, auch wenn ein Versicherungsfall der Wohngebäudeversicherung an versicherten Sachen den Betrieb der Anlage beeinträchtigt. Weitere Vermögensschäden sind in diesem Muster nicht versichert. Dauer und Ermittlung — etwa nach Einspeiseerlös, Mehrkosten oder einem vereinbarten Betrag je nicht erzeugter Kilowattstunde bzw. je Tag — stehen im Vertrag; das Muster enthält Platzhalter, keine festen Fristen oder Beträge.</p>
-      <p>Die zitierten VGB 2022 und die Zusatzvereinbarung gelten für die Wohngebäudeversicherung, typischerweise also für Gebäude, die überwiegend Wohnzwecken dienen. Für Gewerbedächer und betriebliche Anlagen richtet sich der Schutz nach dem jeweiligen gewerblichen Vertrag — etwa über die Gebäudeversicherung, eine technische Versicherung oder eine eigene Vereinbarung zur Photovoltaikanlage. Eine gesonderte GDV-Musterklausel nur für gewerbliche PV-Dächer ziehe ich hier nicht heran. Die Fragen bleiben dieselben: Sind Anlage und Speicher eingeschlossen? Handelt es sich um benannte Gefahren oder um einen Schutz bei äußerer Einwirkung bzw. unvorhergesehenen Sachschäden? Ist ein Ertragsausfall vereinbart, und wie grenzt er sich von der Betriebsunterbrechung ab?</p>
-      <p>Schäden, die die Anlage bei anderen Personen oder an fremden Sachen verursacht, sind typischerweise keine Leistung der Sachversicherung der Anlage. Die Musterklausel PK 7170 regelt diesen Punkt nicht. Ob eine private Haftpflicht, eine Betriebshaftpflicht oder eine besondere Vereinbarung greift, steht im jeweiligen Vertrag. Eine allgemeine gesetzliche Pflichtversicherung nur für Betreiber von Photovoltaikanlagen nenne ich hier nicht.</p>
-    </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="fuer-wen">
-      <p class="eyebrow">Zielgruppe</p>
-      <h2 id="fuer-wen">Für wen das typischerweise infrage kommt</h2>
-      <p class="lead">Die Seite richtet sich an Hausbesitzer und Betriebe mit einer Photovoltaikanlage oder einem Speicher in Mainz, Wiesbaden, Frankfurt, Darmstadt und im übrigen Rhein-Main-Gebiet sowie im Umkreis von rund 100 Kilometern. Online berate ich deutschlandweit, typischerweise per Video.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Hausbesitzer mit Anlage oder Speicher</strong>
-          <span>Die Module liegen auf dem Wohnhaus, oder ein Stromspeicher ist fest mit der Anlage verbunden. Du willst klären, was die Wohngebäudeversicherung schon umfasst und wo eine zusätzliche Vereinbarung beginnt.</span>
-        </li>
-        <li>
-          <strong>Betriebe mit Gewerbedach</strong>
-          <span>Die Anlage steht auf Werkstatt, Halle, Praxis oder Laden. Du willst den gewerblichen Vertrag einordnen — einschließlich Ertragsausfall und der Abgrenzung zur Betriebsunterbrechung.</span>
-        </li>
-        <li>
-          <strong>Bestehender Vertrag oder neue Technik</strong>
-          <span>Die Anlage ist neu oder erweitert, ein Speicher kommt hinzu, oder du willst Sachschutz, Ertragsausfall und Haftpflicht eindeutig voneinander trennen.</span>
-        </li>
-      </ul>
-      <p>Nicht jedes Thema und jedes Produkt ist automatisch verfügbar; das klären wir im Gespräch. Zur Substanz des Gebäudes liegt eine Einordnung auf der Seite <a href="gebaeudeversicherung-gewerbe">Gebäudeversicherung für Gewerbeimmobilien und vermietete Objekte</a>. Zum betrieblichen Inhalt und zur Elektronik liegt eine Einordnung auf der Seite <a href="inhaltsversicherung-betrieb">Inhalts- und Elektronikversicherung</a>. Zur Unterbrechung des laufenden Betriebs nach einem Sachschaden liegt eine Einordnung auf der Seite <a href="betriebsunterbrechung-versicherung">Betriebsunterbrechungsversicherung für kleine Betriebe und Handwerk</a>. Zur Betriebshaftpflicht siehe <a href="betriebshaftpflicht-mainz">Betriebshaftpflicht</a>. Einen Überblick zur Finanzberatung in Mainz findest du auf der Seite <a href="finanzberater-mainz">Finanzberater Mainz</a>.</p>
-    </section>
-
-    <section class="process-section page-block" id="ablauf" aria-labelledby="ablauf-title">
+<section class="process-section page-block" id="ablauf" aria-labelledby="ablauf-title">
       <div class="process-heading">
-        <p class="eyebrow">Der Ablauf</p>
-        <h2 id="ablauf-title">So läuft die Beratung</h2>
-        <p class="lead">Wir starten mit deiner Anlage, dem bestehenden Gebäude- oder Inhaltsvertrag und der Frage, was bei einem Sachschaden, einem Ertragsausfall oder einem Schaden bei Dritten gelten soll. Die Beratung kann vollständig digital laufen, typischerweise per Video.</p>
+        <p class="eyebrow">Ablauf</p>
+        <h2 id="ablauf-title">So gehe ich vor.</h2>
+        <p class="lead">Du musst nichts vorbereiten. Unterlagen helfen, wenn du sie schon hast.</p>
       </div>
-      <ol class="process-list">
-        <li>
-          <span>1</span>
-          <h3>Termin buchen</h3>
-          <p>Du buchst ein unverbindliches Erstgespräch, typischerweise rund 20 Minuten, vor Ort in Mainz, im Rhein-Main-Gebiet bzw. im Umkreis von rund 100 Kilometern oder online.</p>
-        </li>
-        <li>
-          <span>2</span>
-          <h3>Anlage und Verträge verstehen</h3>
-          <p>Wir sprechen über Standort, Technik, Speicher, Nutzung und bestehende Policen. Unterlagen kannst du typischerweise digital einreichen.</p>
-        </li>
-        <li>
-          <span>3</span>
-          <h3>Passung einordnen</h3>
-          <p>Danach ist klar, was bereits über die Gebäude- oder Inhaltsversicherung läuft, wo Lücken typisch sind und wie sich Ertragsausfall und Haftpflicht davon trennen. Wenn es nicht passt, sage ich dir das offen.</p>
-        </li>
-        <li>
-          <span>4</span>
-          <h3>Passende Lösung besprechen</h3>
-          <p>Wenn es passt, schauen wir uns den möglichen Vertragsumfang und die Kosten an. Nicht jedes Produkt ist automatisch verfügbar.</p>
-        </li>
-        <li>
-          <span>5</span>
-          <h3>In Ruhe entscheiden</h3>
-          <p>Du entscheidest in Ruhe, ob und wie es weitergehen soll. Durch das Erstgespräch entsteht keine Verpflichtung.</p>
-        </li>
-      </ol>
+      <ol class="process-list"><li><span>1</span><h3>Kennenlernen</h3><p>Größe, Speicher, Gebäudepolice.</p></li><li><span>2</span><h3>Analysieren</h3><p>Was das Gebäude schon trägt und wo die Lücke ist.</p></li><li><span>3</span><h3>Lösungen besprechen</h3><p>Sachschutz, Ertrag, Haftung, jeweils nur wenn nötig.</p></li><li><span>4</span><h3>Umsetzen</h3><p>Ein Vertrag, der zur Anlage passt, nicht zur Werbung.</p></li></ol>
     </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="transparenz">
-      <p class="eyebrow">Kosten und Ablauf</p>
-      <h2 id="transparenz">Was das Erstgespräch kostet</h2>
-      <p class="lead">Das Erstgespräch ist kostenfrei und unverbindlich. Bevor du etwas entscheidest, weißt du, wie ein Vorschlag funktioniert und was er kostet.</p>
-      <p class="partners">Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte; den Ablauf erkläre ich dir im Gespräch. Es werden keine Kundengelder entgegengenommen; Zahlungen gehen direkt an den jeweiligen Anbieter. Alle Pflichtangaben findest du im <a href="impressum.html">Impressum</a>.</p>
-    </section>
-
-    <section class="page-block" id="termin" aria-labelledby="termin-title">
+<section class="page-block" id="naechster" aria-labelledby="naechster-title">
       <p class="eyebrow">Nächster Schritt</p>
-      <h2 id="termin-title">Termin vereinbaren — in Mainz, im Rhein-Main-Gebiet oder online</h2>
-      <p class="lead">Den unverbindlichen Termin buchst du unter <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=photovoltaikversicherung">termin.eliasgassmann.de</a>. Ohne Druck und ohne eine bestimmte Ersparniszusage.</p>
-      <p>Die öffentlich genannte Anschrift ist August-Horch-Straße 6A, 55129 Mainz. Ob ein Termin vor Ort oder online sinnvoller ist, klären wir bei der Buchung. Du erreichst mich auch unter <a href="tel:+491626960629">+49 162 6960629</a> und <a href="mailto:elias@eliasgassmann.de">elias@eliasgassmann.de</a>.</p>
-      <p style="margin-top:28px"><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=photovoltaikversicherung">Unverbindlichen Termin vereinbaren <span aria-hidden="true">↗</span></a></p>
+      <h2 id="naechster-title">Das Erstgespräch zeigt dir den nächsten sinnvollen Schritt.</h2>
+      
+      <p>Du hörst, was schon passt, was fehlt und was es kosten würde. Danach entscheidest du.</p><p style="margin-top:8px"><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=photovoltaikversicherung">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a></p>
     </section>
-
     <section class="faq-section" id="fragen" aria-labelledby="faq-title">
       <div>
-        <p class="eyebrow">Vor dem Gespräch</p>
-        <h2 id="faq-title">Häufige Fragen zur Photo&shy;voltaik&shy;versicherung</h2>
+        <p class="eyebrow">Kurz geklärt</p>
+        <h2 id="faq-title">Fragen, die oft kommen.</h2>
       </div>
       <div class="faq-list">
-        <details open>
-          <summary>Was ist eine Photovoltaikversicherung?</summary>
-          <p>Sie meint typischerweise den Sachschutz der Photovoltaikanlage und häufig eines dauerhaft verbundenen Stromspeichers — also Module, Montagerahmen, Wechselrichter, Verkabelung und vergleichbare Komponenten. Je nach Vertrag kann auch ein Ertragsausfall vereinbart sein, etwa entgangene Erlöse aus der Stromeinspeisung oder Mehrkosten für den Bezug von Fremdstrom. Das ist etwas anderes als die Gebäudeversicherung, die Elektronikversicherung oder die Haftpflicht, wenn die Anlage Dritte schädigt. Was im Einzelfall versichert ist, steht im Versicherungsschein. Prämien nenne ich hier bewusst nicht.</p>
-        </details>
-        <details>
-          <summary>Greift die Gebäudeversicherung nicht schon für die Anlage auf dem Dach?</summary>
-          <p>In den unverbindlichen GDV-Musterbedingungen zur Wohngebäudeversicherung (VGB 2022, Stand Juni 2026) sind Photovoltaikanlagen und deren Komponenten typischerweise nicht versichert, einschließlich eines mit der Anlage dauerhaft verbundenen, der Versorgung des Gebäudes dienenden Stromspeichers. Balkonkraftwerke — also steckerfertige Mini-PV-Anlagen auf dem Versicherungsgrundstück — gelten dort als Gebäudezubehör; der Ausschluss für Photovoltaikanlagen gilt für sie nicht. Sie teilen dann die vereinbarten Gefahren der Wohngebäudeversicherung, nicht automatisch einen weitergehenden Schutz bei äußerer Einwirkung. Eine zusätzliche Vereinbarung nach der unverbindlichen Musterklausel PK 7170 kann die auf den versicherten Gebäuden befestigte und fachgerecht montierte Anlage einschließlich Speicher einbeziehen. Die zitierten Musterbedingungen betreffen die Wohngebäudeversicherung. Für Gewerbedächer richtet sich der Einschluss nach dem jeweiligen gewerblichen Vertrag. Maßgebend ist immer dein Vertrag; Abweichungen von den Musterbedingungen sind möglich.</p>
-        </details>
-        <details>
-          <summary>Was ist typischerweise versichert — und was nicht?</summary>
-          <p>Nach der unverbindlichen Musterklausel PK 7170 zur Wohngebäudeversicherung sind typischerweise die fachgerecht montierte Photovoltaikanlage auf dem versicherten Gebäude und ein dauerhaft verbundener, der Versorgung des Gebäudes dienender Stromspeicher versichert, etwa Solarmodule, Montagerahmen, Befestigungselemente, Wechselrichter, Moduloptimierer und die Verkabelung. Kraftfahrzeuge gelten dort nicht als Stromspeicheranlage. Der Schutz greift, wenn versicherte Sachen durch äußere Einwirkung zerstört oder beschädigt werden oder abhandenkommen; Folgeschäden an weiteren Teilen durch Konstruktions-, Material- oder Ausführungsfehler können mitversichert sein, die Fehler selbst typischerweise nicht. Der Schutz besteht in diesem Muster auch während Ab- und Wiederaufbau und bei Transport innerhalb des Versicherungsorts. Typischerweise nicht versichert sind unter anderem elektronische Austauschteile ohne äußere Einwirkung, bekannte Mängel, betriebsbedingte normale oder vorzeitige Abnutzung oder Alterung, Verschmutzung und Verschattung etwa durch Schnee, Blütenstaub oder Laub, Schwamm, Grundwasser — außer als Folge von Niederschlag oder über die Ufer getretenen oberirdischen Gewässern —, Trockenheit des Bodens und Sturmflut. Leistungsgrenzen etwa nach Leistung der Anlage oder Fläche sind im Muster als Platzhalter formuliert; ich setze dafür keine eigenen Zahlen. Prämien nenne ich bewusst nicht.</p>
-        </details>
-        <details>
-          <summary>Was gilt typischerweise für den Ertragsausfall?</summary>
-          <p>In derselben unverbindlichen Musterklausel PK 7170 kann ein Ertragsausfall vorgesehen sein, wenn der Betrieb einer versicherten Photovoltaikanlage durch einen versicherten Schaden unterbrochen oder beeinträchtigt wird, auch nach einem Versicherungsfall der Wohngebäudeversicherung an versicherten Sachen. Ersetzt werden dort typischerweise der unmittelbare finanzielle Verlust durch den Produktionsausfall: entgangene Erlöse aus der Stromeinspeisung und/oder Mehrkosten für den Bezug von Fremdstrom. Weitere Vermögensschäden sind in diesem Muster nicht versichert. Die Dauer und die Art der Ermittlung — etwa nach Einspeiseerlös, Mehrkosten oder einem vereinbarten Betrag je nicht erzeugter Kilowattstunde bzw. je Tag — stehen im jeweiligen Vertrag; die Musterbedingungen enthalten dafür Platzhalter, keine festen Fristen oder Beträge. Das ist nicht dasselbe wie eine Betriebsunterbrechungsversicherung, die typischerweise laufende Kosten und den entgehenden Gewinn des Betriebs nach einem Sachschaden betrifft. Zur Betriebsunterbrechung liegt eine Einordnung auf der Seite <a href="betriebsunterbrechung-versicherung">Betriebsunterbrechungsversicherung für kleine Betriebe und Handwerk</a>.</p>
-        </details>
-        <details>
-          <summary>Worin unterscheidet sich das von der Elektronikversicherung?</summary>
-          <p>Die Elektronikversicherung nach den unverbindlichen GDV-Musterbedingungen ABE 2020 stellt auf unvorhergesehene Beschädigung oder Zerstörung sowie bestimmtes Abhandenkommen von im Vertrag bezeichneten elektrotechnischen und elektronischen Anlagen ab, sobald sie betriebsfertig sind. Das wird oft als Allgefahrendeckung beschrieben und ist weiter als die benannten Gefahren einer klassischen Gebäudeversicherung. Sie ist trotzdem ein anderes Produkt als die Zusatzvereinbarung zur Wohngebäudeversicherung: In den ABE 2020 sind Akkumulatoren typischerweise nicht versichert, und in der unverbindlichen Klausel zur Elektronik-Pauschalversicherung (TK A 1926) sind Photovoltaik- und Solarthermieanlagen ausdrücklich als nicht versicherte Sachen genannt. Eine pauschale Elektronikversicherung ersetzt die Absicherung der PV-Anlage und des Speichers deshalb typischerweise nicht automatisch. Eine Einordnung zum betrieblichen Inhaltsschutz liegt auf der Seite <a href="inhaltsversicherung-betrieb">Inhalts- und Elektronikversicherung</a>. Was dein Vertrag bezeichnet, prüfen wir anhand der Police.</p>
-        </details>
-        <details>
-          <summary>Brauche ich eine Betreiberhaftpflicht?</summary>
-          <p>Schäden, die deine Photovoltaikanlage bei anderen Personen oder an fremden Sachen verursacht — etwa durch herabfallende Teile —, sind typischerweise keine Leistung der Sachversicherung der Anlage, sondern eine Haftpflichtfrage. Die unverbindliche Musterklausel PK 7170 regelt den Sachschutz und den Ertragsausfall, nicht die Haftpflicht gegenüber Dritten. Ob deine private Haftpflicht, eine Betriebshaftpflicht oder eine besondere Vereinbarung greift, steht im jeweiligen Vertrag; eine allgemeine gesetzliche Pflichtversicherung nur für Betreiber von Photovoltaikanlagen nenne ich hier nicht. Für betriebliche Risiken liegt eine Einordnung auf der Seite <a href="betriebshaftpflicht-mainz">Betriebshaftpflicht</a>.</p>
-        </details>
-        <details>
-          <summary>Ist das Erstgespräch kostenpflichtig?</summary>
-          <p>Das Erstgespräch dauert typischerweise rund 20 Minuten und ist kostenfrei und unverbindlich. Du zahlst keine Beratungsgebühr. Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte. Den Ablauf erkläre ich dir im Gespräch. Nicht jedes Produkt ist automatisch verfügbar.</p>
-        </details>
-        <details>
-          <summary>Berätst du nur in Mainz oder auch online?</summary>
-          <p>Beides. Du kannst einen Termin in Mainz, nach Absprache im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern, etwa in Wiesbaden, Frankfurt oder Darmstadt, oder online vereinbaren. Den Termin buchst du unter <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=photovoltaikversicherung">termin.eliasgassmann.de</a>.</p>
-        </details>
+        <details open><summary>Reicht die Wohngebäudeversicherung?</summary><p>Nicht sicher. Manche Verträge schließen Anlagen ein, oft begrenzt. Das steht im Bedingungswerk, nicht in der Annahme.</p></details><details><summary>Ist der Speicher dabei?</summary><p>Nur wenn er mitversichert ist. Das prüfe ich am Vertrag.</p></details><details><summary>Was ist Ertragsausfall?</summary><p>Der entgangene Ertrag, nachdem ein versicherter Sachschaden die Anlage stilllegt, und nur für die vereinbarte Zeit.</p></details><details><summary>Was kostet das Erstgespräch?</summary><p>Das Erstgespräch kostet dich nichts. Eine Beratungsgebühr verlange ich nicht. Kommt ein Produkt zustande, werde ich vom Anbieter vergütet. Wie das läuft, sage ich dir im Gespräch. Die Pflichtangaben stehen im Impressum.</p></details><details><summary>Muss ich bestehende Verträge kündigen?</summary><p>Nein. Ich schaue zuerst, was du schon hast. Was zu deinem Ziel passt, kann bleiben. Ob du etwas änderst, entscheidest du.</p></details><details><summary>Bist du danach noch da?</summary><p>Ja. Wenn sich etwas ändert oder du eine Frage zum Vertrag hast, meldest du dich bei mir. Ich bleibe dein Ansprechpartner.</p></details>
       </div>
     </section>
-
     <section class="contact-card" aria-labelledby="kontakt-title">
       <figure class="hero-portrait" style="margin:0;max-height:520px">
-        <img src="portrait-elias-gassmann.jpeg" alt="Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" loading="lazy">
+        <img src="portrait-elias-gassmann.jpeg" alt="Porträt von Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" loading="lazy">
       </figure>
       <div class="contact-content">
-        <p class="eyebrow">Kontakt</p>
-        <h2 id="kontakt-title">Was hast du vor?<br><em>Lass uns sprechen.</em></h2>
-        <p class="contact-copy">Eine neue Anlage, die Frage, ob die Gebäudeversicherung schon greift, oder die Trennung von Ertragsausfall und Haftpflicht: Erzähl mir, worum es geht.</p>
-        <a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=photovoltaikversicherung">Unverbindlichen Termin vereinbaren <span aria-hidden="true">↗</span></a>
+        <p class="eyebrow">Erstgespräch</p>
+        <h2 id="kontakt-title">Wenn du das einordnen willst, sag mir Bescheid.</h2>
+        <p class="contact-copy">Kurz schreiben, worum es geht. Eine Beratungsgebühr verlange ich nicht.</p>
+        <a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=photovoltaikversicherung">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a>
         <div class="contact-data">
           <a href="tel:+491626960629">+49 162 6960629</a>
           <a href="mailto:elias@eliasgassmann.de">elias@eliasgassmann.de</a>
@@ -523,19 +408,7 @@
         </div>
       </div>
     </section>
-
-    <aside class="quellen" aria-labelledby="quellen-title">
-      <h2 id="quellen-title">Quellen zu den unverbindlichen GDV-Musterbedingungen</h2>
-      <p>Die folgenden Texte sind unverbindliche Bekanntgaben des Gesamtverbandes der Deutschen Versicherungswirtschaft e.&nbsp;V. (GDV) zur fakultativen Verwendung. Abweichende Vereinbarungen sind möglich. Ich nenne nur, was sich aus diesen Mustern ergibt, und setze keine eigenen Leistungsgrenzen, Fristen oder Prämien ein.</p>
-      <ol>
-        <li id="quelle-1"><a href="https://www.gdv.de/resource/blob/37090/562b0c381cf8f48be1cdafb8e74cc2e3/allgemeine-wohngebaeude-versicherungsbedingungen-vgb-2022-wohnflaechenmodell--data.pdf">Allgemeine Wohngebäudeversicherungsbedingungen (VGB 2022 — Wohnflächenmodell)</a>, unverbindliche Musterbedingungen des GDV, Stand Juni 2026, insbesondere A 7.3 (Gebäudezubehör, Balkonkraftwerke) und A 7.6.1 (Ausschluss von Photovoltaikanlagen und verbundenem Stromspeicher).</li>
-        <li id="quelle-2"><a href="https://www.gdv.de/resource/blob/37092/d7e21111165e22556e8c7d77c0c7b19c/was-kann-zusaetzlich-zu-den-allgemeinen-wohngebaeude-versicherungsbedingungen-vgb-2022-wohnflaechenmodell-vereinbart-werden--data.pdf">Was kann zusätzlich zu den Allgemeinen Wohngebäudeversicherungsbedingungen (VGB 2022 — Wohnflächenmodell) vereinbart werden?</a>, unverbindliche Musterbedingungen des GDV, Stand Juni 2026, Klausel PK 7170 (26) — Photovoltaikanlagen, einschließlich Speicher und Ertragsausfall.</li>
-        <li id="quelle-3"><a href="https://www.gdv.de/resource/blob/6154/8f0941c9e332346b9c8e593c69ffba14/05-allgemeine-bedingungen-fuer-die-elektronikversicherung-abe-2020--data.pdf">Allgemeine Bedingungen für die Elektronikversicherung (ABE 2020)</a>, unverbindliche Musterbedingungen des GDV, Version 01.07.2025, GDV 0818, insbesondere A1-1 (versicherte und nicht versicherte Sachen, darunter Akkumulatoren) und A1-2 (unvorhergesehene Sachschäden und Abhandenkommen).</li>
-        <li id="quelle-4"><a href="https://www.gdv.de/resource/blob/6226/d4e4174e5fb63529793971ea6f9f4825/06-klauseln-zu-den-allgemeinen-bedingungen-fuer-die-elektronikversicherung-tk-abe-2020--data.pdf">Klauseln zu den Allgemeinen Bedingungen für die Elektronikversicherung (TK ABE 2020)</a>, unverbindliche Musterbedingungen des GDV, Version 01.12.2020, GDV 0820, Klausel TK A 1926 Elektronik-Pauschalversicherung, dort Photovoltaik- und Solarthermieanlagen als nicht versicherte Sachen.</li>
-      </ol>
-    </aside>
-    </main>
-
+  </main>
   <footer>
     <p>© <span id="year">2026</span> Elias Gassmann</p>
     <div>
@@ -544,7 +417,7 @@
       <a href="/datenschutz">Datenschutz</a>
     </div>
   </footer>
-  <a class="mobile-sticky" href="#anfrage">Jetzt Beratung anfragen</a>
+  <a class="mobile-sticky" href="#anfrage">Erstgespräch anfragen</a>
   <script src="formular.js" defer></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {

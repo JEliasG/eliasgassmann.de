@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Factoring für Garten- und Landschaftsbau (GaLaBau) in Mainz und Rhein-Main — Elias Gassmann</title>
-  <meta name="description" content="Factoring für den Garten- und Landschaftsbau: prüffähige Abschlags- und Schlussrechnungen aus bereits erbrachter Leistung verkaufen, damit Material, Löhne und Maschinen nicht auf den Zahlungseingang warten müssen. Beratung in Mainz, im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern oder online. Prüfung über die FactoringWerkstatt.">
+  <title>Factoring für den GaLaBau | Gassmann</title>
+  <meta name="description" content="Factoring für Garten- und Landschaftsbau: Abschlags- und Schlussrechnungen, Saison, Abnahme und Einbehalte. Beratung aus Mainz.">
   <link rel="canonical" href="https://eliasgassmann.de/factoring-galabau">
   <meta name="theme-color" content="#fbfbfd">
-  <meta property="og:title" content="Factoring für Garten- und Landschaftsbau (GaLaBau) in Mainz und Rhein-Main — Elias Gassmann">
-  <meta property="og:description" content="Factoring für GaLaBau: prüffähige Abschläge und Schlussrechnungen verkaufen, Saisonalität, Abnahme und Einbehalte vorsichtig eingeordnet. Beratung in Mainz, Rhein-Main oder online.">
+  <meta property="og:title" content="Factoring für den GaLaBau | Gassmann">
+  <meta property="og:description" content="Factoring für Garten- und Landschaftsbau: Abschlags- und Schlussrechnungen, Saison, Abnahme und Einbehalte. Beratung aus Mainz.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://eliasgassmann.de/factoring-galabau">
   <meta property="og:image" content="https://eliasgassmann.de/portrait-elias-gassmann.jpeg">
@@ -29,7 +29,8 @@
     .hero--beratung h1 {
       font-size: clamp(36px, 4.2vw, 58px);
       line-height: 1.08;
-      max-width: 20ch;
+      max-width: min(22ch, 100%);
+      overflow-wrap: anywhere;
     }
     .answer-box {
       margin: 22px 0 20px;
@@ -87,7 +88,8 @@
       height: 1px;
       overflow: hidden;
     }
-    .form-alt a, .consent a, .page-block a { color: var(--link); }
+
+    .form-alt a, .consent a { color: var(--link); }
     .lead-form { display: grid; gap: 12px; }
     .lead-form label { display: grid; gap: 5px; font-size: 13px; font-weight: 600; color: var(--ink); }
     .lead-form input[type="text"] {
@@ -108,6 +110,11 @@
     }
     .trust-rating strong { display: block; font-size: 15px; }
     .trust-rating small { display: block; font-size: 12px; color: var(--mut); }
+    .quote-mini {
+      margin: 0; padding: 16px 18px; border-radius: 20px; background: var(--grau);
+    }
+    .quote-mini p { margin: 0 0 8px; font-size: 15px; line-height: 1.4; }
+    .quote-mini footer { font-size: 12px; color: var(--mut); }
     .page-block { padding: 96px var(--rand); }
     .page-block h2 { margin: 8px 0 18px; font: 700 clamp(34px,4.2vw,56px)/1.07 var(--display); letter-spacing: -.03em; max-width: 22ch; }
     .page-block .lead, .page-block p { max-width: 42rem; }
@@ -126,9 +133,10 @@
     .topic-list li { padding: 18px 20px; border-radius: 20px; background: var(--grau); }
     .topic-list strong { display: block; margin-bottom: 4px; }
     .topic-list span { color: var(--mut); font-size: 15px; line-height: 1.45; }
-    .page-block--grau .topic-list li { background: #fff; }
     .partners { font-size: 15px; color: var(--ink-2); }
-    .mobile-sticky { display: none; }
+    .mobile-sticky {
+      display: none;
+    }
     @media (max-width: 760px) {
       .hero--beratung h1 { max-width: none; }
       .hero--beratung .hero-portrait { max-height: none; }
@@ -145,6 +153,8 @@
     @media (prefers-reduced-motion: no-preference) {
       .hero-content, .hero-panel { animation: none; }
     }
+
+    .quote-mini .quote-src { margin: 0; font-size: 12px; color: var(--mut); line-height: 1.4; }
     .hero--beratung { display: grid; grid-template-columns: minmax(0,1.15fr) minmax(0,.85fr); }
     .hero-form { min-width: 0; }
     @media (min-width: 761px) {
@@ -154,148 +164,122 @@
     }
     @media (max-width: 760px) {
       .hero--beratung { display: flex; flex-direction: column; }
+      .hero-copy, .hero-form, .hero-panel { order: 0; min-width: 0; width: 100%; }
       .hero-copy { order: 1; }
       .hero-panel { order: 2; }
       .hero-form { order: 3; }
+      .hero--beratung h1 { overflow-wrap: anywhere; }
+    }
+  
+    .process-section.page-block .process-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .page-block--grau .topic-list li { background: #fff; }
+    .link-row { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 4px 0 18px; max-width: 44rem; }
+    .link-row a { color: var(--link); }
+    .source-list { margin: 8px 0 0; padding-left: 18px; max-width: 44rem; }
+    .source-list li { margin: 0 0 8px; font-size: 15px; line-height: 1.45; color: var(--ink-2); }
+    .source-list a { color: var(--link); }
+    @media (max-width: 760px) {
+      .hero h1, .page-block h2, .process-heading h2, .faq-section h2, .contact-card h2 { overflow-wrap: break-word; }
+      .process-section.page-block .process-list { grid-template-columns: 1fr; }
+      .criteria, .criteria thead, .criteria tbody, .criteria tr, .criteria th, .criteria td { display: block; width: auto; }
+      .criteria thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+      .criteria tr { padding: 8px 0; }
     }
   </style>
   <script type="application/ld+json">
-{
+  {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Was ist Factoring für den Garten- und Landschaftsbau?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Beim Factoring verkaufst du prüffähige Rechnungen aus bereits erbrachter Leistung im Garten- und Landschaftsbau an einen Factor. Du erhältst den vereinbarten Kaufpreis typischerweise deutlich früher, als der Auftraggeber zahlen würde. Was wann ausgezahlt wird und welche Kosten anfallen, steht im jeweiligen Vertrag. Pauschale Auszahlungsquoten nenne ich hier bewusst nicht."
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Welche GaLaBau-Rechnungen kommen infrage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Prüffähige Abschlags- und Schlussrechnungen aus bereits erbrachter Leistung. Einbehalte und nicht abgenommene Leistung prüfe ich extra und vorsichtig."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ist Factoring wegen der Saison automatisch sinnvoll?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein. Es hängt daran, wie lange du auf Geld wartest und ob die Rechnungen ankauffähig sind."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was ist mit Gewährleistungseinbehalten?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Die sind oft kein normaler Debitorenposten. Ob und in welcher Höhe sie infrage kommen, steht nicht pauschal fest."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was kostet das Erstgespräch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Das Erstgespräch kostet dich nichts. Eine Beratungsgebühr verlange ich nicht. Kommt ein Produkt zustande, werde ich vom Anbieter vergütet. Wie das läuft, sage ich dir im Gespräch. Die Pflichtangaben stehen im Impressum."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Muss ich bestehende Verträge kündigen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein. Ich schaue zuerst, was du schon hast. Was zu deinem Ziel passt, kann bleiben. Ob du etwas änderst, entscheidest du."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bist du danach noch da?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Wenn sich etwas ändert oder du eine Frage zum Vertrag hast, meldest du dich bei mir. Ich bleibe dein Ansprechpartner."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FinancialService",
+      "name": "Factoring für den GaLaBau",
+      "url": "https://eliasgassmann.de/factoring-galabau",
+      "description": "Factoring für Garten- und Landschaftsbau: Abschlags- und Schlussrechnungen, Saison, Abnahme und Einbehalte. Beratung aus Mainz.",
+      "telephone": "+491626960629",
+      "email": "elias@eliasgassmann.de",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "August-Horch-Straße 6A",
+        "postalCode": "55129",
+        "addressLocality": "Mainz",
+        "addressCountry": "DE"
+      },
+      "provider": {
+        "@type": "Person",
+        "name": "Elias Gassmann",
+        "url": "https://eliasgassmann.de/",
+        "image": "https://eliasgassmann.de/portrait-elias-gassmann.jpeg"
       }
     },
     {
-      "@type": "Question",
-      "name": "Ist Factoring ein Kredit für die Saison oder für Material?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nein. Factoring ist kein Saisonkredit und kein Betriebsmittelkredit für den Materialeinkauf. Es ist der Verkauf geeigneter, bereits entstandener Forderungen. Die frühere Liquidität kann typischerweise helfen, laufende Kosten wie Pflanzen, Pflaster, Löhne oder Maschinen zu bestreiten, bis der Auftraggeber zahlt. Ein noch nicht ausgeführter Frühjahrsauftrag oder eine geplante Pflanzung ist typischerweise noch keine ankauffähige Forderung."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Welche Rechnungen aus dem GaLaBau können typischerweise verkauft werden?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Typischerweise prüffähige Forderungen gegen gewerbliche oder öffentliche Auftraggeber aus bereits erbrachter Leistung, nachvollziehbar dokumentiert. Dazu können je nach Auftrag Leistungsverzeichnis, Aufmaß, Lieferscheine oder eine prüffähige Abschlags- oder Schlussrechnung gehören. Eine Abschlagsrechnung ist nicht automatisch ankauffähig; nach § 632a BGB muss die Aufstellung eine rasche und sichere Beurteilung der erbrachten Leistungen ermöglichen. Nicht jede Rechnung wird automatisch angekauft, etwa wenn sie streitig ist, Mängel geltend gemacht werden oder Gegenforderungen bestehen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Was gilt typischerweise für Abnahme und Einbehalte?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Die Vergütung für das fertige Werk wird nach § 641 BGB typischerweise bei der Abnahme fällig; die Abnahme selbst richtet sich nach § 640 BGB. Abschlagszahlungen ersetzen die Abnahme nicht. Ein vereinbarter Gewährleistungs- oder Sicherheitseinbehalt ist nicht automatisch genauso behandelbar wie der fällige Rechnungsanteil, weil er oft erst später fällig wird. Ob und in welcher Höhe ein Einbehalt vereinbart ist, steht im Bauvertrag, nicht pauschal im Gesetz. Gesetzliche Mängelansprüche verjähren nach § 634a BGB je nach Art des Werks in zwei Jahren oder bei einem Bauwerk in fünf Jahren, gerechnet ab der Abnahme; ob eine konkrete GaLaBau-Leistung ein Bauwerk ist, hängt vom Einzelfall ab."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Was ist der Unterschied zwischen echtem und unechtem Factoring?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Beim echten Factoring übernimmt der Factor das Ausfallrisiko, das Delkredere. Beim unechten Factoring bleibt dieses Risiko bei dir. Ob der Verkauf offen oder still läuft, steht im Vertrag. Die ausführliche Einordnung dieser Varianten liegt auf der Seite Factoring für Handwerk und kleine Betriebe."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Für wen kommt Factoring im GaLaBau typischerweise infrage?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Typisch für Betriebe im Garten- und Landschaftsbau, die regelmäßig prüffähige Rechnungen an gewerbliche oder öffentliche Auftraggeber stellen und laufende Kosten vorfinanzieren müssen, etwa in der Bausaison. Auch Nachunternehmer, die für Generalunternehmer oder andere GaLaBau-Betriebe arbeiten, können geeignete Forderungen haben. Rechnungen an private Endkunden sind ein eigener Fall. Ob es in deinem Fall passt, prüfen wir anhand deiner Rechnungen, Nachweise und Auftraggeber."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Welche Nachteile hat Factoring?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Factoring ist nicht kostenlos; Gebühren und mögliche weitere Kosten können bei knappen Margen ins Gewicht fallen. Beim offenen Verfahren erfährt dein Auftraggeber vom Verkauf. Nicht jede Abschlags- oder Schlussrechnung wird angekauft, etwa wenn sie streitig ist oder ein Einbehalt noch nicht fällig ist. Rahmenverträge können Laufzeiten oder Mindestvolumen vorsehen. Wenn es nicht passt, sage ich dir das offen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Ist das Erstgespräch kostenpflichtig?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Die Erstprüfung dauert typischerweise rund 20 Minuten und ist kostenfrei und unverbindlich. Du zahlst keine Beratungsgebühr. Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte. Den Ablauf erkläre ich dir im Gespräch. Nicht jedes Produkt ist automatisch verfügbar."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Berätst du nur in Mainz oder auch online?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Beides. Du kannst einen Termin in Mainz, nach Absprache im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern, etwa in Wiesbaden, Frankfurt oder Darmstadt, oder online vereinbaren. Den Termin buchst du unter termin.eliasgassmann.de. Die Einordnung prüfe ich über die FactoringWerkstatt."
-      }
-    }
-  ]
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Elias Gassmann — Factoring für Garten- und Landschaftsbau (GaLaBau)",
-  "url": "https://eliasgassmann.de/factoring-galabau",
-  "description": "Beratung zu Factoring für Betriebe im Garten- und Landschaftsbau, persönlich in Mainz, im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern sowie online. Die Einordnung erfolgt über die FactoringWerkstatt.",
-  "areaServed": [
-    "Mainz",
-    "Wiesbaden",
-    "Frankfurt am Main",
-    "Darmstadt",
-    "Rhein-Main",
-    "DE"
-  ],
-  "telephone": "+491626960629",
-  "email": "elias@eliasgassmann.de",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "August-Horch-Straße 6A",
-    "postalCode": "55129",
-    "addressLocality": "Mainz",
-    "addressCountry": "DE"
-  },
-  "provider": {
-    "@type": "Person",
-    "name": "Elias Gassmann",
-    "url": "https://eliasgassmann.de/",
-    "image": "https://eliasgassmann.de/portrait-elias-gassmann.jpeg",
-    "sameAs": [
-      "https://www.factoringwerkstatt.de/"
-    ]
-  }
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Elias Gassmann",
-      "item": "https://eliasgassmann.de/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Factoring Beratung",
-      "item": "https://eliasgassmann.de/factoring-beratung"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Factoring für GaLaBau",
-      "item": "https://eliasgassmann.de/factoring-galabau"
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Elias Gassmann",
+          "item": "https://eliasgassmann.de/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Factoring für den GaLaBau",
+          "item": "https://eliasgassmann.de/factoring-galabau"
+        }
+      ]
     }
   ]
 }
@@ -309,32 +293,28 @@
       <span class="brand-name">Elias Gassmann<small>Finanzberatung</small></span>
     </a>
     <nav class="main-nav" aria-label="Hauptnavigation">
-      <a href="index.html#gewerbe">Gewerbe</a>
       <a href="index.html#privat">Privat</a>
-      <a href="#ablauf">So läuft’s</a>
-      <a href="#termin">Termin</a>
+      <a href="index.html#gewerbe">Betrieb</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="#anfrage">Termin</a>
     </nav>
     <a class="header-contact" href="tel:+491626960629">
       <span class="phone-icon">↗</span>
       <span>0162 6960629</span>
     </a>
   </header>
-
-    <main id="top">
+  <main id="top">
     <section class="hero hero--beratung" id="inhalt" aria-labelledby="hero-title">
       <div class="hero-content hero-copy">
-        <p class="eyebrow hero-label">Für Garten- und Landschaftsbau</p>
-        <h1 id="hero-title">Factoring für Garten- und Landschaftsbau in Mainz und im Rhein-Main-Gebiet</h1>
-        <aside class="answer-box" aria-label="Kurzantwort">
-          <span class="answer-label">Kurzantwort</span>
-          <p>Beim Factoring verkaufst du prüffähige Abschlags- oder Schlussrechnungen aus bereits erbrachter Leistung im Garten- und Landschaftsbau an einen Factor. Du erhältst den vereinbarten Kaufpreis typischerweise deutlich früher, als der Auftraggeber zahlen würde. Factoring ist kein Saisonkredit, sondern der Verkauf geeigneter Forderungen, damit laufende Kosten wie Material, Löhne oder Maschinen planbarer bestritten werden können. Was factoringfähig ist, hängt von der konkreten Forderung ab; pauschale Quoten nenne ich bewusst nicht. Elias Gassmann prüft mit dir in Mainz, im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern oder online über die FactoringWerkstatt, ob Factoring zu deinem Betrieb passt. Echtes und unechtes Factoring sowie offenes und stilles Verfahren sind auf der Seite <a href="factoring-handwerk">Factoring für Handwerk und kleine Betriebe</a> eingeordnet.</p>
-        </aside>
-        <p class="core-answer">Typische Anlässe: die Saison läuft, Material und Löhne sind fällig, der Zahlungseingang kommt erst nach Aufmaß, Rechnungsprüfung oder Abnahme.</p>
+        <p class="eyebrow hero-label">Liquidität</p>
+        <h1 id="hero-title">Factoring im GaLaBau: Die Saison wartet nicht auf die Schlussrechnung.</h1>
+        <p class="core-answer">Pflanzen, Material und Kolonnen kosten Geld, bevor der Bauherr die Schlussrechnung zahlt. Factoring kann prüffähige Abschlags- und Schlussrechnungen aus bereits erbrachter Leistung ankaufen. Abnahme und Gewährleistungseinbehalte schaue ich mir genau an, die sind kein normaler Zahlungseingang.</p>
+        <p><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=factoring-galabau">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a></p>
       </div>
       <div class="hero-form">
         <div class="form-card" id="anfrage">
-          <h2>Jetzt Beratung anfragen</h2>
-          <p class="form-lead">Kostenfrei und unverbindlich, typischerweise rund 20 Minuten. In Mainz, im Rhein-Main-Gebiet oder online.</p>
+          <h2>Erstgespräch anfragen</h2>
+          <p class="form-lead">Kostenlos und unverbindlich. Ein Satz zu deiner Lage reicht.</p>
           <form class="lead-form" id="beratung-form" action="https://eg-anfragen.elias-gassmann.workers.dev/anfrage" method="post" novalidate>
             <label>Name
               <input type="text" name="name" autocomplete="name" required placeholder="Vor- und Nachname">
@@ -343,16 +323,16 @@
               <input type="text" name="kontakt" autocomplete="on" required placeholder="Nummer oder E-Mail-Adresse" inputmode="email">
             </label>
             <label>Branche oder Tätigkeit
-              <input type="text" name="branche" required placeholder="z. B. Garten- und Landschaftsbau">
+              <input type="text" name="branche" required placeholder="z. B. GaLaBau, Pflege, Neubau">
             </label>
             <label>Ungefähres Rechnungsvolumen
-              <input type="text" name="forderungshoehe" placeholder="z. B. typische offene Abschläge">
+              <input type="text" name="forderungshoehe" placeholder="z. B. typische offene Forderungen">
             </label>
             <label>Betriebsgröße
-              <input type="text" name="betriebsgroesse" placeholder="z. B. Einzelunternehmen oder Kolonnen">
+              <input type="text" name="betriebsgroesse" placeholder="z. B. Einzelunternehmen, 8 Mitarbeitende">
             </label>
             <label>Kurz dein Anliegen
-              <input type="text" name="anliegen" required placeholder="z. B. Abschläge vorfinanzieren">
+              <input type="text" name="anliegen" required placeholder="z. B. Liquidität, erste Einordnung">
             </label>
             <label class="consent fwx-consent">
               <input type="checkbox" name="datenschutz" value="ja" required>
@@ -364,238 +344,75 @@
           </form>
           <p class="form-alt">Oder Termin direkt wählen: <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=factoring-galabau">termin.eliasgassmann.de</a> · <a href="tel:+491626960629">+49 162 6960629</a></p>
         </div>
-      </div>
+        </div>
       <div class="hero-panel">
         <figure class="hero-portrait">
-          <img src="portrait-elias-gassmann.jpeg" alt="Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" fetchpriority="high">
+          <img src="portrait-elias-gassmann.jpeg" alt="Porträt von Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" fetchpriority="high">
           <figcaption>
             <span>Elias Gassmann</span>
             <strong>Finanzberater in Mainz</strong>
-            <small>Persönlich in Mainz, Rhein-Main und online</small>
+            <small>Sitz in Mainz, Gespräche auch online</small>
           </figcaption>
         </figure>
         <a class="trust-rating" href="https://www.google.com/maps?cid=18281856182098275446" target="_blank" rel="noopener noreferrer">
           <span aria-hidden="true">★★★★★</span>
           <span>
             <strong>4,9 / 5 · 48 Google-Rezensionen</strong>
-            <small>Stand 10.11.2026, wie auf der Seite Finanzberater Mainz</small>
+            <small>FactoringWerkstatt · Stand 10.11.2026</small>
           </span>
         </a>
       </div>
     </section>
-
-    <section class="page-block" aria-labelledby="abgrenzung">
-      <p class="eyebrow">Einordnung</p>
-      <h2 id="abgrenzung">Was diese Seite klärt — und was nicht</h2>
-      <p class="lead">Hier geht es um Factoring für den Garten- und Landschaftsbau: um Saisonalität, Abschlagsrechnungen, Abnahme, Einbehalte und den Unterschied zwischen öffentlichen und privaten Auftraggebern.</p>
-      <p>Den Überblick zu Ablauf, Kosten und Branchen findest du auf der Seite <a href="factoring-beratung">Factoring-Beratung</a>. Was Factoring grundsätzlich ist, einschließlich echtem und unechtem Ankauf sowie offenem und stillem Verfahren, steht auf der Seite <a href="factoring-handwerk">Factoring für Handwerk und kleine Betriebe</a>. Die Prüfung läuft über die <a href="https://www.factoringwerkstatt.de/">FactoringWerkstatt</a>. Vertiefende Branchentexte liegen dort unter <a href="https://www.factoringwerkstatt.de/factoring-galabau">factoringwerkstatt.de/factoring-galabau</a>. Pauschale Gebühren, Auszahlungsquoten oder feste Zahlungsziel-Tage nenne ich hier bewusst nicht; sie stehen im jeweiligen Vertrag.</p>
-    </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="was-ist">
-      <p class="eyebrow">GaLaBau-Rechnungen</p>
-      <h2 id="was-ist">Wie Factoring im Garten- und Landschaftsbau typischerweise greift</h2>
-      <p class="lead">Du verkaufst eine prüffähige Forderung aus bereits erbrachter Leistung an einen Factor. Im Gegenzug erhältst du den vereinbarten Kaufpreis typischerweise deutlich früher als das Zahlungsziel deines Auftraggebers.</p>
-      <p>Factoring ist kein Kredit, kein Inkasso und kein Saisonkredit. Die frühere Liquidität kann typischerweise helfen, Pflanzen, Pflaster, Substrate, Löhne oder Maschinen zu bezahlen, während die Rechnung noch offen ist. Ein geplanter Frühjahrsauftrag oder eine noch nicht erbrachte Pflanzung ist dafür typischerweise nicht ausreichend; angekauft wird eine bereits entstandene, dokumentierte Forderung.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Saisonalität ändert nicht, was ankauffähig ist</strong>
-          <span>Im GaLaBau fallen Umsatz und Arbeit typischerweise in der Vegetations- und Bauzeit an, während Personal, Maschinen und Betriebskosten auch außerhalb der Saison laufen. Factoring kann entstehende Forderungen früher in Liquidität verwandeln. Es ersetzt keine Vorfinanzierung von Arbeiten, die noch nicht ausgeführt sind.</span>
-        </li>
-        <li>
-          <strong>Abschlagsrechnungen sind nicht automatisch factoringfähig</strong>
-          <span>Nach § 632a BGB kannst du für den Wert der bereits erbrachten und vertraglich geschuldeten Leistungen eine Abschlagszahlung verlangen. Die Leistungen sind durch eine Aufstellung nachzuweisen, die eine rasche und sichere Beurteilung ermöglichen muss. Ob eine solche Abschlagsrechnung angekauft wird, hängt von Prüffähigkeit, Auftrag, Einwendungen und Abtretbarkeit ab, nicht von einer Branchenzusage. Wenn VOB/B vereinbart ist, können dort zusätzliche Regeln zu Abschlägen, Prüfung und Sicherheiten stehen; maßgebend ist die vereinbarte Fassung.</span>
-        </li>
-        <li>
-          <strong>Abnahme, Einbehalte, öffentliche und private Auftraggeber</strong>
-          <span>Die Vergütung für das fertige Werk wird nach § 641 BGB typischerweise bei der Abnahme fällig; die Abnahme richtet sich nach § 640 BGB. Ein vereinbarter Gewährleistungs- oder Sicherheitseinbehalt ist nicht automatisch wie der fällige Rechnungsanteil behandelbar, weil er oft erst später fällig wird. Höhe und Dauer stehen im Vertrag. Gesetzliche Mängelansprüche verjähren nach § 634a BGB je nach Art des Werks in zwei Jahren oder bei einem Bauwerk in fünf Jahren ab der Abnahme; ob eine konkrete GaLaBau-Leistung ein Bauwerk ist, ist eine Frage des Einzelfalls. Öffentliche und private Auftraggeber können geeignete Forderungen begründen; die Unterlagen und der Ablauf unterscheiden sich oft. Ein vertragliches Abtretungsverbot kann die Abwicklung erschweren. Bei Geldforderungen kann die Abtretung nach § 354a HGB gleichwohl wirksam sein, wenn das Geschäft für beide Teile ein Handelsgeschäft ist oder der Schuldner eine juristische Person des öffentlichen Rechts oder ein öffentlich-rechtliches Sondervermögen ist; der Auftraggeber kann dann trotzdem mit befreiender Wirkung an dich zahlen.</span>
-        </li>
-        <li>
-          <strong>Auszahlung und Kosten im Vertrag</strong>
-          <span>Was wann ausgezahlt wird, ob ein Einbehalt bleibt und welche Gebühren anfallen, steht im jeweiligen Vertrag. Pauschale Quoten oder Mindestumsätze nenne ich hier bewusst nicht.</span>
-        </li>
-      </ul>
-    </section>
-
-    <section class="page-block" aria-labelledby="fuer-wen">
+    <section class="page-block" id="fuer-wen" aria-labelledby="fuer-wen-title">
       <p class="eyebrow">Für wen</p>
-      <h2 id="fuer-wen">Für wen Factoring typischerweise passt</h2>
-      <p class="lead">Die Seite richtet sich an Betriebe im Garten- und Landschaftsbau in Mainz, Wiesbaden, Frankfurt, Darmstadt und im übrigen Rhein-Main-Gebiet sowie im Umkreis von rund 100 Kilometern. Online berate ich deutschlandweit, typischerweise per Video.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>GaLaBau-Betriebe mit gewerblichen oder öffentlichen Auftraggebern</strong>
-          <span>Du stellst regelmäßig prüffähige Rechnungen, etwa für Außenanlagen, Pflasterflächen oder Pflanzarbeiten, an Kommunen, Bauträger, Generalunternehmer, Hausverwaltungen oder andere gewerbliche Auftraggeber und musst laufende Kosten vorfinanzieren.</span>
-        </li>
-        <li>
-          <strong>Nachunternehmer im GaLaBau</strong>
-          <span>Du arbeitest für Generalunternehmer oder andere Betriebe. Entscheidend sind die konkrete Vertragsbeziehung und die Frage, ob Einwendungen, Aufmaßdifferenzen oder Einbehalte typischerweise auftreten.</span>
-        </li>
-        <li>
-          <strong>Private Endkunden als eigener Fall</strong>
-          <span>Rechnungen an private Haushalte können im Einzelfall prüfenswert sein. Typischerweise schauen wir zuerst auf wiederkehrende, dokumentierte Forderungen gegen gewerbliche oder öffentliche Auftraggeber.</span>
-        </li>
-      </ul>
-      <p>Ob Factoring in deinem Fall passt, hängt von deinen Rechnungen, deinen Auftraggebern, den Nachweisen und dem konkreten Vertrag ab. Wenn es nicht passt, sage ich dir das offen. Für Speditionen, Kurierdienste und Fuhrunternehmer liegt eine eigene Einordnung auf der Seite <a href="factoring-transport">Factoring für Transport und Spedition</a>. Zur Absicherung von Maschinen liegt eine Einordnung auf der Seite <a href="maschinenversicherung-bau">Maschinenversicherung für Bau und Handwerk</a>. Einen Überblick zur Finanzberatung in Mainz findest du auf der Seite <a href="finanzberater-mainz">Finanzberater Mainz</a>.</p>
+      <h2 id="fuer-wen-title">Für wen das ist.</h2>
+      
+      <ul class="topic-list"><li><strong>GaLaBau mit gewerblichen Auftraggebern</strong><span>Abschlag und Schlussrechnung aus Leistung, die schon steht.</span></li><li><strong>Saison</strong><span>Im Frühjahr und Sommer läuft der Einkauf, das Geld kommt versetzt.</span></li><li><strong>Einbehalte</strong><span>Sicherheitseinbehalte wegen Gewährleistung kauft nicht jeder Factor, und nicht in voller Höhe.</span></li></ul>
     </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="vor-nach">
-      <p class="eyebrow">Ehrlich eingeordnet</p>
-      <h2 id="vor-nach">Vorteile und Nachteile</h2>
-      <p class="lead">Factoring kann die Liquidität planbarer machen, gerade wenn die Saison Material und Löhne bindet. Es ist trotzdem nicht für jeden GaLaBau-Betrieb die bessere Lösung.</p>
-      <table class="criteria">
-        <caption>Kurz eingeordnet — immer vorbehaltlich des konkreten Vertrags</caption>
-        <thead>
-          <tr>
-            <th scope="col">Typische Vorteile</th>
-            <th scope="col">Typische Nachteile und Grenzen</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Zahlungseingänge vorziehen und besser planen, etwa für Material, Löhne oder Maschinen</th>
-            <td>Factoring ist nicht kostenlos. Gebühren und mögliche weitere Kosten können bei knappen Margen ins Gewicht fallen</td>
-          </tr>
-          <tr>
-            <th scope="row">Beim echten Factoring Schutz vor dem Ausfall des Auftraggebers, dem Delkredere</th>
-            <td>Eine streitige Abschlags- oder Schlussrechnung, eine Mängelrüge oder ein noch nicht fälliger Einbehalt kann der Factor typischerweise nicht wie einen Zahlungsausfall behandeln</td>
-          </tr>
-          <tr>
-            <th scope="row">Je nach Modell weniger Aufwand für Mahnwesen und Debitorenprüfung</th>
-            <td>Beim offenen Verfahren erfährt dein Auftraggeber vom Forderungsverkauf. Rahmenverträge können Laufzeiten oder ein Mindestvolumen vorsehen</td>
-          </tr>
-        </tbody>
-      </table>
-      <p style="margin-top:20px">Factoring ersetzt keine saubere Dokumentation von Leistungsstand, Aufmaß und Abnahme. Wer dauerhaft nur über den Verkauf von Rechnungen über die Runden kommt, sollte auch Zahlungsziele, Einbehalte und Kalkulation prüfen.</p>
+<section class="page-block page-block--grau" id="worauf" aria-labelledby="worauf-title">
+      <p class="eyebrow">Worauf es ankommt</p>
+      <h2 id="worauf-title">Was ich mit dir kläre.</h2>
+      
+      <ul class="topic-list"><li><strong>Erbrachte Leistung</strong><span>Anzahlungen vor der Arbeit sind keine typische Factoring-Forderung.</span></li><li><strong>Abnahme</strong><span>Ohne nachvollziehbare Abnahme bleibt eine Rechnung oft streitig. Streitige Posten passen schlecht.</span></li><li><strong>Still oder offen</strong><span>Ob dein Auftraggeber vom Verkauf erfährt, steht im Verfahren.</span></li></ul>
     </section>
-
-    <section class="page-block" aria-labelledby="vergleich">
-      <p class="eyebrow">Vergleich</p>
-      <h2 id="vergleich">Worauf du typischerweise beim Vergleich achtest</h2>
-      <p class="lead">Ein Vergleich ist nur so gut wie die Grundlage. Dieselben Angaben zu Rechnungen, Auftraggebern, Nachweisen, Einbehalten und Zahlungszielen solltest du jedem Angebot zugrunde legen.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Echtes oder unechtes Factoring</strong>
-          <span>Kläre, wer das Ausfallrisiko trägt und ab wann eine Forderung als ausgefallen gilt. Die ausführliche Einordnung steht auf der Seite <a href="factoring-handwerk">Factoring für Handwerk und kleine Betriebe</a>.</span>
-        </li>
-        <li>
-          <strong>Auszahlung, Einbehalte und Verfahren</strong>
-          <span>Wann kommt welcher Teil des Rechnungsbetrags? Läuft der Ankauf offen oder still? Was geschieht mit Sicherheitseinbehalten, Skonti, Nachträgen oder Abtretungsverboten?</span>
-        </li>
-        <li>
-          <strong>Welche GaLaBau-Rechnungen angekauft werden</strong>
-          <span>Frag nach Abschlägen, Schlussrechnungen, öffentlichen Auftraggebern, Nachunternehmerverhältnissen und möglichen Einwendungen. Geprüft wird die konkrete, prüffähige Forderung, nicht ein pauschales Branchenversprechen.</span>
-        </li>
-        <li>
-          <strong>Vertrag, Kosten und Partner</strong>
-          <span>Laufzeit, Kündigung und mögliches Mindestvolumen schriftlich klären. Alle Kosten gehören in das Angebot, nicht nur eine einzelne Gebühr. Wer gewerblich Factoring anbietet, braucht eine Erlaubnis; kläre, wer am Ende dein Vertragspartner ist.</span>
-        </li>
-      </ul>
-      <p>Pauschale Gebührensätze, Auszahlungsquoten oder Mindestumsätze nenne ich hier bewusst nicht. Die Zahlen hängen von deinem Betrieb und vom Vertrag ab. Wir schauen sie uns im Gespräch anhand deiner Rechnungen an.</p>
+<section class="page-block" id="pruefung" aria-labelledby="pruefung-title">
+      <p class="eyebrow">Prüfung</p>
+      <h2 id="pruefung-title">Wer die Anbieter anschaut.</h2>
+      
+      <p>Ich mache die Einordnung mit dir. Die vertiefende Anbieterprüfung liegt bei der <a href="https://www.factoringwerkstatt.de/?utm_source=eliasgassmann.de&amp;utm_medium=referral&amp;utm_campaign=factoring-galabau">FactoringWerkstatt</a>.</p>
     </section>
-
-    <section class="process-section page-block" id="ablauf" aria-labelledby="ablauf-title">
+<section class="process-section page-block" id="ablauf" aria-labelledby="ablauf-title">
       <div class="process-heading">
-        <p class="eyebrow">Der Ablauf</p>
-        <h2 id="ablauf-title">So läuft die Erstprüfung</h2>
-        <p class="lead">Wir starten mit deinen Rechnungen, Auftraggebern, Nachweisen und möglichen Einbehalten. Die Beratung kann vollständig digital laufen, typischerweise per Video.</p>
+        <p class="eyebrow">Ablauf</p>
+        <h2 id="ablauf-title">So gehe ich vor.</h2>
+        <p class="lead">Du musst nichts vorbereiten. Unterlagen helfen, wenn du sie schon hast.</p>
       </div>
-      <ol class="process-list">
-        <li>
-          <span>1</span>
-          <h3>Termin buchen</h3>
-          <p>Du buchst eine unverbindliche Erstprüfung, typischerweise rund 20 Minuten, vor Ort in Mainz, im Rhein-Main-Gebiet bzw. im Umkreis von rund 100 Kilometern oder online.</p>
-        </li>
-        <li>
-          <span>2</span>
-          <h3>Betrieb und Rechnungen verstehen</h3>
-          <p>Wir sprechen über typische Aufträge, Abschläge, Abnahme, Einbehalte, Zahlungsziele, öffentliche und private Auftraggeber und vorhandene Nachweise. Unterlagen kannst du typischerweise digital einreichen.</p>
-        </li>
-        <li>
-          <span>3</span>
-          <h3>Passung einordnen</h3>
-          <p>Danach ist klar, ob Factoring zu deinem Betrieb passt. Wenn nicht, sage ich dir das offen. Dann suchen wir keinen Anbieter um jeden Preis.</p>
-        </li>
-        <li>
-          <span>4</span>
-          <h3>Passende Lösung besprechen</h3>
-          <p>Wenn es passt, schauen wir uns die Lösung an: Auszahlung, Ausfallschutz, Verfahren und Kosten. Nicht jedes Produkt ist automatisch verfügbar.</p>
-        </li>
-        <li>
-          <span>5</span>
-          <h3>In Ruhe entscheiden</h3>
-          <p>Du entscheidest in Ruhe, ob und wie es weitergehen soll. Durch die Erstprüfung entsteht keine Verpflichtung.</p>
-        </li>
-      </ol>
+      <ol class="process-list"><li><span>1</span><h3>Kennenlernen</h3><p>Rechnungen, Kunden und wie lange du auf das Geld wartest. Etwa 20 Minuten, digital per Teams oder Telefon.</p></li><li><span>2</span><h3>Analysieren</h3><p>Ich schaue, ob die Forderungen prüffähig sind und ob Factoring zu deiner Branche passt. Wenn nicht, sage ich das.</p></li><li><span>3</span><h3>Lösungen besprechen</h3><p>Echt oder unecht, offen oder still, Kosten und was der Vertrag mit dem Ausfallrisiko macht.</p></li><li><span>4</span><h3>Umsetzen</h3><p>Die Anbieterprüfung läuft über die FactoringWerkstatt. Du entscheidest am konkreten Angebot.</p></li></ol>
     </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="transparenz">
-      <p class="eyebrow">Kosten und Ablauf</p>
-      <h2 id="transparenz">Was die Erstprüfung kostet</h2>
-      <p class="lead">Die Erstprüfung ist kostenfrei und unverbindlich. Bevor du etwas entscheidest, weißt du, wie ein Vorschlag funktioniert und was er kostet.</p>
-      <p class="partners">Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte; den Ablauf erkläre ich dir im Gespräch. Es werden keine Kundengelder entgegengenommen; Zahlungen gehen direkt an den jeweiligen Anbieter. Alle Pflichtangaben findest du im <a href="impressum.html">Impressum</a>. Die Prüfung läuft über die <a href="https://www.factoringwerkstatt.de/erstpruefung">FactoringWerkstatt</a>.</p>
-    </section>
-
-    <section class="page-block" id="termin" aria-labelledby="termin-title">
+<section class="page-block" id="naechster" aria-labelledby="naechster-title">
       <p class="eyebrow">Nächster Schritt</p>
-      <h2 id="termin-title">Termin vereinbaren — in Mainz, im Rhein-Main-Gebiet oder online</h2>
-      <p class="lead">Den unverbindlichen Termin buchst du unter <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=factoring-galabau">termin.eliasgassmann.de</a>. Ohne Druck und ohne eine bestimmte Ersparniszusage.</p>
-      <p>Die öffentlich genannte Anschrift ist August-Horch-Straße 6A, 55129 Mainz. Ob ein Termin vor Ort oder online sinnvoller ist, klären wir bei der Buchung. Du erreichst mich auch unter <a href="tel:+491626960629">+49 162 6960629</a> und <a href="mailto:elias@eliasgassmann.de">elias@eliasgassmann.de</a>.</p>
-      <p style="margin-top:28px"><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=factoring-galabau">Unverbindlichen Termin vereinbaren <span aria-hidden="true">↗</span></a></p>
+      <h2 id="naechster-title">Das Erstgespräch zeigt dir den nächsten sinnvollen Schritt.</h2>
+      
+      <p>Du erfährst, ob Factoring zu deinen Rechnungen passt und wovon die Kosten abhängen. Das erste Gespräch kostet dich nichts.</p><p style="margin-top:8px"><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=factoring-galabau">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a></p>
     </section>
-
     <section class="faq-section" id="fragen" aria-labelledby="faq-title">
       <div>
-        <p class="eyebrow">Vor dem Gespräch</p>
-        <h2 id="faq-title">Häufige Fragen zu Factoring im Garten- und Landschaftsbau</h2>
+        <p class="eyebrow">Kurz geklärt</p>
+        <h2 id="faq-title">Fragen, die oft kommen.</h2>
       </div>
       <div class="faq-list">
-        <details open>
-          <summary>Was ist Factoring für den Garten- und Landschaftsbau?</summary>
-          <p>Beim Factoring verkaufst du prüffähige Rechnungen aus bereits erbrachter Leistung im Garten- und Landschaftsbau an einen Factor. Du erhältst den vereinbarten Kaufpreis typischerweise deutlich früher, als der Auftraggeber zahlen würde. Was wann ausgezahlt wird und welche Kosten anfallen, steht im jeweiligen Vertrag. Pauschale Auszahlungsquoten nenne ich hier bewusst nicht.</p>
-        </details>
-        <details>
-          <summary>Ist Factoring ein Kredit für die Saison oder für Material?</summary>
-          <p>Nein. Factoring ist kein Saisonkredit und kein Betriebsmittelkredit für den Materialeinkauf. Es ist der Verkauf geeigneter, bereits entstandener Forderungen. Die frühere Liquidität kann typischerweise helfen, laufende Kosten wie Pflanzen, Pflaster, Löhne oder Maschinen zu bestreiten, bis der Auftraggeber zahlt. Ein noch nicht ausgeführter Frühjahrsauftrag oder eine geplante Pflanzung ist typischerweise noch keine ankauffähige Forderung.</p>
-        </details>
-        <details>
-          <summary>Welche Rechnungen aus dem GaLaBau können typischerweise verkauft werden?</summary>
-          <p>Typischerweise prüffähige Forderungen gegen gewerbliche oder öffentliche Auftraggeber aus bereits erbrachter Leistung, nachvollziehbar dokumentiert. Dazu können je nach Auftrag Leistungsverzeichnis, Aufmaß, Lieferscheine oder eine prüffähige Abschlags- oder Schlussrechnung gehören. Eine Abschlagsrechnung ist nicht automatisch ankauffähig; nach § 632a BGB muss die Aufstellung eine rasche und sichere Beurteilung der erbrachten Leistungen ermöglichen. Nicht jede Rechnung wird automatisch angekauft, etwa wenn sie streitig ist, Mängel geltend gemacht werden oder Gegenforderungen bestehen.</p>
-        </details>
-        <details>
-          <summary>Was gilt typischerweise für Abnahme und Einbehalte?</summary>
-          <p>Die Vergütung für das fertige Werk wird nach § 641 BGB typischerweise bei der Abnahme fällig; die Abnahme selbst richtet sich nach § 640 BGB. Abschlagszahlungen ersetzen die Abnahme nicht. Ein vereinbarter Gewährleistungs- oder Sicherheitseinbehalt ist nicht automatisch genauso behandelbar wie der fällige Rechnungsanteil, weil er oft erst später fällig wird. Ob und in welcher Höhe ein Einbehalt vereinbart ist, steht im Bauvertrag, nicht pauschal im Gesetz. Gesetzliche Mängelansprüche verjähren nach § 634a BGB je nach Art des Werks in zwei Jahren oder bei einem Bauwerk in fünf Jahren, gerechnet ab der Abnahme; ob eine konkrete GaLaBau-Leistung ein Bauwerk ist, hängt vom Einzelfall ab.</p>
-        </details>
-        <details>
-          <summary>Was ist der Unterschied zwischen echtem und unechtem Factoring?</summary>
-          <p>Beim echten Factoring übernimmt der Factor das Ausfallrisiko, das Delkredere. Beim unechten Factoring bleibt dieses Risiko bei dir. Ob der Verkauf offen oder still läuft, steht im Vertrag. Die ausführliche Einordnung dieser Varianten liegt auf der Seite <a href="factoring-handwerk">Factoring für Handwerk und kleine Betriebe</a>.</p>
-        </details>
-        <details>
-          <summary>Für wen kommt Factoring im GaLaBau typischerweise infrage?</summary>
-          <p>Typisch für Betriebe im Garten- und Landschaftsbau, die regelmäßig prüffähige Rechnungen an gewerbliche oder öffentliche Auftraggeber stellen und laufende Kosten vorfinanzieren müssen, etwa in der Bausaison. Auch Nachunternehmer, die für Generalunternehmer oder andere GaLaBau-Betriebe arbeiten, können geeignete Forderungen haben. Rechnungen an private Endkunden sind ein eigener Fall. Ob es in deinem Fall passt, prüfen wir anhand deiner Rechnungen, Nachweise und Auftraggeber.</p>
-        </details>
-        <details>
-          <summary>Welche Nachteile hat Factoring?</summary>
-          <p>Factoring ist nicht kostenlos; Gebühren und mögliche weitere Kosten können bei knappen Margen ins Gewicht fallen. Beim offenen Verfahren erfährt dein Auftraggeber vom Verkauf. Nicht jede Abschlags- oder Schlussrechnung wird angekauft, etwa wenn sie streitig ist oder ein Einbehalt noch nicht fällig ist. Rahmenverträge können Laufzeiten oder Mindestvolumen vorsehen. Wenn es nicht passt, sage ich dir das offen.</p>
-        </details>
-        <details>
-          <summary>Ist das Erstgespräch kostenpflichtig?</summary>
-          <p>Die Erstprüfung dauert typischerweise rund 20 Minuten und ist kostenfrei und unverbindlich. Du zahlst keine Beratungsgebühr. Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte. Den Ablauf erkläre ich dir im Gespräch. Nicht jedes Produkt ist automatisch verfügbar.</p>
-        </details>
-        <details>
-          <summary>Berätst du nur in Mainz oder auch online?</summary>
-          <p>Beides. Du kannst einen Termin in Mainz, nach Absprache im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern, etwa in Wiesbaden, Frankfurt oder Darmstadt, oder online vereinbaren. Den Termin buchst du unter <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=factoring-galabau">termin.eliasgassmann.de</a>. Die Einordnung prüfe ich über die <a href="https://www.factoringwerkstatt.de/">FactoringWerkstatt</a>.</p>
-        </details>
+        <details open><summary>Welche GaLaBau-Rechnungen kommen infrage?</summary><p>Prüffähige Abschlags- und Schlussrechnungen aus bereits erbrachter Leistung. Einbehalte und nicht abgenommene Leistung prüfe ich extra und vorsichtig.</p></details><details><summary>Ist Factoring wegen der Saison automatisch sinnvoll?</summary><p>Nein. Es hängt daran, wie lange du auf Geld wartest und ob die Rechnungen ankauffähig sind.</p></details><details><summary>Was ist mit Gewährleistungseinbehalten?</summary><p>Die sind oft kein normaler Debitorenposten. Ob und in welcher Höhe sie infrage kommen, steht nicht pauschal fest.</p></details><details><summary>Was kostet das Erstgespräch?</summary><p>Das Erstgespräch kostet dich nichts. Eine Beratungsgebühr verlange ich nicht. Kommt ein Produkt zustande, werde ich vom Anbieter vergütet. Wie das läuft, sage ich dir im Gespräch. Die Pflichtangaben stehen im Impressum.</p></details><details><summary>Muss ich bestehende Verträge kündigen?</summary><p>Nein. Ich schaue zuerst, was du schon hast. Was zu deinem Ziel passt, kann bleiben. Ob du etwas änderst, entscheidest du.</p></details><details><summary>Bist du danach noch da?</summary><p>Ja. Wenn sich etwas ändert oder du eine Frage zum Vertrag hast, meldest du dich bei mir. Ich bleibe dein Ansprechpartner.</p></details>
       </div>
     </section>
-
     <section class="contact-card" aria-labelledby="kontakt-title">
       <figure class="hero-portrait" style="margin:0;max-height:520px">
-        <img src="portrait-elias-gassmann.jpeg" alt="Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" loading="lazy">
+        <img src="portrait-elias-gassmann.jpeg" alt="Porträt von Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" loading="lazy">
       </figure>
       <div class="contact-content">
-        <p class="eyebrow">Kontakt</p>
-        <h2 id="kontakt-title">Was hast du vor?<br><em>Lass uns sprechen.</em></h2>
-        <p class="contact-copy">Offene Abschläge, die laufende Saison oder die Frage, ob Factoring zu deinem GaLaBau-Betrieb passt: Erzähl mir, worum es geht.</p>
-        <a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=factoring-galabau">Unverbindlichen Termin vereinbaren <span aria-hidden="true">↗</span></a>
+        <p class="eyebrow">Erstgespräch</p>
+        <h2 id="kontakt-title">Wenn du das einordnen willst, sag mir Bescheid.</h2>
+        <p class="contact-copy">Kurz schreiben, worum es geht. Eine Beratungsgebühr verlange ich nicht.</p>
+        <a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=factoring-galabau">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a>
         <div class="contact-data">
           <a href="tel:+491626960629">+49 162 6960629</a>
           <a href="mailto:elias@eliasgassmann.de">elias@eliasgassmann.de</a>
@@ -604,7 +421,6 @@
       </div>
     </section>
   </main>
-
   <footer>
     <p>© <span id="year">2026</span> Elias Gassmann</p>
     <div>
@@ -613,7 +429,7 @@
       <a href="/datenschutz">Datenschutz</a>
     </div>
   </footer>
-  <a class="mobile-sticky" href="#anfrage">Jetzt Beratung anfragen</a>
+  <a class="mobile-sticky" href="#anfrage">Erstgespräch anfragen</a>
   <script src="formular.js" defer></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {

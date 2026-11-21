@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bauleistungs&shy;versicherung für Bauunternehmen und Handwerk in Mainz und Rhein-Main — Elias Gassmann</title>
-  <meta name="description" content="Bauleistungsversicherung für Bauunternehmen und Handwerk: was während der Bauzeit typischerweise versichert ist und was nicht, Abgrenzung zu Gebäude-, Inhalts- und Betriebshaftpflichtversicherung. Beratung in Mainz, im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern oder online.">
+  <title>Bauleistungsversicherung fürs Handwerk</title>
+  <meta name="description" content="Bauleistungsversicherung: unvorhergesehene Schäden an der Bauleistung während der Bauzeit. Abgrenzung zu Gebäude- und Betriebshaftpflicht.">
   <link rel="canonical" href="https://eliasgassmann.de/bauleistungsversicherung">
   <meta name="theme-color" content="#fbfbfd">
-  <meta property="og:title" content="Bauleistungsversicherung für Bauunternehmen und Handwerk in Mainz und Rhein-Main — Elias Gassmann">
-  <meta property="og:description" content="Was die Bauleistungsversicherung während der Bauzeit typischerweise schützt, was ausgenommen ist und worin sie sich von Gebäude- und Haftpflichtversicherung unterscheidet. Beratung in Mainz, Rhein-Main oder online.">
+  <meta property="og:title" content="Bauleistungsversicherung fürs Handwerk">
+  <meta property="og:description" content="Bauleistungsversicherung: unvorhergesehene Schäden an der Bauleistung während der Bauzeit. Abgrenzung zu Gebäude- und Betriebshaftpflicht.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://eliasgassmann.de/bauleistungsversicherung">
   <meta property="og:image" content="https://eliasgassmann.de/portrait-elias-gassmann.jpeg">
   <meta property="og:locale" content="de_DE">
   <link rel="stylesheet" href="apple.css?v=20261103">
-<style>
-    .hero h1, .intro h2, .process-heading h2, .faq-section h2, .contact-card h2, .page-block h2, .quellen h2 {
+  <style>
+    .hero h1, .intro h2, .process-heading h2, .faq-section h2, .contact-card h2, .page-block h2 {
       -webkit-hyphens: manual;
       hyphens: manual;
       overflow-wrap: normal;
@@ -29,7 +29,8 @@
     .hero--beratung h1 {
       font-size: clamp(36px, 4.2vw, 58px);
       line-height: 1.08;
-      max-width: 20ch;
+      max-width: min(22ch, 100%);
+      overflow-wrap: anywhere;
     }
     .answer-box {
       margin: 22px 0 20px;
@@ -87,7 +88,8 @@
       height: 1px;
       overflow: hidden;
     }
-    .form-alt a, .consent a, .page-block a { color: var(--link); }
+
+    .form-alt a, .consent a { color: var(--link); }
     .lead-form { display: grid; gap: 12px; }
     .lead-form label { display: grid; gap: 5px; font-size: 13px; font-weight: 600; color: var(--ink); }
     .lead-form input[type="text"] {
@@ -108,8 +110,13 @@
     }
     .trust-rating strong { display: block; font-size: 15px; }
     .trust-rating small { display: block; font-size: 12px; color: var(--mut); }
+    .quote-mini {
+      margin: 0; padding: 16px 18px; border-radius: 20px; background: var(--grau);
+    }
+    .quote-mini p { margin: 0 0 8px; font-size: 15px; line-height: 1.4; }
+    .quote-mini footer { font-size: 12px; color: var(--mut); }
     .page-block { padding: 96px var(--rand); }
-    .page-block h2, .quellen h2 { margin: 8px 0 18px; font: 700 clamp(34px,4.2vw,56px)/1.07 var(--display); letter-spacing: -.03em; max-width: 22ch; }
+    .page-block h2 { margin: 8px 0 18px; font: 700 clamp(34px,4.2vw,56px)/1.07 var(--display); letter-spacing: -.03em; max-width: 22ch; }
     .page-block .lead, .page-block p { max-width: 42rem; }
     .page-block p { margin: 0 0 16px; font-size: 17px; line-height: 1.5; color: var(--ink-2); }
     .page-block .lead { font-size: 21px; line-height: 1.38; color: var(--mut); }
@@ -126,15 +133,10 @@
     .topic-list li { padding: 18px 20px; border-radius: 20px; background: var(--grau); }
     .topic-list strong { display: block; margin-bottom: 4px; }
     .topic-list span { color: var(--mut); font-size: 15px; line-height: 1.45; }
-    .page-block--grau .topic-list li { background: #fff; }
     .partners { font-size: 15px; color: var(--ink-2); }
-    .fn { font-size: .78em; font-weight: 600; vertical-align: super; line-height: 0; text-decoration: none; margin-left: 1px; }
-    .quellen { padding: 72px var(--rand) 40px; background: var(--grau); }
-    .quellen h2 { margin: 0 0 16px; font: 700 clamp(28px,3.4vw,40px)/1.15 var(--display); letter-spacing: -.03em; }
-    .quellen ol { margin: 0; padding-left: 1.25rem; max-width: 44rem; color: var(--ink-2); font-size: 14px; line-height: 1.5; }
-    .quellen li { margin: 0 0 8px; }
-    .quellen a, .page-block a { color: var(--link); }
-    .mobile-sticky { display: none; }
+    .mobile-sticky {
+      display: none;
+    }
     @media (max-width: 760px) {
       .hero--beratung h1 { max-width: none; }
       .hero--beratung .hero-portrait { max-height: none; }
@@ -151,6 +153,8 @@
     @media (prefers-reduced-motion: no-preference) {
       .hero-content, .hero-panel { animation: none; }
     }
+
+    .quote-mini .quote-src { margin: 0; font-size: 12px; color: var(--mut); line-height: 1.4; }
     .hero--beratung { display: grid; grid-template-columns: minmax(0,1.15fr) minmax(0,.85fr); }
     .hero-form { min-width: 0; }
     @media (min-width: 761px) {
@@ -160,113 +164,127 @@
     }
     @media (max-width: 760px) {
       .hero--beratung { display: flex; flex-direction: column; }
+      .hero-copy, .hero-form, .hero-panel { order: 0; min-width: 0; width: 100%; }
       .hero-copy { order: 1; }
       .hero-panel { order: 2; }
       .hero-form { order: 3; }
+      .hero--beratung h1 { overflow-wrap: anywhere; }
+    }
+  
+    .process-section.page-block .process-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .page-block--grau .topic-list li { background: #fff; }
+    .link-row { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 4px 0 18px; max-width: 44rem; }
+    .link-row a { color: var(--link); }
+    .source-list { margin: 8px 0 0; padding-left: 18px; max-width: 44rem; }
+    .source-list li { margin: 0 0 8px; font-size: 15px; line-height: 1.45; color: var(--ink-2); }
+    .source-list a { color: var(--link); }
+    @media (max-width: 760px) {
+      .hero h1, .page-block h2, .process-heading h2, .faq-section h2, .contact-card h2 { overflow-wrap: break-word; }
+      .process-section.page-block .process-list { grid-template-columns: 1fr; }
+      .criteria, .criteria thead, .criteria tbody, .criteria tr, .criteria th, .criteria td { display: block; width: auto; }
+      .criteria thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+      .criteria tr { padding: 8px 0; }
     }
   </style>
-
   <script type="application/ld+json">
-{
+  {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Was ist eine Bauleistungsversicherung?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Die Bauleistungsversicherung schützt typischerweise die Lieferungen und Leistungen für ein im Versicherungsschein bezeichnetes Bauvorhaben gegen unvorhergesehene Beschädigungen oder Zerstörungen. Nach § 644 BGB trägt der Unternehmer die Gefahr bis zur Abnahme des Werkes. Was im Einzelfall versichert ist, steht im Vertrag. Die unverbindlichen Musterbedingungen des GDV (ABBL 2018) können zugrunde liegen, müssen es aber nicht."
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Was sichert die Bauleistungsversicherung?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Unvorhergesehene Sachschäden an den versicherten Bauleistungen während der Bauzeit, im vereinbarten Umfang."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was hat § 644 BGB damit zu tun?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bis zur Abnahme trägt der Unternehmer in der Regel die Gefahr des zufälligen Untergangs der Leistung. Die Versicherung kann dieses wirtschaftliche Risiko abfedern. Sie ändert nicht den Gesetzestext."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ist jede Beschädigung versichert?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein. Der Vertrag nennt Einschlüsse und Ausschlüsse. Reine Nachbesserung eines eigenen Mangels ist typischerweise kein Versicherungsfall."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was kostet das Erstgespräch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Das Erstgespräch kostet dich nichts. Eine Beratungsgebühr verlange ich nicht. Kommt ein Produkt zustande, werde ich vom Anbieter vergütet. Wie das läuft, sage ich dir im Gespräch. Die Pflichtangaben stehen im Impressum."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Muss ich bestehende Verträge kündigen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein. Ich schaue zuerst, was du schon hast. Was zu deinem Ziel passt, kann bleiben. Ob du etwas änderst, entscheidest du."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bist du danach noch da?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Wenn sich etwas ändert oder du eine Frage zum Vertrag hast, meldest du dich bei mir. Ich bleibe dein Ansprechpartner."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FinancialService",
+      "name": "Bauleistungsversicherung",
+      "url": "https://eliasgassmann.de/bauleistungsversicherung",
+      "description": "Bauleistungsversicherung: unvorhergesehene Schäden an der Bauleistung während der Bauzeit. Abgrenzung zu Gebäude- und Betriebshaftpflicht.",
+      "telephone": "+491626960629",
+      "email": "elias@eliasgassmann.de",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "August-Horch-Straße 6A",
+        "postalCode": "55129",
+        "addressLocality": "Mainz",
+        "addressCountry": "DE"
+      },
+      "provider": {
+        "@type": "Person",
+        "name": "Elias Gassmann",
+        "url": "https://eliasgassmann.de/",
+        "image": "https://eliasgassmann.de/portrait-elias-gassmann.jpeg"
       }
     },
     {
-      "@type": "Question",
-      "name": "Was ist typischerweise versichert — und was nicht?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nach den unverbindlichen Musterbedingungen des GDV sind typischerweise alle Lieferungen und Leistungen für das bezeichnete Bauvorhaben versichert, also Neubauleistungen einschließlich Baustoffen und Bauteilen. Typischerweise nicht versichert sind unter anderem Altbauten, Baugeräte, Kleingeräte und Handwerkzeuge, Gerüste, Baucontainer, Fahrzeuge, Pläne und Pflanzen. Hilfsbauten und Bauhilfsstoffe sind in den Musterbedingungen ebenfalls ausgenommen, sofern nichts anderes vereinbart ist."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Sind Brand, Blitzschlag und Explosion mitversichert?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nicht automatisch. In den unverbindlichen Musterbedingungen des GDV sind Schäden durch Brand, Blitzschlag und Explosion typischerweise ausgeschlossen. Ob diese Gefahren in deinem Vertrag dennoch mitversichert sind, prüfen wir anhand der vereinbarten Bedingungen. Pauschale Prämien oder Einschlüsse nenne ich hier bewusst nicht."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wann beginnt und wann endet der Schutz typischerweise?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Der Schutz beginnt zu dem im Versicherungsschein angegebenen Zeitpunkt. Nach den Musterbedingungen des GDV endet er im Hochbau typischerweise mit der Bezugsfertigkeit, nach Ablauf von sechs Werktagen seit Beginn der Benutzung oder mit der behördlichen Gebrauchsabnahme, je nachdem, was zuerst eintritt. Im Tief- und Ingenieurbau typischerweise mit der Betriebsfertigkeit oder der Abnahme. Spätestens endet er zu dem im Versicherungsschein genannten Zeitpunkt. Für Restarbeiten kann der Schutz weiter bestehen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Reicht die Gebäudeversicherung oder die Betriebshaftpflicht dafür aus?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Typischerweise nicht. Die Gebäudeversicherung gilt dem fertigen oder bezugsfertigen Gebäude. Die Betriebshaftpflicht gilt Ansprüchen Dritter wegen Personen- oder Sachschäden. Die Bauleistungsversicherung gilt typischerweise den Bauleistungen selbst während der Bauzeit. Die drei Versicherungen ersetzen einander nicht. Eine Einordnung zur Gebäudeversicherung und zur Betriebshaftpflicht liegt auf den jeweiligen Seiten."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Ist das Erstgespräch kostenpflichtig?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Das Erstgespräch ist unverbindlich. Du zahlst keine Beratungsgebühr. Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte. Den Ablauf erkläre ich dir im Gespräch. Nicht jedes Produkt ist automatisch verfügbar."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Berätst du nur in Mainz oder auch online?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Beides. Du kannst einen Termin in Mainz, nach Absprache im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern, etwa in Wiesbaden, Frankfurt oder Darmstadt, oder online vereinbaren. Online berate ich deutschlandweit, typischerweise per Video. Den Termin buchst du unter termin.eliasgassmann.de."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Elias Gassmann",
+          "item": "https://eliasgassmann.de/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Bauleistungsversicherung",
+          "item": "https://eliasgassmann.de/bauleistungsversicherung"
+        }
+      ]
     }
-  ]
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Elias Gassmann — Bauleistungsversicherung für Bauunternehmen und Handwerk",
-  "url": "https://eliasgassmann.de/bauleistungsversicherung",
-  "description": "Beratung zur Bauleistungsversicherung für Bauunternehmen und Handwerk, persönlich in Mainz, im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern sowie online deutschlandweit.",
-  "areaServed": ["Mainz", "Wiesbaden", "Frankfurt am Main", "Darmstadt", "Rhein-Main", "DE"],
-  "telephone": "+491626960629",
-  "email": "elias@eliasgassmann.de",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "August-Horch-Straße 6A",
-    "postalCode": "55129",
-    "addressLocality": "Mainz",
-    "addressCountry": "DE"
-  },
-  "provider": {
-    "@type": "Person",
-    "name": "Elias Gassmann",
-    "url": "https://eliasgassmann.de/",
-    "image": "https://eliasgassmann.de/portrait-elias-gassmann.jpeg"
-  }
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Elias Gassmann", "item": "https://eliasgassmann.de/" },
-    { "@type": "ListItem", "position": 2, "name": "Bauleistungsversicherung", "item": "https://eliasgassmann.de/bauleistungsversicherung" }
   ]
 }
   </script>
 </head>
-
 <body>
   <a class="skip-link" href="#inhalt">Zum Inhalt</a>
   <header class="site-header">
@@ -275,32 +293,28 @@
       <span class="brand-name">Elias Gassmann<small>Finanzberatung</small></span>
     </a>
     <nav class="main-nav" aria-label="Hauptnavigation">
-      <a href="index.html#gewerbe">Gewerbe</a>
       <a href="index.html#privat">Privat</a>
-      <a href="#ablauf">So läuft’s</a>
-      <a href="#termin">Termin</a>
+      <a href="index.html#gewerbe">Betrieb</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="#anfrage">Termin</a>
     </nav>
     <a class="header-contact" href="tel:+491626960629">
       <span class="phone-icon">↗</span>
       <span>0162 6960629</span>
     </a>
   </header>
-
   <main id="top">
     <section class="hero hero--beratung" id="inhalt" aria-labelledby="hero-title">
       <div class="hero-content hero-copy">
-        <p class="eyebrow hero-label">Für Bauunternehmen und Handwerk</p>
-        <h1 id="hero-title">Bauleistungs&shy;versicherung für Bauunternehmen und Handwerk in Mainz und im Rhein-Main-Gebiet</h1>
-        <aside class="answer-box" aria-label="Kurzantwort">
-          <span class="answer-label">Kurzantwort</span>
-          <p>Die Bauleistungs&shy;versicherung schützt typischerweise die Lieferungen und Leistungen für ein bezeichnetes Bauvorhaben gegen unvorhergesehene Beschädigungen oder Zerstörungen während der Bauzeit.<a class="fn" href="#quelle-2">[2]</a> Nach §&nbsp;644 BGB trägt der Unternehmer die Gefahr bis zur Abnahme des Werkes.<a class="fn" href="#quelle-1">[1]</a> Nach den unverbindlichen Musterbedingungen des GDV (ABBL 2018) sind unter anderem Baugeräte, Werkzeuge, Gerüste, Fahrzeuge und Altbauten typischerweise nicht versichert; auch Brand, Blitzschlag und Explosion sind dort typischerweise ausgeschlossen, sofern nichts anderes vereinbart ist.<a class="fn" href="#quelle-2">[2]</a> Der konkrete Vertrag kann abweichen. Pauschale Prämien oder Konditionen nenne ich bewusst nicht. Elias Gassmann berät dich dazu in Mainz, im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern oder online deutschlandweit.</p>
-        </aside>
-        <p class="core-answer">Typische Anlässe: ein Neubau oder Umbau steht an, du willst wissen, wer bis zur Abnahme die Gefahr trägt und was eine Bauleistungs&shy;versicherung typischerweise leistet — und was nicht.</p>
+        <p class="eyebrow hero-label">Bau</p>
+        <h1 id="hero-title">Bauleistungsversicherung: Wer trägt den Schaden, bevor abgenommen ist?</h1>
+        <p class="core-answer">Bis zur Abnahme trägst du als Unternehmer nach § 644 BGB in der Regel die Gefahr, dass die Bauleistung zufällig untergeht oder verschlechtert wird. Die Bauleistungsversicherung sichert unvorhergesehene Sachschäden an den Bauleistungen während der Bauzeit, typischerweise bis zur Abnahme oder Bezugsfertigkeit. Sie ist keine Gebäudeversicherung und keine Haftpflicht.</p>
+        <p><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=bauleistungsversicherung">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a></p>
       </div>
       <div class="hero-form">
         <div class="form-card" id="anfrage">
-          <h2>Jetzt Beratung anfragen</h2>
-          <p class="form-lead">Unverbindlich, in Mainz, im Rhein-Main-Gebiet oder online. Erzähl kurz, worum es geht.</p>
+          <h2>Erstgespräch anfragen</h2>
+          <p class="form-lead">Kostenlos und unverbindlich. Ein Satz zu deiner Lage reicht.</p>
           <form class="lead-form" id="beratung-form" action="https://eg-anfragen.elias-gassmann.workers.dev/anfrage" method="post" novalidate>
             <label>Name
               <input type="text" name="name" autocomplete="name" required placeholder="Vor- und Nachname">
@@ -309,10 +323,10 @@
               <input type="text" name="kontakt" autocomplete="on" required placeholder="Nummer oder E-Mail-Adresse" inputmode="email">
             </label>
             <label>Branche oder Tätigkeit
-              <input type="text" name="branche" required placeholder="z. B. Bauunternehmen, Ausbau, Rohbau">
+              <input type="text" name="branche" required placeholder="z. B. Rohbau, Ausbau, GaLaBau">
             </label>
             <label>Kurz dein Anliegen
-              <input type="text" name="anliegen" required placeholder="z. B. Bauvorhaben während der Bauzeit absichern">
+              <input type="text" name="anliegen" required placeholder="z. B. Bauleistung während der Bauzeit">
             </label>
             <label class="consent fwx-consent">
               <input type="checkbox" name="datenschutz" value="ja" required>
@@ -324,210 +338,69 @@
           </form>
           <p class="form-alt">Oder Termin direkt wählen: <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=bauleistungsversicherung">termin.eliasgassmann.de</a> · <a href="tel:+491626960629">+49 162 6960629</a></p>
         </div>
-      </div>
+        </div>
       <div class="hero-panel">
         <figure class="hero-portrait">
-          <img src="portrait-elias-gassmann.jpeg" alt="Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" fetchpriority="high">
+          <img src="portrait-elias-gassmann.jpeg" alt="Porträt von Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" fetchpriority="high">
           <figcaption>
             <span>Elias Gassmann</span>
             <strong>Finanzberater in Mainz</strong>
-            <small>Persönlich in Mainz, Rhein-Main und online</small>
+            <small>Sitz in Mainz, Gespräche auch online</small>
           </figcaption>
         </figure>
         <a class="trust-rating" href="https://www.google.com/maps?cid=18281856182098275446" target="_blank" rel="noopener noreferrer">
           <span aria-hidden="true">★★★★★</span>
           <span>
             <strong>4,9 / 5 · 48 Google-Rezensionen</strong>
-            <small>Stand 10.11.2026, wie auf der Seite Finanzberater Mainz</small>
+            <small>FactoringWerkstatt · Stand 10.11.2026</small>
           </span>
         </a>
       </div>
     </section>
-
-    <section class="page-block" aria-labelledby="was-ist">
-      <p class="eyebrow">Einordnung</p>
-      <h2 id="was-ist">Was die Bauleistungs&shy;versicherung typischerweise leistet</h2>
-      <p class="lead">Sie gilt typischerweise den Bauleistungen selbst: den Lieferungen und Leistungen für ein im Versicherungsschein bezeichnetes Bauvorhaben, einschließlich Baustoffen und Bauteilen.<a class="fn" href="#quelle-2">[2]</a></p>
-      <p>Nach §&nbsp;644 BGB trägt der Unternehmer die Gefahr bis zur Abnahme des Werkes. Kommt der Besteller in Annahmeverzug, geht die Gefahr auf ihn über. Für den zufälligen Untergang eines vom Besteller gelieferten Stoffes ist der Unternehmer nicht verantwortlich.<a class="fn" href="#quelle-1">[1]</a> Viele Bauverträge greifen zusätzlich auf die VOB/B zurück; was im Einzelfall gilt, steht im Bauvertrag.</p>
-      <p>Die folgenden Punkte stützen sich auf die unverbindlichen Musterbedingungen des Gesamtverbands der Deutschen Versicherungswirtschaft (GDV), ABBL 2018, in der Fassung vom 1.&nbsp;Juli 2025. Sie gelten nur, wenn sie im Vertrag einbezogen sind. Der konkrete Versicherungsschein kann abweichen; maßgebend ist immer die vereinbarte Regelung. Pauschale Prämien, Selbstbehalte oder Versicherungssummen nenne ich bewusst nicht.<a class="fn" href="#quelle-2">[2]</a></p>
-      <ul class="topic-list">
-        <li>
-          <strong>Unvorhergesehene Sachschäden</strong>
-          <span>Versichert sind typischerweise unvorhergesehen eintretende Beschädigungen oder Zerstörungen der versicherten Sachen. Unvorhergesehen sind nach den Musterbedingungen Schäden, die der Versicherungsnehmer oder seine Repräsentanten weder rechtzeitig vorhergesehen haben noch mit dem erforderlichen Fachwissen hätten vorhersehen können.<a class="fn" href="#quelle-2">[2]</a></span>
-        </li>
-        <li>
-          <strong>Wessen Interesse geschützt ist</strong>
-          <span>Versichert sein können typischerweise das Interesse des Versicherungsnehmers sowie die Interessen des Bauherrn oder sonstigen Auftraggebers und aller beteiligten Unternehmer einschließlich der Subunternehmer, jeweils mit ihren Lieferungen und Leistungen.<a class="fn" href="#quelle-2">[2]</a></span>
-        </li>
-        <li>
-          <strong>Versicherungssumme</strong>
-          <span>Als Versicherungswert gelten nach den Musterbedingungen typischerweise die Kosten der Lieferungen und Leistungen für das gesamte Vorhaben, einschließlich Stundenlohnarbeiten, Eigenleistungen des Bauherrn und des Neuwerts der Baustoffe und Bauteile. Grundstücks- und Erschließungskosten sowie Baunebenkosten bleiben typischerweise unberücksichtigt. Die Summe soll dem Wert entsprechen; sonst droht Unterversicherung. Zu Beginn wird oft eine vorläufige Summe vereinbart und später endgültig festgesetzt.<a class="fn" href="#quelle-2">[2]</a></span>
-        </li>
-      </ul>
+    <section class="page-block" id="fuer-wen" aria-labelledby="fuer-wen-title">
+      <p class="eyebrow">Für wen</p>
+      <h2 id="fuer-wen-title">Für wen das ist.</h2>
+      
+      <ul class="topic-list"><li><strong>Bau und Ausbau</strong><span>Du hast Leistung auf der Baustelle, die noch nicht abgenommen ist.</span></li><li><strong>Auftraggeber verlangt sie</strong><span>Im Vertrag steht eine Bauleistungsversicherung. Dann muss der Umfang zum Auftrag passen.</span></li><li><strong>Eigene Maschinen</strong><span>Fahrbare Maschinen sind eher die <a href="maschinenversicherung-bau">Maschinenversicherung</a>, nicht die Bauleistung.</span></li></ul>
     </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="grenzen">
-      <p class="eyebrow">Grenzen</p>
-      <h2 id="grenzen">Was typischerweise nicht versichert ist</h2>
-      <p class="lead">Die Musterbedingungen nennen eine Reihe von Sachen und Gefahren, die typischerweise außerhalb des Schutzes liegen. Im Vertrag können Einschlüsse oder weitere Ausschlüsse vereinbart sein.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Geräte, Werkzeuge und Fahrzeuge</strong>
-          <span>Baugeräte einschließlich Zubehör, Kleingeräte und Handwerkzeuge, Gerüste und Schalungen, Baucontainer und Fahrzeuge aller Art sind nach den Musterbedingungen typischerweise nicht versichert. Dafür kommen typischerweise andere Versicherungen infrage, etwa die <a href="maschinenversicherung-bau">Maschinenversicherung für fahrbare Baumaschinen</a>, die Inhaltsversicherung für Werkzeug oder die Kfz-Versicherung für Fahrzeuge.<a class="fn" href="#quelle-2">[2]</a></span>
-        </li>
-        <li>
-          <strong>Altbauten und Hilfsbauten</strong>
-          <span>Altbauten des Hoch-, Tief- und Ingenieurbaus sowie Hilfsbauten und Bauhilfsstoffe sind in den Musterbedingungen typischerweise ausgenommen. Ob ein Umbau oder eine Sanierung versicherbar ist, hängt vom konkreten Vertrag ab und ist nicht selbstverständlich.<a class="fn" href="#quelle-2">[2]</a></span>
-        </li>
-        <li>
-          <strong>Brand, Blitzschlag, Explosion</strong>
-          <span>Diese Gefahren sind in den Musterbedingungen typischerweise ausgeschlossen. Ob sie gleichwohl mitversichert sind, steht im Vertrag. Eine Gebäudeversicherung greift typischerweise erst am fertigen oder bezugsfertigen Gebäude; siehe <a href="gebaeudeversicherung-gewerbe">Gebäudeversicherung für Gewerbeimmobilien</a>.<a class="fn" href="#quelle-2">[2]</a></span>
-        </li>
-        <li>
-          <strong>Normale Witterung und weitere Ausschlüsse</strong>
-          <span>Keine Entschädigung typischerweise für normale Wetter- und Witterungseinflüsse, mit denen vor Ort in einem Dreimonatszeitraum gerechnet werden muss; als normal gelten nach den Musterbedingungen Einflüsse, die einmal innerhalb von zehn Jahren in diesem Zeitraum am Versicherungsort aufgetreten sind, ohne einen außergewöhnlichen Spitzenwert. Weitere typische Ausschlüsse sind Vorsatz, Krieg, innere Unruhen sowie Schäden durch Gewässer, soweit nichts anderes vereinbart ist.<a class="fn" href="#quelle-2">[2]</a></span>
-        </li>
-      </ul>
-      <p>Personenschäden und Ansprüche Dritter gehören typischerweise nicht in diese Sachversicherung, sondern in die <a href="betriebshaftpflicht-mainz">Betriebshaftpflicht</a>. Werkzeug und Inventar ordnet die Seite <a href="inhaltsversicherung-betrieb">Inhalts- und Elektronikversicherung</a> ein.</p>
+<section class="page-block page-block--grau" id="worauf" aria-labelledby="worauf-title">
+      <p class="eyebrow">Worauf es ankommt</p>
+      <h2 id="worauf-title">Was ich mit dir kläre.</h2>
+      
+      <ul class="topic-list"><li><strong>Während der Bauzeit</strong><span>Der Schutz gilt für die versicherte Bauleistung, nicht für das fertige Gebäude auf Dauer.</span></li><li><strong>Unvorhergesehen</strong><span>Übliche Ausschlüsse sind etwa normale Witterung, wenn sie nicht als unvorhergesehenes Ereignis gilt, sowie Mängel, die reine Nachbesserung sind. Maßgeblich ist der Vertrag, oft angelehnt an GDV-Musterbedingungen.</span></li><li><strong>Haftpflicht daneben</strong><span>Schäden, die du Dritten zufügst, bleiben bei der <a href="betriebshaftpflicht-mainz">Betriebshaftpflicht</a>.</span></li><li><strong>Nicht das Gebäude danach</strong><span>Steht der Bau und ist abgenommen, ist die <a href="gebaeudeversicherung-gewerbe">Gebäudeversicherung</a> das andere Thema.</span></li></ul>
     </section>
-
-    <section class="page-block" aria-labelledby="dauer">
-      <p class="eyebrow">Zeitraum</p>
-      <h2 id="dauer">Wann der Schutz typischerweise beginnt und endet</h2>
-      <p class="lead">Der Versicherungsschutz beginnt zu dem im Versicherungsschein angegebenen Zeitpunkt. Er endet nach den Musterbedingungen zum frühesten der genannten Zeitpunkte, spätestens zu dem im Schein festgelegten Datum.<a class="fn" href="#quelle-2">[2]</a></p>
-      <ul class="topic-list">
-        <li>
-          <strong>Im Hochbau</strong>
-          <span>Typischerweise mit der Bezugsfertigkeit, nach Ablauf von sechs Werktagen seit Beginn der Benutzung oder mit dem Tag der behördlichen Gebrauchsabnahme.<a class="fn" href="#quelle-2">[2]</a></span>
-        </li>
-        <li>
-          <strong>Im Tief- und Ingenieurbau</strong>
-          <span>Typischerweise mit der Betriebsfertigkeit oder mit dem Zeitpunkt, in dem das Werk vom Bauherrn abgenommen wird oder nach der VOB/B als abgenommen gilt.<a class="fn" href="#quelle-2">[2]</a></span>
-        </li>
-        <li>
-          <strong>Restarbeiten und Verlängerung</strong>
-          <span>Für Restarbeiten kann der Schutz weiter bestehen. Vor dem vereinbarten Ende kann typischerweise eine Verlängerung beantragt werden.<a class="fn" href="#quelle-2">[2]</a></span>
-        </li>
-      </ul>
-    </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="fuer-wen">
-      <p class="eyebrow">Mainz und Rhein-Main</p>
-      <h2 id="fuer-wen">Für wen das typischerweise infrage kommt</h2>
-      <p class="lead">Die Seite richtet sich an Bauunternehmen und Handwerksbetriebe in Mainz, Wiesbaden, Frankfurt, Darmstadt und im übrigen Rhein-Main-Gebiet sowie im Umkreis von rund 100 Kilometern. Online berate ich deutschlandweit, typischerweise per Video.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Bauunternehmen</strong>
-          <span>Du führst Neubauten, An- oder Umbauten aus und willst einordnen, wer bis zur Abnahme die Gefahr trägt und was die Bauleistungs&shy;versicherung typischerweise abdeckt.</span>
-        </li>
-        <li>
-          <strong>Ausbau- und Rohbaugewerke</strong>
-          <span>Du erbringst einzelne Gewerke und willst klären, ob dein Interesse als beteiligtes Unternehmen typischerweise mitversichert sein kann.</span>
-        </li>
-        <li>
-          <strong>Abgrenzung zu anderen Verträgen</strong>
-          <span>Du hast bereits eine Gebäude-, Inhalts- oder Betriebshaftpflichtversicherung und willst wissen, welche Lücke während der Bauzeit typischerweise bleibt.</span>
-        </li>
-      </ul>
-      <p>Nicht jedes Thema und jedes Produkt ist automatisch verfügbar; das klären wir im Gespräch. Zur Berufshaftpflicht von Architekten und Ingenieuren, also zur Haftung aus Planung und Bauüberwachung, liegt eine Einordnung auf der Seite <a href="berufshaftpflicht-architekten-ingenieure">Berufshaftpflicht für Architekten und Ingenieure</a>. Einen Überblick zur Finanzberatung in Mainz findest du auf der Seite <a href="finanzberater-mainz">Finanzberater Mainz</a>.</p>
-    </section>
-
-    <section class="process-section page-block" id="ablauf" aria-labelledby="ablauf-title">
+<section class="process-section page-block" id="ablauf" aria-labelledby="ablauf-title">
       <div class="process-heading">
-        <p class="eyebrow">Der Ablauf</p>
-        <h2 id="ablauf-title">So läuft die Beratung</h2>
-        <p class="lead">Wir starten mit dem Bauvorhaben, dem Bauvertrag und dem, was schon versichert ist. Die Beratung kann vollständig digital laufen, typischerweise per Video.</p>
+        <p class="eyebrow">Ablauf</p>
+        <h2 id="ablauf-title">So gehe ich vor.</h2>
+        <p class="lead">Du musst nichts vorbereiten. Unterlagen helfen, wenn du sie schon hast.</p>
       </div>
-      <ol class="process-list">
-        <li>
-          <span>1</span>
-          <h3>Termin buchen</h3>
-          <p>Du buchst einen unverbindlichen Termin, vor Ort in Mainz, im Rhein-Main-Gebiet bzw. im Umkreis von rund 100 Kilometern oder online. Online berate ich deutschlandweit, typischerweise per Video.</p>
-        </li>
-        <li>
-          <span>2</span>
-          <h3>Vorhaben verstehen</h3>
-          <p>Wir sprechen über Art des Bauvorhabens, Vertragsgrundlage, Beteiligte und den geplanten Zeitraum bis zur Abnahme oder Bezugsfertigkeit.</p>
-        </li>
-        <li>
-          <span>3</span>
-          <h3>Schutz und Lücken einordnen</h3>
-          <p>Ich ordne typische Leistungen und Ausschlüsse anhand der vereinbarten oder vorgesehenen Bedingungen ein und grenze sie zu Gebäude-, Inhalts- und Betriebshaftpflichtversicherung ab. Nicht jedes Produkt ist automatisch verfügbar.</p>
-        </li>
-        <li>
-          <span>4</span>
-          <h3>Bei Bedarf den nächsten Schritt planen</h3>
-          <p>Kommt ein Vertrag infrage, schauen wir uns die offenen Punkte in Ruhe an, einschließlich Versicherungssumme und etwaiger Einschlüsse.</p>
-        </li>
-        <li>
-          <span>5</span>
-          <h3>In Ruhe entscheiden</h3>
-          <p>Du entscheidest in Ruhe, ob und wie es weitergehen soll. Durch das Erstgespräch entsteht keine Verpflichtung.</p>
-        </li>
-      </ol>
+      <ol class="process-list"><li><span>1</span><h3>Kennenlernen</h3><p>Art der Baustellen und wer den Vertrag heute abschließt.</p></li><li><span>2</span><h3>Analysieren</h3><p>Bauzeit, Summe, Selbstbehalt, was ausgeschlossen ist.</p></li><li><span>3</span><h3>Lösungen besprechen</h3><p>Ich trenne Bauleistung, Haftpflicht und Maschinen.</p></li><li><span>4</span><h3>Umsetzen</h3><p>Nur der Umfang, den deine Aufträge wirklich brauchen.</p></li></ol>
     </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="transparenz">
-      <p class="eyebrow">Kosten und Ablauf</p>
-      <h2 id="transparenz">Was das Erstgespräch kostet</h2>
-      <p class="lead">Für das Erstgespräch zahlst du keine Beratungsgebühr. Bevor du etwas entscheidest, weißt du, wie ein Vorschlag funktioniert und welche Kosten daran hängen.</p>
-      <p class="partners">Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte; den Ablauf erkläre ich dir im Gespräch. Pauschale Prämien oder eine festgelegte Empfehlung für einen bestimmten Vertrag nenne ich hier bewusst nicht. Es werden keine Kundengelder entgegengenommen; Zahlungen gehen direkt an den jeweiligen Anbieter. Alle Pflichtangaben findest du im <a href="impressum.html">Impressum</a>.</p>
-    </section>
-
-    <section class="page-block" id="termin" aria-labelledby="termin-title">
+<section class="page-block" id="naechster" aria-labelledby="naechster-title">
       <p class="eyebrow">Nächster Schritt</p>
-      <h2 id="termin-title">Termin vereinbaren — in Mainz, im Rhein-Main-Gebiet oder online</h2>
-      <p class="lead">Den unverbindlichen Termin buchst du unter <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=bauleistungsversicherung">termin.eliasgassmann.de</a>. Ohne Druck und ohne eine festgelegte Empfehlung zu einem bestimmten Vertrag.</p>
-      <p>Die öffentlich genannte Anschrift ist August-Horch-Straße 6A, 55129 Mainz. Ob ein Termin vor Ort oder online per Video sinnvoller ist, klären wir bei der Buchung. Du erreichst mich auch unter <a href="tel:+491626960629">+49 162 6960629</a> und <a href="mailto:elias@eliasgassmann.de">elias@eliasgassmann.de</a>.</p>
-      <p style="margin-top:28px"><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=bauleistungsversicherung">Unverbindlichen Termin vereinbaren <span aria-hidden="true">↗</span></a></p>
+      <h2 id="naechster-title">Das Erstgespräch zeigt dir den nächsten sinnvollen Schritt.</h2>
+      
+      <p>Du hörst, was schon passt, was fehlt und was es kosten würde. Danach entscheidest du.</p><p style="margin-top:8px"><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=bauleistungsversicherung">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a></p>
     </section>
-
     <section class="faq-section" id="fragen" aria-labelledby="faq-title">
       <div>
-        <p class="eyebrow">Vor dem Gespräch</p>
-        <h2 id="faq-title">Häufige Fragen zur Bauleistungs&shy;versicherung</h2>
+        <p class="eyebrow">Kurz geklärt</p>
+        <h2 id="faq-title">Fragen, die oft kommen.</h2>
       </div>
       <div class="faq-list">
-        <details open>
-          <summary>Was ist eine Bauleistungsversicherung?</summary>
-          <p>Die Bauleistungsversicherung schützt typischerweise die Lieferungen und Leistungen für ein im Versicherungsschein bezeichnetes Bauvorhaben gegen unvorhergesehene Beschädigungen oder Zerstörungen. Nach § 644 BGB trägt der Unternehmer die Gefahr bis zur Abnahme des Werkes. Was im Einzelfall versichert ist, steht im Vertrag. Die unverbindlichen Musterbedingungen des GDV (ABBL 2018) können zugrunde liegen, müssen es aber nicht.</p>
-        </details>
-        <details>
-          <summary>Was ist typischerweise versichert — und was nicht?</summary>
-          <p>Nach den unverbindlichen Musterbedingungen des GDV sind typischerweise alle Lieferungen und Leistungen für das bezeichnete Bauvorhaben versichert, also Neubauleistungen einschließlich Baustoffen und Bauteilen. Typischerweise nicht versichert sind unter anderem Altbauten, Baugeräte, Kleingeräte und Handwerkzeuge, Gerüste, Baucontainer, Fahrzeuge, Pläne und Pflanzen. Hilfsbauten und Bauhilfsstoffe sind in den Musterbedingungen ebenfalls ausgenommen, sofern nichts anderes vereinbart ist.</p>
-        </details>
-        <details>
-          <summary>Sind Brand, Blitzschlag und Explosion mitversichert?</summary>
-          <p>Nicht automatisch. In den unverbindlichen Musterbedingungen des GDV sind Schäden durch Brand, Blitzschlag und Explosion typischerweise ausgeschlossen. Ob diese Gefahren in deinem Vertrag dennoch mitversichert sind, prüfen wir anhand der vereinbarten Bedingungen. Pauschale Prämien oder Einschlüsse nenne ich hier bewusst nicht.</p>
-        </details>
-        <details>
-          <summary>Wann beginnt und wann endet der Schutz typischerweise?</summary>
-          <p>Der Schutz beginnt zu dem im Versicherungsschein angegebenen Zeitpunkt. Nach den Musterbedingungen des GDV endet er im Hochbau typischerweise mit der Bezugsfertigkeit, nach Ablauf von sechs Werktagen seit Beginn der Benutzung oder mit der behördlichen Gebrauchsabnahme, je nachdem, was zuerst eintritt. Im Tief- und Ingenieurbau typischerweise mit der Betriebsfertigkeit oder der Abnahme. Spätestens endet er zu dem im Versicherungsschein genannten Zeitpunkt. Für Restarbeiten kann der Schutz weiter bestehen.</p>
-        </details>
-        <details>
-          <summary>Reicht die Gebäudeversicherung oder die Betriebshaftpflicht dafür aus?</summary>
-          <p>Typischerweise nicht. Die Gebäudeversicherung gilt dem fertigen oder bezugsfertigen Gebäude. Die Betriebshaftpflicht gilt Ansprüchen Dritter wegen Personen- oder Sachschäden. Die Bauleistungsversicherung gilt typischerweise den Bauleistungen selbst während der Bauzeit. Die drei Versicherungen ersetzen einander nicht. Eine Einordnung zur Gebäudeversicherung und zur Betriebshaftpflicht liegt auf den jeweiligen Seiten.</p>
-        </details>
-        <details>
-          <summary>Ist das Erstgespräch kostenpflichtig?</summary>
-          <p>Das Erstgespräch ist unverbindlich. Du zahlst keine Beratungsgebühr. Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte. Den Ablauf erkläre ich dir im Gespräch. Nicht jedes Produkt ist automatisch verfügbar.</p>
-        </details>
-        <details>
-          <summary>Berätst du nur in Mainz oder auch online?</summary>
-          <p>Beides. Du kannst einen Termin in Mainz, nach Absprache im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern, etwa in Wiesbaden, Frankfurt oder Darmstadt, oder online vereinbaren. Online berate ich deutschlandweit, typischerweise per Video. Den Termin buchst du unter <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=bauleistungsversicherung">termin.eliasgassmann.de</a>.</p>
-        </details>
+        <details open><summary>Was sichert die Bauleistungsversicherung?</summary><p>Unvorhergesehene Sachschäden an den versicherten Bauleistungen während der Bauzeit, im vereinbarten Umfang.</p></details><details><summary>Was hat § 644 BGB damit zu tun?</summary><p>Bis zur Abnahme trägt der Unternehmer in der Regel die Gefahr des zufälligen Untergangs der Leistung. Die Versicherung kann dieses wirtschaftliche Risiko abfedern. Sie ändert nicht den Gesetzestext.</p></details><details><summary>Ist jede Beschädigung versichert?</summary><p>Nein. Der Vertrag nennt Einschlüsse und Ausschlüsse. Reine Nachbesserung eines eigenen Mangels ist typischerweise kein Versicherungsfall.</p></details><details><summary>Was kostet das Erstgespräch?</summary><p>Das Erstgespräch kostet dich nichts. Eine Beratungsgebühr verlange ich nicht. Kommt ein Produkt zustande, werde ich vom Anbieter vergütet. Wie das läuft, sage ich dir im Gespräch. Die Pflichtangaben stehen im Impressum.</p></details><details><summary>Muss ich bestehende Verträge kündigen?</summary><p>Nein. Ich schaue zuerst, was du schon hast. Was zu deinem Ziel passt, kann bleiben. Ob du etwas änderst, entscheidest du.</p></details><details><summary>Bist du danach noch da?</summary><p>Ja. Wenn sich etwas ändert oder du eine Frage zum Vertrag hast, meldest du dich bei mir. Ich bleibe dein Ansprechpartner.</p></details>
       </div>
     </section>
-
     <section class="contact-card" aria-labelledby="kontakt-title">
       <figure class="hero-portrait" style="margin:0;max-height:520px">
-        <img src="portrait-elias-gassmann.jpeg" alt="Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" loading="lazy">
+        <img src="portrait-elias-gassmann.jpeg" alt="Porträt von Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" loading="lazy">
       </figure>
       <div class="contact-content">
-        <p class="eyebrow">Kontakt</p>
-        <h2 id="kontakt-title">Was hast du vor?<br><em>Lass uns sprechen.</em></h2>
-        <p class="contact-copy">Ein Bauvorhaben während der Bauzeit einordnen, die Gefahr bis zur Abnahme verstehen oder bestehende Verträge abgrenzen: Erzähl mir, worum es geht.</p>
-        <a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=bauleistungsversicherung">Unverbindlichen Termin vereinbaren <span aria-hidden="true">↗</span></a>
+        <p class="eyebrow">Erstgespräch</p>
+        <h2 id="kontakt-title">Wenn du das einordnen willst, sag mir Bescheid.</h2>
+        <p class="contact-copy">Kurz schreiben, worum es geht. Eine Beratungsgebühr verlange ich nicht.</p>
+        <a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=bauleistungsversicherung">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a>
         <div class="contact-data">
           <a href="tel:+491626960629">+49 162 6960629</a>
           <a href="mailto:elias@eliasgassmann.de">elias@eliasgassmann.de</a>
@@ -535,16 +408,7 @@
         </div>
       </div>
     </section>
-
-    <aside class="quellen" aria-labelledby="quellen-title">
-      <h2 id="quellen-title">Quellen zu Gesetz und Musterbedingungen</h2>
-      <ol>
-        <li id="quelle-1"><a href="https://www.gesetze-im-internet.de/bgb/__644.html">Bürgerliches Gesetzbuch, §&nbsp;644 Gefahrtragung</a>, gesetze-im-internet.de.</li>
-        <li id="quelle-2"><a href="https://www.gdv.de/resource/blob/6230/fbbb6e6b2d99e636aa3cec53add41252/11-allgemeine-bedingungen-fuer-die-versicherung-von-bauleistungen-abbl-2018--data.pdf">Gesamtverband der Deutschen Versicherungswirtschaft, Allgemeine Bedingungen für die Bauleistungs&shy;versicherung (ABBL 2018)</a>, unverbindliche Musterbedingungen, Version 1.&nbsp;Juli 2025.</li>
-      </ol>
-    </aside>
   </main>
-
   <footer>
     <p>© <span id="year">2026</span> Elias Gassmann</p>
     <div>
@@ -553,7 +417,7 @@
       <a href="/datenschutz">Datenschutz</a>
     </div>
   </footer>
-  <a class="mobile-sticky" href="#anfrage">Jetzt Beratung anfragen</a>
+  <a class="mobile-sticky" href="#anfrage">Erstgespräch anfragen</a>
   <script src="formular.js" defer></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {

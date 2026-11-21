@@ -3,72 +3,144 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kosten im Altersvorsorgedepot — Kostendeckel, Effektivkosten und Wechsel — Elias Gassmann</title>
-  <meta name="description" content="Kosten im Altersvorsorgedepot: gesetzlicher Kostendeckel von 1,0 Prozent nur beim Standarddepot, keine Obergrenze bei freien Depots und Garantieprodukten, Wechselkosten und Effektivkosten nach Angaben von BMF, BaFin und Gesetzestext. Beratung in Mainz, im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern oder online.">
+  <title>Kosten im Altersvorsorgedepot | Gassmann</title>
+  <meta name="description" content="Kosten im Altersvorsorgedepot: 1,0 Prozent Deckel nur beim Standarddepot. Freie Depots und Garantieprodukte ohne gesetzliche Obergrenze.">
   <link rel="canonical" href="https://eliasgassmann.de/altersvorsorgedepot-kosten">
   <meta name="theme-color" content="#fbfbfd">
-  <meta property="og:title" content="Kosten im Altersvorsorgedepot — Kostendeckel, Effektivkosten und Wechsel — Elias Gassmann">
-  <meta property="og:description" content="Kostendeckel nur beim Standarddepot, keine gesetzliche Obergrenze bei freien Depots und Garantieprodukten, Wechselkosten und worauf du typischerweise beim Vergleich achtest. Beratung in Mainz, Rhein-Main oder online.">
+  <meta property="og:title" content="Kosten im Altersvorsorgedepot | Gassmann">
+  <meta property="og:description" content="Kosten im Altersvorsorgedepot: 1,0 Prozent Deckel nur beim Standarddepot. Freie Depots und Garantieprodukte ohne gesetzliche Obergrenze.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://eliasgassmann.de/altersvorsorgedepot-kosten">
   <meta property="og:image" content="https://eliasgassmann.de/portrait-elias-gassmann.jpeg">
   <meta property="og:locale" content="de_DE">
   <link rel="stylesheet" href="apple.css?v=20261103">
   <style>
-    .hero h1, .intro h2, .process-heading h2, .faq-section h2, .contact-card h2, .page-block h2, .quellen h2 {
+    .hero h1, .intro h2, .process-heading h2, .faq-section h2, .contact-card h2, .page-block h2 {
       -webkit-hyphens: manual;
       hyphens: manual;
       overflow-wrap: normal;
       word-break: normal;
     }
-    .hero--beratung { align-items: start; gap: 48px; padding-bottom: 72px; }
-    .hero--beratung h1 { font-size: clamp(36px, 4.2vw, 58px); line-height: 1.08; max-width: 20ch; }
-    .answer-box { margin: 22px 0 20px; padding: 18px 20px 18px 22px; border-radius: 20px; background: var(--grau); border-left: 3px solid var(--blau); }
-    .answer-label { display: block; margin: 0 0 6px; color: var(--blau); font-size: 13px; font-weight: 600; }
-    .answer-box p { margin: 0; color: var(--ink); font-size: 17px; line-height: 1.45; }
-    .core-answer { margin: 0 0 22px; max-width: 40rem; font-size: 18px; line-height: 1.45; color: var(--ink-2); }
+    .hero--beratung {
+      align-items: start;
+      gap: 48px;
+      padding-bottom: 72px;
+    }
+    .hero--beratung h1 {
+      font-size: clamp(36px, 4.2vw, 58px);
+      line-height: 1.08;
+      max-width: min(22ch, 100%);
+      overflow-wrap: anywhere;
+    }
+    .answer-box {
+      margin: 22px 0 20px;
+      padding: 18px 20px 18px 22px;
+      border-radius: 20px;
+      background: var(--grau);
+      border-left: 3px solid var(--blau);
+    }
+    .answer-label {
+      display: block;
+      margin: 0 0 6px;
+      color: var(--blau);
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .answer-box p {
+      margin: 0;
+      color: var(--ink);
+      font-size: 17px;
+      line-height: 1.45;
+    }
+    .core-answer {
+      margin: 0 0 22px;
+      max-width: 40rem;
+      font-size: 18px;
+      line-height: 1.45;
+      color: var(--ink-2);
+    }
     .hero-panel { display: grid; gap: 16px; min-width: 0; }
     .hero--beratung .hero-portrait { max-height: 420px; aspect-ratio: 4/5; }
-    .form-card { padding: 22px 22px 20px; border-radius: 28px; background: #fff; box-shadow: var(--schatten-hoch); }
-    .form-card h2 { margin: 0 0 6px; font: 700 24px/1.2 var(--display); letter-spacing: -.03em; }
-    .form-lead, .form-alt, .form-status { margin: 0 0 16px; color: var(--mut); font-size: 15px; line-height: 1.45; }
+    .form-card {
+      padding: 22px 22px 20px;
+      border-radius: 28px;
+      background: #fff;
+      box-shadow: var(--schatten-hoch);
+    }
+    .form-card h2 {
+      margin: 0 0 6px;
+      font: 700 24px/1.2 var(--display);
+      letter-spacing: -.03em;
+    }
+    .form-lead, .form-alt, .form-status {
+      margin: 0 0 16px;
+      color: var(--mut);
+      font-size: 15px;
+      line-height: 1.45;
+    }
     .form-alt, .form-status { margin: 10px 0 0; font-size: 13px; }
     .form-status.is-ok { color: #248a3d; }
     .form-status.is-error { color: #b42318; }
-    .form-alt a, .consent a, .page-block a, .quellen a { color: var(--link); }
+    .fwx-honeypot {
+      position: absolute;
+      left: -10000px;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+
+    .form-alt a, .consent a { color: var(--link); }
     .lead-form { display: grid; gap: 12px; }
     .lead-form label { display: grid; gap: 5px; font-size: 13px; font-weight: 600; color: var(--ink); }
-    .lead-form input[type="text"] { width: 100%; padding: 12px 14px; border: 1px solid var(--linie); border-radius: 12px; background: var(--grau); color: var(--ink); font: 16px var(--sans); }
+    .lead-form input[type="text"] {
+      width: 100%; padding: 12px 14px; border: 1px solid var(--linie); border-radius: 12px;
+      background: var(--grau); color: var(--ink); font: 16px var(--sans);
+    }
     .lead-form input:focus { outline: 2px solid rgba(0,113,227,.55); outline-offset: 1px; background: #fff; }
     .consent { display: flex !important; align-items: flex-start; gap: 10px; font-weight: 400 !important; font-size: 13px !important; color: var(--mut) !important; line-height: 1.45; }
     .consent input { margin-top: 3px; flex: none; }
-    .lead-form button[type="submit"] { appearance: none; margin-top: 4px; min-height: 50px; padding: 0 22px; border: 0; border-radius: 980px; background: var(--blau); color: #fff; font-size: 16px; cursor: pointer; }
+    .lead-form button[type="submit"] {
+      appearance: none; margin-top: 4px; min-height: 50px; padding: 0 22px; border: 0; border-radius: 980px;
+      background: var(--blau); color: #fff; font-size: 16px; cursor: pointer;
+    }
     .lead-form button[type="submit"]:hover { background: var(--blau-hover); }
-    .trust-rating { display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-radius: 20px; background: var(--grau); color: inherit; }
+    .trust-rating {
+      display: flex; align-items: center; gap: 12px; padding: 14px 16px;
+      border-radius: 20px; background: var(--grau); color: inherit;
+    }
     .trust-rating strong { display: block; font-size: 15px; }
     .trust-rating small { display: block; font-size: 12px; color: var(--mut); }
+    .quote-mini {
+      margin: 0; padding: 16px 18px; border-radius: 20px; background: var(--grau);
+    }
+    .quote-mini p { margin: 0 0 8px; font-size: 15px; line-height: 1.4; }
+    .quote-mini footer { font-size: 12px; color: var(--mut); }
     .page-block { padding: 96px var(--rand); }
     .page-block h2 { margin: 8px 0 18px; font: 700 clamp(34px,4.2vw,56px)/1.07 var(--display); letter-spacing: -.03em; max-width: 22ch; }
     .page-block .lead, .page-block p { max-width: 42rem; }
     .page-block p { margin: 0 0 16px; font-size: 17px; line-height: 1.5; color: var(--ink-2); }
     .page-block .lead { font-size: 21px; line-height: 1.38; color: var(--mut); }
     .page-block--grau { background: var(--grau); }
+    .criteria {
+      width: 100%; max-width: 52rem; margin: 8px 0 0; border-collapse: collapse;
+      background: #fff; border-radius: 20px; box-shadow: var(--schatten); overflow: hidden;
+    }
+    .criteria caption { caption-side: top; text-align: left; padding: 18px 20px 8px; font: 600 18px var(--display); color: var(--ink); }
+    .criteria th, .criteria td { padding: 14px 20px; border-top: 1px solid var(--linie); text-align: left; vertical-align: top; font-size: 15px; line-height: 1.45; }
+    .criteria thead th { font-size: 12px; color: var(--mut); font-weight: 600; }
+    .criteria tbody th { width: 48%; color: var(--ink); font-weight: 600; }
     .topic-list { display: grid; gap: 12px; margin: 8px 0 20px; padding: 0; list-style: none; max-width: 44rem; }
     .topic-list li { padding: 18px 20px; border-radius: 20px; background: var(--grau); }
     .topic-list strong { display: block; margin-bottom: 4px; }
     .topic-list span { color: var(--mut); font-size: 15px; line-height: 1.45; }
-    .page-block--grau .topic-list li { background: #fff; }
     .partners { font-size: 15px; color: var(--ink-2); }
-    .fn { font-size: .78em; font-weight: 600; vertical-align: super; line-height: 0; text-decoration: none; margin-left: 1px; }
-    .quellen { padding: 72px var(--rand) 40px; background: var(--grau); }
-    .quellen h2 { margin: 0 0 16px; font: 700 clamp(28px,3.4vw,40px)/1.15 var(--display); letter-spacing: -.03em; }
-    .quellen ol { margin: 0; padding-left: 1.25rem; max-width: 44rem; color: var(--ink-2); font-size: 14px; line-height: 1.5; }
-    .quellen li { margin: 0 0 8px; }
-    .mobile-sticky { display: none; }
+    .mobile-sticky {
+      display: none;
+    }
     @media (max-width: 760px) {
       .hero--beratung h1 { max-width: none; }
       .hero--beratung .hero-portrait { max-height: none; }
-      .page-block, .quellen { padding: 72px 22px; }
+      .page-block { padding: 72px 22px; }
       .mobile-sticky {
         display: flex; align-items: center; justify-content: center;
         position: fixed; z-index: 30; left: 16px; right: 16px;
@@ -78,6 +150,11 @@
       }
       body { padding-bottom: 84px; }
     }
+    @media (prefers-reduced-motion: no-preference) {
+      .hero-content, .hero-panel { animation: none; }
+    }
+
+    .quote-mini .quote-src { margin: 0; font-size: 12px; color: var(--mut); line-height: 1.4; }
     .hero--beratung { display: grid; grid-template-columns: minmax(0,1.15fr) minmax(0,.85fr); }
     .hero-form { min-width: 0; }
     @media (min-width: 761px) {
@@ -87,108 +164,123 @@
     }
     @media (max-width: 760px) {
       .hero--beratung { display: flex; flex-direction: column; }
+      .hero-copy, .hero-form, .hero-panel { order: 0; min-width: 0; width: 100%; }
       .hero-copy { order: 1; }
       .hero-panel { order: 2; }
       .hero-form { order: 3; }
+      .hero--beratung h1 { overflow-wrap: anywhere; }
+    }
+  
+    .process-section.page-block .process-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .page-block--grau .topic-list li { background: #fff; }
+    .link-row { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 4px 0 18px; max-width: 44rem; }
+    .link-row a { color: var(--link); }
+    .source-list { margin: 8px 0 0; padding-left: 18px; max-width: 44rem; }
+    .source-list li { margin: 0 0 8px; font-size: 15px; line-height: 1.45; color: var(--ink-2); }
+    .source-list a { color: var(--link); }
+    @media (max-width: 760px) {
+      .hero h1, .page-block h2, .process-heading h2, .faq-section h2, .contact-card h2 { overflow-wrap: break-word; }
+      .process-section.page-block .process-list { grid-template-columns: 1fr; }
+      .criteria, .criteria thead, .criteria tbody, .criteria tr, .criteria th, .criteria td { display: block; width: auto; }
+      .criteria thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+      .criteria tr { padding: 8px 0; }
     }
   </style>
   <script type="application/ld+json">
-{
+  {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Gibt es einen gesetzlichen Kostendeckel im Altersvorsorgedepot?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ja. Einen gesetzlichen Kostendeckel gibt es nur für das Standarddepot: Die Effektivkosten dürfen höchstens 1,0 Prozent betragen. Maßgebend sind die im individuellen Produktinformationsblatt angegebenen Effektivkosten. Bei freien Altersvorsorgedepots und bei Garantieprodukten legt der Anbieter die Kosten fest; eine gesetzliche Obergrenze gibt es dort nicht."
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Gilt die 1-Prozent-Grenze für alle Depots?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein. Nur für die Effektivkosten des Standarddepots in der Ansparphase. Freie Depots und Garantieprodukte haben keine gesetzliche Obergrenze."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was sind Effektivkosten?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Eine zusammengefasste Kostengröße zum Vergleich. Sie ersetzt nicht den Blick auf Garantie, Anlage und Wechsel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ist das öffentliche Standarddepot schon da?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Laut BMF noch nicht. Die dafür nötige Rechtsverordnung liegt bisher nicht vor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was kostet das Erstgespräch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Das Erstgespräch kostet dich nichts. Eine Beratungsgebühr verlange ich nicht. Kommt ein Produkt zustande, werde ich vom Anbieter vergütet. Wie das läuft, sage ich dir im Gespräch. Die Pflichtangaben stehen im Impressum."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Muss ich einen bestehenden Vertrag kündigen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein. Ich schaue zuerst, was du schon hast. Was zu deinem Ziel passt, kann bleiben. Ob du etwas änderst, entscheidest du."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bist du danach noch da?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Wenn sich etwas ändert oder du eine Frage zum Vertrag hast, meldest du dich bei mir. Ich bleibe dein Ansprechpartner."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FinancialService",
+      "name": "Kosten im Altersvorsorgedepot",
+      "url": "https://eliasgassmann.de/altersvorsorgedepot-kosten",
+      "description": "Kosten im Altersvorsorgedepot: 1,0 Prozent Deckel nur beim Standarddepot. Freie Depots und Garantieprodukte ohne gesetzliche Obergrenze.",
+      "telephone": "+491626960629",
+      "email": "elias@eliasgassmann.de",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "August-Horch-Straße 6A",
+        "postalCode": "55129",
+        "addressLocality": "Mainz",
+        "addressCountry": "DE"
+      },
+      "provider": {
+        "@type": "Person",
+        "name": "Elias Gassmann",
+        "url": "https://eliasgassmann.de/",
+        "image": "https://eliasgassmann.de/portrait-elias-gassmann.jpeg"
       }
     },
     {
-      "@type": "Question",
-      "name": "Was sind Effektivkosten?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Effektivkosten geben laut BMF an, in welchem Umfang sich die jährliche Rendite deines Vertrags durch Kosten im Durchschnitt mindert. Als Erklärbeispiel nennt das BMF: Erzielt die Vermögensanlage eine Rendite von 5 Prozent vor Kosten und betragen die Effektivkosten 1,0 Prozent, ergibt das eine Nettorendite von 4 Prozent. Das ist ein amtliches Rechenbeispiel zur Definition, keine zugesagte Rendite."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wie hoch dürfen die Kosten bei freien Depots und Garantieprodukten sein?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Dafür gibt es keine gesetzliche Obergrenze. Der Anbieter legt die Kosten fest. Laut BaFin können sie vor allem bei besonderer Beratung und Betreuung höher ausfallen. Die maßgeblichen Effektivkosten stehen im individuellen Produktinformationsblatt."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Welche Kosten können beim Wechsel anfallen?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "In den ersten fünf Jahren nach Abschluss darf der bisherige Anbieter typischerweise höchstens 150 Euro verlangen. Danach, nach einer Kostenänderung oder bei Übertragung auf einen Vertrag desselben Anbieters ist die Übertragung typischerweise kostenfrei. Der neue Anbieter darf das übertragene geförderte Kapital bei den Abschluss- und Vertriebskosten nicht berücksichtigen und darf einmalig höchstens 150 Euro als Verwaltungspauschale verlangen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Worauf sollte ich achten, wenn ich Angebote vergleiche?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Laut BaFin haben Abschluss- und Vertriebskosten hohen Einfluss auf die Gesamtkosten. Ein niedriger Preis zu Beginn allein sagt wenig, weil Verträge oft Jahrzehnte laufen und Kosten steigen können. Typischerweise prüfst du das Produktinformationsblatt, Preisanpassungsklauseln, befristete Sonderkonditionen und die Bedingungen für einen späteren Wechsel."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Ist das Erstgespräch kostenpflichtig?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Das Erstgespräch ist unverbindlich. Du zahlst keine Beratungsgebühr. Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte. Den Ablauf erkläre ich dir im Gespräch. Nicht jedes Produkt ist automatisch verfügbar."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Berätst du nur in Mainz oder auch online?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Beides. Du kannst einen Termin in Mainz, nach Absprache im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern, etwa in Wiesbaden, Frankfurt oder Darmstadt, oder online vereinbaren. Online berate ich deutschlandweit, typischerweise per Video. Den Termin buchst du unter termin.eliasgassmann.de."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Elias Gassmann",
+          "item": "https://eliasgassmann.de/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Kosten im Altersvorsorgedepot",
+          "item": "https://eliasgassmann.de/altersvorsorgedepot-kosten"
+        }
+      ]
     }
-  ]
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FinancialService",
-  "name": "Elias Gassmann — Kosten im Altersvorsorgedepot",
-  "url": "https://eliasgassmann.de/altersvorsorgedepot-kosten",
-  "description": "Beratung zu Kostendeckel, Effektivkosten, Wechselkosten und typischen Vergleichspunkten im Altersvorsorgedepot, persönlich in Mainz, im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern sowie online deutschlandweit.",
-  "areaServed": ["Mainz", "Wiesbaden", "Frankfurt am Main", "Darmstadt", "Rhein-Main", "DE"],
-  "telephone": "+491626960629",
-  "email": "elias@eliasgassmann.de",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "August-Horch-Straße 6A",
-    "postalCode": "55129",
-    "addressLocality": "Mainz",
-    "addressCountry": "DE"
-  },
-  "provider": {
-    "@type": "Person",
-    "name": "Elias Gassmann",
-    "url": "https://eliasgassmann.de/",
-    "image": "https://eliasgassmann.de/portrait-elias-gassmann.jpeg"
-  }
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Elias Gassmann", "item": "https://eliasgassmann.de/" },
-    { "@type": "ListItem", "position": 2, "name": "Altersvorsorgedepot", "item": "https://eliasgassmann.de/altersvorsorgedepot" },
-    { "@type": "ListItem", "position": 3, "name": "Kosten", "item": "https://eliasgassmann.de/altersvorsorgedepot-kosten" }
   ]
 }
   </script>
@@ -201,32 +293,28 @@
       <span class="brand-name">Elias Gassmann<small>Finanzberatung</small></span>
     </a>
     <nav class="main-nav" aria-label="Hauptnavigation">
-      <a href="index.html#gewerbe">Gewerbe</a>
       <a href="index.html#privat">Privat</a>
-      <a href="#ablauf">So läuft’s</a>
-      <a href="#termin">Termin</a>
+      <a href="index.html#gewerbe">Betrieb</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="#anfrage">Termin</a>
     </nav>
     <a class="header-contact" href="tel:+491626960629">
       <span class="phone-icon">↗</span>
       <span>0162 6960629</span>
     </a>
   </header>
-
   <main id="top">
     <section class="hero hero--beratung" id="inhalt" aria-labelledby="hero-title">
       <div class="hero-content hero-copy">
-        <p class="eyebrow hero-label">Private Altersvorsorge ab 2027</p>
-        <h1 id="hero-title">Kosten im Altersvorsorge&shy;depot — Kostendeckel, Effektivkosten und Wechselkosten</h1>
-        <aside class="answer-box" aria-label="Kurzantwort">
-          <span class="answer-label">Kurzantwort</span>
-          <p>Im Altersvorsorgedepot gibt es einen gesetzlichen Kostendeckel nur für das Standarddepot: Die Effektivkosten in der Ansparphase dürfen höchstens 1,0&nbsp;Prozent betragen.<a class="fn" href="#quelle-1">[1]</a><a class="fn" href="#quelle-2">[2]</a><a class="fn" href="#quelle-3">[3]</a> Bei freien Altersvorsorgedepots und bei Garantieprodukten legt der Anbieter die Kosten fest; eine gesetzliche Obergrenze gibt es dort nicht.<a class="fn" href="#quelle-2">[2]</a> Beim Wechsel darf der bisherige Anbieter in den ersten fünf Jahren typischerweise höchstens 150&nbsp;Euro verlangen, der neue Anbieter einmalig höchstens 150&nbsp;Euro.<a class="fn" href="#quelle-2">[2]</a><a class="fn" href="#quelle-3">[3]</a> Effektivkosten geben an, in welchem Umfang sich die jährliche Rendite durch Kosten im Durchschnitt mindert.<a class="fn" href="#quelle-1">[1]</a> Konditionen einzelner Anbieter nenne ich bewusst nicht. Den Produktüberblick findest du auf der Seite <a href="altersvorsorgedepot">Altersvorsorgedepot</a>, die Wechselwege auf der Seite <a href="altersvorsorgedepot-riester">Riester und Altersvorsorgedepot</a>. Elias Gassmann berät dich dazu in Mainz, im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern oder online deutschlandweit.</p>
-        </aside>
-        <p class="core-answer">Typische Anlässe: du willst den gesetzlichen Kostendeckel verstehen, Effektivkosten im Produktinformationsblatt einordnen oder wissen, welche Wechselkosten typischerweise gelten — ohne Konditionen einzelner Anbieter als feststehend zu übernehmen.</p>
+        <p class="eyebrow hero-label">Kosten</p>
+        <h1 id="hero-title">Kosten im Altersvorsorgedepot: Der Deckel gilt nur fürs Standarddepot.</h1>
+        <p class="core-answer">1,0 Prozent Effektivkosten in der Ansparphase sind die gesetzliche Obergrenze beim Standarddepot. Beim freien Depot und bei Garantieprodukten gibt es diese Obergrenze nicht. Wer nur auf den Deckel schaut, vergleicht oft das Falsche.</p>
+        <p><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=altersvorsorgedepot-kosten">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a></p>
       </div>
       <div class="hero-form">
         <div class="form-card" id="anfrage">
-          <h2>Jetzt Beratung anfragen</h2>
-          <p class="form-lead">Unverbindlich, in Mainz, im Rhein-Main-Gebiet oder online. Erzähl kurz, worum es geht.</p>
+          <h2>Erstgespräch anfragen</h2>
+          <p class="form-lead">Kostenlos und unverbindlich. Ein Satz zu deiner Lage reicht.</p>
           <form class="lead-form" id="beratung-form" action="https://eg-anfragen.elias-gassmann.workers.dev/anfrage" method="post" novalidate>
             <label>Name
               <input type="text" name="name" autocomplete="name" required placeholder="Vor- und Nachname">
@@ -235,10 +323,10 @@
               <input type="text" name="kontakt" autocomplete="on" required placeholder="Nummer oder E-Mail-Adresse" inputmode="email">
             </label>
             <label>Beruf oder Tätigkeit
-              <input type="text" name="branche" required placeholder="z. B. angestellt oder selbstständig">
+              <input type="text" name="branche" required placeholder="z. B. selbstständig, Handwerk">
             </label>
             <label>Kurz dein Anliegen
-              <input type="text" name="anliegen" required placeholder="z. B. Kostendeckel und Effektivkosten klären">
+              <input type="text" name="anliegen" required placeholder="z. B. Bestand prüfen">
             </label>
             <label class="consent fwx-consent">
               <input type="checkbox" name="datenschutz" value="ja" required>
@@ -250,227 +338,75 @@
           </form>
           <p class="form-alt">Oder Termin direkt wählen: <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=altersvorsorgedepot-kosten">termin.eliasgassmann.de</a> · <a href="tel:+491626960629">+49 162 6960629</a></p>
         </div>
-      </div>
+        </div>
       <div class="hero-panel">
         <figure class="hero-portrait">
-          <img src="portrait-elias-gassmann.jpeg" alt="Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" fetchpriority="high">
+          <img src="portrait-elias-gassmann.jpeg" alt="Porträt von Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" fetchpriority="high">
           <figcaption>
             <span>Elias Gassmann</span>
             <strong>Finanzberater in Mainz</strong>
-            <small>Persönlich in Mainz, Rhein-Main und online</small>
+            <small>Sitz in Mainz, Gespräche auch online</small>
           </figcaption>
         </figure>
         <a class="trust-rating" href="https://www.google.com/maps?cid=18281856182098275446" target="_blank" rel="noopener noreferrer">
           <span aria-hidden="true">★★★★★</span>
           <span>
             <strong>4,9 / 5 · 48 Google-Rezensionen</strong>
-            <small>Stand 10.11.2026, wie auf der Seite Finanzberater Mainz</small>
+            <small>FactoringWerkstatt · Stand 10.11.2026</small>
           </span>
         </a>
       </div>
     </section>
-
-    <section class="page-block" aria-labelledby="abgrenzung">
-      <p class="eyebrow">Einordnung</p>
-      <h2 id="abgrenzung">Was diese Seite klärt — und was nicht</h2>
-      <p class="lead">Hier geht es um den gesetzlichen Rahmen der Kosten: den Kostendeckel beim Standarddepot, freie Depots und Garantieprodukte ohne gesetzliche Obergrenze, Wechselkosten, die Bedeutung der Effektivkosten und typische Vergleichspunkte.</p>
-      <p>Was das Depot ist und welche Produkttypen es ab 2027 gibt, steht auf der Seite <a href="altersvorsorgedepot">Altersvorsorgedepot</a>. Zulagen und Sonderausgaben findest du auf der Seite <a href="altersvorsorgedepot-foerderung">Förderung im Altersvorsorgedepot</a>, Bestandsschutz und die drei Wechselwege auf der Seite <a href="altersvorsorgedepot-riester">Riester und Altersvorsorgedepot</a>. Zulässige Anlagen, ETFs und das Umschichtungsverfahren beim Standarddepot stehen auf der Seite <a href="altersvorsorgedepot-etf">ETFs im Altersvorsorgedepot</a>. Konkrete Angebotspreise einzelner Anbieter übernehme ich hier bewusst nicht, weil sie sich ändern können und nicht amtlich feststehen. Nicht jedes Produkt ist automatisch verfügbar.</p>
+    <section class="page-block" id="fuer-wen" aria-labelledby="fuer-wen-title">
+      <p class="eyebrow">Für wen</p>
+      <h2 id="fuer-wen-title">Für wen das ist.</h2>
+      
+      <ul class="topic-list"><li><strong>Du vergleichst Angebote</strong><span>Gleiche Kostenfrage, unterschiedlicher Produkttyp.</span></li><li><strong>Du willst wechseln</strong><span>Wechselkosten sind ein eigener Posten. <a href="altersvorsorgedepot-riester">Riester-Wechsel</a></span></li><li><strong>Du suchst das Standarddepot</strong><span>Jeder Anbieter geförderter Verträge muss eines anbieten oder das eines Kooperationspartners vertreiben.</span></li></ul>
     </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="effektivkosten">
-      <p class="eyebrow">Begriff</p>
-      <h2 id="effektivkosten">Was Effektivkosten bedeuten</h2>
-      <p class="lead">Laut BMF geben Effektivkosten an, in welchem Umfang sich die jährliche Rendite deines Vertrags durch Kosten im Durchschnitt mindert.<a class="fn" href="#quelle-1">[1]</a></p>
-      <p>Als Erklärbeispiel nennt das BMF: Erzielt die Vermögensanlage eine Rendite von 5&nbsp;Prozent vor Kosten und betragen die Effektivkosten 1,0&nbsp;Prozent, ergibt das eine Nettorendite von 4&nbsp;Prozent. Das ist ein amtliches Rechenbeispiel zur Definition, keine zugesagte Rendite und keine Prognose für deinen Vertrag.<a class="fn" href="#quelle-1">[1]</a></p>
-      <p>Im Gesetzesbeschluss (neuer §&nbsp;2a des Altersvorsorgeverträge-Zertifizierungsgesetzes) müssen Anbieter ermitteln, in welcher Höhe sich die Kosten bis zum Beginn der Auszahlungsphase mindernd auf die Rendite auswirken. Die Ermittlung erfolgt gemäß dem Gesamtkostenindikator nach Anhang&nbsp;VI der Delegierten Verordnung (EU) 2017/653. Maßgebend für den gesetzlichen Deckel sind die Effektivkosten im individuellen Produktinformationsblatt. Wählst du die Anlagen selbst aus, ist laut Gesetzestext die anfängliche Zusammensetzung des Portfolios zugrunde zu legen.<a class="fn" href="#quelle-3">[3]</a></p>
-      <p>Kosten, die über die im Produktinformationsblatt genannten Angaben zu Anspar- und Auszahlungsphase hinausgehen, schuldet der Vertragspartner laut Gesetzestext nicht.<a class="fn" href="#quelle-3">[3]</a></p>
+<section class="page-block page-block--grau" id="worauf" aria-labelledby="worauf-title">
+      <p class="eyebrow">Worauf es ankommt</p>
+      <h2 id="worauf-title">Was ich mit dir kläre.</h2>
+      
+      <ul class="topic-list"><li><strong>Effektivkosten</strong><span>Sie fassen die laufenden Kosten so zusammen, dass du Verträge eher vergleichen kannst. Sie sind nicht die Rendite und nicht jeder Euro, der dir später fehlt.</span></li><li><strong>Standarddepot</strong><span>Höchstens 1,0 Prozent Effektivkosten in der Ansparphase. Vor Rentenbeginn wird umgeschichtet. <a href="altersvorsorgedepot-etf">ETFs und Umschichtung</a></span></li><li><strong>Freies Depot und Garantie</strong><span>Keine gesetzliche Kostenobergrenze. Eine Garantie von 80 oder 100 Prozent der Beiträge zum Auszahlungsbeginn hat ihren Preis. Den siehst du im Produkt, nicht in einer Website-Tabelle.</span></li><li><strong>Öffentliches Standarddepot</strong><span>Gesetzlich vorgesehen, laut BMF noch nicht verfügbar, weil die Rechtsverordnung fehlt.</span></li></ul>
     </section>
-
-    <section class="page-block" aria-labelledby="deckel">
-      <p class="eyebrow">Standarddepot</p>
-      <h2 id="deckel">Kostendeckel nur beim Standarddepot</h2>
-      <p class="lead">Nur beim Standarddepot dürfen die Effektivkosten höchstens 1,0&nbsp;Prozent betragen. BMF und BaFin beziehen den Deckel auf die Ansparphase. Maßgebend sind die im individuellen Produktinformationsblatt angegebenen Effektivkosten.<a class="fn" href="#quelle-1">[1]</a><a class="fn" href="#quelle-2">[2]</a><a class="fn" href="#quelle-3">[3]</a></p>
-      <ul class="topic-list">
-        <li>
-          <strong>Pflichtangebot</strong>
-          <span>Jeder Anbieter geförderter Verträge muss ein Standarddepot anbieten oder das eines Kooperationspartners vertreiben. Wie das Standarddepot typischerweise aufgebaut ist, steht auf der Seite <a href="altersvorsorgedepot">Altersvorsorgedepot</a>.<a class="fn" href="#quelle-1">[1]</a><a class="fn" href="#quelle-2">[2]</a></span>
-        </li>
-        <li>
-          <strong>Öffentliches Standarddepot</strong>
-          <span>Ein öffentlich getragenes Standarddepot ist gesetzlich vorgesehen, aber laut BMF noch nicht verfügbar: Die dafür nötige Rechtsverordnung liegt bisher nicht vor. Das ist deshalb geplant, nicht startbereit, und ändert nichts am gesetzlichen Deckel der übrigen Angebote.<a class="fn" href="#quelle-1">[1]</a></span>
-        </li>
-        <li>
-          <strong>Zertifizierung ist kein Kostensiegel</strong>
-          <span>Die Zertifizierung bestätigt typischerweise nur, dass der Vertrag den gesetzlichen Anforderungen entspricht. Sie ist nach BMF und BaFin kein Gütesiegel für die Qualität, Sicherheit oder Wirtschaftlichkeit des Produkts.<a class="fn" href="#quelle-1">[1]</a><a class="fn" href="#quelle-2">[2]</a></span>
-        </li>
-      </ul>
-    </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="andere">
-      <p class="eyebrow">Ohne gesetzlichen Deckel</p>
-      <h2 id="andere">Freie Depots und Garantieprodukte</h2>
-      <p class="lead">Bei freien Altersvorsorgedepots und bei Garantieprodukten legt der Anbieter die Kosten fest; eine gesetzliche Obergrenze gibt es nicht. Laut BaFin können die Kosten vor allem bei besonderer Beratung und Betreuung höher ausfallen.<a class="fn" href="#quelle-2">[2]</a></p>
-      <p>Das heißt nicht automatisch, dass diese Verträge ungeeignet sind, und auch nicht, dass ein Standarddepot immer die günstigere Lösung ist. Es heißt nur: Der gesetzliche Deckel von 1,0&nbsp;Prozent gilt dort nicht. Deshalb gehören die Effektivkosten im Produktinformationsblatt in jeden Vergleich, nicht nur der Einstiegspreis.<a class="fn" href="#quelle-2">[2]</a><a class="fn" href="#quelle-3">[3]</a></p>
-    </section>
-
-    <section class="page-block" aria-labelledby="wechsel">
-      <p class="eyebrow">Übertragung</p>
-      <h2 id="wechsel">Welche Wechselkosten typischerweise gelten</h2>
-      <p class="lead">Beim Wechsel auf einen anderen Anbieter darf der bisherige Anbieter laut BaFin und Gesetzestext in den ersten fünf Jahren nach Vertragsabschluss typischerweise höchstens 150&nbsp;Euro in Rechnung stellen. Nach Ablauf dieser Frist, nach einer Kostenänderung oder bei Übertragung auf einen Vertrag desselben Anbieters muss die Übertragung typischerweise kostenfrei gewährt werden.<a class="fn" href="#quelle-2">[2]</a><a class="fn" href="#quelle-3">[3]</a></p>
-      <ul class="topic-list">
-        <li>
-          <strong>Neuer Anbieter</strong>
-          <span>Das übertragene, bereits geförderte Kapital darf bei der Berechnung der Abschluss- und Vertriebskosten nicht berücksichtigt werden. Der neue Anbieter darf eine einmalige Verwaltungspauschale von höchstens 150&nbsp;Euro verlangen.<a class="fn" href="#quelle-2">[2]</a><a class="fn" href="#quelle-3">[3]</a></span>
-        </li>
-        <li>
-          <strong>Verteilung der Abschlusskosten</strong>
-          <span>Innerhalb der neuen Produktwelt müssen Abschlusskosten laut BMF auf die gesamte Ansparphase verteilt werden.<a class="fn" href="#quelle-1">[1]</a></span>
-        </li>
-        <li>
-          <strong>Riester-Wechselwege</strong>
-          <span>Die drei Wege aus einem bestehenden Riester-Vertrag, den Bestandsschutz und typische Abwägungen stehen auf der Seite <a href="altersvorsorgedepot-riester">Riester und Altersvorsorgedepot</a>. Diese Seite wiederholt sie nicht.</span>
-        </li>
-      </ul>
-    </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="vergleich">
-      <p class="eyebrow">Vergleich</p>
-      <h2 id="vergleich">Worauf du typischerweise beim Vergleich achtest</h2>
-      <p class="lead">Die BaFin empfiehlt, Abschluss- und Vertriebskosten zu vergleichen, weil sie hohen Einfluss auf die Gesamtkosten und damit auf die Rendite haben. Ein niedriger Preis zu Beginn allein sagt wenig: Verträge laufen oft Jahrzehnte, und die Kosten können im Laufe der Zeit steigen.<a class="fn" href="#quelle-2">[2]</a></p>
-      <ul class="topic-list">
-        <li>
-          <strong>Produktinformationsblatt</strong>
-          <span>Die maßgeblichen Effektivkosten stehen dort. Beim Standarddepot gehört der Blick auf den Deckel von 1,0&nbsp;Prozent dazu, bei freien Depots und Garantieprodukten gilt keine gesetzliche Obergrenze.<a class="fn" href="#quelle-2">[2]</a><a class="fn" href="#quelle-3">[3]</a></span>
-        </li>
-        <li>
-          <strong>Preisanpassung</strong>
-          <span>Ob und unter welchen Bedingungen der Anbieter die Kosten erhöhen darf. Achte auf befristete Sonderkonditionen und auf Preisanpassungsklauseln.<a class="fn" href="#quelle-2">[2]</a></span>
-        </li>
-        <li>
-          <strong>Späterer Wechsel</strong>
-          <span>Zu welchen Bedingungen du den Vertrag später wechseln kannst, einschließlich der gesetzlichen Obergrenzen von 150&nbsp;Euro.<a class="fn" href="#quelle-2">[2]</a><a class="fn" href="#quelle-3">[3]</a></span>
-        </li>
-      </ul>
-      <p>Laut BaFin können auch Finanzprodukte ohne staatliche Förderung günstiger sein; der Vergleich kann sich lohnen. Eine festgelegte Empfehlung für alle Fälle ergibt sich daraus nicht.<a class="fn" href="#quelle-2">[2]</a></p>
-    </section>
-
-    <section class="page-block" aria-labelledby="fuer-wen">
-      <p class="eyebrow">Mainz und Rhein-Main</p>
-      <h2 id="fuer-wen">Für wen das typischerweise infrage kommt</h2>
-      <p class="lead">Die Seite richtet sich an Interessierte in Mainz, Wiesbaden, Frankfurt, Darmstadt und im übrigen Rhein-Main-Gebiet sowie im Umkreis von rund 100 Kilometern. Online berate ich deutschlandweit, typischerweise per Video.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Standarddepot einordnen</strong>
-          <span>Du willst wissen, wo der gesetzliche Deckel von 1,0&nbsp;Prozent greift und was die Effektivkosten im Produktinformationsblatt bedeuten.</span>
-        </li>
-        <li>
-          <strong>Freies Depot oder Garantieprodukt vergleichen</strong>
-          <span>Du willst Angebote ohne gesetzlichen Kostendeckel nicht nur am Einstiegspreis messen und typische Klauseln prüfen.</span>
-        </li>
-        <li>
-          <strong>Wechselkosten verstehen</strong>
-          <span>Du willst die gesetzlichen Obergrenzen von 150&nbsp;Euro einordnen. Die Wege aus einem bestehenden Riester-Vertrag stehen auf der Seite <a href="altersvorsorgedepot-riester">Riester und Altersvorsorgedepot</a>.</span>
-        </li>
-      </ul>
-      <p>Nicht jedes Thema und jedes Produkt ist automatisch verfügbar; das klären wir im Gespräch. Verträge nach neuem Recht können erst ab dem 1.&nbsp;Januar 2027 abgeschlossen werden. Einen Überblick zur Finanzberatung in Mainz findest du auf der Seite <a href="finanzberater-mainz">Finanzberater Mainz</a>.</p>
-    </section>
-
-    <section class="process-section page-block" id="ablauf" aria-labelledby="ablauf-title">
+<section class="process-section page-block" id="ablauf" aria-labelledby="ablauf-title">
       <div class="process-heading">
-        <p class="eyebrow">Der Ablauf</p>
-        <h2 id="ablauf-title">So läuft die Beratung zu den Kosten</h2>
-        <p class="lead">Wir starten mit dem Vertragstyp, dem Produktinformationsblatt und dem, was du vergleichen möchtest. Die Beratung kann vollständig digital laufen, typischerweise per Video.</p>
+        <p class="eyebrow">Ablauf</p>
+        <h2 id="ablauf-title">So gehe ich vor.</h2>
+        <p class="lead">Du musst nichts vorbereiten. Unterlagen helfen, wenn du sie schon hast.</p>
       </div>
-      <ol class="process-list">
-        <li>
-          <span>1</span>
-          <h3>Termin buchen</h3>
-          <p>Du buchst einen unverbindlichen Termin, vor Ort in Mainz, im Rhein-Main-Gebiet bzw. im Umkreis von rund 100 Kilometern oder online. Online berate ich deutschlandweit, typischerweise per Video.</p>
-        </li>
-        <li>
-          <span>2</span>
-          <h3>Situation verstehen</h3>
-          <p>Wir sprechen über Standarddepot, freies Depot oder Garantieprodukt, bestehende Verträge und den geplanten Vergleich. Es wird noch kein Antrag gestellt.</p>
-        </li>
-        <li>
-          <span>3</span>
-          <h3>Kostenrahmen einordnen</h3>
-          <p>Ich ordne den gesetzlichen Deckel, die Effektivkosten und die Wechselbedingungen anhand der amtlichen Regeln und des Produktinformationsblatts ein. Nicht jedes Produkt ist automatisch verfügbar.</p>
-        </li>
-        <li>
-          <span>4</span>
-          <h3>Bei Bedarf den nächsten Schritt planen</h3>
-          <p>Kommt ein Vertrag infrage, schauen wir uns die offenen Punkte in Ruhe an. Vor dem 1.&nbsp;Januar 2027 kann ein Vertrag nach neuem Recht noch nicht abgeschlossen werden.</p>
-        </li>
-        <li>
-          <span>5</span>
-          <h3>In Ruhe entscheiden</h3>
-          <p>Du entscheidest in Ruhe, ob und wie es weitergehen soll. Durch das Erstgespräch entsteht keine Verpflichtung.</p>
-        </li>
-      </ol>
+      <ol class="process-list"><li><span>1</span><h3>Kennenlernen</h3><p>Welchen Produkttyp du meinst, nicht nur das Wort Depot.</p></li><li><span>2</span><h3>Analysieren</h3><p>Effektivkosten, Garantie, Wechselkosten.</p></li><li><span>3</span><h3>Lösungen besprechen</h3><p>Ich lege die Zahlen nebeneinander. Der günstigste Satz ist nicht automatisch der passende Vertrag.</p></li><li><span>4</span><h3>Umsetzen</h3><p>Erst wenn du siehst, was der Deckel abdeckt und was nicht.</p></li></ol>
     </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="transparenz">
-      <p class="eyebrow">Kosten und Ablauf</p>
-      <h2 id="transparenz">Was das Erstgespräch kostet</h2>
-      <p class="lead">Für das Erstgespräch zahlst du keine Beratungsgebühr. Bevor du etwas entscheidest, weißt du, wie ein Vorschlag funktioniert und welche Kosten daran hängen.</p>
-      <p class="partners">Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte; den Ablauf erkläre ich dir im Gespräch. Pauschale Renditen, Anbieterkonditionen oder eine festgelegte Empfehlung für einen Vertragstyp nenne ich hier bewusst nicht. Es werden keine Kundengelder entgegengenommen; Zahlungen gehen direkt an den jeweiligen Anbieter. Alle Pflichtangaben findest du im <a href="impressum.html">Impressum</a>.</p>
+<section class="page-block page-block--grau" id="quellen" aria-labelledby="quellen-title">
+      <p class="eyebrow">Quellen</p>
+      <h2 id="quellen-title">Worauf sich die Zahlen stützen.</h2>
+      <p class="lead">Die Seite ersetzt keine Beratung. Maßgeblich sind Gesetz, Vertrag und der aktuelle Stand.</p>
+      <ul class="source-list"><li><a href="https://www.bundesfinanzministerium.de/Content/DE/FAQ/reform-der-privaten-altersvorsorge.html">Bundesfinanzministerium</a></li><li><a href="https://www.bafin.de/DE/verbraucherinnen-verbraucher/themen-finanzprodukte/altersvorsorge/altersvorsorge_depot/altersvorsorge_depot.html">BaFin</a></li></ul>
     </section>
-
-    <section class="page-block" id="termin" aria-labelledby="termin-title">
+<section class="page-block" id="naechster" aria-labelledby="naechster-title">
       <p class="eyebrow">Nächster Schritt</p>
-      <h2 id="termin-title">Termin vereinbaren — in Mainz, im Rhein-Main-Gebiet oder online</h2>
-      <p class="lead">Den unverbindlichen Termin buchst du unter <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=altersvorsorgedepot-kosten">termin.eliasgassmann.de</a>. Ohne Druck und ohne eine festgelegte Empfehlung zu einem bestimmten Vertrag.</p>
-      <p>Die öffentlich genannte Anschrift ist August-Horch-Straße 6A, 55129 Mainz. Ob ein Termin vor Ort oder online per Video sinnvoller ist, klären wir bei der Buchung. Du erreichst mich auch unter <a href="tel:+491626960629">+49 162 6960629</a> und <a href="mailto:elias@eliasgassmann.de">elias@eliasgassmann.de</a>.</p>
-      <p style="margin-top:28px"><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=altersvorsorgedepot-kosten">Unverbindlichen Termin vereinbaren <span aria-hidden="true">↗</span></a></p>
+      <h2 id="naechster-title">Das Erstgespräch zeigt dir den nächsten sinnvollen Schritt.</h2>
+      
+      <p>Du hörst, was schon passt, was fehlt und was es kosten würde. Danach entscheidest du.</p><p style="margin-top:8px"><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=altersvorsorgedepot-kosten">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a></p>
     </section>
-
     <section class="faq-section" id="fragen" aria-labelledby="faq-title">
       <div>
-        <p class="eyebrow">Vor dem Gespräch</p>
-        <h2 id="faq-title">Häufige Fragen zu den Kosten im Altersvorsorge&shy;depot</h2>
+        <p class="eyebrow">Kurz geklärt</p>
+        <h2 id="faq-title">Fragen, die oft kommen.</h2>
       </div>
       <div class="faq-list">
-        <details open>
-          <summary>Gibt es einen gesetzlichen Kostendeckel im Altersvorsorgedepot?</summary>
-          <p>Ja. Einen gesetzlichen Kostendeckel gibt es nur für das Standarddepot: Die Effektivkosten dürfen höchstens 1,0 Prozent betragen. Maßgebend sind die im individuellen Produktinformationsblatt angegebenen Effektivkosten. Bei freien Altersvorsorgedepots und bei Garantieprodukten legt der Anbieter die Kosten fest; eine gesetzliche Obergrenze gibt es dort nicht.</p>
-        </details>
-        <details>
-          <summary>Was sind Effektivkosten?</summary>
-          <p>Effektivkosten geben laut BMF an, in welchem Umfang sich die jährliche Rendite deines Vertrags durch Kosten im Durchschnitt mindert. Als Erklärbeispiel nennt das BMF: Erzielt die Vermögensanlage eine Rendite von 5 Prozent vor Kosten und betragen die Effektivkosten 1,0 Prozent, ergibt das eine Nettorendite von 4 Prozent. Das ist ein amtliches Rechenbeispiel zur Definition, keine zugesagte Rendite.</p>
-        </details>
-        <details>
-          <summary>Wie hoch dürfen die Kosten bei freien Depots und Garantieprodukten sein?</summary>
-          <p>Dafür gibt es keine gesetzliche Obergrenze. Der Anbieter legt die Kosten fest. Laut BaFin können sie vor allem bei besonderer Beratung und Betreuung höher ausfallen. Die maßgeblichen Effektivkosten stehen im individuellen Produktinformationsblatt.</p>
-        </details>
-        <details>
-          <summary>Welche Kosten können beim Wechsel anfallen?</summary>
-          <p>In den ersten fünf Jahren nach Abschluss darf der bisherige Anbieter typischerweise höchstens 150 Euro verlangen. Danach, nach einer Kostenänderung oder bei Übertragung auf einen Vertrag desselben Anbieters ist die Übertragung typischerweise kostenfrei. Der neue Anbieter darf das übertragene geförderte Kapital bei den Abschluss- und Vertriebskosten nicht berücksichtigen und darf einmalig höchstens 150 Euro als Verwaltungspauschale verlangen.</p>
-        </details>
-        <details>
-          <summary>Worauf sollte ich achten, wenn ich Angebote vergleiche?</summary>
-          <p>Laut BaFin haben Abschluss- und Vertriebskosten hohen Einfluss auf die Gesamtkosten. Ein niedriger Preis zu Beginn allein sagt wenig, weil Verträge oft Jahrzehnte laufen und Kosten steigen können. Typischerweise prüfst du das Produktinformationsblatt, Preisanpassungsklauseln, befristete Sonderkonditionen und die Bedingungen für einen späteren Wechsel.</p>
-        </details>
-        <details>
-          <summary>Ist das Erstgespräch kostenpflichtig?</summary>
-          <p>Das Erstgespräch ist unverbindlich. Du zahlst keine Beratungsgebühr. Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte. Den Ablauf erkläre ich dir im Gespräch. Nicht jedes Produkt ist automatisch verfügbar.</p>
-        </details>
-        <details>
-          <summary>Berätst du nur in Mainz oder auch online?</summary>
-          <p>Beides. Du kannst einen Termin in Mainz, nach Absprache im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern, etwa in Wiesbaden, Frankfurt oder Darmstadt, oder online vereinbaren. Online berate ich deutschlandweit, typischerweise per Video. Den Termin buchst du unter <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=altersvorsorgedepot-kosten">termin.eliasgassmann.de</a>.</p>
-        </details>
+        <details open><summary>Gilt die 1-Prozent-Grenze für alle Depots?</summary><p>Nein. Nur für die Effektivkosten des Standarddepots in der Ansparphase. Freie Depots und Garantieprodukte haben keine gesetzliche Obergrenze.</p></details><details><summary>Was sind Effektivkosten?</summary><p>Eine zusammengefasste Kostengröße zum Vergleich. Sie ersetzt nicht den Blick auf Garantie, Anlage und Wechsel.</p></details><details><summary>Ist das öffentliche Standarddepot schon da?</summary><p>Laut BMF noch nicht. Die dafür nötige Rechtsverordnung liegt bisher nicht vor.</p></details><details><summary>Was kostet das Erstgespräch?</summary><p>Das Erstgespräch kostet dich nichts. Eine Beratungsgebühr verlange ich nicht. Kommt ein Produkt zustande, werde ich vom Anbieter vergütet. Wie das läuft, sage ich dir im Gespräch. Die Pflichtangaben stehen im Impressum.</p></details><details><summary>Muss ich einen bestehenden Vertrag kündigen?</summary><p>Nein. Ich schaue zuerst, was du schon hast. Was zu deinem Ziel passt, kann bleiben. Ob du etwas änderst, entscheidest du.</p></details><details><summary>Bist du danach noch da?</summary><p>Ja. Wenn sich etwas ändert oder du eine Frage zum Vertrag hast, meldest du dich bei mir. Ich bleibe dein Ansprechpartner.</p></details>
       </div>
     </section>
-
     <section class="contact-card" aria-labelledby="kontakt-title">
       <figure class="hero-portrait" style="margin:0;max-height:520px">
-        <img src="portrait-elias-gassmann.jpeg" alt="Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" loading="lazy">
+        <img src="portrait-elias-gassmann.jpeg" alt="Porträt von Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" loading="lazy">
       </figure>
       <div class="contact-content">
-        <p class="eyebrow">Kontakt</p>
-        <h2 id="kontakt-title">Was hast du vor?<br><em>Lass uns sprechen.</em></h2>
-        <p class="contact-copy">Den Kostendeckel einordnen, Effektivkosten im Produktinformationsblatt verstehen oder Wechselkosten prüfen: Erzähl mir, worum es geht.</p>
-        <a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=altersvorsorgedepot-kosten">Unverbindlichen Termin vereinbaren <span aria-hidden="true">↗</span></a>
+        <p class="eyebrow">Erstgespräch</p>
+        <h2 id="kontakt-title">Wenn du das einordnen willst, sag mir Bescheid.</h2>
+        <p class="contact-copy">Kurz schreiben, worum es geht. Eine Beratungsgebühr verlange ich nicht.</p>
+        <a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=altersvorsorgedepot-kosten">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a>
         <div class="contact-data">
           <a href="tel:+491626960629">+49 162 6960629</a>
           <a href="mailto:elias@eliasgassmann.de">elias@eliasgassmann.de</a>
@@ -478,17 +414,7 @@
         </div>
       </div>
     </section>
-
-    <aside class="quellen" aria-labelledby="quellen-title">
-      <h2 id="quellen-title">Quellen zu Kosten und Gesetz</h2>
-      <ol>
-        <li id="quelle-1"><a href="https://www.bundesfinanzministerium.de/Content/DE/FAQ/reform-der-privaten-altersvorsorge.html">Bundesministerium der Finanzen, Fragen und Antworten zur Reform der geförderten privaten Altersvorsorge</a>, Stand 9.&nbsp;November 2026.</li>
-        <li id="quelle-2"><a href="https://www.bafin.de/DE/verbraucherinnen-verbraucher/themen-finanzprodukte/altersvorsorge/altersvorsorge_depot/altersvorsorge_depot.html">Bundesanstalt für Finanzdienstleistungsaufsicht (BaFin), Neue Produkte in der privaten Altersvorsorge: Das ändert sich ab 2027</a>.</li>
-        <li id="quelle-3"><a href="https://www.bundesrat.de/SharedDocs/drucksachen/2026/0201-0300/206-26.pdf?__blob=publicationFile&amp;v=1">Gesetzesbeschluss des Deutschen Bundestages, Gesetz zur Reform der steuerlich geförderten privaten Altersvorsorge (Altersvorsorgereformgesetz)</a>, Bundesrat-Drucksache 206/26, insbesondere der neue §&nbsp;2a AltZertG zu Effektivkosten und der Kostendeckel sowie die Vorschriften zu Wechselkosten und Produktinformationsblatt.</li>
-      </ol>
-    </aside>
   </main>
-
   <footer>
     <p>© <span id="year">2026</span> Elias Gassmann</p>
     <div>
@@ -497,7 +423,7 @@
       <a href="/datenschutz">Datenschutz</a>
     </div>
   </footer>
-  <a class="mobile-sticky" href="#anfrage">Jetzt Beratung anfragen</a>
+  <a class="mobile-sticky" href="#anfrage">Erstgespräch anfragen</a>
   <script src="formular.js" defer></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {

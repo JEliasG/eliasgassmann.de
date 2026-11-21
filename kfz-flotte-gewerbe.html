@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kfz- und Flottenversicherung für Handwerk und Transport in Mainz, Frankfurt und Rhein-Main — Elias Gassmann</title>
-  <meta name="description" content="Kfz- und Flottenversicherung für Handwerksbetriebe und Transportunternehmen in Mainz, Frankfurt und Rhein-Main: Firmenwagen, Transporter, LKW, Flottenvertrag oder Einzelverträge, Werkverkehr und Güterverkehr. Beitragserhöhungen zum Jahreswechsel prüfen lassen. Beratung vor Ort oder online deutschlandweit.">
+  <title>Kfz- und Flottenversicherung | Gassmann</title>
+  <meta name="description" content="Kfz- und Flottenversicherung für Handwerk und Transport: Firmenwagen, Transporter, Werk- und Güterverkehr, Kasko und der Jahreswechsel.">
   <link rel="canonical" href="https://eliasgassmann.de/kfz-flotte-gewerbe">
   <meta name="theme-color" content="#fbfbfd">
-  <meta property="og:title" content="Kfz- und Flottenversicherung für Handwerk und Transport in Mainz, Frankfurt und Rhein-Main — Elias Gassmann">
-  <meta property="og:description" content="Kfz- und Flottenversicherung für Handwerksbetriebe und Transportunternehmen in Mainz, Frankfurt und Rhein-Main: Firmenwagen, Transporter, LKW, Flottenvertrag oder Einzelverträge, Werkverkehr und Güterverkehr. Beitragserhöhungen zum Jahreswechsel prüfen lassen. Beratung vor Ort oder online deutschlandweit.">
+  <meta property="og:title" content="Kfz- und Flottenversicherung | Gassmann">
+  <meta property="og:description" content="Kfz- und Flottenversicherung für Handwerk und Transport: Firmenwagen, Transporter, Werk- und Güterverkehr, Kasko und der Jahreswechsel.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://eliasgassmann.de/kfz-flotte-gewerbe">
   <meta property="og:image" content="https://eliasgassmann.de/portrait-elias-gassmann.jpeg">
@@ -29,7 +29,8 @@
     .hero--beratung h1 {
       font-size: clamp(36px, 4.2vw, 58px);
       line-height: 1.08;
-      max-width: 20ch;
+      max-width: min(22ch, 100%);
+      overflow-wrap: anywhere;
     }
     .answer-box {
       margin: 22px 0 20px;
@@ -87,6 +88,7 @@
       height: 1px;
       overflow: hidden;
     }
+
     .form-alt a, .consent a { color: var(--link); }
     .lead-form { display: grid; gap: 12px; }
     .lead-form label { display: grid; gap: 5px; font-size: 13px; font-weight: 600; color: var(--ink); }
@@ -108,6 +110,11 @@
     }
     .trust-rating strong { display: block; font-size: 15px; }
     .trust-rating small { display: block; font-size: 12px; color: var(--mut); }
+    .quote-mini {
+      margin: 0; padding: 16px 18px; border-radius: 20px; background: var(--grau);
+    }
+    .quote-mini p { margin: 0 0 8px; font-size: 15px; line-height: 1.4; }
+    .quote-mini footer { font-size: 12px; color: var(--mut); }
     .page-block { padding: 96px var(--rand); }
     .page-block h2 { margin: 8px 0 18px; font: 700 clamp(34px,4.2vw,56px)/1.07 var(--display); letter-spacing: -.03em; max-width: 22ch; }
     .page-block .lead, .page-block p { max-width: 42rem; }
@@ -126,20 +133,10 @@
     .topic-list li { padding: 18px 20px; border-radius: 20px; background: var(--grau); }
     .topic-list strong { display: block; margin-bottom: 4px; }
     .topic-list span { color: var(--mut); font-size: 15px; line-height: 1.45; }
-    .page-block--grau .topic-list li { background: #fff; }
     .partners { font-size: 15px; color: var(--ink-2); }
-    .hinweis {
-      margin: 8px 0 0;
-      max-width: 42rem;
-      padding: 18px 20px;
-      border-radius: 20px;
-      background: var(--grau);
-      font-size: 16px;
-      line-height: 1.5;
-      color: var(--ink);
+    .mobile-sticky {
+      display: none;
     }
-    .page-block--grau .hinweis { background: #fff; }
-    .mobile-sticky { display: none; }
     @media (max-width: 760px) {
       .hero--beratung h1 { max-width: none; }
       .hero--beratung .hero-portrait { max-height: none; }
@@ -156,6 +153,8 @@
     @media (prefers-reduced-motion: no-preference) {
       .hero-content, .hero-panel { animation: none; }
     }
+
+    .quote-mini .quote-src { margin: 0; font-size: 12px; color: var(--mut); line-height: 1.4; }
     .hero--beratung { display: grid; grid-template-columns: minmax(0,1.15fr) minmax(0,.85fr); }
     .hero-form { min-width: 0; }
     @media (min-width: 761px) {
@@ -165,123 +164,122 @@
     }
     @media (max-width: 760px) {
       .hero--beratung { display: flex; flex-direction: column; }
+      .hero-copy, .hero-form, .hero-panel { order: 0; min-width: 0; width: 100%; }
       .hero-copy { order: 1; }
       .hero-panel { order: 2; }
       .hero-form { order: 3; }
+      .hero--beratung h1 { overflow-wrap: anywhere; }
+    }
+  
+    .process-section.page-block .process-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .page-block--grau .topic-list li { background: #fff; }
+    .link-row { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 4px 0 18px; max-width: 44rem; }
+    .link-row a { color: var(--link); }
+    .source-list { margin: 8px 0 0; padding-left: 18px; max-width: 44rem; }
+    .source-list li { margin: 0 0 8px; font-size: 15px; line-height: 1.45; color: var(--ink-2); }
+    .source-list a { color: var(--link); }
+    @media (max-width: 760px) {
+      .hero h1, .page-block h2, .process-heading h2, .faq-section h2, .contact-card h2 { overflow-wrap: break-word; }
+      .process-section.page-block .process-list { grid-template-columns: 1fr; }
+      .criteria, .criteria thead, .criteria tbody, .criteria tr, .criteria th, .criteria td { display: block; width: auto; }
+      .criteria thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+      .criteria tr { padding: 8px 0; }
     }
   </style>
   <script type="application/ld+json">
-{
+  {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Was ist der Unterschied zwischen einem Flottenvertrag und Einzelverträgen?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Einzelverträge gelten typischerweise je Fahrzeug, mit eigener Einstufung und eigener Fälligkeit. Ein Flottenvertrag kann infrage kommen, wenn mehrere Fahrzeuge über denselben Vertrag laufen sollen. Verwaltung, Bedingungen und die Behandlung der Schadenfreiheitsklassen können sich dann vom Einzelvertrag unterscheiden. Ab welcher Fahrzeugzahl ein Flottenvertrag möglich ist, hängt vom Anbieter ab. Eine pauschale Schwelle nenne ich hier bewusst nicht."
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Wann ist ein Flottenvertrag sinnvoll?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wenn mehrere Fahrzeuge zusammen betrachtet werden sollen, oft wegen Verwaltung und Schadenverlauf. Ob er günstiger ist, zeigt der Vergleich, nicht die Bezeichnung."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was ist der Unterschied zwischen Werk- und Güterverkehr?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Werkverkehr befördert eigene Güter für eigene Zwecke. Güterverkehr befördert entgeltlich für andere. Die Police muss zur tatsächlichen Nutzung passen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Soll ich zum Jahreswechsel wechseln?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nur nach einem Vergleich von Beitrag, Klasse, Kasko und Selbstbeteiligung. Eine höhere Zahl allein ist kein Auftrag zum Wechsel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was kostet das Erstgespräch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Das Erstgespräch kostet dich nichts. Eine Beratungsgebühr verlange ich nicht. Kommt ein Produkt zustande, werde ich vom Anbieter vergütet. Wie das läuft, sage ich dir im Gespräch. Die Pflichtangaben stehen im Impressum."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Muss ich bestehende Verträge kündigen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein. Ich schaue zuerst, was du schon hast. Was zu deinem Ziel passt, kann bleiben. Ob du etwas änderst, entscheidest du."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bist du danach noch da?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Wenn sich etwas ändert oder du eine Frage zum Vertrag hast, meldest du dich bei mir. Ich bleibe dein Ansprechpartner."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FinancialService",
+      "name": "Kfz- und Flottenversicherung",
+      "url": "https://eliasgassmann.de/kfz-flotte-gewerbe",
+      "description": "Kfz- und Flottenversicherung für Handwerk und Transport: Firmenwagen, Transporter, Werk- und Güterverkehr, Kasko und der Jahreswechsel.",
+      "telephone": "+491626960629",
+      "email": "elias@eliasgassmann.de",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "August-Horch-Straße 6A",
+        "postalCode": "55129",
+        "addressLocality": "Mainz",
+        "addressCountry": "DE"
+      },
+      "provider": {
+        "@type": "Person",
+        "name": "Elias Gassmann",
+        "url": "https://eliasgassmann.de/",
+        "image": "https://eliasgassmann.de/portrait-elias-gassmann.jpeg"
       }
     },
     {
-      "@type": "Question",
-      "name": "Was bedeuten Schadenfreiheitsklassen und Sondereinstufungen?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Schadenfreiheitsklassen steuern typischerweise den Beitrag danach, wie lange ein Fahrzeug oder Vertrag schadenfrei geblieben ist. Nach einem belastenden Schaden kann die Einstufung schlechter werden, ohne Schaden typischerweise besser. Unter bestimmten Voraussetzungen können Sondereinstufungen möglich sein. Wie das in einem Flottenvertrag gerechnet wird, hängt vom jeweiligen Vertrag ab. Konkrete Klassen oder Beiträge nenne ich hier bewusst nicht."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Was ist der Unterschied zwischen Werkverkehr und gewerblichem Güterverkehr?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Im Werkverkehr beförderst du typischerweise eigene Güter mit eigenen Fahrzeugen für betriebliche Zwecke, etwa Material zur Baustelle. Gewerblicher Güterverkehr meint typischerweise die Beförderung von Gütern für andere, oft als Transportunternehmen, und setzt in der Regel eine gesetzliche Erlaubnis voraus. Die Versicherung muss zur tatsächlichen Nutzung passen. Eine falsche Angabe kann den Schutz gefährden."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Brauche ich eine Kasko, und was gilt für die Selbstbeteiligung?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Die Kfz-Haftpflicht ist gesetzlich vorgeschrieben. Teil- oder Vollkasko sind typischerweise zusätzlich vereinbart, etwa je nach Wert, Finanzierung oder Leasing des Fahrzeugs. Zur Kasko gehört oft eine Selbstbeteiligung: Im Schaden zahlst du den vereinbarten Anteil selbst, der Beitrag kann dafür niedriger liegen. Welche Kombination passt, hängt vom Fahrzeug und vom Risiko ab. Beträge nenne ich hier bewusst nicht."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Kann ich Beitragserhöhungen zum Jahreswechsel prüfen lassen?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ja. Viele gewerbliche Kfz-Verträge haben die Hauptfälligkeit zum Jahreswechsel. Dann lohnt typischerweise ein Blick auf Beitrag und Schutz, bevor sich der Vertrag verlängert. Ob und bis wann ein Wechsel möglich ist, hängt vom jeweiligen Vertrag und den geltenden Fristen ab. Die bestehende Betreuung kann ich auf Wunsch übernehmen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Ist das Erstgespräch kostenpflichtig?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Das Erstgespräch ist unverbindlich. Du zahlst keine Beratungsgebühr. Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte. Den Ablauf erkläre ich dir im Gespräch. Nicht jedes Produkt ist automatisch verfügbar."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Berätst du nur in Mainz oder auch online?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Beides. Du kannst einen Termin in Mainz, nach Absprache in Frankfurt, im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern, etwa in Wiesbaden oder Darmstadt, oder online vereinbaren. Online berate ich deutschlandweit, typischerweise per Video. Den Termin buchst du unter termin.eliasgassmann.de."
-      }
-    }
-  ]
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FinancialService",
-  "name": "Elias Gassmann — Kfz- und Flottenversicherung für Handwerk und Transport",
-  "url": "https://eliasgassmann.de/kfz-flotte-gewerbe",
-  "description": "Beratung zur gewerblichen Kfz- und Flottenversicherung für Handwerksbetriebe und Transportunternehmen: Firmenwagen, Transporter, LKW und Zugmaschinen, Flottenvertrag oder Einzelverträge, Werkverkehr und Güterverkehr, persönlich in Mainz, Frankfurt, im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern sowie online deutschlandweit.",
-  "areaServed": [
-    "Mainz",
-    "Wiesbaden",
-    "Frankfurt am Main",
-    "Darmstadt",
-    "Rhein-Main",
-    "DE"
-  ],
-  "telephone": "+491626960629",
-  "email": "elias@eliasgassmann.de",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "August-Horch-Straße 6A",
-    "postalCode": "55129",
-    "addressLocality": "Mainz",
-    "addressCountry": "DE"
-  },
-  "provider": {
-    "@type": "Person",
-    "name": "Elias Gassmann",
-    "url": "https://eliasgassmann.de/",
-    "image": "https://eliasgassmann.de/portrait-elias-gassmann.jpeg"
-  }
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Elias Gassmann",
-      "item": "https://eliasgassmann.de/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Kfz- und Flottenversicherung für Handwerk und Transport",
-      "item": "https://eliasgassmann.de/kfz-flotte-gewerbe"
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Elias Gassmann",
+          "item": "https://eliasgassmann.de/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Kfz- und Flottenversicherung",
+          "item": "https://eliasgassmann.de/kfz-flotte-gewerbe"
+        }
+      ]
     }
   ]
 }
@@ -295,32 +293,28 @@
       <span class="brand-name">Elias Gassmann<small>Finanzberatung</small></span>
     </a>
     <nav class="main-nav" aria-label="Hauptnavigation">
-      <a href="index.html#gewerbe">Gewerbe</a>
       <a href="index.html#privat">Privat</a>
-      <a href="#ablauf">So läuft’s</a>
-      <a href="#termin">Termin</a>
+      <a href="index.html#gewerbe">Betrieb</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="#anfrage">Termin</a>
     </nav>
     <a class="header-contact" href="tel:+491626960629">
       <span class="phone-icon">↗</span>
       <span>0162 6960629</span>
     </a>
   </header>
-
   <main id="top">
     <section class="hero hero--beratung" id="inhalt" aria-labelledby="hero-title">
       <div class="hero-content hero-copy">
-        <p class="eyebrow hero-label">Für Handwerk und Transport</p>
-        <h1 id="hero-title">Kfz- und Flottenversicherung für Handwerk und Transport in Mainz, Frankfurt und im Rhein-Main-Gebiet</h1>
-        <aside class="answer-box" aria-label="Kurzantwort">
-          <span class="answer-label">Kurzantwort</span>
-          <p>Firmenwagen, Transporter, LKW und Zugmaschinen im Güterverkehr brauchen typischerweise eine gewerbliche Kfz-Versicherung. Bei mehreren Fahrzeugen kann ein Flottenvertrag infrage kommen, sonst Einzelverträge. Wichtig sind die tatsächliche Nutzung, also Werkverkehr oder gewerblicher Güterverkehr, Schadenfreiheitsklassen und mögliche Sondereinstufungen, Kasko mit Selbstbeteiligung und ein Schutzbrief. Beitragserhöhungen zum Jahreswechsel lasse ich gerne prüfen; die Betreuung bestehender Verträge kann ich übernehmen. Elias Gassmann berät dich dazu in Mainz, Frankfurt, im Rhein-Main-Gebiet oder online deutschlandweit.</p>
-        </aside>
-        <p class="core-answer">Typische Anlässe: der Fuhrpark wächst, Beiträge steigen zum Jahreswechsel, du willst Einzelverträge und Flotte vergleichen, die Nutzung hat sich geändert oder die Betreuung soll an einem Ort zusammenlaufen.</p>
+        <p class="eyebrow hero-label">Fahrzeuge</p>
+        <h1 id="hero-title">Firmenwagen und Flotte: Ein Vertrag für alles, oder jeder Wagen für sich?</h1>
+        <p class="core-answer">Transporter, Firmenwagen, Lkw. Die Frage ist, ob ein Flottenvertrag zu deinem Bestand passt oder ob Einzelverträge klarer sind. Werkverkehr und gewerblicher Güterverkehr sind nicht dieselbe Nutzung. Zum Jahreswechsel lohnt der Blick auf Beitrag und Schadenfreiheitsklasse.</p>
+        <p><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=kfz-flotte-gewerbe">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a></p>
       </div>
       <div class="hero-form">
         <div class="form-card" id="anfrage">
-          <h2>Jetzt Beratung anfragen</h2>
-          <p class="form-lead">Unverbindlich, in Mainz, Frankfurt, im Rhein-Main-Gebiet oder online. Erzähl kurz, worum es geht.</p>
+          <h2>Erstgespräch anfragen</h2>
+          <p class="form-lead">Kostenlos und unverbindlich. Ein Satz zu deiner Lage reicht.</p>
           <form class="lead-form" id="beratung-form" action="https://eg-anfragen.elias-gassmann.workers.dev/anfrage" method="post" novalidate>
             <label>Name
               <input type="text" name="name" autocomplete="name" required placeholder="Vor- und Nachname">
@@ -329,10 +323,10 @@
               <input type="text" name="kontakt" autocomplete="on" required placeholder="Nummer oder E-Mail-Adresse" inputmode="email">
             </label>
             <label>Beruf oder Tätigkeit
-              <input type="text" name="branche" required placeholder="z. B. Handwerk oder Transport">
+              <input type="text" name="branche" required placeholder="z. B. selbstständig, Handwerk">
             </label>
             <label>Kurz dein Anliegen
-              <input type="text" name="anliegen" required placeholder="z. B. Flotte prüfen oder Jahreswechsel">
+              <input type="text" name="anliegen" required placeholder="z. B. Bestand prüfen">
             </label>
             <label class="consent fwx-consent">
               <input type="checkbox" name="datenschutz" value="ja" required>
@@ -344,250 +338,69 @@
           </form>
           <p class="form-alt">Oder Termin direkt wählen: <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=kfz-flotte-gewerbe">termin.eliasgassmann.de</a> · <a href="tel:+491626960629">+49 162 6960629</a></p>
         </div>
-      </div>
+        </div>
       <div class="hero-panel">
         <figure class="hero-portrait">
-          <img src="portrait-elias-gassmann.jpeg" alt="Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" fetchpriority="high">
+          <img src="portrait-elias-gassmann.jpeg" alt="Porträt von Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" fetchpriority="high">
           <figcaption>
             <span>Elias Gassmann</span>
             <strong>Finanzberater in Mainz</strong>
-            <small>Persönlich in Mainz, Rhein-Main und online</small>
+            <small>Sitz in Mainz, Gespräche auch online</small>
           </figcaption>
         </figure>
         <a class="trust-rating" href="https://www.google.com/maps?cid=18281856182098275446" target="_blank" rel="noopener noreferrer">
           <span aria-hidden="true">★★★★★</span>
           <span>
             <strong>4,9 / 5 · 48 Google-Rezensionen</strong>
-            <small>Stand 10.11.2026, wie auf der Seite Finanzberater Mainz</small>
+            <small>FactoringWerkstatt · Stand 10.11.2026</small>
           </span>
         </a>
       </div>
     </section>
-
-    <section class="page-block" aria-labelledby="fahrzeuge">
-      <p class="eyebrow">Einordnung</p>
-      <h2 id="fahrzeuge">Firmenwagen, Transporter, LKW und Zugmaschinen</h2>
-      <p class="lead">Gewerbliche Fahrzeuge brauchen typischerweise eine eigene Kfz-Versicherung, abgestimmt auf Fahrzeug und Nutzung. Die private Kfz-Police reicht dafür in der Regel nicht.</p>
-      <p>Zur Kfz-Haftpflicht, die gesetzlich vorgeschrieben ist, kommen je nach Lage Teil- oder Vollkasko, ein Schutzbrief und weitere Bausteine. Was davon sinnvoll ist, hängt vom Fahrzeug, vom Einsatz und davon ab, ob das Fahrzeug finanziert oder geleast ist.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Firmenwagen und Transporter</strong>
-          <span>Typisch im Handwerk und in Dienstleistungsbetrieben: Pkw als Firmenwagen und Transporter für Material, Werkzeug oder Mitarbeitende. Entscheidend ist, wofür und von wem das Fahrzeug tatsächlich genutzt wird.</span>
-        </li>
-        <li>
-          <strong>LKW und Zugmaschinen</strong>
-          <span>Im Güterverkehr kommen LKW und Zugmaschinen hinzu. Hier zählen typischerweise Fahrzeugart, zulässiges Gewicht, Einsatz und ob du im Werkverkehr oder im gewerblichen Güterverkehr unterwegs bist.</span>
-        </li>
-        <li>
-          <strong>Der gesamte Fuhrpark</strong>
-          <span>Auch ein gemischter Bestand lässt sich gemeinsam einordnen: einzelne Verträge oder, bei mehreren Fahrzeugen, ein Flottenvertrag. Beiträge oder Annahmerichtlinien nenne ich hier bewusst nicht.</span>
-        </li>
-      </ul>
-    </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="flotte">
-      <p class="eyebrow">Vertrag und Einstufung</p>
-      <h2 id="flotte">Flottenvertrag oder Einzelverträge?</h2>
-      <p class="lead">Bei mehreren Fahrzeugen stellt sich typischerweise die Frage, ob jedes Fahrzeug einzeln versichert bleibt oder ein Flottenvertrag besser passt.</p>
-      <p>Einzelverträge gelten typischerweise je Fahrzeug, mit eigener Schadenfreiheitsklasse und eigener Fälligkeit. Ein Flottenvertrag bündelt mehrere Fahrzeuge. Verwaltung, Bedingungen und die Behandlung der Schadenfreiheitsklassen können sich dann unterscheiden.</p>
-      <p>Ab welcher Fahrzeugzahl ein Flottenvertrag möglich ist, hängt vom Anbieter ab. Eine pauschale Schwelle nenne ich hier bewusst nicht.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Einzelverträge</strong>
-          <span>Jedes Fahrzeug steht für sich. Das kann passen, wenn der Bestand klein ist oder Fahrzeuge sehr unterschiedlich genutzt werden. Änderungen und Kündigungsfristen musst du typischerweise je Vertrag im Blick behalten.</span>
-        </li>
-        <li>
-          <strong>Flottenvertrag</strong>
-          <span>Mehrere Fahrzeuge laufen über einen Vertrag. Das kann die Verwaltung erleichtern, etwa bei Zu- und Abgängen. Ob das für deinen Bestand der bessere Weg ist, hängt von Zahl, Mischung und Schadenverlauf ab.</span>
-        </li>
-        <li>
-          <strong>Schadenfreiheitsklassen und Sondereinstufungen</strong>
-          <span>Schadenfreiheitsklassen steuern typischerweise den Beitrag danach, wie lange ein Fahrzeug oder Vertrag schadenfrei geblieben ist. Unter bestimmten Voraussetzungen können Sondereinstufungen möglich sein. Wie das in einer Flotte gerechnet wird, hängt vom Vertrag ab. Konkrete Klassen nenne ich hier bewusst nicht.</span>
-        </li>
-      </ul>
-    </section>
-
-    <section class="page-block" aria-labelledby="nutzung">
-      <p class="eyebrow">Nutzung</p>
-      <h2 id="nutzung">Werkverkehr oder gewerblicher Güterverkehr?</h2>
-      <p class="lead">Für den Versicherungsschutz zählt, wie das Fahrzeug tatsächlich eingesetzt wird. Die Nutzung muss zum Vertrag passen.</p>
-      <p>Im Werkverkehr beförderst du typischerweise eigene Güter mit eigenen Fahrzeugen für betriebliche Zwecke, etwa Material und Werkzeug zur Baustelle. Gewerblicher Güterverkehr meint typischerweise die Beförderung von Gütern für andere, oft als Transportunternehmen. Dafür ist in der Regel eine gesetzliche Erlaubnis nötig.</p>
-      <p class="hinweis"><strong>Wichtig:</strong> Eine falsche Angabe zur Nutzung kann den Versicherungsschutz gefährden. Deshalb klären wir im Gespräch, wie die Fahrzeuge wirklich eingesetzt werden, bevor ein Vertrag angepasst oder neu beantragt wird.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Werkverkehr</strong>
-          <span>Typisch für Handwerksbetriebe, die eigene Waren, Material oder Werkzeug transportieren. Wird zusätzlich für andere befördert, kann das die Einordnung ändern.</span>
-        </li>
-        <li>
-          <strong>Gewerblicher Güterverkehr</strong>
-          <span>Typisch für Transportunternehmen mit LKW oder Zugmaschinen, die Güter für Auftraggeber fahren. Neben der Versicherung können Erlaubnis und Einsatzbedingungen eine Rolle spielen.</span>
-        </li>
-        <li>
-          <strong>Wechsel der Nutzung</strong>
-          <span>Wenn sich der Einsatz ändert, etwa vom reinen Werkverkehr in den Güterverkehr, gehört das fest in den Vertrag. Sonst besteht typischerweise die Gefahr, dass der Schutz im Schadenfall nicht greift.</span>
-        </li>
-      </ul>
-    </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="kasko">
-      <p class="eyebrow">Bausteine</p>
-      <h2 id="kasko">Kasko, Selbstbeteiligung und Schutzbrief</h2>
-      <p class="lead">Neben der Pflicht-Haftpflicht entscheidest du typischerweise über Kasko, die Höhe der Selbstbeteiligung und einen Schutzbrief.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Teil- und Vollkasko</strong>
-          <span>Die Teilkasko deckt typischerweise bestimmte Sachschäden am eigenen Fahrzeug, etwa durch Diebstahl, Glas oder Naturereignisse, soweit vereinbart. Die Vollkasko ergänzt das typischerweise um selbst verschuldete Schäden und Vandalismus. Gerade bei geleasten oder finanzierten Fahrzeugen wird eine Kasko oft verlangt.</span>
-        </li>
-        <li>
-          <strong>Selbstbeteiligung</strong>
-          <span>Im Schaden zahlst du den vereinbarten Anteil selbst. Eine höhere Selbstbeteiligung kann den Beitrag senken, erhöht aber deine eigene Last im Schadenfall. Welche Höhe passt, hängt vom Fahrzeug und vom Risiko ab. Beträge nenne ich hier bewusst nicht.</span>
-        </li>
-        <li>
-          <strong>Schutzbrief</strong>
-          <span>Ein Schutzbrief hilft typischerweise bei Panne, Unfall oder Diebstahl, etwa durch Hilfe vor Ort, Abschleppen oder Weiterfahrt. Für Betriebe, deren Alltag am Fahrzeug hängt, gehört dieser Baustein fest ins Gespräch.</span>
-        </li>
-      </ul>
-      <p>Welche Kombination sinnvoll ist, hängt vom einzelnen Fahrzeug und vom gesamten Fuhrpark ab. Nicht jedes Produkt ist automatisch verfügbar.</p>
-    </section>
-
-    <section class="page-block" aria-labelledby="jahreswechsel">
-      <p class="eyebrow">Bestehende Verträge</p>
-      <h2 id="jahreswechsel">Beitragserhöhungen zum Jahreswechsel prüfen lassen</h2>
-      <p class="lead">Viele gewerbliche Kfz-Verträge haben die Hauptfälligkeit zum Jahreswechsel. Dann lohnt typischerweise ein Blick auf Beitrag und Schutz, bevor sich der Vertrag verlängert.</p>
-      <p>Steigen die Beiträge, heißt das nicht automatisch, dass der Vertrag unpassend geworden ist. Manchmal hat sich der Bestand oder die Nutzung geändert, manchmal lohnt ein Vergleich mit anderen Angeboten. Ob und bis wann ein Wechsel möglich ist, hängt vom jeweiligen Vertrag und den geltenden Fristen ab. Pauschale Kündigungsfristen nenne ich hier bewusst nicht.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Prüfung zum Jahreswechsel</strong>
-          <span>Schick mir die aktuellen Unterlagen. Ich ordne Beitrag, Leistung und Einstufung ein und sage dir offen, ob ein Wechsel sinnvoll erscheint oder der bestehende Vertrag bleiben kann.</span>
-        </li>
-        <li>
-          <strong>Betreuung übernehmen</strong>
-          <span>Die bestehende Betreuung kann ich auf Wunsch übernehmen. Dann läuft der Kontakt über mich, auch wenn zunächst nichts geändert wird.</span>
-        </li>
-        <li>
-          <strong>Wechsel ohne Druck</strong>
-          <span>Ein Wechsel kommt erst, wenn er zu deinem Fuhrpark passt und du dich entschieden hast. Durch das Erstgespräch entsteht keine Verpflichtung.</span>
-        </li>
-      </ul>
-    </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="fuer-wen">
+    <section class="page-block" id="fuer-wen" aria-labelledby="fuer-wen-title">
       <p class="eyebrow">Für wen</p>
-      <h2 id="fuer-wen">Für wen das typischerweise infrage kommt</h2>
-      <p class="lead">Die Seite richtet sich an Handwerksbetriebe und Transportunternehmen in Mainz, Frankfurt, Wiesbaden, Darmstadt und im übrigen Rhein-Main-Gebiet sowie im Umkreis von rund 100 Kilometern. Online berate ich deutschlandweit, typischerweise per Video.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Handwerksbetriebe</strong>
-          <span>Du hast Firmenwagen oder Transporter, typischerweise im Werkverkehr, und willst einzelne Verträge oder den ganzen Fuhrpark einordnen.</span>
-        </li>
-        <li>
-          <strong>Transportunternehmen</strong>
-          <span>Du fährst im gewerblichen Güterverkehr mit LKW oder Zugmaschinen und brauchst einen Schutz, der zur Nutzung und zum Bestand passt.</span>
-        </li>
-        <li>
-          <strong>Jahreswechsel oder wachsender Fuhrpark</strong>
-          <span>Beiträge steigen, Fahrzeuge kommen hinzu oder die Betreuung soll an einem Ort zusammenlaufen. Dann prüfe ich Bestand, Flotte und mögliche Wechsel.</span>
-        </li>
-      </ul>
-      <p>Nicht jedes Thema und jedes Produkt ist automatisch verfügbar; das klären wir im Gespräch. Für typische betriebliche Risiken abseits der Fahrzeuge liegt eine Einordnung auf der Seite <a href="betriebshaftpflicht-mainz">Betriebshaftpflicht</a>. Für Einrichtung, Werkzeug und Waren im Betrieb oder im Fahrzeug liegt eine Einordnung auf der Seite <a href="inhaltsversicherung-betrieb">Inhalts- und Elektronikversicherung</a>. Für fahrbare oder transportable Baumaschinen — im Unterschied zu Straßenfahrzeugen — liegt eine Einordnung auf der Seite <a href="maschinenversicherung-bau">Maschinenversicherung für Bauunternehmen und Handwerk</a>. Wenn offene Rechnungen die Liquidität belasten, kann zusätzlich Factoring infrage kommen: für Handwerksbetriebe die Seite <a href="factoring-handwerk">Factoring für Handwerk und kleine Betriebe</a>, für Speditionen, Kurierdienste und Fuhrunternehmer die Seite <a href="factoring-transport">Factoring für Transport und Spedition</a>. Einen Überblick zur Finanzberatung in Mainz findest du auf der Seite <a href="finanzberater-mainz">Finanzberater Mainz</a>.</p>
+      <h2 id="fuer-wen-title">Für wen das ist.</h2>
+      
+      <ul class="topic-list"><li><strong>Handwerk mit Transportern</strong><span>Du fährst zu Kunden, das Fahrzeug ist Werkzeug.</span></li><li><strong>Transport und Spedition</strong><span>Güterverkehr hat andere Anforderungen als der eigene Werkverkehr.</span></li><li><strong>Mehrere Fahrzeuge</strong><span>Ab einer gewissen Zahl wird ein Flottenvertrag interessant. Die Grenze ist kein Gesetz, sondern eine Frage von Bestand und Schäden.</span></li></ul>
     </section>
-
-    <section class="process-section page-block" id="ablauf" aria-labelledby="ablauf-title">
+<section class="page-block page-block--grau" id="worauf" aria-labelledby="worauf-title">
+      <p class="eyebrow">Worauf es ankommt</p>
+      <h2 id="worauf-title">Was ich mit dir kläre.</h2>
+      
+      <ul class="topic-list"><li><strong>Haftpflicht und Kasko</strong><span>Haftpflicht ist Pflicht. Teil- oder Vollkasko und der Schutzbrief sind eine Entscheidung zu Fahrzeugwert und Selbstbeteiligung.</span></li><li><strong>Schadenfreiheitsklasse</strong><span>Sie hängt an der Schadenhistorie. Ein Wechsel lohnt nur, wenn Klasse, Nutzung und Beitrag zusammenpassen.</span></li><li><strong>Werk- oder Güterverkehr</strong><span>Eigenes Material zur Baustelle ist etwas anderes als entgeltliche Beförderung für Dritte. Die Zulassung muss zur Nutzung passen.</span></li><li><strong>Jahreswechsel</strong><span>Beitragserhöhungen kommen oft zum Jahr. Ich vergleiche, was sich geändert hat, nicht nur die neue Zahl.</span></li></ul>
+    </section>
+<section class="process-section page-block" id="ablauf" aria-labelledby="ablauf-title">
       <div class="process-heading">
-        <p class="eyebrow">Der Ablauf</p>
-        <h2 id="ablauf-title">So läuft die Beratung</h2>
-        <p class="lead">Wir starten mit deinem Fuhrpark und der tatsächlichen Nutzung. Die Beratung kann vollständig digital laufen, typischerweise per Video.</p>
+        <p class="eyebrow">Ablauf</p>
+        <h2 id="ablauf-title">So gehe ich vor.</h2>
+        <p class="lead">Du musst nichts vorbereiten. Unterlagen helfen, wenn du sie schon hast.</p>
       </div>
-      <ol class="process-list">
-        <li>
-          <span>1</span>
-          <h3>Termin buchen</h3>
-          <p>Du buchst einen unverbindlichen Termin, vor Ort in Mainz, in Frankfurt, im Rhein-Main-Gebiet bzw. im Umkreis von rund 100 Kilometern oder online. Online berate ich deutschlandweit, typischerweise per Video.</p>
-        </li>
-        <li>
-          <span>2</span>
-          <h3>Fuhrpark und Nutzung verstehen</h3>
-          <p>Wir sprechen über Fahrzeugarten, Einsatz, bestehende Verträge und ob du im Werkverkehr oder im gewerblichen Güterverkehr unterwegs bist. Vorhandene Unterlagen helfen, die Lage schnell einzuordnen.</p>
-        </li>
-        <li>
-          <span>3</span>
-          <h3>Verträge einordnen</h3>
-          <p>Ich prüfe, ob Einzelverträge oder ein Flottenvertrag besser passen, und schaue auf Schadenfreiheitsklassen, mögliche Sondereinstufungen, Kasko, Selbstbeteiligung und Schutzbrief. Nicht jedes Produkt ist automatisch verfügbar.</p>
-        </li>
-        <li>
-          <span>4</span>
-          <h3>Zum Jahreswechsel prüfen</h3>
-          <p>Stehen Beitragserhöhungen an oder steht die Hauptfälligkeit bevor, ordne ich ein, ob der bestehende Schutz bleiben kann oder ein Wechsel sinnvoll erscheint. Die Betreuung kann ich auf Wunsch übernehmen.</p>
-        </li>
-        <li>
-          <span>5</span>
-          <h3>In Ruhe entscheiden</h3>
-          <p>Du entscheidest in Ruhe, ob und wie es weitergehen soll. Durch das Erstgespräch entsteht keine Verpflichtung.</p>
-        </li>
-      </ol>
+      <ol class="process-list"><li><span>1</span><h3>Kennenlernen</h3><p>Fahrzeuge, Nutzung, wer fährt.</p></li><li><span>2</span><h3>Analysieren</h3><p>Verträge, Klassen, Schäden, Lücken bei Kasko.</p></li><li><span>3</span><h3>Lösungen besprechen</h3><p>Flotte oder einzeln, Selbstbehalt, was draußen bleibt.</p></li><li><span>4</span><h3>Umsetzen</h3><p>Wechsel nur, wenn er nach Abzug aller Kosten besser ist.</p></li></ol>
     </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="transparenz">
-      <p class="eyebrow">Kosten und Ablauf</p>
-      <h2 id="transparenz">Was das Erstgespräch kostet</h2>
-      <p class="lead">Für das Erstgespräch zahlst du keine Beratungsgebühr. Bevor du etwas entscheidest, weißt du, wie ein Vorschlag funktioniert und welche Kosten daran hängen.</p>
-      <p class="partners">Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte; den Ablauf erkläre ich dir im Gespräch. Pauschale Beiträge, Schadenfreiheitsklassen oder Annahmerichtlinien nenne ich hier bewusst nicht. Es werden keine Kundengelder entgegengenommen; Zahlungen gehen direkt an den jeweiligen Anbieter. Alle Pflichtangaben findest du im <a href="impressum.html">Impressum</a>.</p>
-    </section>
-
-    <section class="page-block" id="termin" aria-labelledby="termin-title">
+<section class="page-block" id="naechster" aria-labelledby="naechster-title">
       <p class="eyebrow">Nächster Schritt</p>
-      <h2 id="termin-title">Termin vereinbaren — in Mainz, Frankfurt, im Rhein-Main-Gebiet oder online</h2>
-      <p class="lead">Den unverbindlichen Termin buchst du unter <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=kfz-flotte-gewerbe">termin.eliasgassmann.de</a>. Ohne Druck und ohne eine festgelegte Empfehlung für Flotte oder Einzelvertrag.</p>
-      <p>Die öffentlich genannte Anschrift ist August-Horch-Straße 6A, 55129 Mainz. Ob ein Termin vor Ort oder online per Video sinnvoller ist, klären wir bei der Buchung. Du erreichst mich auch unter <a href="tel:+491626960629">+49 162 6960629</a> und <a href="mailto:elias@eliasgassmann.de">elias@eliasgassmann.de</a>.</p>
-      <p style="margin-top:28px"><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=kfz-flotte-gewerbe">Unverbindlichen Termin vereinbaren <span aria-hidden="true">↗</span></a></p>
+      <h2 id="naechster-title">Das Erstgespräch zeigt dir den nächsten sinnvollen Schritt.</h2>
+      
+      <p>Du hörst, was schon passt, was fehlt und was es kosten würde. Danach entscheidest du.</p><p style="margin-top:8px"><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=kfz-flotte-gewerbe">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a></p>
     </section>
-
     <section class="faq-section" id="fragen" aria-labelledby="faq-title">
       <div>
-        <p class="eyebrow">Vor dem Gespräch</p>
-        <h2 id="faq-title">Häufige Fragen zur Kfz- und Flottenversicherung</h2>
+        <p class="eyebrow">Kurz geklärt</p>
+        <h2 id="faq-title">Fragen, die oft kommen.</h2>
       </div>
       <div class="faq-list">
-        <details open>
-          <summary>Was ist der Unterschied zwischen einem Flottenvertrag und Einzelverträgen?</summary>
-          <p>Einzelverträge gelten typischerweise je Fahrzeug, mit eigener Einstufung und eigener Fälligkeit. Ein Flottenvertrag kann infrage kommen, wenn mehrere Fahrzeuge über denselben Vertrag laufen sollen. Verwaltung, Bedingungen und die Behandlung der Schadenfreiheitsklassen können sich dann vom Einzelvertrag unterscheiden. Ab welcher Fahrzeugzahl ein Flottenvertrag möglich ist, hängt vom Anbieter ab. Eine pauschale Schwelle nenne ich hier bewusst nicht.</p>
-        </details>
-        <details>
-          <summary>Was bedeuten Schadenfreiheitsklassen und Sondereinstufungen?</summary>
-          <p>Schadenfreiheitsklassen steuern typischerweise den Beitrag danach, wie lange ein Fahrzeug oder Vertrag schadenfrei geblieben ist. Nach einem belastenden Schaden kann die Einstufung schlechter werden, ohne Schaden typischerweise besser. Unter bestimmten Voraussetzungen können Sondereinstufungen möglich sein. Wie das in einem Flottenvertrag gerechnet wird, hängt vom jeweiligen Vertrag ab. Konkrete Klassen oder Beiträge nenne ich hier bewusst nicht.</p>
-        </details>
-        <details>
-          <summary>Was ist der Unterschied zwischen Werkverkehr und gewerblichem Güterverkehr?</summary>
-          <p>Im Werkverkehr beförderst du typischerweise eigene Güter mit eigenen Fahrzeugen für betriebliche Zwecke, etwa Material zur Baustelle. Gewerblicher Güterverkehr meint typischerweise die Beförderung von Gütern für andere, oft als Transportunternehmen, und setzt in der Regel eine gesetzliche Erlaubnis voraus. Die Versicherung muss zur tatsächlichen Nutzung passen. Eine falsche Angabe kann den Schutz gefährden.</p>
-        </details>
-        <details>
-          <summary>Brauche ich eine Kasko, und was gilt für die Selbstbeteiligung?</summary>
-          <p>Die Kfz-Haftpflicht ist gesetzlich vorgeschrieben. Teil- oder Vollkasko sind typischerweise zusätzlich vereinbart, etwa je nach Wert, Finanzierung oder Leasing des Fahrzeugs. Zur Kasko gehört oft eine Selbstbeteiligung: Im Schaden zahlst du den vereinbarten Anteil selbst, der Beitrag kann dafür niedriger liegen. Welche Kombination passt, hängt vom Fahrzeug und vom Risiko ab. Beträge nenne ich hier bewusst nicht.</p>
-        </details>
-        <details>
-          <summary>Kann ich Beitragserhöhungen zum Jahreswechsel prüfen lassen?</summary>
-          <p>Ja. Viele gewerbliche Kfz-Verträge haben die Hauptfälligkeit zum Jahreswechsel. Dann lohnt typischerweise ein Blick auf Beitrag und Schutz, bevor sich der Vertrag verlängert. Ob und bis wann ein Wechsel möglich ist, hängt vom jeweiligen Vertrag und den geltenden Fristen ab. Die bestehende Betreuung kann ich auf Wunsch übernehmen.</p>
-        </details>
-        <details>
-          <summary>Ist das Erstgespräch kostenpflichtig?</summary>
-          <p>Das Erstgespräch ist unverbindlich. Du zahlst keine Beratungsgebühr. Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte. Den Ablauf erkläre ich dir im Gespräch. Nicht jedes Produkt ist automatisch verfügbar.</p>
-        </details>
-        <details>
-          <summary>Berätst du nur in Mainz oder auch online?</summary>
-          <p>Beides. Du kannst einen Termin in Mainz, nach Absprache in Frankfurt, im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern, etwa in Wiesbaden oder Darmstadt, oder online vereinbaren. Online berate ich deutschlandweit, typischerweise per Video. Den Termin buchst du unter <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=kfz-flotte-gewerbe">termin.eliasgassmann.de</a>.</p>
-        </details>
+        <details open><summary>Wann ist ein Flottenvertrag sinnvoll?</summary><p>Wenn mehrere Fahrzeuge zusammen betrachtet werden sollen, oft wegen Verwaltung und Schadenverlauf. Ob er günstiger ist, zeigt der Vergleich, nicht die Bezeichnung.</p></details><details><summary>Was ist der Unterschied zwischen Werk- und Güterverkehr?</summary><p>Werkverkehr befördert eigene Güter für eigene Zwecke. Güterverkehr befördert entgeltlich für andere. Die Police muss zur tatsächlichen Nutzung passen.</p></details><details><summary>Soll ich zum Jahreswechsel wechseln?</summary><p>Nur nach einem Vergleich von Beitrag, Klasse, Kasko und Selbstbeteiligung. Eine höhere Zahl allein ist kein Auftrag zum Wechsel.</p></details><details><summary>Was kostet das Erstgespräch?</summary><p>Das Erstgespräch kostet dich nichts. Eine Beratungsgebühr verlange ich nicht. Kommt ein Produkt zustande, werde ich vom Anbieter vergütet. Wie das läuft, sage ich dir im Gespräch. Die Pflichtangaben stehen im Impressum.</p></details><details><summary>Muss ich bestehende Verträge kündigen?</summary><p>Nein. Ich schaue zuerst, was du schon hast. Was zu deinem Ziel passt, kann bleiben. Ob du etwas änderst, entscheidest du.</p></details><details><summary>Bist du danach noch da?</summary><p>Ja. Wenn sich etwas ändert oder du eine Frage zum Vertrag hast, meldest du dich bei mir. Ich bleibe dein Ansprechpartner.</p></details>
       </div>
     </section>
-
     <section class="contact-card" aria-labelledby="kontakt-title">
       <figure class="hero-portrait" style="margin:0;max-height:520px">
-        <img src="portrait-elias-gassmann.jpeg" alt="Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" loading="lazy">
+        <img src="portrait-elias-gassmann.jpeg" alt="Porträt von Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" loading="lazy">
       </figure>
       <div class="contact-content">
-        <p class="eyebrow">Kontakt</p>
-        <h2 id="kontakt-title">Was hast du vor?<br><em>Lass uns sprechen.</em></h2>
-        <p class="contact-copy">Den Fuhrpark einordnen, Beiträge zum Jahreswechsel prüfen oder die Betreuung übernehmen lassen: Erzähl mir, worum es geht.</p>
-        <a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=kfz-flotte-gewerbe">Unverbindlichen Termin vereinbaren <span aria-hidden="true">↗</span></a>
+        <p class="eyebrow">Erstgespräch</p>
+        <h2 id="kontakt-title">Wenn du das einordnen willst, sag mir Bescheid.</h2>
+        <p class="contact-copy">Kurz schreiben, worum es geht. Eine Beratungsgebühr verlange ich nicht.</p>
+        <a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=kfz-flotte-gewerbe">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a>
         <div class="contact-data">
           <a href="tel:+491626960629">+49 162 6960629</a>
           <a href="mailto:elias@eliasgassmann.de">elias@eliasgassmann.de</a>
@@ -596,7 +409,6 @@
       </div>
     </section>
   </main>
-
   <footer>
     <p>© <span id="year">2026</span> Elias Gassmann</p>
     <div>
@@ -605,7 +417,7 @@
       <a href="/datenschutz">Datenschutz</a>
     </div>
   </footer>
-  <a class="mobile-sticky" href="#anfrage">Jetzt Beratung anfragen</a>
+  <a class="mobile-sticky" href="#anfrage">Erstgespräch anfragen</a>
   <script src="formular.js" defer></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
