@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GKV-Höchstbeitrag 2027: Selbstständige und Geschäftsführer</title>
-  <meta name="description" content="GKV-Höchstbeitrag 2027 laut Kabinettsbeschluss: 1.115,63 € im Monat mit durchschnittlichem Zusatzbeitrag. Tabelle 2025–2027, JAEG und PKV-Prüfung.">
+  <title>GKV-Höchstbeitrag 2027 für Selbstständige</title>
+  <meta name="description" content="GKV-Höchstbeitrag 2027 laut Kabinettsbeschluss: 1.115,63 Euro im Monat mit durchschnittlichem Zusatzbeitrag. Für Selbstständige und Geschäftsführer.">
   <link rel="canonical" href="https://eliasgassmann.de/gkv-hoechstbeitrag-2027-selbststaendige">
   <meta name="theme-color" content="#fbfbfd">
-  <meta property="og:title" content="GKV-Höchstbeitrag 2027: Selbstständige und Geschäftsführer">
-  <meta property="og:description" content="GKV-Höchstbeitrag 2027 laut Kabinettsbeschluss: 1.115,63 € im Monat mit durchschnittlichem Zusatzbeitrag. Tabelle 2025–2027, JAEG und PKV-Prüfung.">
-  <meta property="og:type" content="article">
+  <meta property="og:title" content="GKV-Höchstbeitrag 2027 für Selbstständige">
+  <meta property="og:description" content="GKV-Höchstbeitrag 2027 laut Kabinettsbeschluss: 1.115,63 Euro im Monat mit durchschnittlichem Zusatzbeitrag. Für Selbstständige und Geschäftsführer.">
+  <meta property="og:type" content="website">
   <meta property="og:url" content="https://eliasgassmann.de/gkv-hoechstbeitrag-2027-selbststaendige">
   <meta property="og:image" content="https://eliasgassmann.de/portrait-elias-gassmann.jpeg">
   <meta property="og:locale" content="de_DE">
@@ -27,9 +27,10 @@
       padding-bottom: 72px;
     }
     .hero--beratung h1 {
-      font-size: clamp(36px, 4.2vw, 54px);
+      font-size: clamp(36px, 4.2vw, 58px);
       line-height: 1.08;
-      max-width: none;
+      max-width: min(22ch, 100%);
+      overflow-wrap: anywhere;
     }
     .answer-box {
       margin: 22px 0 20px;
@@ -50,13 +51,6 @@
       color: var(--ink);
       font-size: 17px;
       line-height: 1.45;
-    }
-    .stand {
-      display: block;
-      margin: 10px 0 0;
-      color: var(--mut);
-      font-size: 13px;
-      font-weight: 600;
     }
     .core-answer {
       margin: 0 0 22px;
@@ -94,7 +88,8 @@
       height: 1px;
       overflow: hidden;
     }
-    .form-alt a, .consent a, .criteria a { color: var(--link); }
+
+    .form-alt a, .consent a { color: var(--link); }
     .lead-form { display: grid; gap: 12px; }
     .lead-form label { display: grid; gap: 5px; font-size: 13px; font-weight: 600; color: var(--ink); }
     .lead-form input[type="text"] {
@@ -115,107 +110,33 @@
     }
     .trust-rating strong { display: block; font-size: 15px; }
     .trust-rating small { display: block; font-size: 12px; color: var(--mut); }
+    .quote-mini {
+      margin: 0; padding: 16px 18px; border-radius: 20px; background: var(--grau);
+    }
+    .quote-mini p { margin: 0 0 8px; font-size: 15px; line-height: 1.4; }
+    .quote-mini footer { font-size: 12px; color: var(--mut); }
     .page-block { padding: 96px var(--rand); }
     .page-block h2 { margin: 8px 0 18px; font: 700 clamp(34px,4.2vw,56px)/1.07 var(--display); letter-spacing: -.03em; max-width: 22ch; }
     .page-block .lead, .page-block p { max-width: 42rem; }
     .page-block p { margin: 0 0 16px; font-size: 17px; line-height: 1.5; color: var(--ink-2); }
     .page-block .lead { font-size: 21px; line-height: 1.38; color: var(--mut); }
     .page-block--grau { background: var(--grau); }
-    .table-wrap { width: 100%; max-width: 52rem; overflow-x: auto; margin: 8px 0 16px; }
     .criteria {
-      width: 100%; min-width: 36rem; margin: 0; border-collapse: collapse;
+      width: 100%; max-width: 52rem; margin: 8px 0 0; border-collapse: collapse;
       background: #fff; border-radius: 20px; box-shadow: var(--schatten); overflow: hidden;
     }
     .criteria caption { caption-side: top; text-align: left; padding: 18px 20px 8px; font: 600 18px var(--display); color: var(--ink); }
     .criteria th, .criteria td { padding: 14px 20px; border-top: 1px solid var(--linie); text-align: left; vertical-align: top; font-size: 15px; line-height: 1.45; }
     .criteria thead th { font-size: 12px; color: var(--mut); font-weight: 600; }
-    .criteria tbody th { width: 40%; color: var(--ink); font-weight: 600; }
-    .criteria .num { white-space: nowrap; font-variant-numeric: tabular-nums; }
-    .criteria caption { white-space: normal; }
-    @media (max-width: 760px) {
-      .table-wrap { overflow: visible; }
-      .criteria {
-        min-width: 0;
-        background: transparent;
-        box-shadow: none;
-        overflow: visible;
-      }
-      .criteria caption { padding: 0 0 14px; font-size: 16px; }
-      .criteria thead { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
-      .criteria tbody, .criteria tr, .criteria th, .criteria td { display: block; width: auto; }
-      .criteria tr {
-        margin: 0 0 12px;
-        padding: 16px 16px 14px;
-        border-radius: 20px;
-        background: #fff;
-        box-shadow: var(--schatten);
-      }
-      .criteria tbody th {
-        width: auto;
-        border: 0;
-        padding: 0 0 8px;
-        font-size: 15px;
-      }
-      .criteria td {
-        border: 0;
-        padding: 5px 0;
-        display: flex;
-        justify-content: space-between;
-        gap: 12px;
-        font-size: 15px;
-      }
-      .criteria td::before {
-        content: attr(data-label);
-        color: var(--mut);
-        font-size: 13px;
-        font-weight: 600;
-      }
-      .criteria .num { font-size: 15px; }
-    }
-    .table-note {
-      margin: 0 0 16px;
-      max-width: 52rem;
-      font-size: 14px;
-      line-height: 1.5;
-      color: var(--mut);
-    }
+    .criteria tbody th { width: 48%; color: var(--ink); font-weight: 600; }
     .topic-list { display: grid; gap: 12px; margin: 8px 0 20px; padding: 0; list-style: none; max-width: 44rem; }
     .topic-list li { padding: 18px 20px; border-radius: 20px; background: var(--grau); }
     .topic-list strong { display: block; margin-bottom: 4px; }
     .topic-list span { color: var(--mut); font-size: 15px; line-height: 1.45; }
-    .page-block--grau .topic-list li { background: #fff; }
     .partners { font-size: 15px; color: var(--ink-2); }
-    .hinweis {
-      margin: 8px 0 0;
-      max-width: 42rem;
-      padding: 18px 20px;
-      border-radius: 20px;
-      background: var(--grau);
-      font-size: 16px;
-      line-height: 1.5;
-      color: var(--ink);
+    .mobile-sticky {
+      display: none;
     }
-    .page-block--grau .hinweis { background: #fff; }
-    .quellen-list {
-      max-width: 46rem;
-      margin: 8px 0 0;
-      padding: 0;
-      list-style: none;
-      display: grid;
-      gap: 12px;
-    }
-    .quellen-list li {
-      font-size: 14px;
-      line-height: 1.5;
-      color: var(--ink-2);
-    }
-    .quellen-list a { color: var(--link); }
-    @media (max-width: 760px) {
-      .hero--beratung h1, .page-block h2, .process-heading h2, .faq-section h2, .contact-card h2 {
-        overflow-wrap: break-word;
-      }
-    }
-    .mobile-sticky { display: none; }
     @media (max-width: 760px) {
       .hero--beratung h1 { max-width: none; }
       .hero--beratung .hero-portrait { max-height: none; }
@@ -232,6 +153,8 @@
     @media (prefers-reduced-motion: no-preference) {
       .hero-content, .hero-panel { animation: none; }
     }
+
+    .quote-mini .quote-src { margin: 0; font-size: 12px; color: var(--mut); line-height: 1.4; }
     .hero--beratung { display: grid; grid-template-columns: minmax(0,1.15fr) minmax(0,.85fr); }
     .hero-form { min-width: 0; }
     @media (min-width: 761px) {
@@ -241,146 +164,122 @@
     }
     @media (max-width: 760px) {
       .hero--beratung { display: flex; flex-direction: column; }
+      .hero-copy, .hero-form, .hero-panel { order: 0; min-width: 0; width: 100%; }
       .hero-copy { order: 1; }
       .hero-panel { order: 2; }
       .hero-form { order: 3; }
+      .hero--beratung h1 { overflow-wrap: anywhere; }
+    }
+  
+    .process-section.page-block .process-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .page-block--grau .topic-list li { background: #fff; }
+    .link-row { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 4px 0 18px; max-width: 44rem; }
+    .link-row a { color: var(--link); }
+    .source-list { margin: 8px 0 0; padding-left: 18px; max-width: 44rem; }
+    .source-list li { margin: 0 0 8px; font-size: 15px; line-height: 1.45; color: var(--ink-2); }
+    .source-list a { color: var(--link); }
+    @media (max-width: 760px) {
+      .hero h1, .page-block h2, .process-heading h2, .faq-section h2, .contact-card h2 { overflow-wrap: break-word; }
+      .process-section.page-block .process-list { grid-template-columns: 1fr; }
+      .criteria, .criteria thead, .criteria tbody, .criteria tr, .criteria th, .criteria td { display: block; width: auto; }
+      .criteria thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+      .criteria tr { padding: 8px 0; }
     }
   </style>
   <script type="application/ld+json">
-{
+  {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Wie hoch ist der GKV-Höchstbeitrag 2027?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Laut Kabinettsbeschluss vom 7. Oktober 2026 liegt der Höchstbeitrag für die Krankenversicherung 2027 bei 1.115,63 Euro im Monat, gerechnet mit dem amtlichen durchschnittlichen Zusatzbeitrag von 2,9 Prozent und dem allgemeinen Beitragssatz mit Krankengeld. Selbstständige zahlen die Pflegeversicherung zusätzlich allein. Nach geltendem Recht sind das 1.334,33 Euro mit Kind und 1.370,78 Euro als Kinderlose oder Kinderloser. Der Bundesrat stimmt am 20. November 2026 ab. Bis dahin sind die Werte noch nicht endgültig."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Wie hoch ist der GKV-Höchstbeitrag 2027?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Laut Kabinettsbeschluss 1.115,63 Euro im Monat für die Krankenversicherung mit Krankengeld und durchschnittlichem Zusatzbeitrag von 2,9 Prozent, ohne Pflege. Selbstständige zahlen die Pflege zusätzlich allein: nach geltendem Recht 1.334,33 Euro mit Kind und 1.370,78 Euro kinderlos. Die Werte sind bis zur verkündeten Verordnung nicht endgültig."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ab welchem Gehalt darf ein angestellter Geschäftsführer in die PKV?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Typischerweise erst, wenn das regelmäßige Jahresarbeitsentgelt über der Versicherungspflichtgrenze liegt. Laut Kabinettsbeschluss sind das 2027 84.150 Euro. Wer am 31. Dezember 2026 bereits privat und versicherungsfrei ist, soll an 80.550 Euro gemessen werden."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Können Selbstständige ohne Einkommensgrenze in die PKV?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hauptberuflich Selbstständige sind typischerweise nicht gesetzlich pflichtversichert. Ein Wechsel ist dann ohne diese Einkommensgrenze möglich, aber nur mit einer sauberen Abwägung zu Familie, Gesundheit und Alter."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was kostet das Erstgespräch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Das Erstgespräch kostet dich nichts. Eine Beratungsgebühr verlange ich nicht. Kommt ein Produkt zustande, werde ich vom Anbieter vergütet. Wie das läuft, sage ich dir im Gespräch. Die Pflichtangaben stehen im Impressum."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Muss ich bestehende Verträge kündigen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein. Ich schaue zuerst, was du schon hast. Was zu deinem Ziel passt, kann bleiben. Ob du etwas änderst, entscheidest du."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bist du danach noch da?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Wenn sich etwas ändert oder du eine Frage zum Vertrag hast, meldest du dich bei mir. Ich bleibe dein Ansprechpartner."
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Sind die Werte für 2027 schon endgültig?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Noch nicht vollständig. Der durchschnittliche Zusatzbeitrag für 2027 ist bereits festgelegt und beträgt 2,9 Prozent. Beitragsbemessungsgrenze und Versicherungspflichtgrenze beruhen auf dem Kabinettsbeschluss vom 7. Oktober 2026. Der Bundesrat stimmt am 20. November 2026 ab. Eine geplante Änderung des Kinderlosenzuschlags in der Pflegeversicherung ist ein gesondertes Vorhaben und ebenfalls noch offen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Ab welchem Gehalt darf ein angestellter Geschäftsführer in die PKV?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Beschäftigte Geschäftsführerinnen und Geschäftsführer können typischerweise nur in die private Krankenversicherung, wenn das regelmäßige Jahresarbeitsentgelt über der Versicherungspflichtgrenze liegt. Laut Kabinettsbeschluss sind das 2027 jährlich 84.150 Euro. Wer am 31. Dezember 2026 bereits privat und versicherungsfrei ist, soll nach dem Beschluss an der Bestandsgrenze von 80.550 Euro gemessen werden. Beides steht unter dem Vorbehalt der Bundesrat-Abstimmung."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Können Selbstständige ohne Einkommensgrenze in die PKV wechseln?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Hauptberuflich Selbstständige sind typischerweise nicht in der gesetzlichen Krankenversicherung pflichtversichert. Ein Wechsel in die private Krankenversicherung ist dann ohne eine Einkommensgrenze möglich. Die Kündigung der freiwilligen Mitgliedschaft wirkt zum Ablauf des übernächsten Kalendermonats und nur mit Nachweis einer anderen Absicherung. Ob der Wechsel passt, hängt von Familie, Gesundheit und dem Blick aufs Alter ab. Das gehört ins Gespräch."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Warum gehören die Beiträge im Alter in die Beratung?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "In der gesetzlichen Krankenversicherung bleiben die Beiträge typischerweise am Einkommen ausgerichtet, auch im Ruhestand. In der privaten Krankenversicherung richten sie sich typischerweise nach Tarif, Eintrittsalter und Gesundheit, nicht nach dem Einkommen. Sie können im Alter steigen. Es werden Alterungsrückstellungen gebildet, und es gibt gesetzlich vorgesehene Auffangtarife. Konkrete Verläufe nenne ich hier bewusst nicht. Den Blick aufs Alter nehme ich im Gespräch mit auf."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Ist das Erstgespräch kostenpflichtig?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Das Erstgespräch ist unverbindlich. Sie zahlen keine Beratungsgebühr. Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte. Den Ablauf erkläre ich Ihnen im Gespräch. Nicht jedes Produkt ist automatisch verfügbar."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Beraten Sie nur in Mainz oder auch online?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Beides. Sie können einen Termin in Mainz, nach Absprache im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern, etwa in Wiesbaden, Frankfurt oder Darmstadt, oder online vereinbaren. Online berate ich deutschlandweit. Den Termin buchen Sie unter termin.eliasgassmann.de."
-      }
-    }
-  ]
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "GKV-Höchstbeitrag 2027: Was Selbstständige und GmbH-Geschäftsführer zahlen",
-  "description": "GKV-Höchstbeitrag 2027 laut Kabinettsbeschluss: 1.115,63 € im Monat mit durchschnittlichem Zusatzbeitrag. Tabelle 2025–2027, JAEG und PKV-Prüfung.",
-  "inLanguage": "de-DE",
-  "datePublished": "2026-11-17",
-  "dateModified": "2026-11-17",
-  "mainEntityOfPage": "https://eliasgassmann.de/gkv-hoechstbeitrag-2027-selbststaendige",
-  "image": "https://eliasgassmann.de/portrait-elias-gassmann.jpeg",
-  "author": {
-    "@type": "Person",
-    "name": "Elias Gassmann",
-    "url": "https://eliasgassmann.de/"
-  },
-  "publisher": {
-    "@type": "Person",
-    "name": "Elias Gassmann",
-    "url": "https://eliasgassmann.de/",
-    "image": "https://eliasgassmann.de/portrait-elias-gassmann.jpeg"
-  }
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FinancialService",
-  "name": "Elias Gassmann — GKV-Höchstbeitrag 2027 für Selbstständige und Geschäftsführer",
-  "url": "https://eliasgassmann.de/gkv-hoechstbeitrag-2027-selbststaendige",
-  "description": "Einordnung des GKV-Höchstbeitrags 2027 für Selbstständige und angestellte Geschäftsführer, einschließlich Beitragsbemessungsgrenze, Versicherungspflichtgrenze und der Frage, wann die private Krankenversicherung infrage kommt.",
-  "areaServed": ["Mainz", "Wiesbaden", "Frankfurt am Main", "Darmstadt", "Rhein-Main", "DE"],
-  "telephone": "+491626960629",
-  "email": "elias@eliasgassmann.de",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "August-Horch-Straße 6A",
-    "postalCode": "55129",
-    "addressLocality": "Mainz",
-    "addressCountry": "DE"
-  },
-  "provider": {
-    "@type": "Person",
-    "name": "Elias Gassmann",
-    "url": "https://eliasgassmann.de/",
-    "image": "https://eliasgassmann.de/portrait-elias-gassmann.jpeg"
-  }
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Elias Gassmann",
-      "item": "https://eliasgassmann.de/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Krankenversicherung für Selbstständige",
-      "item": "https://eliasgassmann.de/krankenversicherung-selbststaendige"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
+      "@type": "FinancialService",
       "name": "GKV-Höchstbeitrag 2027",
-      "item": "https://eliasgassmann.de/gkv-hoechstbeitrag-2027-selbststaendige"
+      "url": "https://eliasgassmann.de/gkv-hoechstbeitrag-2027-selbststaendige",
+      "description": "GKV-Höchstbeitrag 2027 laut Kabinettsbeschluss: 1.115,63 Euro im Monat mit durchschnittlichem Zusatzbeitrag. Für Selbstständige und Geschäftsführer.",
+      "telephone": "+491626960629",
+      "email": "elias@eliasgassmann.de",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "August-Horch-Straße 6A",
+        "postalCode": "55129",
+        "addressLocality": "Mainz",
+        "addressCountry": "DE"
+      },
+      "provider": {
+        "@type": "Person",
+        "name": "Elias Gassmann",
+        "url": "https://eliasgassmann.de/",
+        "image": "https://eliasgassmann.de/portrait-elias-gassmann.jpeg"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Elias Gassmann",
+          "item": "https://eliasgassmann.de/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "GKV-Höchstbeitrag 2027",
+          "item": "https://eliasgassmann.de/gkv-hoechstbeitrag-2027-selbststaendige"
+        }
+      ]
     }
   ]
 }
@@ -394,33 +293,28 @@
       <span class="brand-name">Elias Gassmann<small>Finanzberatung</small></span>
     </a>
     <nav class="main-nav" aria-label="Hauptnavigation">
-      <a href="index.html#gewerbe">Gewerbe</a>
       <a href="index.html#privat">Privat</a>
-      <a href="#ablauf">So läuft’s</a>
-      <a href="#termin">Termin</a>
+      <a href="index.html#gewerbe">Betrieb</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="#anfrage">Termin</a>
     </nav>
     <a class="header-contact" href="tel:+491626960629">
       <span class="phone-icon">↗</span>
       <span>0162 6960629</span>
     </a>
   </header>
-
   <main id="top">
     <section class="hero hero--beratung" id="inhalt" aria-labelledby="hero-title">
       <div class="hero-content hero-copy">
-        <p class="eyebrow hero-label">Für Selbstständige und Geschäftsführer</p>
-        <h1 id="hero-title">GKV-Höchstbeitrag 2027: Was Selbstständige und GmbH-Geschäftsführer zahlen</h1>
-        <aside class="answer-box" aria-label="Kurzantwort">
-          <span class="answer-label">Kurzantwort</span>
-          <p>Laut Kabinettsbeschluss vom 7. Oktober 2026 steigt die Beitragsbemessungsgrenze 2027 auf 6.375 Euro im Monat. Mit durchschnittlichem Zusatzbeitrag sind das 1.115,63 Euro im Monat allein für die Krankenversicherung, ohne Pflege. Der Bundesrat stimmt am 20. November 2026 ab. Bis dahin sind diese Werte noch nicht endgültig.</p>
-          <span class="stand">Stand: November 2026</span>
-        </aside>
-        <p class="core-answer">Ich ordne den Höchstbeitrag mit Ihnen ein und prüfe, ob die private Krankenversicherung für Ihre Lage überhaupt infrage kommt. Gesundheitsdaten gehören nicht ins Formular.</p>
+        <p class="eyebrow hero-label">Gesetzliche Krankenversicherung</p>
+        <h1 id="hero-title">GKV-Höchstbeitrag 2027: Was Selbstständige und Geschäftsführer zahlen.</h1>
+        <p class="core-answer">Laut Kabinettsbeschluss vom 7. Oktober 2026 steigt die Beitragsbemessungsgrenze 2027 auf 6.375 Euro im Monat. Mit dem durchschnittlichen Zusatzbeitrag von 2,9 Prozent sind das 1.115,63 Euro im Monat allein für die Krankenversicherung mit Krankengeld, ohne Pflege. Der Bundesrat war für den 20. November 2026 angesetzt. Bis zur verkündeten Verordnung sind das keine endgültigen Werte.</p>
+        <p><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=gkv-hoechstbeitrag-2027">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a></p>
       </div>
       <div class="hero-form">
         <div class="form-card" id="anfrage">
-          <h2>Jetzt Beratung anfragen</h2>
-          <p class="form-lead">Unverbindlich, in Mainz, im Rhein-Main-Gebiet oder online. Schreiben Sie kurz, worum es geht.</p>
+          <h2>Erstgespräch anfragen</h2>
+          <p class="form-lead">Keine Gesundheitsdaten. Geburtsjahr, Kasse und ungefähres Einkommen reichen für den ersten Blick.</p>
           <form class="lead-form" id="beratung-form" action="https://eg-anfragen.elias-gassmann.workers.dev/anfrage" method="post" novalidate>
             <label>Name
               <input type="text" name="name" autocomplete="name" required placeholder="Vor- und Nachname">
@@ -429,9 +323,9 @@
               <input type="text" name="kontakt" autocomplete="on" required placeholder="Nummer oder E-Mail-Adresse" inputmode="email">
             </label>
             <label>Beruf oder Tätigkeit
-              <input type="text" name="branche" required placeholder="z. B. selbstständig oder Geschäftsführer">
+              <input type="text" name="branche" required placeholder="z. B. selbstständig, Geschäftsführer">
             </label>
-            <label>Kurz Ihr Anliegen
+            <label>Kurz dein Anliegen
               <input type="text" name="anliegen" required placeholder="z. B. Höchstbeitrag 2027 einordnen">
             </label>
             <label class="consent fwx-consent">
@@ -444,254 +338,81 @@
           </form>
           <p class="form-alt">Oder Termin direkt wählen: <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=gkv-hoechstbeitrag-2027">termin.eliasgassmann.de</a> · <a href="tel:+491626960629">+49 162 6960629</a></p>
         </div>
-      </div>
+        </div>
       <div class="hero-panel">
         <figure class="hero-portrait">
-          <img src="portrait-elias-gassmann.jpeg" alt="Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" fetchpriority="high">
+          <img src="portrait-elias-gassmann.jpeg" alt="Porträt von Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" fetchpriority="high">
           <figcaption>
             <span>Elias Gassmann</span>
             <strong>Finanzberater in Mainz</strong>
-            <small>Persönlich in Mainz, Rhein-Main und online</small>
+            <small>Sitz in Mainz, Gespräche auch online</small>
           </figcaption>
         </figure>
         <a class="trust-rating" href="https://www.google.com/maps?cid=18281856182098275446" target="_blank" rel="noopener noreferrer">
           <span aria-hidden="true">★★★★★</span>
           <span>
             <strong>4,9 / 5 · 48 Google-Rezensionen</strong>
-            <small>Stand 10.11.2026, wie auf der Seite Finanzberater Mainz</small>
+            <small>FactoringWerkstatt · Stand 10.11.2026</small>
           </span>
         </a>
       </div>
     </section>
-
-    <section class="page-block" aria-labelledby="tabelle">
-      <p class="eyebrow">Zahlen 2025 bis 2027</p>
-      <h2 id="tabelle">Beitrags&shy;bemessungs&shy;grenze und Höchstbeitrag</h2>
-      <p class="lead">Die Werte für 2025 und 2026 gelten. Die Werte für 2027 beruhen auf dem Kabinettsbeschluss vom 7. Oktober 2026. Der Bundesrat stimmt am 20. November 2026 ab.</p>
-      <div class="table-wrap">
-        <table class="criteria">
-          <caption>Rechengrößen und Höchstbeitrag in Euro. Die Spalte 2027 folgt dem Kabinettsbeschluss.</caption>
-          <thead>
-            <tr>
-              <th scope="col">Größe</th>
-              <th scope="col">2025</th>
-              <th scope="col">2026</th>
-              <th scope="col">2027</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Beitragsbemessungsgrenze KV, Monat</th>
-              <td class="num" data-label="2025">5.512,50</td>
-              <td class="num" data-label="2026">5.812,50</td>
-              <td class="num" data-label="2027">6.375,00</td>
-            </tr>
-            <tr>
-              <th scope="row">Beitragsbemessungsgrenze KV, Jahr</th>
-              <td class="num" data-label="2025">66.150</td>
-              <td class="num" data-label="2026">69.750</td>
-              <td class="num" data-label="2027">76.500</td>
-            </tr>
-            <tr>
-              <th scope="row">Versicherungspflichtgrenze, Jahr</th>
-              <td class="num" data-label="2025">73.800</td>
-              <td class="num" data-label="2026">77.400</td>
-              <td class="num" data-label="2027">84.150</td>
-            </tr>
-            <tr>
-              <th scope="row">Höchstbeitrag nur KV, mit Krankengeld</th>
-              <td class="num" data-label="2025">942,64</td>
-              <td class="num" data-label="2026">1.017,19</td>
-              <td class="num" data-label="2027">1.115,63</td>
-            </tr>
-            <tr>
-              <th scope="row">KV und Pflege, selbstständig, mit Kind</th>
-              <td class="num" data-label="2025">1.141,09</td>
-              <td class="num" data-label="2026">1.226,44</td>
-              <td class="num" data-label="2027">1.334,33</td>
-            </tr>
-            <tr>
-              <th scope="row">KV und Pflege, selbstständig, kinderlos</th>
-              <td class="num" data-label="2025">1.174,16</td>
-              <td class="num" data-label="2026">1.261,31</td>
-              <td class="num" data-label="2027">1.370,78</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="table-note">Die Höchstbeiträge sind eine eigene Rechnung: Beitragsbemessungsgrenze mal allgemeiner Beitragssatz 14,6 Prozent plus amtlicher durchschnittlicher Zusatzbeitrag (2025: 2,5 Prozent, 2026 und 2027: 2,9 Prozent), zuzüglich Pflege auf der jeweiligen Pflege-Bemessungsgrenze. Selbstständige zahlen den Betrag allein. Angestellte, auch angestellte Geschäftsführerinnen und Geschäftsführer, tragen typischerweise etwa die Hälfte, den Kinderlosenzuschlag allein. Der echte Kassenbeitrag hängt am individuellen Zusatzbeitrag. In der 2027er-Spalte ist die Pflege noch nach geltendem Recht gerechnet (3,6 Prozent, kinderlos 4,2 Prozent). Eine geplante Anhebung des Kinderlosenzuschlags auf 0,9 Prozent ist offen. Käme sie, lägen die Selbstständigen-Werte 2027 bei 1.345,13 Euro mit Kind und 1.402,50 Euro ohne Kind.</p>
-      <p>Von 2025 auf 2027 steigt der Höchstbeitrag der Krankenversicherung um 172,99 Euro im Monat, das sind 18,4 Prozent. Von 2026 auf 2027 sind es 98,44 Euro oder 9,7 Prozent. Beides ist dieselbe eigene Rechnung mit dem durchschnittlichen Zusatzbeitrag.</p>
+    <section class="page-block" id="fuer-wen" aria-labelledby="fuer-wen-title">
+      <p class="eyebrow">Für wen</p>
+      <h2 id="fuer-wen-title">Für wen das ist.</h2>
+      
+      <ul class="topic-list"><li><strong>Selbstständige am Höchstbeitrag</strong><span>Du zahlst den Beitrag allein. Ein höherer Höchstbeitrag ist ein Anlass zum Rechnen, kein automatischer Grund zu wechseln.</span></li><li><strong>Angestellte Geschäftsführer</strong><span>Zuerst der Status, dann das Gehalt. Die Versicherungspflichtgrenze ist eine andere Zahl als die Beitragsbemessungsgrenze.</span></li><li><strong>Schon privat versichert</strong><span>Dann gehört das Schreiben auf die Seite <a href="pkv-beitragsanpassung-2027">PKV-Beitragsanpassung 2027</a>.</span></li></ul>
     </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="geschaeftsfuehrer">
-      <p class="eyebrow">Angestellte Geschäftsführer</p>
-      <h2 id="geschaeftsfuehrer">Versicherungspflicht&shy;grenze und Status</h2>
-      <p class="lead">Für angestellte Geschäftsführerinnen und Geschäftsführer zählt zuerst der Status, dann das Gehalt.</p>
-      <p>Beschäftigte Geschäftsführer können typischerweise nur in die private Krankenversicherung, wenn das regelmäßige Jahresarbeitsentgelt über der Versicherungspflichtgrenze liegt. Laut Kabinettsbeschluss steigt diese Grenze 2027 auf 7.012,50 Euro im Monat oder 84.150 Euro im Jahr. Das ist ein Sprung um 8,7 Prozent gegenüber 2026 (77.400 Euro).</p>
-      <p>Wer am 31. Dezember 2026 bereits privat und versicherungsfrei ist, soll nach dem Beschluss an einer Bestandsgrenze von 80.550 Euro im Jahr gemessen werden. Wer 2026 nur knapp über 77.400 Euro lag, kann 2027 sonst wieder versicherungspflichtig werden. Beide Grenzen stehen unter dem Vorbehalt der Abstimmung im Bundesrat.</p>
-      <p>Gesellschafter-Geschäftsführer mit mindestens 50 Prozent der Anteile oder mit einer echten, umfassenden Sperrminorität gelten typischerweise als selbstständig und sind nicht versicherungspflichtig. Liegt der Anteil darunter und fehlt eine solche Sperrminorität, oder handelt es sich um eine fremdgeschäftsführende Person, ist typischerweise eine abhängige Beschäftigung anzunehmen. Die Einzugsstelle muss bei geschäftsführenden Gesellschaftern einer GmbH die Statusfeststellung nach § 7a SGB IV bei der Deutschen Rentenversicherung Bund beantragen.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Grenze 2027: 84.150 Euro</strong>
-          <span>Für neu eintretende Beschäftigte ist das die Schwelle, ab der eine Versicherung in der PKV typischerweise überhaupt offensteht. Stand: Kabinettsbeschluss, Bundesrat am 20. November 2026.</span>
-        </li>
-        <li>
-          <strong>Bestandsgrenze 80.550 Euro</strong>
-          <span>Sie soll gelten, wenn jemand am 31. Dezember 2026 bereits versicherungsfrei und privat versichert ist. Auch dieser Wert ist noch nicht endgültig.</span>
-        </li>
-        <li>
-          <strong>Arbeitgeberzuschuss</strong>
-          <span>Für versicherungsfreie Beschäftigte gibt es typischerweise einen Zuschuss des Arbeitgebers zur privaten Kranken- und Pflegeversicherung. Rechnerisch wären das 2027 bis zu 557,81 Euro plus 114,75 Euro. Dieser Wert ist offen und ebenfalls vom Beschluss abhängig.</span>
-        </li>
-      </ul>
+<section class="page-block page-block--grau" id="worauf" aria-labelledby="worauf-title">
+      <p class="eyebrow">Worauf es ankommt</p>
+      <h2 id="worauf-title">Was ich mit dir kläre.</h2>
+      
+      <ul class="topic-list"><li><strong>Die Rechnung 2027</strong><span>Beitragsbemessungsgrenze mal 14,6 Prozent allgemeiner Beitragssatz plus 2,9 Prozent durchschnittlicher Zusatzbeitrag ergibt 1.115,63 Euro. Der echte Kassenbeitrag hängt am individuellen Zusatzbeitrag. Pflege kommt oben drauf.</span></li><li><strong>Mit Pflege, selbstständig</strong><span>Nach geltendem Recht rechne ich für 2027 mit 1.334,33 Euro mit Kind und 1.370,78 Euro kinderlos. Eine geplante Anhebung des Kinderlosenzuschlags ist offen. Käme sie, lägen die Werte bei 1.345,13 Euro mit Kind und 1.402,50 Euro ohne Kind.</span></li><li><strong>Zum Vergleich</strong><span>2025: Höchstbeitrag nur KV 942,64 Euro. 2026: 1.017,19 Euro. Von 2026 auf 2027 sind es 98,44 Euro oder 9,7 Prozent, gerechnet mit dem Durchschnittszusatzbeitrag.</span></li><li><strong>Versicherungspflichtgrenze</strong><span>Laut Kabinettsbeschluss 2027: 84.150 Euro im Jahr, also 7.012,50 Euro im Monat. Wer am 31. Dezember 2026 bereits privat und versicherungsfrei ist, soll an einer Bestandsgrenze von 80.550 Euro gemessen werden. Beides steht unter dem Vorbehalt der Verkündung.</span></li><li><strong>Status in der GmbH</strong><span>Gesellschafter-Geschäftsführer mit mindestens 50 Prozent der Anteile oder einer echten, umfassenden Sperrminorität gelten typischerweise als selbstständig. Liegt der Anteil darunter, ist oft eine abhängige Beschäftigung anzunehmen. Die Einzugsstelle muss die Statusfeststellung nach § 7a SGB IV beantragen.</span></li></ul>
     </section>
-
-    <section class="page-block" aria-labelledby="pkv">
-      <p class="eyebrow">Die Alternative</p>
-      <h2 id="pkv">Wann die private Krankenversicherung infrage kommen kann</h2>
-      <p class="lead">Ein höherer Höchstbeitrag allein ist kein Grund, zu wechseln. Er ist ein Anlass, die Lage ruhig einzuordnen.</p>
-      <p>Hauptberuflich Selbstständige sind typischerweise nicht in der gesetzlichen Krankenversicherung pflichtversichert. Ein Wechsel in die private Krankenversicherung ist dann ohne eine Einkommensgrenze möglich. Die freiwillige Mitgliedschaft können Sie zum Ablauf des übernächsten Kalendermonats kündigen. Wirksam wird das nur mit Nachweis einer anderen Absicherung.</p>
-      <p>Für angestellte Geschäftsführerinnen und Geschäftsführer gilt das nicht ohne Weiteres. Hier muss zuerst der Status klar sein und das Gehalt über der Versicherungspflichtgrenze liegen.</p>
-      <p>Ob die private Krankenversicherung passt, hängt typischerweise von Familie, Gesundheit und dem Blick aufs Alter ab. In der gesetzlichen Krankenversicherung können Partner und Kinder unter den Voraussetzungen der Familienversicherung mitversichert sein, ohne einen eigenen Beitrag. In der privaten Krankenversicherung braucht jede Person typischerweise einen eigenen Vertrag. Die Rückkehr in die gesetzliche Krankenversicherung ist später oft schwierig, ab einem gesetzlich festgelegten Alter stark eingeschränkt.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Selbstständige</strong>
-          <span>Die Einkommensgrenze der Versicherungspflicht gilt typischerweise nicht. Trotzdem gehört die Abwägung mit Familie, Gesundheit und Alter fest ins Gespräch.</span>
-        </li>
-        <li>
-          <strong>Angestellte Geschäftsführer</strong>
-          <span>Zuerst Status und Jahresarbeitsentgelt klären, dann erst über einen Wechsel sprechen. Die Bestandsgrenze 2027 kann für bereits privat Versicherte entscheidend sein.</span>
-        </li>
-        <li>
-          <strong>Keine pauschale Empfehlung</strong>
-          <span>Ich nenne hier bewusst keine Ersparnis und keine feste Empfehlung für gesetzlich oder privat. Die Einordnung machen wir anhand Ihrer Zahlen. Eine ausführliche Grundlage dafür liegt auf der Seite <a href="krankenversicherung-selbststaendige">Krankenversicherung für Selbstständige: gesetzlich oder privat</a>.</span>
-        </li>
-      </ul>
-      <div class="hinweis">Wenn Sie bereits privat versichert sind und 2027 eine Beitragserhöhung erhalten, finden Sie Frist, Sonderkündigungsrecht und Tarifwechsel auf der Seite <a href="pkv-beitragsanpassung-2027">PKV-Beitragsanpassung 2027</a>.</div>
-    </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="alter">
-      <p class="eyebrow">Auf Dauer</p>
-      <h2 id="alter">Warum die Beiträge im Alter in die Beratung gehören</h2>
-      <p class="lead">Die Entscheidung wirkt typischerweise lange. Deshalb gehört der Blick aufs Alter fest dazu, nicht nur der Beitrag von 2027.</p>
-      <p>In der gesetzlichen Krankenversicherung bleiben die Beiträge typischerweise am Einkommen ausgerichtet, auch im Ruhestand. Die Rente zählt dabei typischerweise mit.</p>
-      <p>In der privaten Krankenversicherung richten sich die Beiträge typischerweise nicht nach dem Einkommen. Sie können im Alter steigen, unter anderem durch das Alter und die allgemeine Kostenentwicklung. Es werden Alterungsrückstellungen gebildet, und es gibt gesetzlich vorgesehene Auffangtarife. Konkrete Verläufe oder Beträge nenne ich hier bewusst nicht. Das ist ein Beratungsthema und lässt sich nur anhand Ihrer Situation seriös einordnen.</p>
-      <p>Die Rückkehr aus der privaten in die gesetzliche Krankenversicherung ist typischerweise schwierig. Wer selbstständig bleibt, kann in der Regel nicht einfach zurückwechseln. Gerade deshalb sollte der Schritt in Ruhe geprüft werden, nicht unter Zeitdruck.</p>
-    </section>
-
-    <section class="process-section page-block" id="ablauf" aria-labelledby="ablauf-title">
+<section class="process-section page-block" id="ablauf" aria-labelledby="ablauf-title">
       <div class="process-heading">
-        <p class="eyebrow">Der Ablauf</p>
-        <h2 id="ablauf-title">So läuft die Beratung</h2>
-        <p class="lead">Wir starten mit Ihrem Versicherungsstatus, Ihrem Einkommen und Ihrer Familiensituation. Die Beratung kann vollständig digital laufen.</p>
+        <p class="eyebrow">Ablauf</p>
+        <h2 id="ablauf-title">So gehe ich vor.</h2>
+        <p class="lead">Du musst nichts vorbereiten. Unterlagen helfen, wenn du sie schon hast.</p>
       </div>
-      <ol class="process-list">
-        <li>
-          <span>1</span>
-          <h3>Termin buchen</h3>
-          <p>Sie buchen einen unverbindlichen Termin, vor Ort in Mainz, im Rhein-Main-Gebiet bzw. im Umkreis von rund 100 Kilometern oder online.</p>
-        </li>
-        <li>
-          <span>2</span>
-          <h3>Lage verstehen</h3>
-          <p>Wir sprechen über Status, Einkommen, Familie und bestehende Verträge. Für einen ersten Vergleich reichen typischerweise Geburtsjahr, Krankenkasse und ungefähres Einkommen. Gesundheitsdaten gehören nicht in diese Mail.</p>
-        </li>
-        <li>
-          <span>3</span>
-          <h3>Höchstbeitrag einordnen</h3>
-          <p>Ich rechne Ihren Beitrag mit dem kassenindividuellen Zusatzbeitrag und ordne ihn neben die 2027er-Werte. Bei Geschäftsführern klären wir außerdem Grenze und Status.</p>
-        </li>
-        <li>
-          <span>4</span>
-          <h3>Alternative prüfen</h3>
-          <p>Passt die private Krankenversicherung überhaupt zur Lage, schaue ich das mit dem Blick auf Familie, Gesundheit und Alter an. Nicht jedes Produkt ist automatisch verfügbar.</p>
-        </li>
-        <li>
-          <span>5</span>
-          <h3>In Ruhe entscheiden</h3>
-          <p>Sie entscheiden, ob und wie es weitergeht. Durch das Erstgespräch entsteht keine Verpflichtung. Ein Antrag kommt erst, wenn die Angaben sitzen und Sie sich entschieden haben.</p>
-        </li>
-      </ol>
+      <ol class="process-list"><li><span>1</span><h3>Kennenlernen</h3><p>Selbstständig oder angestellt, Familie, ungefähres Einkommen.</p></li><li><span>2</span><h3>Analysieren</h3><p>Ich rechne deinen Beitrag mit dem Zusatzbeitrag deiner Kasse und halte ihn neben die 2027er-Werte.</p></li><li><span>3</span><h3>Lösungen besprechen</h3><p>Ob privat überhaupt passt, hängt an Familie, Gesundheit und Alter. Keine Ersparnis aus dem Ärmel.</p></li><li><span>4</span><h3>Umsetzen</h3><p>Nur wenn die Lage klar ist. Die Grundsatzseite ist die <a href="krankenversicherung-selbststaendige">Krankenversicherung für Selbstständige</a>.</p></li></ol>
     </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="transparenz">
-      <p class="eyebrow">Kosten und Ablauf</p>
-      <h2 id="transparenz">Was das Erstgespräch kostet</h2>
-      <p class="lead">Für das Erstgespräch zahlen Sie keine Beratungsgebühr. Bevor Sie etwas entscheiden, wissen Sie, wie ein Vorschlag funktioniert und welche Kosten daran hängen.</p>
-      <p class="partners">Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte. Den Ablauf erkläre ich Ihnen im Gespräch. Eine pauschale Ersparnis nenne ich hier bewusst nicht. Es werden keine Kundengelder entgegengenommen. Zahlungen gehen direkt an den jeweiligen Anbieter. Alle Pflichtangaben finden Sie im <a href="impressum.html">Impressum</a>.</p>
+<section class="page-block page-block--grau" id="quellen" aria-labelledby="quellen-title">
+      <p class="eyebrow">Quellen</p>
+      <h2 id="quellen-title">Worauf sich die Zahlen stützen.</h2>
+      <p class="lead">Die Seite ersetzt keine Beratung. Maßgeblich sind Gesetz, Vertrag und der aktuelle Stand.</p>
+      <ul class="source-list">
+      <li>BMAS, Kabinettsbeschluss vom 7. Oktober 2026. <a href="https://www.bmas.de/DE/Service/Presse/Pressemitteilungen/2026/bundeskabinett-beschliesst-sozialversicherungsrechengroessen-2027.html">bmas.de</a></li>
+      <li>Durchschnittlicher Zusatzbeitrag 2027 von 2,9 Prozent. <a href="https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/zusatzbeitragssatz-gkv-2027-festgelegt">bundesgesundheitsministerium.de</a></li>
+      <li>§ 5 Abs. 5 SGB V und § 175 Abs. 4 SGB V. <a href="https://www.gesetze-im-internet.de/sgb_5/__5.html">gesetze-im-internet.de</a></li>
+      <li>Statusfeststellung, § 7a SGB IV. <a href="https://www.gesetze-im-internet.de/sgb_4/__7a.html">gesetze-im-internet.de</a></li>
+    </ul>
+    <p>Die Höchstbeiträge sind eine eigene Rechnung mit dem amtlichen Durchschnitts-Zusatzbeitrag. Arbeitgeberzuschuss für versicherungsfreie Beschäftigte rechnerisch bis zu 557,81 Euro plus 114,75 Euro Pflege, abhängig vom Beschluss. Stand der Einordnung: November 2026.</p>
     </section>
-
-    <section class="page-block" id="termin" aria-labelledby="termin-title">
+<section class="page-block" id="naechster" aria-labelledby="naechster-title">
       <p class="eyebrow">Nächster Schritt</p>
-      <h2 id="termin-title">Termin vereinbaren — in Mainz, im Rhein-Main-Gebiet oder online</h2>
-      <p class="lead">Den unverbindlichen Termin buchen Sie unter <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=gkv-hoechstbeitrag-2027">termin.eliasgassmann.de</a>. Alternativ können Sie mir Geburtsjahr, Krankenkasse und ungefähres Einkommen für einen ersten Vergleich schicken.</p>
-      <p>Die öffentlich genannte Anschrift ist August-Horch-Straße 6A, 55129 Mainz. Ob ein Termin vor Ort oder online sinnvoller ist, klären wir bei der Buchung. Sie erreichen mich auch unter <a href="tel:+491626960629">+49 162 6960629</a> und <a href="mailto:elias@eliasgassmann.de">elias@eliasgassmann.de</a>.</p>
-      <p style="margin-top:28px"><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=gkv-hoechstbeitrag-2027">Unverbindlichen Termin vereinbaren <span aria-hidden="true">↗</span></a></p>
+      <h2 id="naechster-title">Das Erstgespräch zeigt dir den nächsten sinnvollen Schritt.</h2>
+      
+      <p>Du hörst, was schon passt, was fehlt und was es kosten würde. Danach entscheidest du.</p><p style="margin-top:8px"><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=gkv-hoechstbeitrag-2027">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a></p>
     </section>
-
     <section class="faq-section" id="fragen" aria-labelledby="faq-title">
       <div>
-        <p class="eyebrow">Vor dem Gespräch</p>
-        <h2 id="faq-title">Häufige Fragen zum Höchstbeitrag 2027</h2>
+        <p class="eyebrow">Kurz geklärt</p>
+        <h2 id="faq-title">Fragen, die oft kommen.</h2>
       </div>
       <div class="faq-list">
-        <details open>
-          <summary>Wie hoch ist der GKV-Höchstbeitrag 2027?</summary>
-          <p>Laut Kabinettsbeschluss vom 7. Oktober 2026 liegt der Höchstbeitrag für die Krankenversicherung 2027 bei 1.115,63 Euro im Monat, gerechnet mit dem amtlichen durchschnittlichen Zusatzbeitrag von 2,9 Prozent und dem allgemeinen Beitragssatz mit Krankengeld. Selbstständige zahlen die Pflegeversicherung zusätzlich allein. Nach geltendem Recht sind das 1.334,33 Euro mit Kind und 1.370,78 Euro als Kinderlose oder Kinderloser. Der Bundesrat stimmt am 20. November 2026 ab. Bis dahin sind die Werte noch nicht endgültig.</p>
-        </details>
-        <details>
-          <summary>Sind die Werte für 2027 schon endgültig?</summary>
-          <p>Noch nicht vollständig. Der durchschnittliche Zusatzbeitrag für 2027 ist bereits festgelegt und beträgt 2,9 Prozent. Beitragsbemessungsgrenze und Versicherungspflichtgrenze beruhen auf dem Kabinettsbeschluss vom 7. Oktober 2026. Der Bundesrat stimmt am 20. November 2026 ab. Eine geplante Änderung des Kinderlosenzuschlags in der Pflegeversicherung ist ein gesondertes Vorhaben und ebenfalls noch offen.</p>
-        </details>
-        <details>
-          <summary>Ab welchem Gehalt darf ein angestellter Geschäftsführer in die PKV?</summary>
-          <p>Beschäftigte Geschäftsführerinnen und Geschäftsführer können typischerweise nur in die private Krankenversicherung, wenn das regelmäßige Jahresarbeitsentgelt über der Versicherungspflichtgrenze liegt. Laut Kabinettsbeschluss sind das 2027 jährlich 84.150 Euro. Wer am 31. Dezember 2026 bereits privat und versicherungsfrei ist, soll nach dem Beschluss an der Bestandsgrenze von 80.550 Euro gemessen werden. Beides steht unter dem Vorbehalt der Bundesrat-Abstimmung.</p>
-        </details>
-        <details>
-          <summary>Können Selbstständige ohne Einkommensgrenze in die PKV wechseln?</summary>
-          <p>Hauptberuflich Selbstständige sind typischerweise nicht in der gesetzlichen Krankenversicherung pflichtversichert. Ein Wechsel in die private Krankenversicherung ist dann ohne eine Einkommensgrenze möglich. Die Kündigung der freiwilligen Mitgliedschaft wirkt zum Ablauf des übernächsten Kalendermonats und nur mit Nachweis einer anderen Absicherung. Ob der Wechsel passt, hängt von Familie, Gesundheit und dem Blick aufs Alter ab. Das gehört ins Gespräch.</p>
-        </details>
-        <details>
-          <summary>Warum gehören die Beiträge im Alter in die Beratung?</summary>
-          <p>In der gesetzlichen Krankenversicherung bleiben die Beiträge typischerweise am Einkommen ausgerichtet, auch im Ruhestand. In der privaten Krankenversicherung richten sie sich typischerweise nach Tarif, Eintrittsalter und Gesundheit, nicht nach dem Einkommen. Sie können im Alter steigen. Es werden Alterungsrückstellungen gebildet, und es gibt gesetzlich vorgesehene Auffangtarife. Konkrete Verläufe nenne ich hier bewusst nicht. Den Blick aufs Alter nehme ich im Gespräch mit auf.</p>
-        </details>
-        <details>
-          <summary>Ist das Erstgespräch kostenpflichtig?</summary>
-          <p>Das Erstgespräch ist unverbindlich. Sie zahlen keine Beratungsgebühr. Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte. Den Ablauf erkläre ich Ihnen im Gespräch. Nicht jedes Produkt ist automatisch verfügbar.</p>
-        </details>
-        <details>
-          <summary>Beraten Sie nur in Mainz oder auch online?</summary>
-          <p>Beides. Sie können einen Termin in Mainz, nach Absprache im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern, etwa in Wiesbaden, Frankfurt oder Darmstadt, oder online vereinbaren. Online berate ich deutschlandweit. Den Termin buchen Sie unter <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=gkv-hoechstbeitrag-2027">termin.eliasgassmann.de</a>.</p>
-        </details>
+        <details open><summary>Wie hoch ist der GKV-Höchstbeitrag 2027?</summary><p>Laut Kabinettsbeschluss 1.115,63 Euro im Monat für die Krankenversicherung mit Krankengeld und durchschnittlichem Zusatzbeitrag von 2,9 Prozent, ohne Pflege. Selbstständige zahlen die Pflege zusätzlich allein: nach geltendem Recht 1.334,33 Euro mit Kind und 1.370,78 Euro kinderlos. Die Werte sind bis zur verkündeten Verordnung nicht endgültig.</p></details><details><summary>Ab welchem Gehalt darf ein angestellter Geschäftsführer in die PKV?</summary><p>Typischerweise erst, wenn das regelmäßige Jahresarbeitsentgelt über der Versicherungspflichtgrenze liegt. Laut Kabinettsbeschluss sind das 2027 84.150 Euro. Wer am 31. Dezember 2026 bereits privat und versicherungsfrei ist, soll an 80.550 Euro gemessen werden.</p></details><details><summary>Können Selbstständige ohne Einkommensgrenze in die PKV?</summary><p>Hauptberuflich Selbstständige sind typischerweise nicht gesetzlich pflichtversichert. Ein Wechsel ist dann ohne diese Einkommensgrenze möglich, aber nur mit einer sauberen Abwägung zu Familie, Gesundheit und Alter.</p></details><details><summary>Was kostet das Erstgespräch?</summary><p>Das Erstgespräch kostet dich nichts. Eine Beratungsgebühr verlange ich nicht. Kommt ein Produkt zustande, werde ich vom Anbieter vergütet. Wie das läuft, sage ich dir im Gespräch. Die Pflichtangaben stehen im Impressum.</p></details><details><summary>Muss ich bestehende Verträge kündigen?</summary><p>Nein. Ich schaue zuerst, was du schon hast. Was zu deinem Ziel passt, kann bleiben. Ob du etwas änderst, entscheidest du.</p></details><details><summary>Bist du danach noch da?</summary><p>Ja. Wenn sich etwas ändert oder du eine Frage zum Vertrag hast, meldest du dich bei mir. Ich bleibe dein Ansprechpartner.</p></details>
       </div>
     </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="quellen">
-      <p class="eyebrow">Nachweise</p>
-      <h2 id="quellen">Quellen und Hinweis</h2>
-      <p class="lead">Jede Zahl auf dieser Seite hat eine Quelle. Die Angaben ersetzen keine Beratung und keine Rechtsberatung.</p>
-      <p>Maßgeblich sind das Gesetz, Ihre Kasse und, soweit es um 2027 geht, der Stand des Gesetzgebungsverfahrens. Stand der Seite: November 2026.</p>
-      <ul class="quellen-list">
-        <li>BMAS, Kabinettsbeschluss der Sozialversicherungsrechengrößen 2027 vom 7. Oktober 2026, einschließlich Beitragsbemessungsgrenze 6.375 Euro im Monat und Versicherungspflichtgrenze 84.150 Euro im Jahr. <a href="https://www.bmas.de/DE/Service/Presse/Pressemitteilungen/2026/bundeskabinett-beschliesst-sozialversicherungsrechengroessen-2027.html">bmas.de</a></li>
-        <li>Bundesrat-Vorgang 576/26, noch ohne Beschluss. Die Abstimmung wird in Fachmedien für den 20. November 2026 genannt, eine amtliche Bestätigung des Termins lag bei der Recherche am 17. November 2026 noch nicht vor. <a href="https://www.bundesrat.de/SharedDocs/beratungsvorgaenge/2026/0501-0600/0576-26.html">bundesrat.de</a>, <a href="https://aerzteverbund.de/beitragsbemessungsgrenze-2027/">aerzteverbund.de</a></li>
-        <li>Bestandsgrenze 80.550 Euro und Sonderanhebung der Versicherungspflichtgrenze. <a href="https://pkv-praxis.de/aktuelles/versicherungspflichtgrenze-2027/">pkv-praxis.de</a></li>
-        <li>Rechengrößen 2026, Verordnung BGBl. 2025 I Nr. 278. <a href="https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf">recht.bund.de</a>. Rechengrößen 2025, SVBezGrV 2025. <a href="https://www.gesetze-im-internet.de/svbezgrv_2025/SVBezGrV_2025.pdf">gesetze-im-internet.de</a>. Übersicht 2025/2026 der Finanzverwaltung NRW. <a href="https://www.finanzverwaltung.nrw.de/system/files/media/document/file/uebersicht-sozialversicherungswerte-2025-2026_stand-10_2026.pdf">finanzverwaltung.nrw.de</a></li>
-        <li>Durchschnittlicher Zusatzbeitrag 2027 von 2,9 Prozent, festgelegt am 28./30. Oktober 2026. <a href="https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/zusatzbeitragssatz-gkv-2027-festgelegt">bundesgesundheitsministerium.de</a></li>
-        <li>Höchstbeiträge: eigene Rechnung mit amtlichem Durchschnitts-Zusatzbeitrag, abgeglichen mit <a href="https://hoechstbeitrag.de/rechner/gkv-hoechstbeitrag-rechner/">hoechstbeitrag.de</a> und <a href="https://pkv-gruender.de/daten/zahlen-2027/">pkv-gruender.de</a> (Stand 9./10. Oktober 2026).</li>
-        <li>Pflege 2027 und möglicher Kinderlosenzuschlag von 0,9 Prozent: noch offen. <a href="https://www.aok.de/fk/jahreswechsel/pflegeversicherung/">aok.de</a></li>
-        <li>§ 5 Abs. 5 SGB V, Versicherungspflicht von Selbstständigen. <a href="https://www.gesetze-im-internet.de/sgb_5/__5.html">gesetze-im-internet.de</a>. Kündigung der freiwilligen Mitgliedschaft, § 175 Abs. 4 SGB V. <a href="https://www.gesetze-im-internet.de/sgb_5/__175.html">gesetze-im-internet.de</a>. Statusfeststellung, § 7a SGB IV. <a href="https://www.gesetze-im-internet.de/sgb_4/__7a.html">gesetze-im-internet.de</a></li>
-      </ul>
-    </section>
-
     <section class="contact-card" aria-labelledby="kontakt-title">
       <figure class="hero-portrait" style="margin:0;max-height:520px">
-        <img src="portrait-elias-gassmann.jpeg" alt="Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" loading="lazy">
+        <img src="portrait-elias-gassmann.jpeg" alt="Porträt von Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" loading="lazy">
       </figure>
       <div class="contact-content">
-        <p class="eyebrow">Kontakt</p>
-        <h2 id="kontakt-title">Was haben Sie vor?<br><em>Lassen Sie uns sprechen.</em></h2>
-        <p class="contact-copy">Den Höchstbeitrag einordnen oder prüfen, ob die private Krankenversicherung für Sie infrage kommt: Schreiben Sie mir, worum es geht.</p>
-        <a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=gkv-hoechstbeitrag-2027">Unverbindlichen Termin vereinbaren <span aria-hidden="true">↗</span></a>
+        <p class="eyebrow">Erstgespräch</p>
+        <h2 id="kontakt-title">Wenn du das einordnen willst, sag mir Bescheid.</h2>
+        <p class="contact-copy">Kurz schreiben, worum es geht. Eine Beratungsgebühr verlange ich nicht.</p>
+        <a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=gkv-hoechstbeitrag-2027">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a>
         <div class="contact-data">
           <a href="tel:+491626960629">+49 162 6960629</a>
           <a href="mailto:elias@eliasgassmann.de">elias@eliasgassmann.de</a>
@@ -700,7 +421,6 @@
       </div>
     </section>
   </main>
-
   <footer>
     <p>© <span id="year">2026</span> Elias Gassmann</p>
     <div>
@@ -709,16 +429,13 @@
       <a href="/datenschutz">Datenschutz</a>
     </div>
   </footer>
-  <a class="mobile-sticky" href="#anfrage">Jetzt Beratung anfragen</a>
+  <a class="mobile-sticky" href="#anfrage">Erstgespräch anfragen</a>
   <script src="formular.js" defer></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('year').textContent = new Date().getFullYear();
       bindeAnfrageFormular(document.getElementById('beratung-form'), {
-        endpoint: 'https://eg-anfragen.elias-gassmann.workers.dev/anfrage',
-        sendeText: 'Einen Moment, Ihre Anfrage wird gesendet …',
-        okText: 'Danke, Ihre Anfrage ist angekommen. Ich melde mich in Kürze bei Ihnen.',
-        netzText: 'Die Anfrage konnte gerade nicht gesendet werden. Bitte versuchen Sie es noch einmal oder schreiben Sie an elias@eliasgassmann.de.'
+        endpoint: 'https://eg-anfragen.elias-gassmann.workers.dev/anfrage'
       });
     });
   </script>

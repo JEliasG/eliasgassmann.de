@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Krankenversicherung Selbstständige: gesetzlich oder privat?</title>
-  <meta name="description" content="Krankenversicherung für Selbstständige: gesetzlich oder privat. Familie, Krankentagegeld, Rückkehr in die GKV. Beratung in Mainz, Rhein-Main oder online.">
+  <title>Krankenversicherung für Selbstständige | Gassmann</title>
+  <meta name="description" content="Krankenversicherung für Selbstständige: gesetzlich oder privat, Familie, Krankentagegeld und die Rückkehr in die GKV. Beratung aus Mainz, auch online.">
   <link rel="canonical" href="https://eliasgassmann.de/krankenversicherung-selbststaendige">
   <meta name="theme-color" content="#fbfbfd">
-  <meta property="og:title" content="Krankenversicherung Selbstständige: gesetzlich oder privat?">
-  <meta property="og:description" content="Krankenversicherung für Selbstständige: gesetzlich oder privat. Familie, Krankentagegeld, Rückkehr in die GKV. Beratung in Mainz, Rhein-Main oder online.">
+  <meta property="og:title" content="Krankenversicherung für Selbstständige | Gassmann">
+  <meta property="og:description" content="Krankenversicherung für Selbstständige: gesetzlich oder privat, Familie, Krankentagegeld und die Rückkehr in die GKV. Beratung aus Mainz, auch online.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://eliasgassmann.de/krankenversicherung-selbststaendige">
   <meta property="og:image" content="https://eliasgassmann.de/portrait-elias-gassmann.jpeg">
@@ -29,7 +29,8 @@
     .hero--beratung h1 {
       font-size: clamp(36px, 4.2vw, 58px);
       line-height: 1.08;
-      max-width: 20ch;
+      max-width: min(22ch, 100%);
+      overflow-wrap: anywhere;
     }
     .answer-box {
       margin: 22px 0 20px;
@@ -50,14 +51,6 @@
       color: var(--ink);
       font-size: 17px;
       line-height: 1.45;
-    }
-    .answer-box a { color: var(--link); }
-    .stand {
-      display: block;
-      margin: 10px 0 0;
-      color: var(--mut);
-      font-size: 13px;
-      font-weight: 600;
     }
     .core-answer {
       margin: 0 0 22px;
@@ -95,6 +88,7 @@
       height: 1px;
       overflow: hidden;
     }
+
     .form-alt a, .consent a { color: var(--link); }
     .lead-form { display: grid; gap: 12px; }
     .lead-form label { display: grid; gap: 5px; font-size: 13px; font-weight: 600; color: var(--ink); }
@@ -116,6 +110,11 @@
     }
     .trust-rating strong { display: block; font-size: 15px; }
     .trust-rating small { display: block; font-size: 12px; color: var(--mut); }
+    .quote-mini {
+      margin: 0; padding: 16px 18px; border-radius: 20px; background: var(--grau);
+    }
+    .quote-mini p { margin: 0 0 8px; font-size: 15px; line-height: 1.4; }
+    .quote-mini footer { font-size: 12px; color: var(--mut); }
     .page-block { padding: 96px var(--rand); }
     .page-block h2 { margin: 8px 0 18px; font: 700 clamp(34px,4.2vw,56px)/1.07 var(--display); letter-spacing: -.03em; max-width: 22ch; }
     .page-block .lead, .page-block p { max-width: 42rem; }
@@ -134,20 +133,10 @@
     .topic-list li { padding: 18px 20px; border-radius: 20px; background: var(--grau); }
     .topic-list strong { display: block; margin-bottom: 4px; }
     .topic-list span { color: var(--mut); font-size: 15px; line-height: 1.45; }
-    .page-block--grau .topic-list li { background: #fff; }
     .partners { font-size: 15px; color: var(--ink-2); }
-    .hinweis {
-      margin: 8px 0 0;
-      max-width: 42rem;
-      padding: 18px 20px;
-      border-radius: 20px;
-      background: var(--grau);
-      font-size: 16px;
-      line-height: 1.5;
-      color: var(--ink);
+    .mobile-sticky {
+      display: none;
     }
-    .page-block--grau .hinweis { background: #fff; }
-    .mobile-sticky { display: none; }
     @media (max-width: 760px) {
       .hero--beratung h1 { max-width: none; }
       .hero--beratung .hero-portrait { max-height: none; }
@@ -164,6 +153,8 @@
     @media (prefers-reduced-motion: no-preference) {
       .hero-content, .hero-panel { animation: none; }
     }
+
+    .quote-mini .quote-src { margin: 0; font-size: 12px; color: var(--mut); line-height: 1.4; }
     .hero--beratung { display: grid; grid-template-columns: minmax(0,1.15fr) minmax(0,.85fr); }
     .hero-form { min-width: 0; }
     @media (min-width: 761px) {
@@ -173,149 +164,122 @@
     }
     @media (max-width: 760px) {
       .hero--beratung { display: flex; flex-direction: column; }
+      .hero-copy, .hero-form, .hero-panel { order: 0; min-width: 0; width: 100%; }
       .hero-copy { order: 1; }
       .hero-panel { order: 2; }
       .hero-form { order: 3; }
+      .hero--beratung h1 { overflow-wrap: anywhere; }
+    }
+  
+    .process-section.page-block .process-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .page-block--grau .topic-list li { background: #fff; }
+    .link-row { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 4px 0 18px; max-width: 44rem; }
+    .link-row a { color: var(--link); }
+    .source-list { margin: 8px 0 0; padding-left: 18px; max-width: 44rem; }
+    .source-list li { margin: 0 0 8px; font-size: 15px; line-height: 1.45; color: var(--ink-2); }
+    .source-list a { color: var(--link); }
+    @media (max-width: 760px) {
+      .hero h1, .page-block h2, .process-heading h2, .faq-section h2, .contact-card h2 { overflow-wrap: break-word; }
+      .process-section.page-block .process-list { grid-template-columns: 1fr; }
+      .criteria, .criteria thead, .criteria tbody, .criteria tr, .criteria th, .criteria td { display: block; width: auto; }
+      .criteria thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+      .criteria tr { padding: 8px 0; }
     }
   </style>
   <script type="application/ld+json">
-{
+  {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Was ist der Unterschied zwischen freiwilliger gesetzlicher und privater Krankenversicherung?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Als Selbstständiger bist du typischerweise nicht in der gesetzlichen Krankenversicherung pflichtversichert. Du kannst unter den gesetzlichen Voraussetzungen freiwillig gesetzlich versichert bleiben oder in die private Krankenversicherung wechseln. In der gesetzlichen Krankenversicherung richten sich die Beiträge typischerweise nach dem Einkommen, in der privaten typischerweise nach Eintrittsalter, Gesundheit und Tarif. Was zu dir passt, hängt von der Ausgangslage ab. Beiträge oder Grenzen nenne ich hier bewusst nicht."
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Kann ich als Selbstständiger frei wählen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hauptberuflich Selbstständige sind in der Regel nicht gesetzlich pflichtversichert. Freiwillig gesetzlich bleiben oder privat wechseln ist dann die Frage. Die Kündigung einer freiwilligen Mitgliedschaft wirkt zum Ablauf des übernächsten Kalendermonats und nur mit Nachweis einer anderen Absicherung."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was ist mit Partner und Kindern?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Gesetzlich kann eine Familienversicherung ohne eigenen Beitrag möglich sein, wenn die Voraussetzungen stimmen. Privat braucht in der Regel jede Person einen eigenen Vertrag."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Warum zählt das Alter mit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Private Beiträge richten sich nicht nach dem Einkommen und können steigen. Zurück in die gesetzliche Krankenversicherung ist später oft schwierig. Deshalb gehört der lange Blick ins Gespräch, nicht nur der Beitrag von heute."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was kostet das Erstgespräch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Das Erstgespräch kostet dich nichts. Eine Beratungsgebühr verlange ich nicht. Kommt ein Produkt zustande, werde ich vom Anbieter vergütet. Wie das läuft, sage ich dir im Gespräch. Die Pflichtangaben stehen im Impressum."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Muss ich bestehende Verträge kündigen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein. Ich schaue zuerst, was du schon hast. Was zu deinem Ziel passt, kann bleiben. Ob du etwas änderst, entscheidest du."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bist du danach noch da?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Wenn sich etwas ändert oder du eine Frage zum Vertrag hast, meldest du dich bei mir. Ich bleibe dein Ansprechpartner."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FinancialService",
+      "name": "Krankenversicherung für Selbstständige",
+      "url": "https://eliasgassmann.de/krankenversicherung-selbststaendige",
+      "description": "Krankenversicherung für Selbstständige: gesetzlich oder privat, Familie, Krankentagegeld und die Rückkehr in die GKV. Beratung aus Mainz, auch online.",
+      "telephone": "+491626960629",
+      "email": "elias@eliasgassmann.de",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "August-Horch-Straße 6A",
+        "postalCode": "55129",
+        "addressLocality": "Mainz",
+        "addressCountry": "DE"
+      },
+      "provider": {
+        "@type": "Person",
+        "name": "Elias Gassmann",
+        "url": "https://eliasgassmann.de/",
+        "image": "https://eliasgassmann.de/portrait-elias-gassmann.jpeg"
       }
     },
     {
-      "@type": "Question",
-      "name": "Wie sind Familie und Kinder mitversichert?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "In der gesetzlichen Krankenversicherung können Ehe- oder Lebenspartner und Kinder unter den gesetzlichen Voraussetzungen typischerweise über die Familienversicherung mitversichert sein, ohne einen eigenen Beitrag. In der privaten Krankenversicherung braucht jede Person typischerweise einen eigenen Vertrag und zahlt einen eigenen Beitrag. Für neugeborene Kinder gelten besondere Aufnahmewege, wenn ein Elternteil bereits privat versichert ist. Die Einzelheiten klären wir im Gespräch."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wie entwickeln sich die Beiträge typischerweise im Alter?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "In der gesetzlichen Krankenversicherung bleiben die Beiträge typischerweise am Einkommen ausgerichtet, auch im Ruhestand, etwa bezogen auf die Rente. In der privaten Krankenversicherung richten sie sich typischerweise nicht nach dem Einkommen. Sie können im Alter steigen, unter anderem durch Alter und die allgemeine Kostenentwicklung. Es gibt gesetzlich vorgesehene Auffangtarife. Konkrete Beitragsverläufe nenne ich hier bewusst nicht. Den Blick aufs Alter nehmen wir im Gespräch mit auf."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Kann ich von der privaten wieder zurück in die gesetzliche Krankenversicherung?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Die Rückkehr ist typischerweise schwierig. Besonders im späteren Erwerbsleben, ab einem gesetzlich festgelegten Alter, ist sie stark eingeschränkt. Ein typischer Weg ist eine erneute Versicherungspflicht, etwa als Angestellte oder Angestellter, wenn die gesetzlichen Voraussetzungen vorliegen. Wer selbstständig bleibt, kann in der Regel nicht einfach zurückwechseln. Ob das in deinem Fall möglich ist, prüfen wir anhand von Alter, bisheriger Versicherung und deiner aktuellen Situation. Eine Garantie dafür gibt es nicht."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Was gilt für Gesundheitsfragen und die anonyme Risikovoranfrage?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Für die private Krankenversicherung musst du Gesundheitsfragen wahrheitsgemäß und vollständig beantworten. Unrichtige oder unvollständige Angaben können den Versicherungsschutz gefährden. Bevor ein namentlicher Antrag gestellt wird, kann typischerweise eine anonyme Risikovoranfrage gestellt werden. Du erhältst eine Einschätzung, etwa Annahme, Zuschlag, Ausschluss oder Ablehnung, ohne dass schon ein Antrag mit deinem Namen vorliegt. Beim freiwilligen Verbleib in der gesetzlichen Krankenversicherung entfällt diese Gesundheitsprüfung typischerweise."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Was tun bei einer Beitragserhöhung in der PKV?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Wenn der Beitrag wegen einer Anpassungsklausel steigt, kannst du innerhalb von zwei Monaten nach Zugang der Mitteilung kündigen. Die Kündigung einer Pflicht-Krankheitskostenversicherung braucht den Nachweis einer Anschlussversicherung. Einen Tarifwechsel beim bisherigen Versicherer kannst du jederzeit prüfen. Die Zwei-Monats-Frist gilt dafür nicht. Ob und um wie viel dein Vertrag steigt, steht nur im Anpassungsschreiben. Laut PKV-Verband sind zum 1. Januar 2027 rund 53 Prozent der Privatversicherten betroffen, im Schnitt um 13,4 Prozent. Die Einzelheiten stehen auf der Seite zur PKV-Beitragsanpassung 2027."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Gilt das auch für angestellte Geschäftsführer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Die Einordnung gesetzlich oder privat gilt auch für angestellte Geschäftsführerinnen und Geschäftsführer, aber mit einer anderen Voraussetzung. Sie können typischerweise nur in die private Krankenversicherung, wenn das regelmäßige Jahresarbeitsentgelt über der Versicherungspflichtgrenze liegt. Laut Kabinettsbeschluss sind das 2027 jährlich 84.150 Euro. Der Bundesrat stimmt am 20.11.2026 ab. Bis dahin ist dieser Wert noch nicht endgültig. Hauptberuflich Selbstständige sind typischerweise nicht pflichtversichert und können ohne diese Einkommensgrenze wechseln. Die Zahlen stehen auf der Seite zum GKV-Höchstbeitrag 2027."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Ist das Erstgespräch kostenpflichtig?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Das Erstgespräch ist unverbindlich. Du zahlst keine Beratungsgebühr. Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte. Den Ablauf erkläre ich dir im Gespräch. Nicht jedes Produkt ist automatisch verfügbar."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Berätst du nur in Mainz oder auch online?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Beides. Du kannst einen Termin in Mainz, nach Absprache im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern, etwa in Wiesbaden, Frankfurt oder Darmstadt, oder online vereinbaren. Online berate ich deutschlandweit. Den Termin buchst du unter termin.eliasgassmann.de."
-      }
-    }
-  ]
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FinancialService",
-  "name": "Elias Gassmann — Krankenversicherung für Selbstständige: gesetzlich oder privat?",
-  "url": "https://eliasgassmann.de/krankenversicherung-selbststaendige",
-  "description": "Beratung zur Krankenversicherung für Selbstständige: freiwillige gesetzliche oder private Versicherung, Familie, Krankentagegeld und Rückkehr in die GKV, persönlich in Mainz, im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern sowie online deutschlandweit.",
-  "areaServed": [
-    "Mainz",
-    "Wiesbaden",
-    "Frankfurt am Main",
-    "Darmstadt",
-    "Rhein-Main",
-    "DE"
-  ],
-  "telephone": "+491626960629",
-  "email": "elias@eliasgassmann.de",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "August-Horch-Straße 6A",
-    "postalCode": "55129",
-    "addressLocality": "Mainz",
-    "addressCountry": "DE"
-  },
-  "provider": {
-    "@type": "Person",
-    "name": "Elias Gassmann",
-    "url": "https://eliasgassmann.de/",
-    "image": "https://eliasgassmann.de/portrait-elias-gassmann.jpeg"
-  }
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Krankenversicherung Selbstständige: gesetzlich oder privat?",
-  "url": "https://eliasgassmann.de/krankenversicherung-selbststaendige",
-  "dateModified": "2026-11-17",
-  "inLanguage": "de-DE"
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Elias Gassmann",
-      "item": "https://eliasgassmann.de/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Krankenversicherung für Selbstständige: gesetzlich oder privat?",
-      "item": "https://eliasgassmann.de/krankenversicherung-selbststaendige"
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Elias Gassmann",
+          "item": "https://eliasgassmann.de/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Krankenversicherung für Selbstständige",
+          "item": "https://eliasgassmann.de/krankenversicherung-selbststaendige"
+        }
+      ]
     }
   ]
 }
@@ -329,37 +293,28 @@
       <span class="brand-name">Elias Gassmann<small>Finanzberatung</small></span>
     </a>
     <nav class="main-nav" aria-label="Hauptnavigation">
-      <a href="index.html#gewerbe">Gewerbe</a>
       <a href="index.html#privat">Privat</a>
-      <a href="#ablauf">So läuft’s</a>
-      <a href="#termin">Termin</a>
+      <a href="index.html#gewerbe">Betrieb</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="#anfrage">Termin</a>
     </nav>
     <a class="header-contact" href="tel:+491626960629">
       <span class="phone-icon">↗</span>
       <span>0162 6960629</span>
     </a>
   </header>
-
   <main id="top">
     <section class="hero hero--beratung" id="inhalt" aria-labelledby="hero-title">
       <div class="hero-content hero-copy">
-        <p class="eyebrow hero-label">Für Selbstständige</p>
-        <h1 id="hero-title">Kranken&shy;versicherung für Selbstständige: gesetzlich oder privat? In Mainz und im Rhein-Main-Gebiet</h1>
-        <aside class="answer-box" aria-label="Kurzantwort">
-          <span class="answer-label">Kurzantwort</span>
-          <p>Als Selbstständiger bist du typischerweise nicht in der gesetzlichen Krankenversicherung pflichtversichert. Du kannst unter den Voraussetzungen freiwillig gesetzlich versichert bleiben oder in die private wechseln. Was passt, hängt unter anderem von Einkommen, Familie, Gesundheit und dem Blick aufs Alter ab. Die Rückkehr in die gesetzliche Krankenversicherung ist typischerweise schwierig. Elias Gassmann berät dich dazu in Mainz, im Rhein-Main-Gebiet oder online deutschlandweit.</p>
-        </aside>
-        <aside class="answer-box" aria-label="Aktuell 2027">
-          <span class="answer-label">Aktuell 2027</span>
-          <p>Laut Kabinettsbeschluss liegt der GKV-Höchstbeitrag 2027 bei 1.115,63&nbsp;€ im Monat, mit durchschnittlichem Zusatzbeitrag und ohne Pflege. Laut PKV-Verband sind rund 53&nbsp;Prozent der Privatversicherten von einer Erhöhung betroffen, im Schnitt um 13,4&nbsp;Prozent. Steigt dein Beitrag wegen einer Anpassungsklausel, hast du zwei Monate ab Zugang des Schreibens für eine Sonderkündigung. Der Bundesrat stimmt am 20.11.2026 über die Rechengrößen ab. Bis dahin sind die 2027er-Werte noch nicht endgültig. Mehr zum <a href="gkv-hoechstbeitrag-2027-selbststaendige">GKV-Höchstbeitrag 2027 für Selbstständige</a> und zur <a href="pkv-beitragsanpassung-2027">PKV-Beitragsanpassung 2027</a>.</p>
-          <span class="stand">Stand: November 2026</span>
-        </aside>
-        <p class="core-answer">Typische Anlässe: du machst dich selbstständig, du willst gesetzlich oder privat einordnen, die Absicherung der Familie klären oder ein Krankentagegeld prüfen.</p>
+        <p class="eyebrow hero-label">Gesundheit</p>
+        <h1 id="hero-title">Krankenversicherung für Selbstständige: gesetzlich bleiben oder privat wechseln?</h1>
+        <p class="core-answer">Als Selbstständiger bist du in der Regel nicht pflichtversichert in der gesetzlichen Krankenversicherung. Du kannst freiwillig gesetzlich bleiben oder privat wechseln. Was passt, hängt an Einkommen, Familie, Gesundheit und am Alter, nicht an einem pauschalen Tipp.</p>
+        <p><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=kv-selbststaendige">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a></p>
       </div>
       <div class="hero-form">
         <div class="form-card" id="anfrage">
-          <h2>Jetzt Beratung anfragen</h2>
-          <p class="form-lead">Unverbindlich, in Mainz, im Rhein-Main-Gebiet oder online. Erzähl kurz, worum es geht.</p>
+          <h2>Erstgespräch anfragen</h2>
+          <p class="form-lead">Kostenlos und unverbindlich. Ein Satz zu deiner Lage reicht.</p>
           <form class="lead-form" id="beratung-form" action="https://eg-anfragen.elias-gassmann.workers.dev/anfrage" method="post" novalidate>
             <label>Name
               <input type="text" name="name" autocomplete="name" required placeholder="Vor- und Nachname">
@@ -368,10 +323,10 @@
               <input type="text" name="kontakt" autocomplete="on" required placeholder="Nummer oder E-Mail-Adresse" inputmode="email">
             </label>
             <label>Beruf oder Tätigkeit
-              <input type="text" name="branche" required placeholder="z. B. selbstständig oder Handwerk">
+              <input type="text" name="branche" required placeholder="z. B. selbstständig, GmbH-Geschäftsführer">
             </label>
             <label>Kurz dein Anliegen
-              <input type="text" name="anliegen" required placeholder="z. B. gesetzlich oder privat?">
+              <input type="text" name="anliegen" required placeholder="z. B. gesetzlich oder privat">
             </label>
             <label class="consent fwx-consent">
               <input type="checkbox" name="datenschutz" value="ja" required>
@@ -383,262 +338,76 @@
           </form>
           <p class="form-alt">Oder Termin direkt wählen: <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=kv-selbststaendige">termin.eliasgassmann.de</a> · <a href="tel:+491626960629">+49 162 6960629</a></p>
         </div>
-      </div>
+        </div>
       <div class="hero-panel">
         <figure class="hero-portrait">
-          <img src="portrait-elias-gassmann.jpeg" alt="Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" fetchpriority="high">
+          <img src="portrait-elias-gassmann.jpeg" alt="Porträt von Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" fetchpriority="high">
           <figcaption>
             <span>Elias Gassmann</span>
             <strong>Finanzberater in Mainz</strong>
-            <small>Persönlich in Mainz, Rhein-Main und online</small>
+            <small>Sitz in Mainz, Gespräche auch online</small>
           </figcaption>
         </figure>
         <a class="trust-rating" href="https://www.google.com/maps?cid=18281856182098275446" target="_blank" rel="noopener noreferrer">
           <span aria-hidden="true">★★★★★</span>
           <span>
             <strong>4,9 / 5 · 48 Google-Rezensionen</strong>
-            <small>Stand 10.11.2026, wie auf der Seite Finanzberater Mainz</small>
+            <small>FactoringWerkstatt · Stand 10.11.2026</small>
           </span>
         </a>
       </div>
     </section>
-
-    <section class="page-block" aria-labelledby="vergleich">
-      <p class="eyebrow">Einordnung</p>
-      <h2 id="vergleich">Gesetzlich oder privat?</h2>
-      <p class="lead">Als Selbstständiger bist du typischerweise nicht in der gesetzlichen Krankenversicherung pflichtversichert. Du hast dann in der Regel zwei Wege.</p>
-      <p>Du kannst unter den gesetzlichen Voraussetzungen freiwillig in der gesetzlichen Krankenversicherung bleiben. Die Beiträge richten sich dort typischerweise nach deinem Einkommen. Der Leistungsumfang folgt im Wesentlichen dem gesetzlichen Rahmen.</p>
-      <p>Alternativ kannst du in die private Krankenversicherung wechseln, wenn du nicht gesetzlich pflichtversichert bist. Die Beiträge richten sich dort typischerweise nach Eintrittsalter, Gesundheit und dem gewählten Tarif, nicht nach dem Einkommen. Die Leistungen stehen im jeweiligen Tarif.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Freiwillige gesetzliche Krankenversicherung</strong>
-          <span>Beiträge typischerweise nach dem Einkommen. Partner und Kinder können unter den Voraussetzungen der Familienversicherung mitversichert sein, ohne einen eigenen Beitrag.</span>
-        </li>
-        <li>
-          <strong>Private Krankenversicherung</strong>
-          <span>Beitrag typischerweise nach Alter, Gesundheit und Tarif. Jede Person braucht typischerweise einen eigenen Vertrag. Der Leistungsumfang richtet sich nach der Vereinbarung, nicht nach dem gesetzlichen Katalog allein.</span>
-        </li>
-        <li>
-          <strong>Die Abwägung</strong>
-          <span>Was passt, hängt von Einkommen, Familie, Gesundheit und dem Blick aufs Alter ab. Ich wäge beides mit dir ab. Pauschale Beiträge, Grenzen oder eine Empfehlung ohne deine Angaben nenne ich hier bewusst nicht.</span>
-        </li>
-      </ul>
-    </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="familie">
-      <p class="eyebrow">Familie</p>
-      <h2 id="familie">Familie und Kinder</h2>
-      <p class="lead">Bei der Entscheidung zählt oft nicht nur dein eigener Schutz. Partner und Kinder ändern typischerweise die Rechnung.</p>
-      <p>In der gesetzlichen Krankenversicherung können Ehe- oder Lebenspartner und Kinder unter den gesetzlichen Voraussetzungen typischerweise über die Familienversicherung mitversichert sein, ohne einen eigenen Beitrag. Ob das gilt, hängt unter anderem von der eigenen Versicherung und dem Einkommen der mitversicherten Person ab. Die genauen Grenzen nenne ich hier bewusst nicht.</p>
-      <p>In der privaten Krankenversicherung braucht jede Person typischerweise einen eigenen Vertrag und einen eigenen Beitrag. Für neugeborene Kinder gibt es besondere Aufnahmewege, typischerweise wenn ein Elternteil bereits privat versichert ist und die Aufnahme fristgerecht beantragt wird.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Familie in der gesetzlichen Krankenversicherung</strong>
-          <span>Die Familienversicherung kann ein starkes Argument sein, wenn Partner oder Kinder die Voraussetzungen erfüllen. Das prüfen wir anhand deiner Situation.</span>
-        </li>
-        <li>
-          <strong>Familie in der privaten Krankenversicherung</strong>
-          <span>Jede Person hat typischerweise ihren eigenen Schutz und ihren eigenen Beitrag. Dafür richtet sich der Leistungsumfang nach dem jeweiligen Tarif.</span>
-        </li>
-        <li>
-          <strong>Vor der Entscheidung</strong>
-          <span>Wir schauen uns die konkrete Familiensituation an, nicht nur deinen eigenen Vertrag. Eine pauschale Aussage ohne diese Angaben wäre unvollständig.</span>
-        </li>
-      </ul>
-    </section>
-
-    <section class="page-block" aria-labelledby="alter">
-      <p class="eyebrow">Auf Dauer</p>
-      <h2 id="alter">Beiträge im Alter und die Rückkehr in die GKV</h2>
-      <p class="lead">Die Entscheidung wirkt typischerweise lange. Deshalb gehören der Blick aufs Alter und die Frage nach einem späteren Wechsel fest dazu.</p>
-      <p>In der gesetzlichen Krankenversicherung bleiben die Beiträge typischerweise am Einkommen ausgerichtet, auch im Ruhestand. Die Rente zählt dabei typischerweise mit.</p>
-      <p>In der privaten Krankenversicherung richten sich die Beiträge typischerweise nicht nach dem Einkommen. Sie können im Alter steigen, unter anderem durch das Alter und die allgemeine Kostenentwicklung. Es werden Alterungsrückstellungen gebildet, und es gibt gesetzlich vorgesehene Auffangtarife. Konkrete Verläufe oder Beträge nenne ich hier bewusst nicht.</p>
-      <p>Die Rückkehr aus der privaten in die gesetzliche Krankenversicherung ist typischerweise schwierig. Besonders im späteren Erwerbsleben, ab einem gesetzlich festgelegten Alter, ist sie stark eingeschränkt. Ein typischer Weg ist eine erneute Versicherungspflicht, etwa als Angestellte oder Angestellter, wenn die gesetzlichen Voraussetzungen vorliegen. Wer selbstständig bleibt, kann in der Regel nicht einfach zurückwechseln.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Blick aufs Alter</strong>
-          <span>Wir nehmen die mögliche Beitragsentwicklung mit auf, ohne hier Zahlen zu versprechen. Weder der gesetzliche noch der private Weg hat einen festgeschriebenen Beitrag für immer.</span>
-        </li>
-        <li>
-          <strong>Rückkehr in die gesetzliche Krankenversicherung</strong>
-          <span>Sie ist typischerweise schwierig und an enge Voraussetzungen gebunden. Ob das in deinem Fall überhaupt offensteht, hängt von Alter, bisheriger Versicherung und deiner aktuellen Situation ab. Eine Garantie dafür gibt es nicht.</span>
-        </li>
-        <li>
-          <strong>Vor einem Wechsel</strong>
-          <span>Gerade deshalb sollte der Schritt in die private Krankenversicherung in Ruhe eingeordnet werden, nicht unter Zeitdruck.</span>
-        </li>
-      </ul>
-    </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="gesundheit">
-      <p class="eyebrow">Vor dem Antrag</p>
-      <h2 id="gesundheit">Gesundheitsfragen und anonyme Risikovoranfrage</h2>
-      <p class="lead">Für die private Krankenversicherung stellt der Versicherer typischerweise Gesundheitsfragen. Die Antworten müssen wahr und vollständig sein. Davon hängt später der Versicherungsschutz ab.</p>
-      <p>Unrichtige oder unvollständige Angaben können den Schutz gefährden. Der Versicherer kann später ganz oder teilweise von der Leistung frei sein. Deshalb gehen wir die Fragen in Ruhe durch, bevor ein Antrag gestellt wird.</p>
-      <p>Beim freiwilligen Verbleib in der gesetzlichen Krankenversicherung entfällt diese Gesundheitsprüfung typischerweise.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Ehrlich und vollständig</strong>
-          <span>Es zählt, was gefragt ist, im abgefragten Zeitraum. Wenn du unsicher bist, etwa bei alten Befunden oder Behandlungen, klären wir das, statt zu raten oder etwas wegzulassen.</span>
-        </li>
-        <li>
-          <strong>Anonyme Risikovoranfrage</strong>
-          <span>Bevor ein namentlicher Antrag auf eine private Krankenversicherung gestellt wird, kann typischerweise eine anonyme Risikovoranfrage gestellt werden. Du erhältst eine Einschätzung, etwa Annahme, Zuschlag, Ausschluss oder Ablehnung, ohne dass schon ein Antrag mit deinem Namen vorliegt.</span>
-        </li>
-        <li>
-          <strong>Erst dann der Antrag</strong>
-          <span>So siehst du die Lage, bevor du entscheidest. Ein Antrag kommt erst, wenn die Einschätzung und der Tarif zu deiner Situation passen. Nicht jedes Produkt ist automatisch verfügbar.</span>
-        </li>
-      </ul>
-    </section>
-
-    <section class="page-block" aria-labelledby="krankentagegeld">
-      <p class="eyebrow">Einkommen bei Krankheit</p>
-      <h2 id="krankentagegeld">Krankentagegeld für Selbstständige</h2>
-      <p class="lead">Als Selbstständiger hast du typischerweise keine Entgeltfortzahlung durch einen Arbeitgeber. Fällst du krankheitsbedingt länger aus, fehlt das Einkommen oft sofort oder nach kurzer Zeit.</p>
-      <p>In der freiwilligen gesetzlichen Krankenversicherung gibt es ein gesetzliches Krankengeld typischerweise nur, wenn du es gewählt hast. In der privaten Krankenversicherung wird das Krankentagegeld typischerweise gesondert vereinbart.</p>
-      <p>Höhe, Beginn und Voraussetzungen hängen vom jeweiligen Tarif bzw. von der gewählten Absicherung ab. Pauschale Tagessätze nenne ich hier bewusst nicht.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Ohne automatische Lohnfortzahlung</strong>
-          <span>Anders als bei vielen Angestellten läuft dein Einkommen typischerweise nicht einfach weiter, wenn du krank wirst. Deshalb gehört die Absicherung dieser Lücke fest ins Gespräch.</span>
-        </li>
-        <li>
-          <strong>Gesetzliches Krankengeld</strong>
-          <span>In der freiwilligen gesetzlichen Krankenversicherung musst du den Anspruch typischerweise wählen. Ob und ab wann er greift, klären wir anhand deiner bestehenden Mitgliedschaft.</span>
-        </li>
-        <li>
-          <strong>Privates Krankentagegeld</strong>
-          <span>Es wird typischerweise als eigener Baustein vereinbart. Sinnvoll ist, den Beginn und die Höhe an deinem tatsächlichen Bedarf auszurichten. Das rechnen wir im Gespräch durch, ohne hier feste Sätze zu nennen.</span>
-        </li>
-      </ul>
-    </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="fuer-wen">
+    <section class="page-block" id="fuer-wen" aria-labelledby="fuer-wen-title">
       <p class="eyebrow">Für wen</p>
-      <h2 id="fuer-wen">Für wen das typischerweise infrage kommt</h2>
-      <p class="lead">Die Seite richtet sich an Selbstständige in Mainz, Wiesbaden, Frankfurt, Darmstadt und im übrigen Rhein-Main-Gebiet sowie im Umkreis von rund 100 Kilometern. Online berate ich deutschlandweit.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Gründung oder Wechsel der Absicherung</strong>
-          <span>Du machst dich selbstständig oder willst klären, ob du freiwillig gesetzlich bleiben oder in die private Krankenversicherung wechseln sollst.</span>
-        </li>
-        <li>
-          <strong>Familie und Kinder</strong>
-          <span>Partner oder Kinder sollen mitversichert werden, oder die bisherige Lösung passt nicht mehr zur Familiensituation.</span>
-        </li>
-        <li>
-          <strong>Krankentagegeld oder Bestand</strong>
-          <span>Du willst die Einkommenslücke bei Krankheit absichern oder einen bestehenden Schutz prüfen, bevor du etwas änderst.</span>
-        </li>
-      </ul>
-      <p>Nicht jedes Thema und jedes Produkt ist automatisch verfügbar; das klären wir im Gespräch. Wenn du Mitarbeitende beschäftigst und ein Gesundheitsangebot über den Betrieb prüfen willst, liegt eine Einordnung auf der Seite <a href="bkv-arbeitgeber">betriebliche Krankenversicherung (bKV) für Arbeitgeber im Handwerk</a>. Zur Pflegezusatzversicherung sowie zu Krankentagegeld und Krankenhaustagegeld im Zusammenhang der Gesundheitsabsicherung liegt eine Einordnung auf der Seite <a href="pflege-selbststaendige">Pflegeversicherung und Gesundheitsabsicherung für Selbstständige</a>. Zur Absicherung der Arbeitskraft liegt eine Einordnung auf der Seite <a href="bu-selbststaendige">Berufsunfähigkeitsversicherung für Selbstständige und Handwerker</a>. Für typische betriebliche Themen siehe auch <a href="betriebshaftpflicht-mainz">Betriebshaftpflicht</a> und <a href="rechtsschutz-selbststaendige">Rechtsschutz für Selbstständige</a>. Einen Überblick zur Finanzberatung in Mainz findest du auf der Seite <a href="finanzberater-mainz">Finanzberater Mainz</a>.</p>
+      <h2 id="fuer-wen-title">Für wen das ist.</h2>
+      <p class="lead">Für Gründer und Selbstständige, die den Status gerade wechseln oder die Familie mitdenken müssen.</p>
+      <ul class="topic-list"><li><strong>Gründung</strong><span>Du machst dich selbstständig und musst klären, ob die freiwillige gesetzliche Mitgliedschaft bleibt.</span></li><li><strong>Familie</strong><span>Partner oder Kinder ändern die Rechnung. In der gesetzlichen Krankenversicherung kann eine Familienversicherung möglich sein, privat braucht meist jede Person einen eigenen Vertrag.</span></li><li><strong>Krankheit und Einkommen</strong><span>Ohne Arbeitgeber gibt es keine Lohnfortzahlung. Krankentagegeld ist dann eine eigene Frage.</span></li></ul>
     </section>
-
-    <section class="process-section page-block" id="ablauf" aria-labelledby="ablauf-title">
+<section class="page-block page-block--grau" id="worauf" aria-labelledby="worauf-title">
+      <p class="eyebrow">Worauf es ankommt</p>
+      <h2 id="worauf-title">Was ich mit dir kläre.</h2>
+      
+      <ul class="topic-list"><li><strong>Freiwillig gesetzlich</strong><span>Der Beitrag richtet sich im Wesentlichen nach dem Einkommen. Der Leistungsumfang folgt dem gesetzlichen Rahmen. Eine Gesundheitsprüfung entfällt dabei in der Regel.</span></li><li><strong>Privat</strong><span>Der Beitrag richtet sich nach Eintrittsalter, Gesundheit und Tarif, nicht nach dem Einkommen. Leistungen stehen im Tarif. Vor dem Antrag mit deinem Namen kann eine anonyme Voranfrage die Annahme zeigen.</span></li><li><strong>Alter und Rückkehr</strong><span>Gesetzliche Beiträge bleiben am Einkommen orientiert, auch später. Private können steigen. Alterungsrückstellungen werden gebildet, es gibt gesetzlich vorgesehene Auffangtarife. Die Rückkehr in die gesetzliche Krankenversicherung ist oft schwer und an enge Voraussetzungen gebunden.</span></li><li><strong>Krankentagegeld</strong><span>In der freiwilligen gesetzlichen Versicherung musst du Krankengeld meist wählen. Privat wird ein Tagegeld gesondert vereinbart. Beginn und Höhe gehören an deinen echten Bedarf.</span></li></ul>
+    </section>
+<section class="page-block" id="zahlen" aria-labelledby="zahlen-title">
+      <p class="eyebrow">Aktuell</p>
+      <h2 id="zahlen-title">Zwei Zahlen, die 2027 viele Gespräche auslösen.</h2>
+      
+      <p>Laut Kabinettsbeschluss vom 7. Oktober 2026 liegt der GKV-Höchstbeitrag 2027 bei 1.115,63 Euro im Monat für die Krankenversicherung, gerechnet mit durchschnittlichem Zusatzbeitrag, ohne Pflege. Der Bundesrat war für den 20. November 2026 angesetzt. Solange die Verordnung nicht verkündet ist, rechne ich mit dem aktuellen Stand. <a href="gkv-hoechstbeitrag-2027-selbststaendige">GKV-Höchstbeitrag 2027</a></p>
+                  <p>Laut PKV-Verband sind zum 1. Januar 2027 rund 53 Prozent der Privatversicherten von einer Erhöhung betroffen, im Schnitt um 13,4 Prozent. Ob dein Vertrag steigt, steht nur in deinem Schreiben. <a href="pkv-beitragsanpassung-2027">PKV-Beitragsanpassung 2027</a></p>
+    </section>
+<section class="process-section page-block" id="ablauf" aria-labelledby="ablauf-title">
       <div class="process-heading">
-        <p class="eyebrow">Der Ablauf</p>
-        <h2 id="ablauf-title">So läuft die Beratung</h2>
-        <p class="lead">Wir starten mit deiner aktuellen Absicherung und deiner Familiensituation. Die Beratung kann vollständig digital laufen.</p>
+        <p class="eyebrow">Ablauf</p>
+        <h2 id="ablauf-title">So gehe ich vor.</h2>
+        <p class="lead">Du musst nichts vorbereiten. Unterlagen helfen, wenn du sie schon hast.</p>
       </div>
-      <ol class="process-list">
-        <li>
-          <span>1</span>
-          <h3>Termin buchen</h3>
-          <p>Du buchst einen unverbindlichen Termin, vor Ort in Mainz, im Rhein-Main-Gebiet bzw. im Umkreis von rund 100 Kilometern oder online. Die Beratung kann also auch rein digital laufen.</p>
-        </li>
-        <li>
-          <span>2</span>
-          <h3>Situation verstehen</h3>
-          <p>Wir sprechen über deinen Versicherungsstatus, Einkommen, Familie, bestehende Verträge und was du absichern möchtest. Auch offene Punkte zur Gesundheit gehören dazu, ohne dass schon ein Antrag gestellt wird.</p>
-        </li>
-        <li>
-          <span>3</span>
-          <h3>Alternativen einordnen</h3>
-          <p>Ich ordne freiwillige gesetzliche und private Krankenversicherung für deine Lage ein, einschließlich Familie, Blick aufs Alter und Krankentagegeld. Nicht jedes Produkt ist automatisch verfügbar.</p>
-        </li>
-        <li>
-          <span>4</span>
-          <h3>Bei Bedarf anonyme Risikovoranfrage</h3>
-          <p>Kommt die private Krankenversicherung infrage, klären wir die Annahme typischerweise zuerst anonym. Du siehst, wie Versicherer die Gesundheit einschätzen, bevor ein namentlicher Antrag gestellt wird.</p>
-        </li>
-        <li>
-          <span>5</span>
-          <h3>In Ruhe entscheiden</h3>
-          <p>Du entscheidest in Ruhe, ob und wie es weitergehen soll. Ein Antrag kommt erst, wenn die Angaben sitzen und du dich entschieden hast. Durch das Erstgespräch entsteht keine Verpflichtung.</p>
-        </li>
-      </ol>
+      <ol class="process-list"><li><span>1</span><h3>Kennenlernen</h3><p>Status, Einkommen, Familie. Gesundheitsdaten gehören nicht ins Formular.</p></li><li><span>2</span><h3>Analysieren</h3><p>Ich ordne freiwillig gesetzlich und privat für deine Lage ein, inklusive Blick aufs Alter.</p></li><li><span>3</span><h3>Lösungen besprechen</h3><p>Kommt privat infrage, klären wir die Annahme oft zuerst anonym.</p></li><li><span>4</span><h3>Umsetzen</h3><p>Du entscheidest. Ein Antrag kommt erst, wenn die Angaben sitzen.</p></li></ol>
     </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="transparenz">
-      <p class="eyebrow">Kosten und Ablauf</p>
-      <h2 id="transparenz">Was das Erstgespräch kostet</h2>
-      <p class="lead">Für das Erstgespräch zahlst du keine Beratungsgebühr. Bevor du etwas entscheidest, weißt du, wie ein Vorschlag funktioniert und welche Kosten daran hängen.</p>
-      <p class="partners">Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte; den Ablauf erkläre ich dir im Gespräch. Pauschale Beiträge, Beitragsgrenzen oder Annahmerichtlinien nenne ich hier bewusst nicht. Es werden keine Kundengelder entgegengenommen; Zahlungen gehen direkt an den jeweiligen Anbieter. Alle Pflichtangaben findest du im <a href="impressum.html">Impressum</a>.</p>
-    </section>
-
-    <section class="page-block" id="termin" aria-labelledby="termin-title">
+<section class="page-block" id="naechster" aria-labelledby="naechster-title">
       <p class="eyebrow">Nächster Schritt</p>
-      <h2 id="termin-title">Termin vereinbaren — in Mainz, im Rhein-Main-Gebiet oder online</h2>
-      <p class="lead">Den unverbindlichen Termin buchst du unter <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=kv-selbststaendige">termin.eliasgassmann.de</a>. Ohne Druck und ohne eine festgelegte Empfehlung für gesetzlich oder privat.</p>
-      <p>Die öffentlich genannte Anschrift ist August-Horch-Straße 6A, 55129 Mainz. Ob ein Termin vor Ort oder online sinnvoller ist, klären wir bei der Buchung. Du erreichst mich auch unter <a href="tel:+491626960629">+49 162 6960629</a> und <a href="mailto:elias@eliasgassmann.de">elias@eliasgassmann.de</a>.</p>
-      <p style="margin-top:28px"><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=kv-selbststaendige">Unverbindlichen Termin vereinbaren <span aria-hidden="true">↗</span></a></p>
+      <h2 id="naechster-title">Das Erstgespräch zeigt dir den nächsten sinnvollen Schritt.</h2>
+      
+      <p>Du hörst, was schon passt, was fehlt und was es kosten würde. Danach entscheidest du.</p><p style="margin-top:8px"><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=kv-selbststaendige">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a></p>
     </section>
-
     <section class="faq-section" id="fragen" aria-labelledby="faq-title">
       <div>
-        <p class="eyebrow">Vor dem Gespräch</p>
-        <h2 id="faq-title">Häufige Fragen zur Kranken&shy;versicherung für Selbstständige</h2>
+        <p class="eyebrow">Kurz geklärt</p>
+        <h2 id="faq-title">Fragen, die oft kommen.</h2>
       </div>
       <div class="faq-list">
-        <details open>
-          <summary>Was ist der Unterschied zwischen freiwilliger gesetzlicher und privater Krankenversicherung?</summary>
-          <p>Als Selbstständiger bist du typischerweise nicht in der gesetzlichen Krankenversicherung pflichtversichert. Du kannst unter den gesetzlichen Voraussetzungen freiwillig gesetzlich versichert bleiben oder in die private Krankenversicherung wechseln. In der gesetzlichen Krankenversicherung richten sich die Beiträge typischerweise nach dem Einkommen, in der privaten typischerweise nach Eintrittsalter, Gesundheit und Tarif. Was zu dir passt, hängt von der Ausgangslage ab. Beiträge oder Grenzen nenne ich hier bewusst nicht.</p>
-        </details>
-        <details>
-          <summary>Wie sind Familie und Kinder mitversichert?</summary>
-          <p>In der gesetzlichen Krankenversicherung können Ehe- oder Lebenspartner und Kinder unter den gesetzlichen Voraussetzungen typischerweise über die Familienversicherung mitversichert sein, ohne einen eigenen Beitrag. In der privaten Krankenversicherung braucht jede Person typischerweise einen eigenen Vertrag und zahlt einen eigenen Beitrag. Für neugeborene Kinder gelten besondere Aufnahmewege, wenn ein Elternteil bereits privat versichert ist. Die Einzelheiten klären wir im Gespräch.</p>
-        </details>
-        <details>
-          <summary>Wie entwickeln sich die Beiträge typischerweise im Alter?</summary>
-          <p>In der gesetzlichen Krankenversicherung bleiben die Beiträge typischerweise am Einkommen ausgerichtet, auch im Ruhestand, etwa bezogen auf die Rente. In der privaten Krankenversicherung richten sie sich typischerweise nicht nach dem Einkommen. Sie können im Alter steigen, unter anderem durch Alter und die allgemeine Kostenentwicklung. Es gibt gesetzlich vorgesehene Auffangtarife. Konkrete Beitragsverläufe nenne ich hier bewusst nicht. Den Blick aufs Alter nehmen wir im Gespräch mit auf.</p>
-        </details>
-        <details>
-          <summary>Kann ich von der privaten wieder zurück in die gesetzliche Krankenversicherung?</summary>
-          <p>Die Rückkehr ist typischerweise schwierig. Besonders im späteren Erwerbsleben, ab einem gesetzlich festgelegten Alter, ist sie stark eingeschränkt. Ein typischer Weg ist eine erneute Versicherungspflicht, etwa als Angestellte oder Angestellter, wenn die gesetzlichen Voraussetzungen vorliegen. Wer selbstständig bleibt, kann in der Regel nicht einfach zurückwechseln. Ob das in deinem Fall möglich ist, prüfen wir anhand von Alter, bisheriger Versicherung und deiner aktuellen Situation. Eine Garantie dafür gibt es nicht.</p>
-        </details>
-        <details>
-          <summary>Was gilt für Gesundheitsfragen und die anonyme Risikovoranfrage?</summary>
-          <p>Für die private Krankenversicherung musst du Gesundheitsfragen wahrheitsgemäß und vollständig beantworten. Unrichtige oder unvollständige Angaben können den Versicherungsschutz gefährden. Bevor ein namentlicher Antrag gestellt wird, kann typischerweise eine anonyme Risikovoranfrage gestellt werden. Du erhältst eine Einschätzung, etwa Annahme, Zuschlag, Ausschluss oder Ablehnung, ohne dass schon ein Antrag mit deinem Namen vorliegt. Beim freiwilligen Verbleib in der gesetzlichen Krankenversicherung entfällt diese Gesundheitsprüfung typischerweise.</p>
-        </details>
-        <details>
-          <summary>Was tun bei einer Beitragserhöhung in der PKV?</summary>
-          <p>Wenn der Beitrag wegen einer Anpassungsklausel steigt, kannst du innerhalb von zwei Monaten nach Zugang der Mitteilung kündigen. Die Kündigung einer Pflicht-Krankheitskostenversicherung braucht den Nachweis einer Anschlussversicherung. Einen Tarifwechsel beim bisherigen Versicherer kannst du jederzeit prüfen. Die Zwei-Monats-Frist gilt dafür nicht. Ob und um wie viel dein Vertrag steigt, steht nur im Anpassungsschreiben. Laut PKV-Verband sind zum 1. Januar 2027 rund 53 Prozent der Privatversicherten betroffen, im Schnitt um 13,4 Prozent. Die Einzelheiten stehen auf der Seite zur <a href="pkv-beitragsanpassung-2027">PKV-Beitragsanpassung 2027</a>.</p>
-        </details>
-        <details>
-          <summary>Gilt das auch für angestellte Geschäftsführer?</summary>
-          <p>Die Einordnung gesetzlich oder privat gilt auch für angestellte Geschäftsführerinnen und Geschäftsführer, aber mit einer anderen Voraussetzung. Sie können typischerweise nur in die private Krankenversicherung, wenn das regelmäßige Jahresarbeitsentgelt über der Versicherungspflichtgrenze liegt. Laut Kabinettsbeschluss sind das 2027 jährlich 84.150 Euro. Der Bundesrat stimmt am 20.11.2026 ab. Bis dahin ist dieser Wert noch nicht endgültig. Hauptberuflich Selbstständige sind typischerweise nicht pflichtversichert und können ohne diese Einkommensgrenze wechseln. Die Zahlen stehen auf der Seite zum <a href="gkv-hoechstbeitrag-2027-selbststaendige">GKV-Höchstbeitrag 2027</a>.</p>
-        </details>
-        <details>
-          <summary>Ist das Erstgespräch kostenpflichtig?</summary>
-          <p>Das Erstgespräch ist unverbindlich. Du zahlst keine Beratungsgebühr. Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte. Den Ablauf erkläre ich dir im Gespräch. Nicht jedes Produkt ist automatisch verfügbar.</p>
-        </details>
-        <details>
-          <summary>Berätst du nur in Mainz oder auch online?</summary>
-          <p>Beides. Du kannst einen Termin in Mainz, nach Absprache im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern, etwa in Wiesbaden, Frankfurt oder Darmstadt, oder online vereinbaren. Online berate ich deutschlandweit. Den Termin buchst du unter <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=kv-selbststaendige">termin.eliasgassmann.de</a>.</p>
-        </details>
+        <details open><summary>Kann ich als Selbstständiger frei wählen?</summary><p>Hauptberuflich Selbstständige sind in der Regel nicht gesetzlich pflichtversichert. Freiwillig gesetzlich bleiben oder privat wechseln ist dann die Frage. Die Kündigung einer freiwilligen Mitgliedschaft wirkt zum Ablauf des übernächsten Kalendermonats und nur mit Nachweis einer anderen Absicherung.</p></details><details><summary>Was ist mit Partner und Kindern?</summary><p>Gesetzlich kann eine Familienversicherung ohne eigenen Beitrag möglich sein, wenn die Voraussetzungen stimmen. Privat braucht in der Regel jede Person einen eigenen Vertrag.</p></details><details><summary>Warum zählt das Alter mit?</summary><p>Private Beiträge richten sich nicht nach dem Einkommen und können steigen. Zurück in die gesetzliche Krankenversicherung ist später oft schwierig. Deshalb gehört der lange Blick ins Gespräch, nicht nur der Beitrag von heute.</p></details><details><summary>Was kostet das Erstgespräch?</summary><p>Das Erstgespräch kostet dich nichts. Eine Beratungsgebühr verlange ich nicht. Kommt ein Produkt zustande, werde ich vom Anbieter vergütet. Wie das läuft, sage ich dir im Gespräch. Die Pflichtangaben stehen im Impressum.</p></details><details><summary>Muss ich bestehende Verträge kündigen?</summary><p>Nein. Ich schaue zuerst, was du schon hast. Was zu deinem Ziel passt, kann bleiben. Ob du etwas änderst, entscheidest du.</p></details><details><summary>Bist du danach noch da?</summary><p>Ja. Wenn sich etwas ändert oder du eine Frage zum Vertrag hast, meldest du dich bei mir. Ich bleibe dein Ansprechpartner.</p></details>
       </div>
     </section>
-
     <section class="contact-card" aria-labelledby="kontakt-title">
       <figure class="hero-portrait" style="margin:0;max-height:520px">
-        <img src="portrait-elias-gassmann.jpeg" alt="Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" loading="lazy">
+        <img src="portrait-elias-gassmann.jpeg" alt="Porträt von Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" loading="lazy">
       </figure>
       <div class="contact-content">
-        <p class="eyebrow">Kontakt</p>
-        <h2 id="kontakt-title">Was hast du vor?<br><em>Lass uns sprechen.</em></h2>
-        <p class="contact-copy">Gesetzlich oder privat einordnen, die Familie absichern oder ein Krankentagegeld prüfen: Erzähl mir, worum es geht.</p>
-        <a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=kv-selbststaendige">Unverbindlichen Termin vereinbaren <span aria-hidden="true">↗</span></a>
+        <p class="eyebrow">Erstgespräch</p>
+        <h2 id="kontakt-title">Wenn du das einordnen willst, sag mir Bescheid.</h2>
+        <p class="contact-copy">Kurz schreiben, worum es geht. Eine Beratungsgebühr verlange ich nicht.</p>
+        <a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=kv-selbststaendige">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a>
         <div class="contact-data">
           <a href="tel:+491626960629">+49 162 6960629</a>
           <a href="mailto:elias@eliasgassmann.de">elias@eliasgassmann.de</a>
@@ -647,7 +416,6 @@
       </div>
     </section>
   </main>
-
   <footer>
     <p>© <span id="year">2026</span> Elias Gassmann</p>
     <div>
@@ -656,7 +424,7 @@
       <a href="/datenschutz">Datenschutz</a>
     </div>
   </footer>
-  <a class="mobile-sticky" href="#anfrage">Jetzt Beratung anfragen</a>
+  <a class="mobile-sticky" href="#anfrage">Erstgespräch anfragen</a>
   <script src="formular.js" defer></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {

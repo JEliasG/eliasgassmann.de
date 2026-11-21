@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Unfallversicherung für Selbstständige und Handwerker in Mainz und Rhein-Main — Elias Gassmann</title>
-  <meta name="description" content="Unfallversicherung für Selbstständige und Handwerker in Mainz und Rhein-Main: private Absicherung nach einem Unfall, Abgrenzung zur gesetzlichen Unfallversicherung bzw. Berufsgenossenschaft und zur Berufsunfähigkeitsversicherung. Beratung vor Ort, im Umkreis von rund 100 Kilometern oder online deutschlandweit.">
+  <title>Unfallversicherung für Selbstständige | Gassmann</title>
+  <meta name="description" content="Private Unfallversicherung für Selbstständige und Handwerker: Unterschied zur Berufsgenossenschaft und zur Berufsunfähigkeit. Beratung aus Mainz.">
   <link rel="canonical" href="https://eliasgassmann.de/unfallversicherung-selbststaendige">
   <meta name="theme-color" content="#fbfbfd">
-  <meta property="og:title" content="Unfallversicherung für Selbstständige und Handwerker in Mainz und Rhein-Main — Elias Gassmann">
-  <meta property="og:description" content="Unfallversicherung für Selbstständige und Handwerker in Mainz und Rhein-Main: private Absicherung nach einem Unfall, Abgrenzung zur gesetzlichen Unfallversicherung bzw. Berufsgenossenschaft und zur Berufsunfähigkeitsversicherung. Beratung vor Ort, im Umkreis von rund 100 Kilometern oder online deutschlandweit.">
+  <meta property="og:title" content="Unfallversicherung für Selbstständige | Gassmann">
+  <meta property="og:description" content="Private Unfallversicherung für Selbstständige und Handwerker: Unterschied zur Berufsgenossenschaft und zur Berufsunfähigkeit. Beratung aus Mainz.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://eliasgassmann.de/unfallversicherung-selbststaendige">
   <meta property="og:image" content="https://eliasgassmann.de/portrait-elias-gassmann.jpeg">
@@ -29,7 +29,8 @@
     .hero--beratung h1 {
       font-size: clamp(36px, 4.2vw, 58px);
       line-height: 1.08;
-      max-width: 20ch;
+      max-width: min(22ch, 100%);
+      overflow-wrap: anywhere;
     }
     .answer-box {
       margin: 22px 0 20px;
@@ -87,6 +88,7 @@
       height: 1px;
       overflow: hidden;
     }
+
     .form-alt a, .consent a { color: var(--link); }
     .lead-form { display: grid; gap: 12px; }
     .lead-form label { display: grid; gap: 5px; font-size: 13px; font-weight: 600; color: var(--ink); }
@@ -108,6 +110,11 @@
     }
     .trust-rating strong { display: block; font-size: 15px; }
     .trust-rating small { display: block; font-size: 12px; color: var(--mut); }
+    .quote-mini {
+      margin: 0; padding: 16px 18px; border-radius: 20px; background: var(--grau);
+    }
+    .quote-mini p { margin: 0 0 8px; font-size: 15px; line-height: 1.4; }
+    .quote-mini footer { font-size: 12px; color: var(--mut); }
     .page-block { padding: 96px var(--rand); }
     .page-block h2 { margin: 8px 0 18px; font: 700 clamp(34px,4.2vw,56px)/1.07 var(--display); letter-spacing: -.03em; max-width: 22ch; }
     .page-block .lead, .page-block p { max-width: 42rem; }
@@ -126,20 +133,10 @@
     .topic-list li { padding: 18px 20px; border-radius: 20px; background: var(--grau); }
     .topic-list strong { display: block; margin-bottom: 4px; }
     .topic-list span { color: var(--mut); font-size: 15px; line-height: 1.45; }
-    .page-block--grau .topic-list li { background: #fff; }
     .partners { font-size: 15px; color: var(--ink-2); }
-    .hinweis {
-      margin: 8px 0 0;
-      max-width: 42rem;
-      padding: 18px 20px;
-      border-radius: 20px;
-      background: var(--grau);
-      font-size: 16px;
-      line-height: 1.5;
-      color: var(--ink);
+    .mobile-sticky {
+      display: none;
     }
-    .page-block--grau .hinweis { background: #fff; }
-    .mobile-sticky { display: none; }
     @media (max-width: 760px) {
       .hero--beratung h1 { max-width: none; }
       .hero--beratung .hero-portrait { max-height: none; }
@@ -156,6 +153,8 @@
     @media (prefers-reduced-motion: no-preference) {
       .hero-content, .hero-panel { animation: none; }
     }
+
+    .quote-mini .quote-src { margin: 0; font-size: 12px; color: var(--mut); line-height: 1.4; }
     .hero--beratung { display: grid; grid-template-columns: minmax(0,1.15fr) minmax(0,.85fr); }
     .hero-form { min-width: 0; }
     @media (min-width: 761px) {
@@ -165,123 +164,122 @@
     }
     @media (max-width: 760px) {
       .hero--beratung { display: flex; flex-direction: column; }
+      .hero-copy, .hero-form, .hero-panel { order: 0; min-width: 0; width: 100%; }
       .hero-copy { order: 1; }
       .hero-panel { order: 2; }
       .hero-form { order: 3; }
+      .hero--beratung h1 { overflow-wrap: anywhere; }
+    }
+  
+    .process-section.page-block .process-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .page-block--grau .topic-list li { background: #fff; }
+    .link-row { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 4px 0 18px; max-width: 44rem; }
+    .link-row a { color: var(--link); }
+    .source-list { margin: 8px 0 0; padding-left: 18px; max-width: 44rem; }
+    .source-list li { margin: 0 0 8px; font-size: 15px; line-height: 1.45; color: var(--ink-2); }
+    .source-list a { color: var(--link); }
+    @media (max-width: 760px) {
+      .hero h1, .page-block h2, .process-heading h2, .faq-section h2, .contact-card h2 { overflow-wrap: break-word; }
+      .process-section.page-block .process-list { grid-template-columns: 1fr; }
+      .criteria, .criteria thead, .criteria tbody, .criteria tr, .criteria th, .criteria td { display: block; width: auto; }
+      .criteria thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+      .criteria tr { padding: 8px 0; }
     }
   </style>
   <script type="application/ld+json">
-{
+  {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Bin ich als Selbstständiger oder Handwerker gesetzlich unfallversichert?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Als Selbstständiger bist du typischerweise nicht automatisch in der gesetzlichen Unfallversicherung der Berufsgenossenschaft abgesichert. Eine Pflicht besteht in der Regel nicht; oft ist eine freiwillige Versicherung möglich. Ob das für dich gilt, hängt von Tätigkeit, Eintragung und einer möglichen Mitgliedschaft ab. Das prüfe ich im Gespräch, ohne es hier pauschal festzulegen."
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Bin ich als Selbstständiger in der Berufsgenossenschaft?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nicht automatisch. Beschäftigte sind es kraft Gesetzes. Für Unternehmer kann die Satzung gelten, sonst oft eine freiwillige Versicherung."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Zahlt die Unfallversicherung bei Krankheit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In der Regel nein. Ohne Unfallereignis bleibt Krankheit draußen. Dafür sind Krankenversicherung, Tagegeld oder BU die passenderen Fragen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was ist der Unterschied zur BU?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Die BU fragt, ob du deinen Beruf noch ausüben kannst, auch nach Krankheit. Die Unfallversicherung fragt nach der körperlichen Folge eines Unfalls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was kostet das Erstgespräch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Das Erstgespräch kostet dich nichts. Eine Beratungsgebühr verlange ich nicht. Kommt ein Produkt zustande, werde ich vom Anbieter vergütet. Wie das läuft, sage ich dir im Gespräch. Die Pflichtangaben stehen im Impressum."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Muss ich bestehende Verträge kündigen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein. Ich schaue zuerst, was du schon hast. Was zu deinem Ziel passt, kann bleiben. Ob du etwas änderst, entscheidest du."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bist du danach noch da?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Wenn sich etwas ändert oder du eine Frage zum Vertrag hast, meldest du dich bei mir. Ich bleibe dein Ansprechpartner."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FinancialService",
+      "name": "Unfallversicherung für Selbstständige",
+      "url": "https://eliasgassmann.de/unfallversicherung-selbststaendige",
+      "description": "Private Unfallversicherung für Selbstständige und Handwerker: Unterschied zur Berufsgenossenschaft und zur Berufsunfähigkeit. Beratung aus Mainz.",
+      "telephone": "+491626960629",
+      "email": "elias@eliasgassmann.de",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "August-Horch-Straße 6A",
+        "postalCode": "55129",
+        "addressLocality": "Mainz",
+        "addressCountry": "DE"
+      },
+      "provider": {
+        "@type": "Person",
+        "name": "Elias Gassmann",
+        "url": "https://eliasgassmann.de/",
+        "image": "https://eliasgassmann.de/portrait-elias-gassmann.jpeg"
       }
     },
     {
-      "@type": "Question",
-      "name": "Was ist der Unterschied zwischen gesetzlicher und privater Unfallversicherung?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Die gesetzliche Unfallversicherung greift typischerweise bei Arbeitsunfällen, Wegeunfällen und anerkannten Berufskrankheiten. Unfälle in der Freizeit, im Haushalt oder beim Sport sind dort typischerweise nicht versichert. Eine private Unfallversicherung kann Unfälle auch außerhalb der Arbeit absichern und leistet typischerweise bei dauerhafter Invalidität, oft als Kapitalzahlung. Die genaue Abgrenzung hängt vom jeweiligen Schutz ab."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Was ist der Unterschied zur Berufsunfähigkeitsversicherung?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Die private Unfallversicherung leistet typischerweise nur nach einem Unfall, nicht bei Krankheit. Sie stellt meist auf die dauerhafte körperliche Beeinträchtigung ab, nicht darauf, ob du deinen Beruf noch ausüben kannst. Die Berufsunfähigkeitsversicherung zielt typischerweise darauf, dein Einkommen zu sichern, wenn du deinen Beruf aus gesundheitlichen Gründen nicht mehr ausüben kannst, auch bei Krankheit. Die Unfallversicherung ersetzt die BU typischerweise nicht. Beide können sich ergänzen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Was leistet eine private Unfallversicherung typischerweise?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Im Kern steht typischerweise eine Invaliditätsleistung, wenn nach einem Unfall eine dauerhafte Beeinträchtigung bleibt. Die Höhe richtet sich oft nach dem Grad der Invalidität und einer Gliedertaxe im Vertrag. Zusätzlich können Bausteine wie eine Unfallrente, ein Krankenhaustagegeld oder eine Leistung im Todesfall vereinbart sein. Krankheiten sind typischerweise nicht versichert. Konkrete Summen oder Grade nenne ich hier bewusst nicht."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Zählt nur ein Unfall bei der Arbeit?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Bei der privaten Unfallversicherung typischerweise nicht. Sie gilt meist rund um die Uhr, also auch in der Freizeit, im Haushalt oder unterwegs, soweit der Vertrag das vorsieht. Die gesetzliche Unfallversicherung der Berufsgenossenschaft ist dagegen typischerweise auf die Arbeit und den Weg dorthin beschränkt. Was in deinem Fall schon greift, klären wir im Gespräch."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Ist das Erstgespräch kostenpflichtig?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Das Erstgespräch ist unverbindlich. Du zahlst keine Beratungsgebühr. Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte. Den Ablauf erkläre ich dir im Gespräch. Nicht jedes Produkt ist automatisch verfügbar."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Berätst du nur in Mainz oder auch online?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Beides. Du kannst einen Termin in Mainz, nach Absprache im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern, etwa in Wiesbaden, Frankfurt oder Darmstadt, oder online vereinbaren. Online berate ich deutschlandweit, typischerweise per Video. Den Termin buchst du unter termin.eliasgassmann.de."
-      }
-    }
-  ]
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FinancialService",
-  "name": "Elias Gassmann — Unfallversicherung für Selbstständige und Handwerker",
-  "url": "https://eliasgassmann.de/unfallversicherung-selbststaendige",
-  "description": "Beratung zur privaten Unfallversicherung für Selbstständige und Handwerker: Absicherung nach einem Unfall, Abgrenzung zur gesetzlichen Unfallversicherung bzw. Berufsgenossenschaft und zur Berufsunfähigkeitsversicherung, persönlich in Mainz, im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern sowie online deutschlandweit.",
-  "areaServed": [
-    "Mainz",
-    "Wiesbaden",
-    "Frankfurt am Main",
-    "Darmstadt",
-    "Rhein-Main",
-    "DE"
-  ],
-  "telephone": "+491626960629",
-  "email": "elias@eliasgassmann.de",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "August-Horch-Straße 6A",
-    "postalCode": "55129",
-    "addressLocality": "Mainz",
-    "addressCountry": "DE"
-  },
-  "provider": {
-    "@type": "Person",
-    "name": "Elias Gassmann",
-    "url": "https://eliasgassmann.de/",
-    "image": "https://eliasgassmann.de/portrait-elias-gassmann.jpeg"
-  }
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Elias Gassmann",
-      "item": "https://eliasgassmann.de/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Unfallversicherung für Selbstständige und Handwerker",
-      "item": "https://eliasgassmann.de/unfallversicherung-selbststaendige"
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Elias Gassmann",
+          "item": "https://eliasgassmann.de/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Unfallversicherung für Selbstständige",
+          "item": "https://eliasgassmann.de/unfallversicherung-selbststaendige"
+        }
+      ]
     }
   ]
 }
@@ -295,32 +293,28 @@
       <span class="brand-name">Elias Gassmann<small>Finanzberatung</small></span>
     </a>
     <nav class="main-nav" aria-label="Hauptnavigation">
-      <a href="index.html#gewerbe">Gewerbe</a>
       <a href="index.html#privat">Privat</a>
-      <a href="#ablauf">So läuft’s</a>
-      <a href="#termin">Termin</a>
+      <a href="index.html#gewerbe">Betrieb</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="#anfrage">Termin</a>
     </nav>
     <a class="header-contact" href="tel:+491626960629">
       <span class="phone-icon">↗</span>
       <span>0162 6960629</span>
     </a>
   </header>
-
   <main id="top">
     <section class="hero hero--beratung" id="inhalt" aria-labelledby="hero-title">
       <div class="hero-content hero-copy">
-        <p class="eyebrow hero-label">Für Selbstständige und Handwerker</p>
-        <h1 id="hero-title">Unfallversicherung für Selbstständige und Handwerker in Mainz und im Rhein-Main-Gebiet</h1>
-        <aside class="answer-box" aria-label="Kurzantwort">
-          <span class="answer-label">Kurzantwort</span>
-          <p>Als Selbstständiger oder Handwerker bist du typischerweise nicht automatisch in der gesetzlichen Unfallversicherung der Berufsgenossenschaft abgesichert, oder nur dann, wenn du freiwillig versichert bist. Die gesetzliche Unfallversicherung greift typischerweise bei Arbeits- und Wegeunfällen, nicht in der Freizeit. Eine private Unfallversicherung kann Unfälle auch außerhalb der Arbeit absichern und leistet typischerweise bei dauerhafter Invalidität. Sie ersetzt keine Berufsunfähigkeitsversicherung, weil sie typischerweise nur Unfälle und nicht Krankheiten umfasst. Elias Gassmann berät dich dazu in Mainz, im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern oder online deutschlandweit.</p>
-        </aside>
-        <p class="core-answer">Typische Anlässe: du machst dich selbstständig, du willst klären, ob du in der Berufsgenossenschaft versichert bist, Unfälle in der Freizeit sollen abgesichert werden, oder du willst den Unterschied zur BU einordnen.</p>
+        <p class="eyebrow hero-label">Unfall</p>
+        <h1 id="hero-title">Unfallversicherung: Was zahlt, wenn die Berufsgenossenschaft nicht zuständig ist?</h1>
+        <p class="core-answer">Beschäftigte sind bei der Arbeit und auf dem direkten Weg gesetzlich unfallversichert. Als Unternehmer bist du dort nicht automatisch drin. Und Freizeit, Sport oder der Weg zum Einkaufen liegen meist außerhalb. Die private Unfallversicherung setzt an einem Unfall an, nicht an einer Krankheit.</p>
+        <p><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=unfallversicherung-selbststaendige">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a></p>
       </div>
       <div class="hero-form">
         <div class="form-card" id="anfrage">
-          <h2>Jetzt Beratung anfragen</h2>
-          <p class="form-lead">Unverbindlich, in Mainz, im Rhein-Main-Gebiet oder online. Erzähl kurz, worum es geht.</p>
+          <h2>Erstgespräch anfragen</h2>
+          <p class="form-lead">Kostenlos und unverbindlich. Ein Satz zu deiner Lage reicht.</p>
           <form class="lead-form" id="beratung-form" action="https://eg-anfragen.elias-gassmann.workers.dev/anfrage" method="post" novalidate>
             <label>Name
               <input type="text" name="name" autocomplete="name" required placeholder="Vor- und Nachname">
@@ -329,10 +323,10 @@
               <input type="text" name="kontakt" autocomplete="on" required placeholder="Nummer oder E-Mail-Adresse" inputmode="email">
             </label>
             <label>Beruf oder Tätigkeit
-              <input type="text" name="branche" required placeholder="z. B. selbstständig oder Handwerk">
+              <input type="text" name="branche" required placeholder="z. B. selbstständig, Handwerk">
             </label>
             <label>Kurz dein Anliegen
-              <input type="text" name="anliegen" required placeholder="z. B. Unfallschutz prüfen oder Unterschied zur BU">
+              <input type="text" name="anliegen" required placeholder="z. B. Bestand prüfen">
             </label>
             <label class="consent fwx-consent">
               <input type="checkbox" name="datenschutz" value="ja" required>
@@ -344,207 +338,69 @@
           </form>
           <p class="form-alt">Oder Termin direkt wählen: <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=unfallversicherung-selbststaendige">termin.eliasgassmann.de</a> · <a href="tel:+491626960629">+49 162 6960629</a></p>
         </div>
-      </div>
+        </div>
       <div class="hero-panel">
         <figure class="hero-portrait">
-          <img src="portrait-elias-gassmann.jpeg" alt="Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" fetchpriority="high">
+          <img src="portrait-elias-gassmann.jpeg" alt="Porträt von Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" fetchpriority="high">
           <figcaption>
             <span>Elias Gassmann</span>
             <strong>Finanzberater in Mainz</strong>
-            <small>Persönlich in Mainz, Rhein-Main und online</small>
+            <small>Sitz in Mainz, Gespräche auch online</small>
           </figcaption>
         </figure>
         <a class="trust-rating" href="https://www.google.com/maps?cid=18281856182098275446" target="_blank" rel="noopener noreferrer">
           <span aria-hidden="true">★★★★★</span>
           <span>
             <strong>4,9 / 5 · 48 Google-Rezensionen</strong>
-            <small>Stand 10.11.2026, wie auf der Seite Finanzberater Mainz</small>
+            <small>FactoringWerkstatt · Stand 10.11.2026</small>
           </span>
         </a>
       </div>
     </section>
-
-    <section class="page-block" aria-labelledby="warum">
-      <p class="eyebrow">Einordnung</p>
-      <h2 id="warum">Ohne automatischen Schutz in der Berufsgenossenschaft</h2>
-      <p class="lead">Angestellte sind typischerweise über den Arbeitgeber gesetzlich unfallversichert. Als Selbstständiger oder Inhaber eines Handwerksbetriebs gilt das oft nicht automatisch.</p>
-      <p>Eine Pflichtversicherung in der Berufsgenossenschaft besteht für dich typischerweise nicht. Häufig ist eine freiwillige Versicherung möglich. Ob das auf dich zutrifft, hängt von Tätigkeit, Eintragung und einer möglichen Mitgliedschaft ab. Das prüfe ich im Gespräch, ohne es hier pauschal festzulegen.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Selbstständige ohne Pflichtversicherung</strong>
-          <span>Ohne Mitgliedschaft in der gesetzlichen Unfallversicherung fehlt typischerweise der gesetzliche Schutz nach einem Arbeits- oder Wegeunfall. Dann liegt die Absicherung bei dir.</span>
-        </li>
-        <li>
-          <strong>Handwerker und Inhaber</strong>
-          <span>Mitarbeitende sind typischerweise über die Berufsgenossenschaft abgesichert. Für dich als Inhaberin oder Inhaber gilt das nicht selbstverständlich. Gerade bei körperlicher Arbeit gehört diese Frage fest ins Gespräch.</span>
-        </li>
-        <li>
-          <strong>Freizeit bleibt typischerweise außen vor</strong>
-          <span>Selbst wer gesetzlich unfallversichert ist, hat diesen Schutz typischerweise nur bei der Arbeit und auf dem Weg dorthin. Unfälle zu Hause, in der Freizeit oder beim Sport fallen in der Regel nicht darunter.</span>
-        </li>
-      </ul>
-    </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="leistungen">
-      <p class="eyebrow">Typische Leistungen</p>
-      <h2 id="leistungen">Was die private Unfallversicherung typischerweise leistet</h2>
-      <p class="lead">Ein Unfall liegt typischerweise vor, wenn durch ein plötzlich von außen auf den Körper wirkendes Ereignis unfreiwillig eine Gesundheitsschädigung entsteht. Krankheiten sind in der Regel nicht versichert.</p>
-      <p>Im Kern steht typischerweise eine Invaliditätsleistung, wenn nach einem Unfall eine dauerhafte Beeinträchtigung bleibt. Die Höhe richtet sich oft nach dem Grad der Invalidität und einer Gliedertaxe im Vertrag. Zusätzlich können weitere Bausteine vereinbart sein.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Invaliditätsleistung</strong>
-          <span>Typischerweise eine Kapitalzahlung, ausgerichtet an der dauerhaften körperlichen Beeinträchtigung. Manche Verträge erhöhen die Leistung bei höheren Graden, oft als Progression bezeichnet. Konkrete Grade oder Summen nenne ich hier bewusst nicht.</span>
-        </li>
-        <li>
-          <strong>Mögliche Ergänzungen</strong>
-          <span>Je nach Vertrag können etwa eine Unfallrente, ein Krankenhaustagegeld, eine Leistung im Todesfall oder Hilfe bei Bergung vereinbart sein. Nicht jeder Baustein ist automatisch enthalten.</span>
-        </li>
-        <li>
-          <strong>Rund um die Uhr, soweit vereinbart</strong>
-          <span>Die private Unfallversicherung gilt typischerweise nicht nur bei der Arbeit, sondern auch in der Freizeit, im Haushalt und unterwegs. Was genau eingeschlossen oder ausgeschlossen ist, steht im Vertrag.</span>
-        </li>
-      </ul>
-      <p>Nicht jedes Produkt ist automatisch verfügbar. Beiträge, Versicherungssummen oder Annahmerichtlinien nenne ich erst im Gespräch.</p>
-    </section>
-
-    <section class="page-block" aria-labelledby="abgrenzung">
-      <p class="eyebrow">Abgrenzung</p>
-      <h2 id="abgrenzung">Unterschied zur Berufsgenossenschaft und zur BU</h2>
-      <p class="lead">Die private Unfallversicherung, die gesetzliche Unfallversicherung der Berufsgenossenschaft und die Berufsunfähigkeitsversicherung greifen typischerweise an unterschiedlichen Stellen. Sie ersetzen einander nicht.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Gesetzliche Unfallversicherung und Berufsgenossenschaft</strong>
-          <span>Sie greift typischerweise bei Arbeitsunfällen, Wegeunfällen und anerkannten Berufskrankheiten. Leistungen zielen oft auf Heilbehandlung, Rehabilitation und unter gesetzlichen Voraussetzungen auf eine Rente. Unfälle in der Freizeit sind typischerweise nicht versichert. Ob du als Selbstständiger oder Handwerker überhaupt Mitglied bist, prüfen wir im Gespräch.</span>
-        </li>
-        <li>
-          <strong>Private Unfallversicherung</strong>
-          <span>Sie kann Unfälle auch außerhalb der Arbeit absichern und leistet typischerweise bei dauerhafter Invalidität, oft als Kapitalzahlung nach der Gliedertaxe. Sie stellt meist auf die körperliche Beeinträchtigung ab, nicht darauf, ob du deinen Beruf noch ausüben kannst. Krankheiten sind typischerweise nicht versichert.</span>
-        </li>
-        <li>
-          <strong>Berufsunfähigkeitsversicherung</strong>
-          <span>Die BU zielt typischerweise darauf, dein Einkommen zu sichern, wenn du deinen Beruf aus gesundheitlichen Gründen nicht mehr ausüben kannst. Das gilt bei Krankheit und typischerweise auch nach einem Unfall. Die private Unfallversicherung ersetzt die BU nicht; beide können sich ergänzen. Eine Einordnung liegt auf der Seite <a href="bu-selbststaendige">Berufsunfähigkeitsversicherung für Selbstständige und Handwerker</a>.</span>
-        </li>
-      </ul>
-      <p class="hinweis"><strong>Wichtig:</strong> Eine Leistung aus der Unfallversicherung hängt typischerweise nicht daran, ob du weiterarbeiten kannst. Umgekehrt zahlt die BU typischerweise nicht schon deshalb, weil ein Unfall zu einer Invalidität geführt hat, sondern nur wenn die Berufsunfähigkeit im Sinne des Vertrags vorliegt. Deshalb gehören beide Themen getrennt ins Gespräch.</p>
-    </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="fuer-wen">
+    <section class="page-block" id="fuer-wen" aria-labelledby="fuer-wen-title">
       <p class="eyebrow">Für wen</p>
-      <h2 id="fuer-wen">Für wen das typischerweise infrage kommt</h2>
-      <p class="lead">Die Seite richtet sich an Selbstständige und Handwerker in Mainz, Wiesbaden, Frankfurt, Darmstadt und im übrigen Rhein-Main-Gebiet sowie im Umkreis von rund 100 Kilometern. Online berate ich deutschlandweit, typischerweise per Video.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Selbstständige ohne gesetzlichen Unfallschutz</strong>
-          <span>Du zahlst typischerweise nicht in die Berufsgenossenschaft ein und willst klären, was nach einem Unfall — bei der Arbeit oder in der Freizeit — abgesichert ist.</span>
-        </li>
-        <li>
-          <strong>Handwerker und Inhaber</strong>
-          <span>Die Arbeit ist körperlich, die Mitarbeitenden sind oft über die Berufsgenossenschaft geschützt, du selbst möglicherweise nicht. Dann gehört der Blick auf deinen eigenen Unfallschutz fest dazu.</span>
-        </li>
-        <li>
-          <strong>Ergänzung zur BU</strong>
-          <span>Du hast bereits eine Berufsunfähigkeitsversicherung oder prüfst sie und willst einordnen, was eine private Unfallversicherung zusätzlich leisten kann — und was nicht.</span>
-        </li>
-      </ul>
-      <p>Nicht jedes Thema und jedes Produkt ist automatisch verfügbar; das klären wir im Gespräch. Zur Absicherung der Arbeitskraft liegt eine Einordnung auf der Seite <a href="bu-selbststaendige">Berufsunfähigkeitsversicherung für Selbstständige und Handwerker</a>. Für ein Unfallangebot des Betriebs an die Beschäftigten — typischerweise als Gruppenvertrag — liegt eine Einordnung auf der Seite <a href="gruppenunfallversicherung">Gruppenunfallversicherung für Arbeitgeber</a>. Zur eigenen Altersvorsorge siehe <a href="altersvorsorge-selbststaendige">Altersvorsorge für Selbstständige und Handwerker</a>. Einen Überblick zur Finanzberatung in Mainz findest du auf der Seite <a href="finanzberater-mainz">Finanzberater Mainz</a>.</p>
+      <h2 id="fuer-wen-title">Für wen das ist.</h2>
+      
+      <ul class="topic-list"><li><strong>Selbstständige ohne Pflicht in der BG</strong><span>Die Satzung der Berufsgenossenschaft kann dich einbeziehen. Sonst bleibt oft nur die freiwillige Versicherung oder ein privater Vertrag.</span></li><li><strong>Handwerker mit Team</strong><span>Deine Leute sind bei der Arbeit gesetzlich versichert. Du selbst und die Freizeit sind eine andere Frage. Fürs Team siehe <a href="gruppenunfallversicherung">Gruppenunfallversicherung</a>.</span></li><li><strong>Du hast schon eine BU</strong><span>Die <a href="bu-selbststaendige">Berufsunfähigkeit</a> schützt das Einkommen, wenn der Beruf nicht mehr geht. Die Unfallversicherung schaut auf die unfallbedingte Invalidität, oft als Kapitalsumme.</span></li></ul>
     </section>
-
-    <section class="process-section page-block" id="ablauf" aria-labelledby="ablauf-title">
+<section class="page-block page-block--grau" id="worauf" aria-labelledby="worauf-title">
+      <p class="eyebrow">Worauf es ankommt</p>
+      <h2 id="worauf-title">Was ich mit dir kläre.</h2>
+      
+      <ul class="topic-list"><li><strong>Was ein Unfall ist</strong><span>Typischerweise ein plötzliches Ereignis von außen, das unfreiwillig die Gesundheit schädigt. Krankheit ohne Unfallereignis ist in der Regel nicht versichert.</span></li><li><strong>Invaliditätsleistung</strong><span>Eine Kapitalsumme, wenn die Beeinträchtigung dauerhaft ist. Die Höhe hängt an Versicherungssumme und Invaliditätsgrad, oft nach einer Gliedertaxe im Vertrag.</span></li><li><strong>Weitere Bausteine</strong><span>Unfallrente, Tagegeld, Krankenhaustagegeld oder Todesfallleistung gibt es nur, wenn sie vereinbart sind.</span></li><li><strong>Grenzen</strong><span>Bewusstseinsstörungen, bestimmte Sportarten oder Krankheiten können ausgeschlossen sein. Maßgeblich ist der Vertrag, nicht eine Musterbedingung allein.</span></li></ul>
+    </section>
+<section class="process-section page-block" id="ablauf" aria-labelledby="ablauf-title">
       <div class="process-heading">
-        <p class="eyebrow">Der Ablauf</p>
-        <h2 id="ablauf-title">So läuft die Beratung</h2>
-        <p class="lead">Wir starten mit deiner Tätigkeit und dem, was schon gesetzlich oder privat versichert ist. Die Beratung kann vollständig digital laufen, typischerweise per Video.</p>
+        <p class="eyebrow">Ablauf</p>
+        <h2 id="ablauf-title">So gehe ich vor.</h2>
+        <p class="lead">Du musst nichts vorbereiten. Unterlagen helfen, wenn du sie schon hast.</p>
       </div>
-      <ol class="process-list">
-        <li>
-          <span>1</span>
-          <h3>Termin buchen</h3>
-          <p>Du buchst einen unverbindlichen Termin, vor Ort in Mainz, im Rhein-Main-Gebiet bzw. im Umkreis von rund 100 Kilometern oder online. Online berate ich deutschlandweit, typischerweise per Video.</p>
-        </li>
-        <li>
-          <span>2</span>
-          <h3>Situation verstehen</h3>
-          <p>Wir sprechen über deine Tätigkeit, eine mögliche Mitgliedschaft in der Berufsgenossenschaft, bestehende Verträge und was du absichern möchtest. Auch der Unterschied zur BU gehört dazu, ohne dass schon ein Antrag gestellt wird.</p>
-        </li>
-        <li>
-          <span>3</span>
-          <h3>Schutz einordnen</h3>
-          <p>Ich prüfe, was gesetzlich schon greift und was eine private Unfallversicherung typischerweise ergänzen würde. Nicht jedes Produkt ist automatisch verfügbar.</p>
-        </li>
-        <li>
-          <span>4</span>
-          <h3>Zusammenspiel mit der BU klären</h3>
-          <p>Wir schauen uns an, ob und wie Unfallversicherung und Berufsunfähigkeitsversicherung in deiner Lage zusammenpassen, ohne die eine durch die andere zu ersetzen.</p>
-        </li>
-        <li>
-          <span>5</span>
-          <h3>In Ruhe entscheiden</h3>
-          <p>Du entscheidest in Ruhe, ob und wie es weitergehen soll. Durch das Erstgespräch entsteht keine Verpflichtung.</p>
-        </li>
-      </ol>
+      <ol class="process-list"><li><span>1</span><h3>Kennenlernen</h3><p>Bist du in der Berufsgenossenschaft, und was soll der Vertrag leisten?</p></li><li><span>2</span><h3>Analysieren</h3><p>Gesetzlicher Schutz, Freizeit, vorhandene BU.</p></li><li><span>3</span><h3>Lösungen besprechen</h3><p>Ich zeige, welche Summe und welche Bausteine zu deiner Lage passen.</p></li><li><span>4</span><h3>Umsetzen</h3><p>Du entscheidest, ob der Vertrag die Lücke wirklich trifft.</p></li></ol>
     </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="transparenz">
-      <p class="eyebrow">Kosten und Ablauf</p>
-      <h2 id="transparenz">Was das Erstgespräch kostet</h2>
-      <p class="lead">Für das Erstgespräch zahlst du keine Beratungsgebühr. Bevor du etwas entscheidest, weißt du, wie ein Vorschlag funktioniert und welche Kosten daran hängen.</p>
-      <p class="partners">Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte; den Ablauf erkläre ich dir im Gespräch. Pauschale Beiträge, Versicherungssummen, Invaliditätsgrade oder Annahmerichtlinien nenne ich hier bewusst nicht. Es werden keine Kundengelder entgegengenommen; Zahlungen gehen direkt an den jeweiligen Anbieter. Alle Pflichtangaben findest du im <a href="impressum.html">Impressum</a>.</p>
-    </section>
-
-    <section class="page-block" id="termin" aria-labelledby="termin-title">
+<section class="page-block" id="naechster" aria-labelledby="naechster-title">
       <p class="eyebrow">Nächster Schritt</p>
-      <h2 id="termin-title">Termin vereinbaren — in Mainz, im Rhein-Main-Gebiet oder online</h2>
-      <p class="lead">Den unverbindlichen Termin buchst du unter <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=unfallversicherung-selbststaendige">termin.eliasgassmann.de</a>. Ohne Druck und ohne eine festgelegte Empfehlung für oder gegen einen Vertrag.</p>
-      <p>Die öffentlich genannte Anschrift ist August-Horch-Straße 6A, 55129 Mainz. Ob ein Termin vor Ort oder online per Video sinnvoller ist, klären wir bei der Buchung. Du erreichst mich auch unter <a href="tel:+491626960629">+49 162 6960629</a> und <a href="mailto:elias@eliasgassmann.de">elias@eliasgassmann.de</a>.</p>
-      <p style="margin-top:28px"><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=unfallversicherung-selbststaendige">Unverbindlichen Termin vereinbaren <span aria-hidden="true">↗</span></a></p>
+      <h2 id="naechster-title">Das Erstgespräch zeigt dir den nächsten sinnvollen Schritt.</h2>
+      
+      <p>Du hörst, was schon passt, was fehlt und was es kosten würde. Danach entscheidest du.</p><p style="margin-top:8px"><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=unfallversicherung-selbststaendige">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a></p>
     </section>
-
     <section class="faq-section" id="fragen" aria-labelledby="faq-title">
       <div>
-        <p class="eyebrow">Vor dem Gespräch</p>
-        <h2 id="faq-title">Häufige Fragen zur Unfallversicherung</h2>
+        <p class="eyebrow">Kurz geklärt</p>
+        <h2 id="faq-title">Fragen, die oft kommen.</h2>
       </div>
       <div class="faq-list">
-        <details open>
-          <summary>Bin ich als Selbstständiger oder Handwerker gesetzlich unfallversichert?</summary>
-          <p>Als Selbstständiger bist du typischerweise nicht automatisch in der gesetzlichen Unfallversicherung der Berufsgenossenschaft abgesichert. Eine Pflicht besteht in der Regel nicht; oft ist eine freiwillige Versicherung möglich. Ob das für dich gilt, hängt von Tätigkeit, Eintragung und einer möglichen Mitgliedschaft ab. Das prüfe ich im Gespräch, ohne es hier pauschal festzulegen.</p>
-        </details>
-        <details>
-          <summary>Was ist der Unterschied zwischen gesetzlicher und privater Unfallversicherung?</summary>
-          <p>Die gesetzliche Unfallversicherung greift typischerweise bei Arbeitsunfällen, Wegeunfällen und anerkannten Berufskrankheiten. Unfälle in der Freizeit, im Haushalt oder beim Sport sind dort typischerweise nicht versichert. Eine private Unfallversicherung kann Unfälle auch außerhalb der Arbeit absichern und leistet typischerweise bei dauerhafter Invalidität, oft als Kapitalzahlung. Die genaue Abgrenzung hängt vom jeweiligen Schutz ab.</p>
-        </details>
-        <details>
-          <summary>Was ist der Unterschied zur Berufsunfähigkeitsversicherung?</summary>
-          <p>Die private Unfallversicherung leistet typischerweise nur nach einem Unfall, nicht bei Krankheit. Sie stellt meist auf die dauerhafte körperliche Beeinträchtigung ab, nicht darauf, ob du deinen Beruf noch ausüben kannst. Die Berufsunfähigkeitsversicherung zielt typischerweise darauf, dein Einkommen zu sichern, wenn du deinen Beruf aus gesundheitlichen Gründen nicht mehr ausüben kannst, auch bei Krankheit. Die Unfallversicherung ersetzt die BU typischerweise nicht. Beide können sich ergänzen.</p>
-        </details>
-        <details>
-          <summary>Was leistet eine private Unfallversicherung typischerweise?</summary>
-          <p>Im Kern steht typischerweise eine Invaliditätsleistung, wenn nach einem Unfall eine dauerhafte Beeinträchtigung bleibt. Die Höhe richtet sich oft nach dem Grad der Invalidität und einer Gliedertaxe im Vertrag. Zusätzlich können Bausteine wie eine Unfallrente, ein Krankenhaustagegeld oder eine Leistung im Todesfall vereinbart sein. Krankheiten sind typischerweise nicht versichert. Konkrete Summen oder Grade nenne ich hier bewusst nicht.</p>
-        </details>
-        <details>
-          <summary>Zählt nur ein Unfall bei der Arbeit?</summary>
-          <p>Bei der privaten Unfallversicherung typischerweise nicht. Sie gilt meist rund um die Uhr, also auch in der Freizeit, im Haushalt oder unterwegs, soweit der Vertrag das vorsieht. Die gesetzliche Unfallversicherung der Berufsgenossenschaft ist dagegen typischerweise auf die Arbeit und den Weg dorthin beschränkt. Was in deinem Fall schon greift, klären wir im Gespräch.</p>
-        </details>
-        <details>
-          <summary>Ist das Erstgespräch kostenpflichtig?</summary>
-          <p>Das Erstgespräch ist unverbindlich. Du zahlst keine Beratungsgebühr. Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte. Den Ablauf erkläre ich dir im Gespräch. Nicht jedes Produkt ist automatisch verfügbar.</p>
-        </details>
-        <details>
-          <summary>Berätst du nur in Mainz oder auch online?</summary>
-          <p>Beides. Du kannst einen Termin in Mainz, nach Absprache im Rhein-Main-Gebiet und im Umkreis von rund 100 Kilometern, etwa in Wiesbaden, Frankfurt oder Darmstadt, oder online vereinbaren. Online berate ich deutschlandweit, typischerweise per Video. Den Termin buchst du unter <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=unfallversicherung-selbststaendige">termin.eliasgassmann.de</a>.</p>
-        </details>
+        <details open><summary>Bin ich als Selbstständiger in der Berufsgenossenschaft?</summary><p>Nicht automatisch. Beschäftigte sind es kraft Gesetzes. Für Unternehmer kann die Satzung gelten, sonst oft eine freiwillige Versicherung.</p></details><details><summary>Zahlt die Unfallversicherung bei Krankheit?</summary><p>In der Regel nein. Ohne Unfallereignis bleibt Krankheit draußen. Dafür sind Krankenversicherung, Tagegeld oder BU die passenderen Fragen.</p></details><details><summary>Was ist der Unterschied zur BU?</summary><p>Die BU fragt, ob du deinen Beruf noch ausüben kannst, auch nach Krankheit. Die Unfallversicherung fragt nach der körperlichen Folge eines Unfalls.</p></details><details><summary>Was kostet das Erstgespräch?</summary><p>Das Erstgespräch kostet dich nichts. Eine Beratungsgebühr verlange ich nicht. Kommt ein Produkt zustande, werde ich vom Anbieter vergütet. Wie das läuft, sage ich dir im Gespräch. Die Pflichtangaben stehen im Impressum.</p></details><details><summary>Muss ich bestehende Verträge kündigen?</summary><p>Nein. Ich schaue zuerst, was du schon hast. Was zu deinem Ziel passt, kann bleiben. Ob du etwas änderst, entscheidest du.</p></details><details><summary>Bist du danach noch da?</summary><p>Ja. Wenn sich etwas ändert oder du eine Frage zum Vertrag hast, meldest du dich bei mir. Ich bleibe dein Ansprechpartner.</p></details>
       </div>
     </section>
-
     <section class="contact-card" aria-labelledby="kontakt-title">
       <figure class="hero-portrait" style="margin:0;max-height:520px">
-        <img src="portrait-elias-gassmann.jpeg" alt="Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" loading="lazy">
+        <img src="portrait-elias-gassmann.jpeg" alt="Porträt von Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" loading="lazy">
       </figure>
       <div class="contact-content">
-        <p class="eyebrow">Kontakt</p>
-        <h2 id="kontakt-title">Was hast du vor?<br><em>Lass uns sprechen.</em></h2>
-        <p class="contact-copy">Den gesetzlichen Unfallschutz klären, eine private Unfallversicherung einordnen oder den Unterschied zur BU verstehen: Erzähl mir, worum es geht.</p>
-        <a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=unfallversicherung-selbststaendige">Unverbindlichen Termin vereinbaren <span aria-hidden="true">↗</span></a>
+        <p class="eyebrow">Erstgespräch</p>
+        <h2 id="kontakt-title">Wenn du das einordnen willst, sag mir Bescheid.</h2>
+        <p class="contact-copy">Kurz schreiben, worum es geht. Eine Beratungsgebühr verlange ich nicht.</p>
+        <a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=unfallversicherung-selbststaendige">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a>
         <div class="contact-data">
           <a href="tel:+491626960629">+49 162 6960629</a>
           <a href="mailto:elias@eliasgassmann.de">elias@eliasgassmann.de</a>
@@ -553,7 +409,6 @@
       </div>
     </section>
   </main>
-
   <footer>
     <p>© <span id="year">2026</span> Elias Gassmann</p>
     <div>
@@ -562,7 +417,7 @@
       <a href="/datenschutz">Datenschutz</a>
     </div>
   </footer>
-  <a class="mobile-sticky" href="#anfrage">Jetzt Beratung anfragen</a>
+  <a class="mobile-sticky" href="#anfrage">Erstgespräch anfragen</a>
   <script src="formular.js" defer></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
