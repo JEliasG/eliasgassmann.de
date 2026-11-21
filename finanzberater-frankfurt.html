@@ -3,15 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Finanzberater Frankfurt — Elias Gassmann | von Mainz aus, vor Ort auf Wunsch und online</title>
-  <meta name="description" content="Finanzberater für Frankfurt am Main: Beratung für Privat, Selbstständige und Betriebe von Mainz aus, nach Absprache vor Ort in Frankfurt oder online. Kein Büro in Frankfurt; Anschrift in Mainz.">
+  <title>Finanzberater Frankfurt | Elias Gassmann</title>
+  <meta name="description" content="Finanzberater für Frankfurt, von Mainz aus. Absicherung, Vorsorge und Betrieb, digital oder nach Absprache vor Ort.">
   <link rel="canonical" href="https://eliasgassmann.de/finanzberater-frankfurt">
   <meta name="theme-color" content="#fbfbfd">
-  <meta property="og:title" content="Finanzberater Frankfurt — Elias Gassmann | von Mainz aus, vor Ort auf Wunsch und online">
-  <meta property="og:description" content="Finanzberater für Frankfurt am Main: Beratung für Privat, Selbstständige und Betriebe von Mainz aus, nach Absprache vor Ort in Frankfurt oder online. Kein Büro in Frankfurt; Anschrift in Mainz.">
+  <meta property="og:title" content="Finanzberater Frankfurt | Elias Gassmann">
+  <meta property="og:description" content="Finanzberater für Frankfurt, von Mainz aus. Absicherung, Vorsorge und Betrieb, digital oder nach Absprache vor Ort.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://eliasgassmann.de/finanzberater-frankfurt">
   <meta property="og:image" content="https://eliasgassmann.de/portrait-elias-gassmann.jpeg">
+  <meta property="og:locale" content="de_DE">
   <link rel="stylesheet" href="apple.css?v=20261103">
   <style>
     .hero h1, .intro h2, .process-heading h2, .faq-section h2, .contact-card h2, .page-block h2 {
@@ -28,7 +29,8 @@
     .hero--beratung h1 {
       font-size: clamp(36px, 4.2vw, 58px);
       line-height: 1.08;
-      max-width: 18ch;
+      max-width: min(22ch, 100%);
+      overflow-wrap: anywhere;
     }
     .answer-box {
       margin: 22px 0 20px;
@@ -162,141 +164,119 @@
     }
     @media (max-width: 760px) {
       .hero--beratung { display: flex; flex-direction: column; }
+      .hero-copy, .hero-form, .hero-panel { order: 0; min-width: 0; width: 100%; }
       .hero-copy { order: 1; }
       .hero-panel { order: 2; }
       .hero-form { order: 3; }
+      .hero--beratung h1 { overflow-wrap: anywhere; }
     }
   
-    .quellen { padding: 72px var(--rand) 40px; background: var(--grau); }
-    .quellen h2 { margin: 0 0 16px; font: 700 clamp(28px,3.4vw,40px)/1.15 var(--display); letter-spacing: -.03em; }
-    .quellen ol { margin: 0; padding-left: 1.25rem; max-width: 44rem; color: var(--ink-2); font-size: 14px; line-height: 1.5; }
-    .quellen li { margin: 0 0 8px; }
-    .quellen a, .page-block a { color: var(--link); }
-    .fn { font-size: 0.75em; vertical-align: super; line-height: 0; }
-</style>
+    .process-section.page-block .process-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .page-block--grau .topic-list li { background: #fff; }
+    .link-row { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 4px 0 18px; max-width: 44rem; }
+    .link-row a { color: var(--link); }
+    .source-list { margin: 8px 0 0; padding-left: 18px; max-width: 44rem; }
+    .source-list li { margin: 0 0 8px; font-size: 15px; line-height: 1.45; color: var(--ink-2); }
+    .source-list a { color: var(--link); }
+    @media (max-width: 760px) {
+      .hero h1, .page-block h2, .process-heading h2, .faq-section h2, .contact-card h2 { overflow-wrap: break-word; }
+      .process-section.page-block .process-list { grid-template-columns: 1fr; }
+      .criteria, .criteria thead, .criteria tbody, .criteria tr, .criteria th, .criteria td { display: block; width: auto; }
+      .criteria thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+      .criteria tr { padding: 8px 0; }
+    }
+  </style>
   <script type="application/ld+json">
-{
+  {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Hast du ein Büro in Frankfurt?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nein. Ein Büro in Frankfurt am Main unterhalte ich nicht. Die öffentlich genannte Anschrift ist August-Horch-Straße 6A, 55129 Mainz. Die Beratung findet in Mainz, nach Absprache vor Ort in Frankfurt oder online statt."
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Was kostet die Beratung?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Das Erstgespräch kostet dich nichts. Eine Beratungsgebühr verlange ich nicht. Kommt ein Produkt zustande, werde ich vom Anbieter vergütet. Wie das läuft, sage ich dir im Gespräch. Die Pflichtangaben stehen im Impressum."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Muss ich bestehende Verträge kündigen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein. Ich schaue zuerst, was du schon hast. Was zu deinem Ziel passt, kann bleiben. Ob du etwas änderst, entscheidest du."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie läuft ein Gespräch ab?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Du erzählst mir, worum es geht. Ich schaue mir Verträge und Ziele an und erkläre dir, was passt. Umgesetzt wird nur, was du willst. Per Teams, Telefon oder nach Absprache vor Ort."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bist du danach noch ansprechbar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Wenn sich etwas ändert oder du eine Frage zum Vertrag hast, meldest du dich bei mir. Ich bleibe dein Ansprechpartner."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hast du ein Büro in Frankfurt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein. Mein Sitz ist in Mainz. Für Frankfurt gibt es kein eigenes Büro. Gespräche laufen per Teams, Telefon oder nach Absprache vor Ort."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FinancialService",
+      "name": "Elias Gassmann — Finanzberater für Frankfurt",
+      "url": "https://eliasgassmann.de/finanzberater-frankfurt",
+      "description": "Finanzberatung für Menschen und Betriebe in Frankfurt am Main. Sitz in Mainz, kein Büro in Frankfurt.",
+      "telephone": "+491626960629",
+      "email": "elias@eliasgassmann.de",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "August-Horch-Straße 6A",
+        "postalCode": "55129",
+        "addressLocality": "Mainz",
+        "addressCountry": "DE"
+      },
+      "provider": {
+        "@type": "Person",
+        "name": "Elias Gassmann",
+        "url": "https://eliasgassmann.de/",
+        "image": "https://eliasgassmann.de/portrait-elias-gassmann.jpeg"
       }
     },
     {
-      "@type": "Question",
-      "name": "Wer berät als Finanzberater in Frankfurt?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Die Beratung erfolgt persönlich durch Elias Gassmann. Du kannst einen Termin in Mainz, nach Absprache vor Ort in Frankfurt oder online vereinbaren."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Was soll ich zum Erstgespräch mitbringen?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Wenn vorhanden: deine letzte Renteninformation, bestehende Versicherungs- und Vorsorgeverträge und als Unternehmer die aktuellen Betriebsversicherungen. Es geht aber auch ganz ohne Unterlagen, dann starten wir mit deinen Zielen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Berätst du auch Selbstständige und Betriebe in Frankfurt?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ja. Neben privaten Themen kommen typische Fragen von Selbstständigen und Betrieben auf den Tisch, etwa zur Absicherung im Gewerbe. Vertiefende Fachtexte zu einzelnen Gewerbeversicherungen liegen auf factoringwerkstatt.de und werden von hier verlinkt."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Ist das Erstgespräch kostenpflichtig?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Das Erstgespräch ist unverbindlich. Du zahlst keine Beratungsgebühr. Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte. Den Ablauf erkläre ich dir im Gespräch."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Welche Themen deckt die Finanzberatung für Frankfurt ab?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Häufig geht es um private Absicherung und Vorsorge sowie um typische betriebliche Fragen von Selbstständigen und Betrieben. Nicht jedes Thema und jedes Produkt ist automatisch verfügbar; das klären wir im Gespräch."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wie vereinbare ich einen Termin?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Den unverbindlichen Termin buchst du online unter termin.eliasgassmann.de. Im Erstgespräch klären wir dein Anliegen und den möglichen nächsten Schritt, ohne Verpflichtung."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Elias Gassmann",
+          "item": "https://eliasgassmann.de/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Finanzberater Frankfurt",
+          "item": "https://eliasgassmann.de/finanzberater-frankfurt"
+        }
+      ]
     }
   ]
 }
-</script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FinancialService",
-  "name": "Elias Gassmann — Finanzberater für Frankfurt am Main (von Mainz aus)",
-  "url": "https://eliasgassmann.de/finanzberater-frankfurt",
-  "description": "Finanzberatung für Privat, Selbstständige und Betriebe in Frankfurt am Main: Elias Gassmann berät von Mainz aus, nach Absprache vor Ort in Frankfurt und online. Kein Büro in Frankfurt.",
-  "areaServed": [
-    "Frankfurt am Main",
-    "Mainz",
-    "Rhein-Main",
-    "DE"
-  ],
-  "telephone": "+491626960629",
-  "email": "elias@eliasgassmann.de",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "August-Horch-Straße 6A",
-    "postalCode": "55129",
-    "addressLocality": "Mainz",
-    "addressCountry": "DE"
-  },
-  "provider": {
-    "@type": "Person",
-    "name": "Elias Gassmann",
-    "url": "https://eliasgassmann.de/",
-    "image": "https://eliasgassmann.de/portrait-elias-gassmann.jpeg",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "August-Horch-Straße 6A",
-      "postalCode": "55129",
-      "addressLocality": "Mainz",
-      "addressCountry": "DE"
-    }
-  }
-}
-</script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Elias Gassmann",
-      "item": "https://eliasgassmann.de/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Finanzberater Frankfurt",
-      "item": "https://eliasgassmann.de/finanzberater-frankfurt"
-    }
-  ]
-}
-</script>
+  </script>
 </head>
-
 <body>
   <a class="skip-link" href="#inhalt">Zum Inhalt</a>
   <header class="site-header">
@@ -305,32 +285,28 @@
       <span class="brand-name">Elias Gassmann<small>Finanzberatung</small></span>
     </a>
     <nav class="main-nav" aria-label="Hauptnavigation">
-      <a href="index.html#gewerbe">Gewerbe</a>
       <a href="index.html#privat">Privat</a>
-      <a href="#ablauf">So läuft’s</a>
-      <a href="#termin">Termin</a>
+      <a href="index.html#gewerbe">Betrieb</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="#anfrage">Termin</a>
     </nav>
     <a class="header-contact" href="tel:+491626960629">
       <span class="phone-icon">↗</span>
       <span>0162 6960629</span>
     </a>
   </header>
-
   <main id="top">
     <section class="hero hero--beratung" id="inhalt" aria-labelledby="hero-title">
       <div class="hero-content hero-copy">
-        <p class="eyebrow hero-label">Finanzberatung für Frankfurt am Main</p>
-        <h1 id="hero-title">Finanzberater in Frankfurt: Beratung von Mainz aus, vor Ort auf Wunsch und online</h1>
-        <aside class="answer-box" aria-label="Kurzantwort">
-          <span class="answer-label">Kurzantwort</span>
-          <p>Du suchst einen Finanzberater in Frankfurt am Main für private oder betriebliche Themen — von Absicherung und Vorsorge bis zu typischen Fragen von Selbstständigen und Betrieben. Elias Gassmann berät von Mainz aus, nach Absprache vor Ort in Frankfurt und online. Ein Büro in Frankfurt unterhalte ich nicht; die öffentlich genannte Anschrift ist August-Horch-Straße 6A, 55129 Mainz. Im kostenfreien, unverbindlichen Erstgespräch klären wir dein Anliegen, die mögliche Vergütung und den nächsten sinnvollen Schritt.</p>
-        </aside>
-        <p class="core-answer">Typische Anlässe: die erste eigene Absicherung, Familie oder Immobilie, die Gründung oder Übergabe eines Betriebs, das neue <a href="altersvorsorgedepot">Altersvorsorgedepot ab 2027</a> oder ein Ordner voller Verträge, den du nicht mehr überblickst.</p>
+        <p class="eyebrow hero-label">Finanzberater Frankfurt</p>
+        <h1 id="hero-title">Finanzberater für Frankfurt – persönlich, verständlich und auf deine Ziele abgestimmt</h1>
+        <p class="core-answer">Du suchst einen Finanzberater für Frankfurt, der deine Lage versteht und sie dir in normalen Sätzen erklärt. Ich prüfe mit dir Verträge, Absicherung, Vorsorge und Finanzierung. Mein Sitz ist in Mainz.</p>
+        <p><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=finanzberater-frankfurt">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a></p>
       </div>
       <div class="hero-form">
         <div class="form-card" id="anfrage">
-          <h2>Jetzt Beratung anfragen</h2>
-          <p class="form-lead">Unverbindlich, in Mainz, nach Absprache in Frankfurt oder online. Erzähl kurz, worum es geht.</p>
+          <h2>Erstgespräch anfragen</h2>
+          <p class="form-lead">Kostenlos und unverbindlich. Ein Satz zu deiner Lage reicht.</p>
           <form class="lead-form" id="beratung-form" action="https://eg-anfragen.elias-gassmann.workers.dev/anfrage" method="post" novalidate>
             <label>Name
               <input type="text" name="name" autocomplete="name" required placeholder="Vor- und Nachname">
@@ -339,10 +315,10 @@
               <input type="text" name="kontakt" autocomplete="on" required placeholder="Nummer oder E-Mail-Adresse" inputmode="email">
             </label>
             <label>Branche oder Situation
-              <input type="text" name="branche" required placeholder="z. B. privat, selbstständig, Betrieb">
+              <input type="text" name="branche" required placeholder="z. B. privat, selbstständig, Handwerk">
             </label>
             <label>Kurz dein Anliegen
-              <input type="text" name="anliegen" required placeholder="z. B. Absicherung, Vorsorge, Betrieb">
+              <input type="text" name="anliegen" required placeholder="z. B. Verträge prüfen, Vorsorge, Betrieb">
             </label>
             <label class="consent fwx-consent">
               <input type="checkbox" name="datenschutz" value="ja" required>
@@ -354,21 +330,21 @@
           </form>
           <p class="form-alt">Oder Termin direkt wählen: <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=finanzberater-frankfurt">termin.eliasgassmann.de</a> · <a href="tel:+491626960629">+49 162 6960629</a></p>
         </div>
-      </div>
+        </div>
       <div class="hero-panel">
         <figure class="hero-portrait">
-          <img src="portrait-elias-gassmann.jpeg" alt="Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" fetchpriority="high">
+          <img src="portrait-elias-gassmann.jpeg" alt="Porträt von Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" fetchpriority="high">
           <figcaption>
             <span>Elias Gassmann</span>
             <strong>Finanzberater in Mainz</strong>
-            <small>Von Mainz aus, in Frankfurt auf Wunsch und online</small>
+            <small>Kein Büro außerhalb von Mainz</small>
           </figcaption>
         </figure>
         <a class="trust-rating" href="https://www.google.com/maps?cid=18281856182098275446" target="_blank" rel="noopener noreferrer">
           <span aria-hidden="true">★★★★★</span>
           <span>
             <strong>4,9 / 5 · 48 Google-Rezensionen</strong>
-            <small>Stand 10.11.2026, wie auf der Seite Finanzberater Mainz</small>
+            <small>FactoringWerkstatt · Stand 10.11.2026</small>
           </span>
         </a>
         <blockquote class="quote-mini">
@@ -381,184 +357,63 @@
         </blockquote>
       </div>
     </section>
-
-    <section class="page-block" aria-labelledby="standort">
-      <p class="eyebrow">Standort</p>
-      <h2 id="standort">Von Mainz aus nach Frankfurt — ohne Büro vor Ort</h2>
-      <p class="lead">Die öffentlich genannte Anschrift ist August-Horch-Straße 6A, 55129 Mainz. Ein Büro oder eine weitere Anschrift in Frankfurt am Main unterhalte ich nicht.</p>
-      <p>Frankfurt am Main liegt mit Mainz im Rhein-Main-Gebiet. Zum Jahresende 2024 waren 776&nbsp;843 Einwohnerinnen und Einwohner mit Hauptwohnung in Frankfurt gemeldet.<a class="fn" href="#quelle-1">[1]</a> Termine finden in Mainz, nach Absprache vor Ort in Frankfurt oder online statt — typischerweise per Video, auch deutschlandweit.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Niederlassungen und Beschäftigte</strong>
-          <span>Nach dem Unternehmensregister des Hessischen Statistischen Landesamts gab es in Frankfurt am Main im Jahr 2024 45&nbsp;828 Niederlassungen mit abhängig Beschäftigten. Auf sie entfielen 714&nbsp;641 abhängig Beschäftigte, darunter 630&nbsp;977 sozialversicherungs&shy;pflichtig Beschäftigte.<a class="fn" href="#quelle-2">[2]</a></span>
-        </li>
-        <li>
-          <strong>Branchen mit den höchsten Beschäftigtenzahlen</strong>
-          <span>Unter diesen Niederlassungen entfielen 2024 die höchsten Zahlen sozialversicherungs&shy;pflichtig Beschäftigter auf Verkehr und Lagerei (93&nbsp;934), auf freiberufliche, wissenschaftliche und technische Dienstleistungen (84&nbsp;588) sowie auf Finanz- und Versicherungsdienstleistungen (81&nbsp;785).<a class="fn" href="#quelle-2">[2]</a> Die öffentliche Verwaltung ist in dieser Registerauszählung typischerweise nicht in derselben Weise enthalten; die Zahlen beschreiben die erfassten Niederlassungen, nicht jeden Arbeitsplatz in der Stadt.</span>
-        </li>
-      </ul>
+    <section class="page-block" id="privat" aria-labelledby="privat-title">
+      <p class="eyebrow">Privat</p>
+      <h2 id="privat-title">Was ich für dich privat kläre.</h2>
+      <p class="lead">Ob du angestellt bist, dich selbstständig machst oder einfach den Ordner nicht mehr überblickst.</p>
+      <ul class="topic-list"><li><strong>Verträge prüfen</strong><span>Ich lese mit dir, was Haftpflicht, Rechtsschutz, Kfz und der Rest wirklich leisten. Doppelt und lückenhaft wird sichtbar, bevor irgendetwas gewechselt wird.</span></li><li><strong>Berufsunfähigkeit und Einkommen</strong><span>Fällst du länger aus, fehlt das Einkommen. Bei vielen Selbstständigen gibt es keinen gesetzlichen Schutz für den eigenen Beruf. <a href="bu-selbststaendige">Berufsunfähigkeitsversicherung</a></span></li><li><strong>ETF, Fonds und Vermögensaufbau</strong><span>Sparplan oder Einmalanlage richten sich nach Ziel, Zeitraum und wie viel Schwankung du aushältst. Kurse können fallen. <a href="geldanlage-mainz">Geldanlage</a></span></li><li><strong>Altersvorsorge</strong><span>Vorhandene Ansprüche zuerst, dann Basisrente, private Rente oder Sparplan. Ab 2027 kommt das <a href="altersvorsorgedepot">Altersvorsorgedepot</a> dazu. <a href="altersvorsorge-selbststaendige">Altersvorsorge für Selbstständige</a></span></li><li><strong>Krankenversicherung, PKV und Zahnzusatz</strong><span>Gesetzlich oder privat hängt an Einkommen, Familie, Gesundheit und dem Blick aufs Alter. Zahnzusatz und Krankentagegeld sind eigene Bausteine. <a href="krankenversicherung-selbststaendige">Krankenversicherung</a></span></li><li><strong>Private Finanzierung</strong><span>Ob Anschaffung, Auto oder Umschuldung: Ich schaue auf Bedarf, Rate, effektiven Jahreszins und, wenn du ablösen willst, auf die Restlaufzeit.</span></li></ul>
     </section>
-
-    <section class="process-section page-block page-block--grau" id="ablauf" aria-labelledby="ablauf-title">
+<section class="page-block page-block--grau" id="betrieb" aria-labelledby="betrieb-title">
+      <p class="eyebrow">Betrieb</p>
+      <h2 id="betrieb-title">Was ich für deinen Betrieb kläre.</h2>
+      <p class="lead">Für Selbstständige, Handwerk und kleine Betriebe. Ich starte bei deiner Tätigkeit.</p>
+      <ul class="topic-list"><li><strong>Gewerbeversicherungen</strong><span>Haftung, Einrichtung, Fahrzeuge und Ausfall hängen an deiner Tätigkeit. Einstieg oft über <a href="betriebshaftpflicht-mainz">Betriebshaftpflicht</a>, <a href="inhaltsversicherung-betrieb">Inhalt</a> und <a href="rechtsschutz-selbststaendige">Rechtsschutz</a>.</span></li><li><strong>Factoring und Liquidität</strong><span>Wenn Kunden spät zahlen, fehlt Geld für Material und Löhne. Ob ein Forderungsverkauf passt, sehe ich an deinen Rechnungen. <a href="factoring-beratung">Factoring-Beratung</a></span></li><li><strong>Finanzierung, Leasing und Mietkauf</strong><span>Maschinen, Fahrzeuge oder Ausstattung: Laufzeit, Eigenmittel und Rate müssen zum Auftrag passen, nicht nur zum Prospekt.</span></li><li><strong>bAV und Mitarbeiterbenefits</strong><span>Entgeltumwandlung, Zuschuss und ein Weg, den dein Team versteht. Dazu können <a href="bkv-arbeitgeber">betriebliche Krankenversicherung</a> und <a href="gruppenunfallversicherung">Gruppenunfall</a> kommen. <a href="bav-handwerk">Betriebliche Altersvorsorge</a></span></li><li><strong>Unternehmerabsicherung</strong><span>Dein eigenes Einkommen, Unfall und, wenn du eine GmbH führst, die persönliche Haftung als Geschäftsführer. <a href="bu-selbststaendige">BU</a>, <a href="do-versicherung-geschaeftsfuehrer">D&amp;O</a></span></li></ul>
+    </section>
+<section class="page-block" id="warum" aria-labelledby="warum-title">
+      <p class="eyebrow">Warum ich</p>
+      <h2 id="warum-title">Warum du mit mir sprichst.</h2>
+      <p class="lead">Ich bin Elias Gassmann, Finanzberater mit Sitz in Mainz. Du sprichst mit mir.</p>
+      <ul class="topic-list"><li><strong>Du verstehst, was du unterschreibst</strong><span>Ich erkläre Leistung, Preis und Grenze in normalen Sätzen. Fachwort nur, wenn es etwas ändert.</span></li><li><strong>Bestehendes darf bleiben</strong><span>Ein Ordner voller Verträge ist kein Auftrag, alles umzudecken. Was passt, bleibt.</span></li><li><strong>Danach bin ich noch da</strong><span>Neue Familie, neuer Auftrag, Beitragserhöhung: Du meldest dich bei mir, nicht bei einer Hotline.</span></li></ul>
+    </section>
+<section class="process-section page-block" id="ablauf" aria-labelledby="ablauf-title">
       <div class="process-heading">
-        <p class="eyebrow">Der Ablauf</p>
-        <h2 id="ablauf-title">Wie die Finanzberatung für Frankfurt abläuft</h2>
-        <p class="lead">In Mainz, nach Absprache vor Ort in Frankfurt oder online: Wir starten mit einem unverbindlichen Erstgespräch, klären dein Anliegen und ordnen die nächsten Schritte ein.</p>
-        <p>Du musst nichts vorbereiten. Wenn du Unterlagen zur Hand hast, etwa deine Renteninformation oder Versicherungsscheine, kommen wir schneller zum Punkt.</p>
+        <p class="eyebrow">Ablauf</p>
+        <h2 id="ablauf-title">So läuft die Beratung.</h2>
+        <p class="lead">Persönlich oder per Teams und Telefon. Ohne vorbereitete Mappe.</p>
       </div>
-      <ol class="process-list">
-        <li>
-          <span>1</span>
-          <h3>Termin buchen</h3>
-          <p>Du buchst einen unverbindlichen Termin in Mainz, nach Absprache vor Ort in Frankfurt oder online.</p>
-        </li>
-        <li>
-          <span>2</span>
-          <h3>Anliegen klären</h3>
-          <p>Wir klären dein Anliegen und die wichtigsten Rahmenbedingungen — privat, betrieblich oder beides.</p>
-        </li>
-        <li>
-          <span>3</span>
-          <h3>Themen einordnen</h3>
-          <p>Ich ordne ein, welche Themen zuerst relevant sind und welche Unterlagen helfen.</p>
-        </li>
-        <li>
-          <span>4</span>
-          <h3>Vorschlag besprechen</h3>
-          <p>Ich zeige dir, welche Lösung zu deinem Anliegen passt, was sie kostet und worauf du achten solltest.</p>
-        </li>
-        <li>
-          <span>5</span>
-          <h3>In Ruhe entscheiden</h3>
-          <p>Du entscheidest in Ruhe, ob und wie es weitergehen soll. Durch das Erstgespräch entsteht keine Verpflichtung.</p>
-        </li>
-      </ol>
+      <ol class="process-list"><li><span>1</span><h3>Kennenlernen</h3><p>Du sagst, was dich beschäftigt. Privat, im Betrieb oder beides. Unterlagen brauchst du noch nicht.</p></li><li><span>2</span><h3>Analysieren</h3><p>Ich schaue auf Ziele, Verträge und die Lücke, die wirklich zählt.</p></li><li><span>3</span><h3>Lösungen besprechen</h3><p>Du hörst, was ein Vorschlag leistet, was er kostet und wo er aufhört.</p></li><li><span>4</span><h3>Umsetzen</h3><p>Du entscheidest. Wenn du willst, begleite ich den Antrag und die Fragen danach.</p></li></ol>
     </section>
-
-    <section class="page-block" aria-labelledby="fuer-wen">
-      <p class="eyebrow">Zielgruppen</p>
-      <h2 id="fuer-wen">Für wen die Beratung typischerweise infrage kommt</h2>
-      <p class="lead">Die Beratung richtet sich an private Haushalte sowie an Selbstständige und Betriebe in Frankfurt am Main und der Umgebung — oft an der Schnittstelle von privat und betrieblich.</p>
-      <p>Für Privatpersonen geht es typischerweise um Absicherung, Vorsorge und Entscheidungen in bestimmten Lebensphasen. Für Selbstständige und Betriebe kommen dazu typische betriebliche Fragen, etwa zum Schutz des Gewerbes. Nicht jedes Thema und jedes Produkt ist automatisch verfügbar; das klären wir im Gespräch.</p>
-      <p>Vertiefende Ratgeber zu einzelnen Gewerbeversicherungen liegen auf factoringwerkstatt.de, zum Beispiel zur <a href="https://www.factoringwerkstatt.de/betriebshaftpflicht-handwerk">Betriebshaftpflicht fürs Handwerk</a> und zum <a href="https://www.factoringwerkstatt.de/gewerberechtsschutz">Gewerberechtsschutz</a>. Für Freelancer und Selbstständige gibt es auf dieser Website eine Einordnung zur <a href="vermoegensschadenhaftpflicht-freelancer">Vermögensschadenhaftpflicht</a>. Zur Beratung in Mainz, Wiesbaden, Darmstadt und Worms siehe <a href="finanzberater-mainz">Finanzberater Mainz</a>, <a href="finanzberater-wiesbaden">Finanzberater Wiesbaden</a>, <a href="finanzberater-darmstadt">Finanzberater Darmstadt</a> und <a href="finanzberater-worms">Finanzberater Worms</a>. Diese Seiten ersetzen nicht das Gespräch, sondern ordnen Fachfragen ein.</p>
+<section class="page-block page-block--grau" id="region" aria-labelledby="region-title">
+      <p class="eyebrow">Ort</p>
+      <h2 id="region-title">Mainz ist mein Sitz. Frankfurt erreiche ich von dort.</h2>
+      
+      <p>Frankfurt erreiche ich von Mainz aus. Ein Büro in Frankfurt habe ich nicht, und ich tue auch nicht so.</p>
+        <p>Per Teams oder Telefon bist du genauso dran wie bei einem Termin vor Ort. Wenn wir uns sehen sollen, sagen wir den Ort bei der Buchung. Mein Sitz: <a href="finanzberater-mainz">Finanzberater Mainz</a>.</p>
     </section>
-
-    <section class="page-block page-block--grau" aria-labelledby="themen">
-      <p class="eyebrow">Themen, nicht Produktkatalog</p>
-      <h2 id="themen">Themen, die häufig auf den Tisch kommen</h2>
-      <p class="lead">Die Liste ist eine Orientierung, kein Vollständigkeitsversprechen und keine Zusage, jedes Produkt vermitteln zu können.</p>
-      <ul class="topic-list">
-        <li>
-          <strong>Private Absicherung</strong>
-          <span>Typische Risiken im Alltag und für die Familie einordnen und mit dem abgleichen, was bereits besteht.</span>
-        </li>
-        <li>
-          <strong>Vorsorge</strong>
-          <span>Für später vorsorgen und die wichtigsten Rahmenbedingungen klären, ohne eine Rendite zuzusagen. Dazu gehört auch das <a href="altersvorsorgedepot">Altersvorsorgedepot</a>.</span>
-        </li>
-        <li>
-          <strong>Typische betriebliche Versicherungen</strong>
-          <span>Fragen von Selbstständigen und Betrieben zur Absicherung im Gewerbe — vertieft etwa über die Fachseiten zu Betriebshaftpflicht und Gewerberechtsschutz sowie zur <a href="vermoegensschadenhaftpflicht-freelancer">Vermögensschadenhaftpflicht für Freelancer</a>.</span>
-        </li>
-        <li>
-          <strong>Schnittstelle Privat und Betrieb</strong>
-          <span>Wenn sich privater und betrieblicher Bedarf überschneidet, schauen wir, welche Fragen zuerst kommen.</span>
-        </li>
-      </ul>
-    </section>
-
-    <section class="page-block" aria-labelledby="transparenz">
-      <p class="eyebrow">Kosten und Ablauf</p>
-      <h2 id="transparenz">Was das Erstgespräch kostet – und was du erwarten kannst</h2>
-      <p class="lead">Für das Erstgespräch zahlst du keine Beratungsgebühr. Bevor du etwas entscheidest, weißt du, was ein Vorschlag kostet und wie er funktioniert.</p>
-      <p class="partners">Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte; den Ablauf erkläre ich dir im Gespräch. Es werden keine Kundengelder entgegengenommen; Zahlungen gehen direkt an den jeweiligen Anbieter. Alle Pflichtangaben findest du im <a href="impressum.html">Impressum</a>.</p>
-      <table class="criteria">
-        <caption>Was du hier erwarten kannst — und was nicht</caption>
-        <thead>
-          <tr>
-            <th scope="col">Das kannst du erwarten</th>
-            <th scope="col">Das ist hier nicht gemeint</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Persönliche Finanzberatung von Mainz aus, in Frankfurt auf Wunsch und online</th>
-            <td>Ein Büro oder eine Anschrift in Frankfurt</td>
-          </tr>
-          <tr>
-            <th scope="row">Hilfe beim Sortieren deiner bestehenden Verträge</th>
-            <td>Druck, bestehende Verträge zu kündigen</td>
-          </tr>
-          <tr>
-            <th scope="row">Klare Einordnung typischer privater und betrieblicher Anliegen</th>
-            <td>Eine Gebühr für das Erstgespräch</td>
-          </tr>
-          <tr>
-            <th scope="row">Unverbindlicher Termin als Einstieg</th>
-            <td>Eine Garantie auf das günstigste Produkt oder eine bestimmte Ersparnis</td>
-          </tr>
-          <tr>
-            <th scope="row">Verweise auf vertiefende Fachseiten, etwa zu Gewerbeversicherungen</th>
-            <td>Eine Zweitfassung aller nationalen Ratgebertexte auf dieser Domain</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section class="page-block page-block--grau" id="termin" aria-labelledby="termin-title">
+<section class="page-block" id="naechster" aria-labelledby="naechster-title">
       <p class="eyebrow">Nächster Schritt</p>
-      <h2 id="termin-title">Termin vereinbaren — in Mainz, in Frankfurt auf Wunsch oder online</h2>
-      <p class="lead">Den unverbindlichen Termin buchst du unter <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=finanzberater-frankfurt">termin.eliasgassmann.de</a>. In Mainz, nach Absprache vor Ort in Frankfurt oder online — ohne Druck und ohne Ersparniszusage.</p>
-      <p>Die öffentlich genannte Anschrift ist August-Horch-Straße 6A, 55129 Mainz. Ob ein Termin in Mainz, vor Ort in Frankfurt oder online sinnvoller ist, klären wir bei der Buchung. Du erreichst mich auch unter <a href="tel:+491626960629">+49 162 6960629</a> und <a href="mailto:elias@eliasgassmann.de">elias@eliasgassmann.de</a>.</p>
-      <p style="margin-top:28px"><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=finanzberater-frankfurt">Unverbindlichen Termin vereinbaren <span aria-hidden="true">↗</span></a></p>
+      <h2 id="naechster-title">Das Erstgespräch kostet dich nichts.</h2>
+      
+      <p>Du gehst mit einer klaren Einordnung raus: was schon passt, was fehlt und was der nächste Schritt wäre.</p><p style="margin-top:8px"><a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=finanzberater-frankfurt">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a></p>
     </section>
-
     <section class="faq-section" id="fragen" aria-labelledby="faq-title">
       <div>
-        <p class="eyebrow">Vor dem Gespräch</p>
-        <h2 id="faq-title">Häufige Fragen zur Finanzberatung in Frankfurt</h2>
+        <p class="eyebrow">Kurz geklärt</p>
+        <h2 id="faq-title">Fragen, die oft kommen.</h2>
       </div>
       <div class="faq-list">
-        <details open>
-          <summary>Hast du ein Büro in Frankfurt?</summary>
-          <p>Nein. Ein Büro in Frankfurt am Main unterhalte ich nicht. Die öffentlich genannte Anschrift ist August-Horch-Straße 6A, 55129 Mainz. Die Beratung findet in Mainz, nach Absprache vor Ort in Frankfurt oder online statt.</p>
-        </details>
-        <details>
-          <summary>Wer berät als Finanzberater in Frankfurt?</summary>
-          <p>Die Beratung erfolgt persönlich durch Elias Gassmann. Du kannst einen Termin in Mainz, nach Absprache vor Ort in Frankfurt oder online vereinbaren.</p>
-        </details>
-        <details>
-          <summary>Was soll ich zum Erstgespräch mitbringen?</summary>
-          <p>Wenn vorhanden: deine letzte Renteninformation, bestehende Versicherungs- und Vorsorgeverträge und als Unternehmer die aktuellen Betriebsversicherungen. Es geht aber auch ganz ohne Unterlagen, dann starten wir mit deinen Zielen.</p>
-        </details>
-        <details>
-          <summary>Berätst du auch Selbstständige und Betriebe in Frankfurt?</summary>
-          <p>Ja. Neben privaten Themen kommen typische Fragen von Selbstständigen und Betrieben auf den Tisch, etwa zur Absicherung im Gewerbe. Vertiefende Fachtexte zu einzelnen Gewerbeversicherungen liegen auf factoringwerkstatt.de und werden von hier verlinkt.</p>
-        </details>
-        <details>
-          <summary>Ist das Erstgespräch kostenpflichtig?</summary>
-          <p>Das Erstgespräch ist unverbindlich. Du zahlst keine Beratungsgebühr. Soweit Produkte vermittelt werden, erhalte ich meine Vergütung von den Anbietern dieser Produkte. Den Ablauf erkläre ich dir im Gespräch.</p>
-        </details>
-        <details>
-          <summary>Welche Themen deckt die Finanzberatung für Frankfurt ab?</summary>
-          <p>Häufig geht es um private Absicherung und Vorsorge sowie um typische betriebliche Fragen von Selbstständigen und Betrieben. Nicht jedes Thema und jedes Produkt ist automatisch verfügbar; das klären wir im Gespräch.</p>
-        </details>
-        <details>
-          <summary>Wie vereinbare ich einen Termin?</summary>
-          <p>Den unverbindlichen Termin buchst du online unter <a href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=finanzberater-frankfurt">termin.eliasgassmann.de</a>. Im Erstgespräch klären wir dein Anliegen und den möglichen nächsten Schritt, ohne Verpflichtung.</p>
-        </details>
+        <details open><summary>Was kostet die Beratung?</summary><p>Das Erstgespräch kostet dich nichts. Eine Beratungsgebühr verlange ich nicht. Kommt ein Produkt zustande, werde ich vom Anbieter vergütet. Wie das läuft, sage ich dir im Gespräch. Die Pflichtangaben stehen im Impressum.</p></details><details><summary>Muss ich bestehende Verträge kündigen?</summary><p>Nein. Ich schaue zuerst, was du schon hast. Was zu deinem Ziel passt, kann bleiben. Ob du etwas änderst, entscheidest du.</p></details><details><summary>Wie läuft ein Gespräch ab?</summary><p>Du erzählst mir, worum es geht. Ich schaue mir Verträge und Ziele an und erkläre dir, was passt. Umgesetzt wird nur, was du willst. Per Teams, Telefon oder nach Absprache vor Ort.</p></details><details><summary>Bist du danach noch ansprechbar?</summary><p>Ja. Wenn sich etwas ändert oder du eine Frage zum Vertrag hast, meldest du dich bei mir. Ich bleibe dein Ansprechpartner.</p></details><details><summary>Hast du ein Büro in Frankfurt?</summary><p>Nein. Mein Sitz ist in Mainz. Für Frankfurt gibt es kein eigenes Büro. Gespräche laufen per Teams, Telefon oder nach Absprache vor Ort.</p></details>
       </div>
     </section>
-
     <section class="contact-card" aria-labelledby="kontakt-title">
       <figure class="hero-portrait" style="margin:0;max-height:520px">
-        <img src="portrait-elias-gassmann.jpeg" alt="Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" loading="lazy">
+        <img src="portrait-elias-gassmann.jpeg" alt="Porträt von Elias Gassmann, Finanzberater in Mainz" width="1254" height="1254" loading="lazy">
       </figure>
       <div class="contact-content">
-        <p class="eyebrow">Kontakt</p>
-        <h2 id="kontakt-title">Was hast du vor?<br><em>Lass uns sprechen.</em></h2>
-        <p class="contact-copy">Ein privates Ziel, eine Frage zur Absicherung oder der nächste Schritt für deinen Betrieb in Frankfurt: Erzähl mir, worum es geht.</p>
-        <a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=finanzberater-frankfurt">Unverbindlichen Termin vereinbaren <span aria-hidden="true">↗</span></a>
+        <p class="eyebrow">Erstgespräch</p>
+        <h2 id="kontakt-title">Wenn du das einordnen willst, sag mir Bescheid.</h2>
+        <p class="contact-copy">Kurz schreiben, worum es geht. Ich melde mich. Sitz: August-Horch-Straße 6A, 55129 Mainz.</p>
+        <a class="text-link" href="https://termin.eliasgassmann.de/?utm_source=eliasgassmann.de&amp;utm_medium=website&amp;utm_campaign=finanzberater-frankfurt">Kostenloses Erstgespräch <span aria-hidden="true">↗</span></a>
         <div class="contact-data">
           <a href="tel:+491626960629">+49 162 6960629</a>
           <a href="mailto:elias@eliasgassmann.de">elias@eliasgassmann.de</a>
@@ -566,16 +421,7 @@
         </div>
       </div>
     </section>
-
-    <aside class="quellen" aria-labelledby="quellen-title">
-      <h2 id="quellen-title">Quellen zu Stadt und Arbeitsmarkt</h2>
-      <ol>
-        <li id="quelle-1"><a href="https://statistikportal.frankfurt.de/statistik_aktuell/2025/FSA_2025_04_BevoelkerungEnde2024.html">Stadt Frankfurt am Main, Bürgeramt, Statistik und Wahlen, Frankfurt Statistik aktuell 4/2025, „Moderates Wachstum: Bevölkerungszahl nähert sich 780.000“</a>, veröffentlicht am 27.&nbsp;Februar 2025: Einwohnerinnen und Einwohner mit Hauptwohnung zum Jahresende 2024.</li>
-        <li id="quelle-2"><a href="https://statistik.hessen.de/sites/statistik.hessen.de/files/2026-01/dii1_j24.pdf">Hessisches Statistisches Landesamt, Rechtliche Einheiten und Niederlassungen in Hessen 2024</a> (Kennziffer D&nbsp;II 1 – j/24, Januar 2026), Tabelle 4.1: Niederlassungen mit abhängig Beschäftigten in Frankfurt am Main, Stadt, nach Wirtschaftsabschnitten. Die Spalte SVB bezeichnet sozialversicherungspflichtig Beschäftigte.</li>
-      </ol>
-    </aside>
   </main>
-
   <footer>
     <p>© <span id="year">2026</span> Elias Gassmann</p>
     <div>
@@ -584,7 +430,7 @@
       <a href="/datenschutz">Datenschutz</a>
     </div>
   </footer>
-  <a class="mobile-sticky" href="#anfrage">Jetzt Beratung anfragen</a>
+  <a class="mobile-sticky" href="#anfrage">Erstgespräch anfragen</a>
   <script src="formular.js" defer></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
