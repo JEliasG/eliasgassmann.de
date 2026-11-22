@@ -159,7 +159,7 @@
       font-weight: 600;
       color: var(--ink);
     }
-    .lead-form input[type="text"] {
+    .lead-form input[type="text"], .lead-form input[type="tel"], .lead-form input[type="email"] {
       width: 100%;
       max-width: 100%;
       padding: 12px 14px;
@@ -552,8 +552,11 @@
           <label>Name
             <input type="text" name="name" autocomplete="name" required placeholder="Vor- und Nachname">
           </label>
-          <label>Telefon oder E-Mail
-            <input type="text" name="kontakt" autocomplete="on" required placeholder="Nummer oder E-Mail-Adresse" inputmode="email">
+          <label>Telefon
+            <input type="tel" name="telefon" autocomplete="tel" required placeholder="Telefonnummer">
+          </label>
+          <label>E-Mail
+            <input type="email" name="email" autocomplete="email" placeholder="E-Mail-Adresse">
           </label>
           <label>Branche oder Situation
             <input type="text" name="branche" required placeholder="z. B. privat oder Handwerk">

@@ -84,7 +84,9 @@
 
       var daten = {
         name: (form.elements.name && form.elements.name.value) || "",
-        kontakt: (form.elements.kontakt && form.elements.kontakt.value) || "",
+        telefon: (form.elements.telefon && form.elements.telefon.value) || "",
+        email: (form.elements.email && form.elements.email.value) || "",
+        kontakt: (form.elements.telefon && form.elements.telefon.value) || (form.elements.email && form.elements.email.value) || (form.elements.kontakt && form.elements.kontakt.value) || "",
         branche: (form.elements.branche && form.elements.branche.value) || "",
         forderungshoehe: (form.elements.forderungshoehe && form.elements.forderungshoehe.value) || "",
         betriebsgroesse: (form.elements.betriebsgroesse && form.elements.betriebsgroesse.value) || "",
